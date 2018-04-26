@@ -1612,6 +1612,17 @@ icd_10_code:
     cde_version: 2.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3226287&version=2.0"
 
+icd_10_code:
+  description: >
+    Alphanumeric value used to describe the  disease code from the tenth version of the
+    International Classification of Disease (ICD-10).
+  termDef:
+    term: International Classification of Disease, Tenth Revision Code
+    source: caDSR
+    cde_id: 3226287
+    cde_version: 2.0
+    term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3226287&version=2.0"
+
 iga:
   description: >
     The numeric value, in mg/dL, for the amount of immunoglobulin type A
