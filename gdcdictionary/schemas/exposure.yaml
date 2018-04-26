@@ -33,11 +33,6 @@ preferred:
   - pack_years_smoked
   - years_smoked
 
-deprecated:
-  - bmi
-  - cigarettes_per_day
-  - height
-  - weight
 
 uniqueKeys:
   #unclear if want submitter ID for clinical
@@ -66,11 +61,7 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-      - "no"
-      - "yes"
-    deprecated_enum:
-      - "no"
-      - "yes"
+
 
   alcohol_intensity:
     term:
@@ -84,20 +75,6 @@ properties:
       - Unknown
       - Not Reported
 
-  bmi:
-    term:
-      $ref: "_terms.yaml#/bmi"
-    type: number
-
-  cigarettes_per_day:
-    term:
-      $ref: "_terms.yaml#/cigarettes_per_day"
-    type: number
-
-  height:
-    term:
-      $ref: "_terms.yaml#/height"
-    type: number
 
   pack_years_smoked:
     term:
@@ -126,14 +103,7 @@ properties:
       - "7"
       - Unknown
       - Not Reported
-      - Not Allowed To Collect
-    deprecated_enum:
-      - Not Allowed To Collect
 
-  weight:
-    term:
-      $ref: "_terms.yaml#/weight"
-    type: number
 
   years_smoked:
     term:
