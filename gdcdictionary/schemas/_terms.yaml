@@ -1141,6 +1141,16 @@ hpv_status:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2230033&version=1.0"
 
+icd10_code:
+  description: >
+    The high-level icd10 classification of disease.
+  termDef:
+    term: ICD10 Codes
+    source: CDC
+    cde_id: null
+    cde_version: null
+    term_url: "https://www.cdc.gov/nchs/icd/icd10cm.htm"
+
 iga:
   description: >
     The numeric value, in mg/dL, for the amount of immunoglobulin type A
