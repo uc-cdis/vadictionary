@@ -36,7 +36,7 @@ required:
   - assay_target
   - target_measurement
   - target_measurement_units
-  - analytes
+  - aliquots
 
 uniqueKeys:
   - [ id ]
@@ -47,12 +47,7 @@ properties:
 
   assay_instrument:
     description: "The specific instrument type used to perform the assay."
-    enum:
-      - Bruker Mass Spectrometer
-      - CytoTrapNano CTC Platform
-      - Epic Sciences CTC Platform
-      - HD-SCA Platform
-      - Multi-Array Assay, Meso Scale Discovery
+    type: string
   assay_instrument_model:
     description: "The specific model of instrument used to perform the assay."
     type: string
@@ -67,10 +62,7 @@ properties:
     type: string
   assay_method:
     description: "General methodology used to perform the assay."
-    enum:
-      - Enzyme-Linked Immunosorbent Assay (ELISA)
-      - Immunohistochemistry
-      - MALDI-TOF Mass Spectrometry
+    type: string
   assay_target:
     description: "Target for the assay: can be a specific gene, protein, or otherwise."
     type: string
