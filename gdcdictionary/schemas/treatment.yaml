@@ -33,8 +33,6 @@ links:
 required:
   - submitter_id
 
-deprecated:
-  - days_to_treatment
 
 uniqueKeys:
   #unclear if want submitter ID for clinical
@@ -449,9 +447,7 @@ properties:
       - Targeted Molecular Therapy
       - Unknown
       - Not Reported
-      - Not Allowed To Collect
-    deprecated_enum:
-      - Not Allowed To Collect
+
 
   diagnoses:
     $ref: "_definitions.yaml#/to_one"
