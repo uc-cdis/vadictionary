@@ -803,30 +803,30 @@ properties:
     type: string
     pattern: ^[A-TV-Z][0-9][A-Z0-9](\.?[A-Z0-9]{1,4})?$
 
-icd_10_description:
+  icd_10_description:
     description: "The high-level icd10 disease category description."
     enum:
-        - A00-B99  Infectious and Parasitic Diseases
-        - C00-D49  Neoplasms
-        - D50-D89  Blood and Immune Diseases
-        - E00-E89  Endocrine, Nutritional and Metabolic Diseases
-        - F01-F99  Mental, Behavioral and Neurodevelopmental Disorders
-        - G00-G99  Diseases of the nervous system
-        - H00-H59  Diseases of the eye and adnexa
-        - H60-H95  Diseases of the ear and mastoid process
-        - I00-I99  Diseases of the circulatory system
-        - J00-J99  Diseases of the respiratory system
-        - K00-K95  Diseases of the digestive system
-        - L00-L99  Diseases of the skin and subcutaneous tissue
-        - M00-M99  Diseases of the musculoskeletal system and connective tissue
-        - N00-N99  Diseases of the genitourinary system
-        - O00-O9A  Pregnancy, childbirth and the puerperium
-        - P00-P96  Certain conditions originating in the perinatal period
-        - Q00-Q99  Congenital malformations, deformations and chromosomal abnormalities
-        - R00-R99  Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified
-        - S00-T88  Injury, poisoning and certain other consequences of external causes
-        - V00-Y99  External causes of morbidity
-        - Z00-Z99  Factors influencing health status and contact with health services
+      - A00-B99  Infectious and Parasitic Diseases
+      - C00-D49  Neoplasms
+      - D50-D89  Blood and Immune Diseases
+      - E00-E89  Endocrine and Metabolic Diseases
+      - F01-F99  Mental and Behavioral Disorders
+      - G00-G99  Nervous System Diseases
+      - H00-H59  Eye Diseases
+      - H60-H95  Ear Diseases
+      - I00-I99  Circulatory Diseases
+      - J00-J99  Respiratory Diseases
+      - K00-K95  Digestive Diseases
+      - L00-L99  Skin Diseases
+      - M00-M99  Musculoskeletal Diseases
+      - N00-N99  Genitourinary Diseases
+      - O00-O9A  Pregnancy Related Diseases
+      - P00-P96  Perinatal Conditions
+      - Q00-Q99  Congenital Diseases
+      - R00-R99  Other Clinical Symptoms
+      - S00-T88  External Causes of Injury
+      - V00-Y99  External Causes of Morbidity
+      - Z00-Z99  Health Status Factors
 
   inpc_grade:
     term:
