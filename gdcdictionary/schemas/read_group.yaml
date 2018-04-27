@@ -42,13 +42,6 @@ required:
   - read_group_name
   - target_capture_kit
 
-deprecated:
-  - target_capture_kit_catalog_number
-  - target_capture_kit_name
-  - target_capture_kit_target_region
-  - target_capture_kit_vendor
-  - target_capture_kit_version
-
 uniqueKeys:
   - [ id ]
   - [ project_id, submitter_id ]
@@ -293,30 +286,6 @@ properties:
       - Not Applicable
       - Unknown
 
-  target_capture_kit_catalog_number:
-    term:
-      $ref: "_terms.yaml#/target_capture_kit_catalog_number"
-    type: string
-
-  target_capture_kit_name:  # conditionally required for WXS etc
-    term:
-      $ref: "_terms.yaml#/target_capture_kit_name"
-    type: string
-
-  target_capture_kit_target_region:
-    term:
-      $ref: "_terms.yaml#/target_capture_kit_target_region"
-    type: string
-
-  target_capture_kit_vendor:
-    term:
-      $ref: "_terms.yaml#/target_capture_kit_vendor"
-    type: string
-
-  target_capture_kit_version:
-    term:
-      $ref: "_terms.yaml#/target_capture_kit_version"
-    type: string
 
   to_trim_adapter_sequence:
     term:
