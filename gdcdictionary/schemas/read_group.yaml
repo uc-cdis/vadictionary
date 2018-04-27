@@ -88,7 +88,10 @@ properties:
     term:
       $ref: "_terms.yaml#/fragment_mean_length"
     type: number
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
   fragment_minimum_length:
     term:
       $ref: "_terms.yaml#/fragment_minimum_length"
@@ -98,7 +101,10 @@ properties:
     term:
       $ref: "_terms.yaml#/fragment_standard_deviation_length"
     type: number
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
   includes_spike_ins:
     term:
       $ref: "_terms.yaml#/includes_spike_ins"
@@ -194,8 +200,15 @@ properties:
       - ChIP-Seq
       - miRNA-Seq
       - Bisulfite-Seq
+<<<<<<< HEAD
       - Targeted Sequencing
 
+=======
+      - Validation
+      - Amplicon
+      - Targeted Sequencing
+      - Other
+>>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
   multiplex_barcode:
     term:
       $ref: "_terms.yaml#/multiplex_barcode"

@@ -8,7 +8,7 @@ namespace: https://gdc.cancer.gov/
 program: '*'
 project: '*'
 description: >
-  Information pertaining to any molecular tests performed on the patient during a clinical event.
+  Information pertaining to any molecular tests performed on the patient during a clinical event, including blood workup and urinalysis.
 additionalProperties: false
 submittable: true
 downloadable: false
@@ -23,7 +23,7 @@ systemProperties:
 
 required:
   - submitter_id
-  - gene_symbol
+  #- gene_symbol
   - molecular_analysis_method
   - test_result
 
@@ -46,6 +46,10 @@ properties:
     term:
       $ref: "_terms.yaml#/aa_change"
     type: string
+
+  active_clinical_trials:
+    description: "A flag that denotes whether a mutation is part of an active clinical trial."
+    type: boolean
 
   antigen:
     term:
@@ -131,6 +135,10 @@ properties:
       - Unknown
       - Not Reported
 
+  clinically_actionable:
+    description: "Flag for whether a mutation is deemed clinically actionable."
+    type: boolean
+
   copy_number:
     term:
       $ref: "_terms.yaml#/copy_number"
@@ -141,16 +149,36 @@ properties:
       $ref: "_terms.yaml#/cytoband"
     type: string
 
+  days_to_test:
+    description: "The number of days between the case index date and the biopsy for mutational analysis."
+    type: integer
+
+  days_to_results:
+    description: "The number of days between the case index date and receipt of the biopsy mutational analysis results."
+    type: integer
+
   dna_change:
     term:
       $ref: "_terms.yaml#/dna_change"
     type: string
+
+  drug_sensitivity:
+    description: "A flag that determines whether the mutation is associated with drug sensitivity."
+    type: boolean
+
+  drug_resistance:
+    description: "A flag that determines whether the mutation is associated with drug resistance."
+    type: boolean
 
   exon:
     term:
       $ref: "_terms.yaml#/exon"
     type: integer
     minimum: 1
+
+  fold:
+    description: "The fold change for amplifications."
+    type: number
 
   gene_symbol:
     term:
@@ -927,6 +955,7 @@ properties:
     term:
       $ref: "_terms.yaml#/molecular_analysis_method"
     enum:
+      - Blood Test
       - Comparative Genomic Hybridization
       - FISH
       - Flow Cytometry
@@ -943,6 +972,7 @@ properties:
       - Targeted Sequencing
       - WGS
       - WXS
+      - Urinalysis
       - Unknown
       - Not Reported
 
@@ -985,6 +1015,10 @@ properties:
       - Transcript Ablation
       - Transcript Amplification
       - Upstream Gene Variant
+
+  mutant_fraction:
+    description: "The mutant fraction."
+    type: number
 
   ploidy:
     term:
@@ -1759,6 +1793,10 @@ properties:
     term:
       $ref: "_terms.yaml#/transcript"
     type: string
+
+  trial_phase:
+    description: "The phase of the active clinical trial for a mutation."
+    type: integer
 
   variant_type:
     term:
