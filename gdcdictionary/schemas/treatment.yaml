@@ -42,6 +42,10 @@ uniqueKeys:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  day_or_dose_limit:
+    description: "The maximum number of treatment doses or days."
+    type: string
+
   days_to_treatment_end:
     term:
       $ref: "_terms.yaml#/days_to_treatment_end"
@@ -51,6 +55,90 @@ properties:
     term:
       $ref: "_terms.yaml#/days_to_treatment_start"
     type: integer
+
+  dosage:
+    description: "The dosage of an administered drug."
+    type: string
+
+  dosage_form:
+    description: "The form of an administered drug."
+    enum:
+      - CAP INHL
+      - TAB
+      - TAB SA
+
+  drug_class:
+    description: "An alphanumeric code that specifies a drug classification."
+    type: string
+
+  drug_classification:
+    description: "The general classification of a drug."
+    type: string
+
+  high_risk_medication:
+    description: "A code that indicates the high risk or alert level for medication."
+    type: integer
+
+  injection_site:
+    description: "The anatomical site of an injection."
+    type: string
+
+  medication_route:
+    description: "The route of administered medications."
+    enum:
+      - Missing
+      - Affected Area
+      - As Directed
+      - Blood Test
+      - Both Ears
+      - Both Eyes
+      - Catheter
+      - Catheter Flush
+      - Each Nostril
+      - Epidural
+      - Externally
+      - Feeding Tube
+      - Fentanyl Patch
+      - Finger Stick
+      - For Procedure
+      - G Tube
+      - Hairless Skin
+      - Infiltration
+      - Inhalation
+      - Inhalation Cap Powder
+      - Inhalation Nasal
+      - Inhalation Oral
+      - Inhalation Nebulizer
+      - Metered-dose Inhaler
+      - Intra-catheter
+      - Intradermal
+      - Intramuscular
+      - IV
+      - IV Piggyback
+      - IV Push
+      - IV Central Line
+      - IV Drip
+      - IV Syringe
+      - Miscellaneous
+      - Nasogastric Intubation
+      - Ophthamalic
+      - Oral
+      - Oral Powder
+      - Oral Rinse
+      - Oral Sublingual
+      - Patch
+      - Rectum
+      - Strip
+      - Subcutaneous
+      - Swish and Spit
+      - Swish and Swallow
+      - Skin
+      - Topical
+      - Transdermal
+
+  prn_reason:
+    description: "The reason for using pro re nata (PRN) / when necessary medications."
+    type: string
 
   regimen_or_line_of_therapy:
     term:
@@ -427,6 +515,7 @@ properties:
       - I-131 Radiation Therapy
       - Internal Radiation
       - Immunotherapy (Including Vaccines)
+      - Medication
       - Microwave Ablation
       - Other
       - Pharmaceutical Therapy
