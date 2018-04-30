@@ -33,9 +33,7 @@ links:
 required:
   - submitter_id
 
-
 uniqueKeys:
-  #unclear if want submitter ID for clinical
   - [id]
   - [project_id, submitter_id]
 
