@@ -82,21 +82,21 @@ properties:
     term:
       $ref: "_terms.yaml#/ethnicity"
     enum:
-      - hispanic or latino
-      - not hispanic or latino
+      - Hispanic or Latino
+      - Not Hispanic or Latino
       - Unknown
-      - not reported
-      - not allowed to collect
+      - Not Reported
+      - Not Allowed to Collect
 
   gender:
     term:
       $ref: "_terms.yaml#/gender"
     enum:
-      - female
-      - male
-      - unknown
-      - unspecified
-      - not reported
+      - Female
+      - Male
+      - Unknown
+      - Unspecified
+      - Not Reported
 
   premature_at_birth:
     term:
@@ -111,15 +111,15 @@ properties:
     term:
       $ref: "_terms.yaml#/race"
     enum:
-      - white
-      - american indian or alaska native
-      - black or african american
-      - asian
-      - native hawaiian or other pacific islander
-      - other
+      - White
+      - American Indian or Alaska Native
+      - Black or African American
+      - Asian
+      - Native Hawaiian or Other Pacific Islander
+      - Other
       - Unknown
-      - not reported
-      - not allowed to collect
+      - Not Reported
+      - Not Allowed to Collect
 
   vital_status:
     term:

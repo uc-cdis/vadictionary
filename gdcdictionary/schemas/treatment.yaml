@@ -40,8 +40,44 @@ uniqueKeys:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  abnormal_results_flag:
+    description: "A flag that denotes whether results are abnormal."
+    type: boolean
+
   day_or_dose_limit:
     description: "The maximum number of treatment doses or days."
+    type: string
+
+  days_to_appointment:
+    description: "The number of days from index date to the date of an appointment in CPRS orders."
+    type: integer
+
+  days_to_completed:
+    description: "The number of days from index date to the date of completion in CPRS orders."
+    type: integer
+
+  days_to_discontinued:
+    description: "The number of days from index date to the date of discontinuation in CPRS orders."
+    type: integer
+
+  days_to_order_end:
+    description: "The number of days from index date to the day the CPRS order fulfilled."
+    type: integer
+
+  days_to_order_start:
+    description: "The number of days from index date to the day the CPRS order was placed."
+    type: integer
+
+  days_to_lapsed:
+    description: "The number of days from index date to day CPRS order lapsed."
+    type: string
+
+  days_to_last_activity:
+    description: "The number of days from index date to the date of last activity in CPRS orders."
+    type: integer
+
+  days_to_results:
+    description: "The number of days from index date to date results received for CPRS order."
     type: string
 
   days_to_treatment_end:
@@ -53,6 +89,31 @@ properties:
     term:
       $ref: "_terms.yaml#/days_to_treatment_start"
     type: integer
+
+  discontinued_nature:
+    description: "The nature of discontinued CPRS order name."
+    enum:
+      - Auto
+      - Rejected
+      - Duplicate
+      - Policy
+      - Written
+      - Changed
+      - Service Correction
+      - Verbal
+      - Maintenance
+      - Rejected by Service
+      - Electronically Entered
+      - Telephoned
+      - Entered in Error
+
+  discontinued_reason:
+    description: "The reason a CPRS order was discontinued."
+    type: string
+
+  display_group_name:
+    description: "The display group name in CPRS orders."
+    type: string
 
   dosage:
     description: "The dosage of an administered drug."
@@ -73,13 +134,41 @@ properties:
     description: "The general classification of a drug."
     type: string
 
+  findings:
+    description: "A description of any abnormal results."uro
+    type: string
+
   high_risk_medication:
     description: "A code that indicates the high risk or alert level for medication."
     type: integer
 
+  imaging_type:
+    description: "The type of clinical imaging test ordered."
+    enum:
+      - Nuclear Medicine
+      - CT Scan
+      - Magnetic Resonance Imaging
+      - Radiology
+      - Ultrasound
+      - Angio or Neuro Interventional
+      - Mammography
+      - Vascular Lab
+
   injection_site:
     description: "The anatomical site of an injection."
     type: string
+
+  inpatient_flag:
+    desciption: "A flag that denotes whether a treatment order is InPatient or not."
+    type: boolean
+
+  iv_base_flag:
+    description: "A flag that denotes whether an order is IV base."
+    type: boolean
+
+  iv_additive_flag:
+    description: "A flag that denotes whether an order is IV additive."
+    type: boolean
 
   medication_route:
     description: "The route of administered medications."
@@ -133,6 +222,104 @@ properties:
       - Skin
       - Topical
       - Transdermal
+
+  non_formulary_flag:
+    description: "A flag that denotes whether a CPRS order is non-formulary."
+    type: boolean
+
+  non_va_flag:
+    description: "A flag that denotes whether a CPRS medication order is non-VA."
+    type: boolean
+
+  order_type:
+    description: "A classification for the type of CPRS Order."
+    enum:
+      - Standard
+      - Edit
+      - Unknown
+      - Package
+      - Renew
+      - Transfer
+      - Copy
+      - BCMA
+
+  orderable_group:
+    description: "The group display name of an CPRS order."
+    enum:
+      - ACTIVITY
+      - ADMINISTRATIVE
+      - ADT INFO
+      - ALL SERVICES
+      - AMBULATORY INFUSION CENTER
+      - AMBULATORY PROCEDURE CENTER
+      - ANATOMIC PATHOLOGY
+      - APPOINTMENTS
+      - BLOOD PRODUCTS
+      - BLOOD TRANSFUSION ORDERS
+      - CHECKOUT
+      - CHEMOTHERAPY ORDERS
+      - CLINIC INFO
+      - CLINIC ORDERS
+      - CODE STATUS
+      - CONDITION
+      - CONSULTS
+      - CYTOLOGY
+      - DC INSTRUCTIONS
+      - DIAGNOSIS
+      - DIET/NURSING
+      - DIETETICS
+      - DISCHARGE
+      - DNR/LOC ORDER
+      - DOCUMENTATION
+      - EARLY/LATE TRAYS
+      - EKG
+      - ELOPEMENT RISK
+      - GWN EDUCATION
+      - HYPERLINKS
+      - IMAGING
+      - INTAKE AND OUTPUT
+      - INVASIVE LINES/DEVICES
+      - ISOLATION
+      - LAB TEXT
+      - LABORATORY
+      - M.A.S.
+      - Meds Reconciliation
+      - MICROBIOLOGY
+      - NURSING
+      - NURSING PRE-CHEMO PROTOCOL
+      - OPTOMETRY
+      - ORDERABLE ITEMS
+      - OTHER HOSPITAL SERVICES
+      - OUTPATIENT
+      - PATHOLOGY
+      - PATIENT MOVEMENT
+      - PATIENT RESUSCITATION PLAN
+      - PFT
+      - PHARMACY
+      - PHARMACY-OTHER
+      - PMR Therapy
+      - POST ANESTHESIA CARE UNIT
+      - PRE-OP
+      - PRECAUTIONS
+      - PRIVILEGES
+      - PROCEDURES
+      - RECALL
+      - RESPIRATORY THERAPY
+      - RESUSCITATION
+      - RETURN TO CLINIC
+      - RTC
+      - SAME DAY UNIT
+      - SCHEDULING
+      - SSU
+      - SUMMARY ORDER
+      - SURGICAL PATHOLOGY
+      - TESTS/PROCEDURES
+      - VENOUS LINES
+      - VITALS/MEASUREMENTS
+
+  outpatient_flag:
+    description: "A flag that denotes whether a CPRS order was for outpatient treatment."
+    type: boolean
 
   prn_reason:
     description: "The reason for using pro re nata (PRN) / when necessary medications."
@@ -454,6 +641,42 @@ properties:
       - Wrist
       - Not Reported
 
+  specialty:
+    description: "The treating specialty name for a CPRS order."
+    type: string
+
+  time_appointment:
+    description: "The time of an appointment in CPRS orders."
+    type: string
+
+  time_completed:
+    description: "The time of completed CPRS orders."
+    type: string
+
+  time_discontinued:
+    description: "The time of discontinued CPRS orders."
+    type: string
+
+  time_last_activity:
+    description: "The time of last activity in CPRS orders."
+    type: string
+
+  time_lapsed:
+    description: "The time of lapsed CPRS order."
+    type: string
+
+  time_order_end:
+    description: "The time that a CPRS order was ended."
+    type: string
+
+  time_order_start:
+    description: "The time that a CPRS order was started."
+    type: string
+
+  time_results:
+    description: "The time results received for CPRS order."
+    type: string
+
   treatment_intent_type:
     term:
       $ref: "_terms.yaml#/treatment_intent_type"
@@ -473,10 +696,10 @@ properties:
     term:
       $ref: "_terms.yaml#/treatment_or_therapy"
     enum:
-      - "yes"
-      - "no"
-      - unknown
-      - not reported
+      - Yes
+      - No
+      - Unknown
+      - Not Reported
 
   treatment_outcome:
     term:
@@ -515,8 +738,11 @@ properties:
       - Immunotherapy (Including Vaccines)
       - Medication
       - Microwave Ablation
+      - Neurology
       - Other
       - Pharmaceutical Therapy
+      - Primary Care
+      - Psychiatry
       - Radiation, 2D Conventional
       - Radiation, 3D Conformal
       - Radiation, Intensity-Modulated Radiotherapy
@@ -527,6 +753,7 @@ properties:
       - Radiofrequency Ablation
       - Radioisotope Radiation
       - Radiosurgical Ablation
+      - Rehabilitation
       - Stem Cell Transplantation
       - Stem Cell Treatment
       - Stereotactic Radiosurgery
@@ -535,6 +762,17 @@ properties:
       - Unknown
       - Not Reported
 
+  vista_package:
+    description: "The vista package for a CPRS Order."
+    type: string
+
+  vista_package_description:
+    description: "The VistA package short description for a CPRS Order."
+    type: string
+
+  veiled_flag:
+    description: "A flag for whether CPRS Order is veiled."
+    type: boolean
 
   diagnoses:
     $ref: "_definitions.yaml#/to_one"
