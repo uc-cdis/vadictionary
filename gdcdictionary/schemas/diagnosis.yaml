@@ -540,7 +540,6 @@ properties:
       $ref: "_terms.yaml#/days_to_best_overall_response"
     type: integer
 
-
   days_to_diagnosis:
     term:
       $ref: "_terms.yaml#/days_to_diagnosis"
@@ -560,6 +559,13 @@ properties:
       - number
       - "null"
 
+  days_to_icd_end:
+    description: "The days from index date to end date of ICD 9/10 code."
+    type: integer
+
+  days_to_icd_start:
+    description: "The days from index date to start date of ICD 9/10 code."
+    type: integer
 
   days_to_recurrence:
     term:
@@ -695,6 +701,13 @@ properties:
       $ref: "_terms.yaml#/gross_tumor_weight"
     type: number
 
+  icd_9_code:
+    description: "The ICD 9 code that classifies a medical diagnosis."
+    type: string
+
+  icd_9_description:
+    description: "The ICD 9 code description for a medical diagnosis."
+    type: string
 
   icd_10_code:
     term:
@@ -704,28 +717,28 @@ properties:
 
   icd_10_description:
     description: "The high-level icd10 disease category description."
-    enum:
-      - A00-B99  Infectious and Parasitic Diseases
-      - C00-D49  Neoplasms
-      - D50-D89  Blood and Immune Diseases
-      - E00-E89  Endocrine and Metabolic Diseases
-      - F01-F99  Mental and Behavioral Disorders
-      - G00-G99  Nervous System Diseases
-      - H00-H59  Eye Diseases
-      - H60-H95  Ear Diseases
-      - I00-I99  Circulatory Diseases
-      - J00-J99  Respiratory Diseases
-      - K00-K95  Digestive Diseases
-      - L00-L99  Skin Diseases
-      - M00-M99  Musculoskeletal Diseases
-      - N00-N99  Genitourinary Diseases
-      - O00-O9A  Pregnancy Related Diseases
-      - P00-P96  Perinatal Conditions
-      - Q00-Q99  Congenital Diseases
-      - R00-R99  Other Clinical Symptoms
-      - S00-T88  External Causes of Injury
-      - V00-Y99  External Causes of Morbidity
-      - Z00-Z99  Health Status Factors
+    type: string
+#    enum:
+#      - Infectious and Parasitic Diseases (A00-B99)
+#      - Neoplasms (C00-D49)
+#      - Blood and Immune Diseases (D50-D89)
+#      - Endocrine and Metabolic Diseases (E00-E89)
+#      - Nervous System Diseases (G00-G99)
+#      - Eye Diseases (H00-H59)
+#      - Ear Diseases (H60-H95)
+#      - Circulatory Diseases (I00-I99)
+#      - Respiratory Diseases (J00-J99)
+#      - Digestive Diseases (K00-K95)
+#      - Skin Diseases (L00-L99)
+#      - Musculoskeletal Diseases (M00-M99)
+#      - Genitourinary Diseases (N00-N99)
+#      - Pregnancy Related Diseases (O00-O9A)
+#      - Perinatal Conditions (P00-P96)
+#      - Congenital Diseases (Q00-Q99)
+#      - Other Clinical Symptoms (R00-R99)
+#      - External Causes of Injury (S00-T88)
+#      - External Causes of Morbidity (V00-Y99)
+#      - Health Status Factors (Z00-Z99)
 
   inpc_grade:
     term:
@@ -810,32 +823,6 @@ properties:
       - 6 - Established Cirrhosis
       - Unknown
       - Not Reported
-
-  icd10_code:
-    term:
-      $ref: "_terms.yaml#/icd10_code"
-    enum:
-      - A00-B99  Infectious and Parasitic Diseases
-      - C00-D49  Neoplasms
-      - D50-D89  Blood and Immune Diseases
-      - E00-E89  Endocrine and Metabolic Diseases
-      - F01-F99  Mental and Behavioral Disorders
-      - G00-G99  Nervous System Diseases
-      - H00-H59  Eye Diseases
-      - H60-H95  Ear Diseases
-      - I00-I99  Circulatory Diseases
-      - J00-J99  Respiratory Diseases
-      - K00-K95  Digestive Diseases
-      - L00-L99  Skin Diseases
-      - M00-M99  Musculoskeletal Diseases
-      - N00-N99  Genitourinary Diseases
-      - O00-O9A  Pregnancy Related Diseases
-      - P00-P96  Perinatal Conditions
-      - Q00-Q99  Congenital Diseases
-      - R00-R99  Other Clinical Symptoms
-      - S00-T88  External Causes of Injury
-      - V00-Y99  External Causes of Morbidity
-      - Z00-Z99  Health Status Factors
 
   iss_stage:
     term:
@@ -2085,7 +2072,9 @@ properties:
       - Unknown
       - Not Reported
 
-
+  parent_table_name:
+    description: "The parent table name of ICD 9/10 code."
+    type: string
 
   perineural_invasion_present:
     term:
@@ -4956,6 +4945,10 @@ properties:
       - Unknown
       - Not Reported
 
+  sta3n:
+    description: "The station code for an ICD 9/10 code."
+    type: string
+
   supratentorial_localization:
     term:
       $ref: "_terms.yaml#/supratentorial_localization"
@@ -4975,6 +4968,18 @@ properties:
       - "No"
       - Unknown
       - Not Reported
+
+  table_name:
+    description: "The name of ICD 9/10 code table."
+    type: string
+
+  time_icd_end:
+    description: "The end time of an ICD 9/10 code."
+    type: string
+
+  time_icd_start:
+    description: "The start time of an ICD 9/10 code."
+    type: string
 
   tissue_or_organ_of_origin:
     term:

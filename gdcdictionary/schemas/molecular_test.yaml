@@ -47,6 +47,7 @@ properties:
       $ref: "_terms.yaml#/aa_change"
     type: string
 
+# VA actionable_mutations
   active_clinical_trials:
     description: "A flag that denotes whether a mutation is part of an active clinical trial."
     type: boolean
@@ -149,12 +150,24 @@ properties:
       $ref: "_terms.yaml#/cytoband"
     type: string
 
+# VA dictionary PatientLabChem domain
+  days_to_completion:
+    description: "The number of days between the case index date and completion of a lab chemistry test."
+    type: integer
+
+# VA actionable_mutations
   days_to_test:
     description: "The number of days between the case index date and the biopsy for mutational analysis."
     type: integer
 
+# VA actionable_mutations
   days_to_results:
     description: "The number of days between the case index date and receipt of the biopsy mutational analysis results."
+    type: integer
+
+# VA dictionary PatientLabChem domain
+  days_to_specimen:
+    description: "The number of days between the case index date and collection of a lab chemistry specimen."
     type: integer
 
   dna_change:
@@ -162,10 +175,12 @@ properties:
       $ref: "_terms.yaml#/dna_change"
     type: string
 
+# VA actionable_mutations
   drug_sensitivity:
     description: "A flag that determines whether the mutation is associated with drug sensitivity."
     type: boolean
 
+# VA actionable_mutations
   drug_resistance:
     description: "A flag that determines whether the mutation is associated with drug resistance."
     type: boolean
@@ -176,6 +191,7 @@ properties:
     type: integer
     minimum: 1
 
+# VA actionable_mutations
   fold:
     description: "The fold change for amplifications."
     type: number
@@ -926,6 +942,16 @@ properties:
       - mH2A.2
       - Unknown
       - Not Reported
+
+# VA dictionary PatientLabChem domain
+  lab_chem_code:
+    description: "The short-hand code of a test done in VA's patient lab chemistry domain."
+    type: string
+
+# VA dictionary PatientLabChem domain
+  lab_chem_name:
+    description: "The name of a test done in VA's patient lab chemistry domain."
+    type: string
 
   loci_abnormal_count:
     term:
@@ -1788,6 +1814,14 @@ properties:
     term:
       $ref: "_terms.yaml#/test_value"
     type: number
+
+  time_completion:
+    description: "The time of day a lab chemistry test was completed."
+    type: string
+
+  time_specimen:
+    description: "The time of day a specimen was collected."
+    type: string
 
   transcript:
     term:
