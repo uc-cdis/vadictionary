@@ -56,6 +56,26 @@ properties:
     type: boolean
 
 #VA SurgeryINTRA
+  anesthesia_billable:
+    description: "A flag for whether anesthesia is billable in SurgeryINTRA."
+    type: boolean
+
+#VA SurgeryINTRA
+  anesthesia_directed:
+    description: "A flag for whether anesthesia was medically directed in SurgeryINTRA."
+    type: boolean
+
+#VA SurgeryINTRA
+  anesthesia_personal:
+    description: "A flag for whether anesthesia was personally performed in SurgeryINTRA."
+    type: boolean
+
+#VA SurgeryINTRA
+  anesthesia_physician:
+    description: "A flag for whether physician is available for anesthesia in SurgeryINTRA."
+    type: boolean
+
+#VA SurgeryINTRA
   anesthesia_temp:
     description: "The final anesthesia temperature in SurgeryINTRA."
     type: number
@@ -99,6 +119,11 @@ properties:
     description: "The attending code name used in VA SurgeryINTRA."
     type: string
 
+#VA SurgeryINTRA
+  batista_used:
+    description: "A flag for whether batista procedure was used in SurgeryINTRA."
+    type: boolean
+
 #VA RxOutpat
   bingo_wait_time:
     description: "The bingo wait time for Rx in VA RxOutpat."
@@ -113,6 +138,11 @@ properties:
   blood_loss:
     description: "The amount of blood loss in SurgeryINTRA."
     type: integer
+
+#VA SurgeryINTRA
+  case_verification:
+    description: "A flag for case verification in SurgeryINTRA."
+    type: boolean
 
 #VA SurgeryINTRA
   catheter_size:
@@ -400,6 +430,11 @@ properties:
     description: "The devices used in surgery in VA SurgeryINTRA."
     type: string
 
+#VA SurgeryINTRA
+  diagnostic_therapeutic:
+    description: "A flag for diagnostic therapeutic in SurgeryINTRA."
+    type: boolean
+
 #VA CPRSOrder data element
   discontinued_nature:
     description: "The nature of discontinued CPRS order name."
@@ -525,6 +560,11 @@ properties:
     description: "A code that indicates the high risk or alert level for medication."
     type: integer
 
+#VA SurgeryINTRA
+  id_confirmed:
+    description: "A flag for whether identity was confirmed in SurgeryINTRA."
+    type: boolean
+
 #VA CPRSOrder data element
   imaging_type:
     description: "The type of clinical imaging test ordered."
@@ -610,9 +650,19 @@ properties:
     type: string
 
 #VA SurgeryINTRA
-  site_confirmed:
-    description: "A flag for marked site confirmation in VA SurgeryINTRA."
+  site_confirmed_code:
+    description: "A code for marked site confirmation in VA SurgeryINTRA."
     type: string
+
+#VA SurgeryINTRA
+  site_confirmed_flag:
+    description: "A flag for marked site confirmation in VA SurgeryINTRA."
+    type: boolean
+
+#VA SurgeryINTRA
+  mallampati_scale:
+    description: "Value for Mallampati scale in SurgeryINTRA."
+    type: integer
 
 #VA RxOutpat
   max_refills:
@@ -686,6 +736,11 @@ properties:
 #VA CPRSOrder data element
   non_formulary_flag:
     description: "A flag that denotes whether a CPRS order is non-formulary."
+    type: boolean
+
+#VA SurgeryINTRA
+  non_or_procedure:
+    description: "A flag for non-OR procedures in SurgeryINTRA."
     type: boolean
 
 #VA CPRSOrder data element
@@ -871,6 +926,11 @@ properties:
       - EXPIRED
       - HOLD
       - SUSPENDED
+
+#VA SurgeryINTRA
+  sequential_blood_device:
+    description: "A flag for sequential blood devices in SurgeryINTRA."
+    type: boolean
 
 #VA RxOutpat
   service_connected:
