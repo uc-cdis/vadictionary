@@ -40,45 +40,176 @@ uniqueKeys:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+#VA CPRSOrder data element
   abnormal_results_flag:
     description: "A flag that denotes whether results are abnormal."
     type: boolean
 
+#VA RxOutpat
+  agent_orange:
+    description: "A flag that denotes whether a patient was exposed to agent orange in VA RxOutpat."
+    type: boolean
+
+#VA RxOutpat
+  bingo_wait_time:
+    description: "The bingo wait time for Rx in VA RxOutpat."
+    type: integer
+
+#VA RxOutpat data element:
+  combat_veteran:
+    description: "A flag that denotes whether a patient receiving a Rx is a combat veteran in VA RxOutpat."
+    type: boolean
+
+#VA RxOutpat
+  copay_transaction:
+    description: "Description of the Rx copay for VA RxOutpat."
+    enum:
+      - PSO NSC RX COPAY NEW
+      - PSO SC RX COPAY NEW
+
+#VA RxOutpat
+  counseled:
+    description: "A flag that denotes whether patient was counseled for Rx in VA RxOutpat."
+    type: boolean
+
+#VA RxOutpat
+  cmop_status:
+    description: "The CMOP status of Rx in VA RxOutpat."
+    enum:
+      - 0
+      - 1
+      - 2
+      - 3
+
+#VA RxOutpat
+  daw_code:
+    description: "The DAW code for Rx in VA RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  days_supply:
+    description: "The number of days supplied by Rx in VA RxOutpat."
+    type: integer
+
+#VA CPRSOrder data element
   day_or_dose_limit:
     description: "The maximum number of treatment doses or days."
     type: string
 
+#VA CPRSOrder data element
   days_to_appointment:
     description: "The number of days from index date to the date of an appointment in CPRS orders."
     type: integer
 
+#VA RxOutpat data element:
+  days_to_cancel:
+    description: "The number of days from index date to the date of Rx cancellation in VA RxOutpat."
+    type: integer
+
+#VA CPRSOrder data element
   days_to_completed:
     description: "The number of days from index date to the date of completion in CPRS orders."
     type: integer
 
+#VA CPRSOrder data element
   days_to_discontinued:
     description: "The number of days from index date to the date of discontinuation in CPRS orders."
     type: integer
 
+#VA RxOutpat
+  days_to_expiration:
+    description: "The number of days from index date to the date of Rx fill expiration in RxOutpat."
+    type: integer
+
+#VA RxOutpat data element:
+  days_to_fill:
+    description: "The number of days from index date to the date of Rx fill in VA RxOutpat."
+    type: integer
+
+#VA RxOutpat data element:
+  days_to_finishing:
+    description: "The number of days from index date to the date of Rx finishing in RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  days_to_hold:
+    description: "The number of days from index date to the date of Rx hold in RxOutpat."
+    type: integer
+
+#VA RxOutpat data element:
+  days_to_instructions:
+    description: "The number of days from index date to the date of Rx instructions issued in VA RxOutpat."
+    type: integer
+
+#VA RxOutpat data element:
+  days_to_issue:
+    description: "The number of days from index date to the date of Rx issue in VA RxOutpat."
+    type: integer
+
+#VA RxOutpat data element:
+  days_to_login:
+    description: "The number of days from index date to the date of Rx fill login in VA RxOutpat."
+    type: integer
+
+#VA CPRSOrder data element
   days_to_order_end:
     description: "The number of days from index date to the day the CPRS order fulfilled."
     type: integer
 
+#VA CPRSOrder data element
   days_to_order_start:
     description: "The number of days from index date to the day the CPRS order was placed."
     type: integer
 
+#VA CPRSOrder data element
   days_to_lapsed:
     description: "The number of days from index date to day CPRS order lapsed."
     type: string
 
+#VA CPRSOrder data element
   days_to_last_activity:
     description: "The number of days from index date to the date of last activity in CPRS orders."
     type: integer
 
+#VA RxOutpat
+  days_to_last_dispensed:
+    description: "The number of days from index date to the date of last Rx dispense in RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  days_to_next_fill:
+    description: "The number of days from index date to the date of Rx next possible fill in RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  days_to_prior_fill:
+    description: "The number of days from index date to the date of Rx prior fill in RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  days_to_release:
+    description: "The number of days from index date to the date of Rx fill release in RxOutpat."
+    type: integer
+
+#VA CPRSOrder data element
   days_to_results:
     description: "The number of days from index date to date results received for CPRS order."
-    type: string
+    type: integer
+
+#VA RxOutpat data element
+  days_to_returned:
+    description: "The number of days from index date to date Rx returned to stock in VA RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  days_to_sig:
+    description: "The number of days from index date to the date of Rx sig (instructiosn for use) issued in RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  days_to_suspense:
+    description: "The number of days from index date to the date of Rx fill suspension in RxOutpat."
+    type: integer
 
   days_to_treatment_end:
     term:
@@ -90,6 +221,12 @@ properties:
       $ref: "_terms.yaml#/days_to_treatment_start"
     type: integer
 
+#VA RxOutpat data element
+  days_to_validated:
+    description: "The number of days from index date to date Rx fill validated in VA RxOutpat."
+    type: integer
+
+#VA CPRSOrder data element
   discontinued_nature:
     description: "The nature of discontinued CPRS order name."
     enum:
@@ -107,10 +244,22 @@ properties:
       - Telephoned
       - Entered in Error
 
+#VA CPRSOrder data element
   discontinued_reason:
     description: "The reason a CPRS order was discontinued."
     type: string
 
+#VA RxOutpat
+  discontinue_type:
+    description: "Code for the type of discontinuation for Rx in VA RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  dispense_units:
+    description: "The dispense units for Rx in VA RxOutpat."
+    type: integer
+
+#VA CPRSOrder data element
   display_group_name:
     description: "The display group name in CPRS orders."
     type: string
@@ -119,29 +268,48 @@ properties:
     description: "The dosage of an administered drug."
     type: string
 
+#VA BCMAMedicationLog data element
   dosage_form:
-    description: "The form of an administered drug."
+    description: "The form of an administered drug in VA BCMAMedicationLog."
     enum:
       - CAP INHL
       - TAB
       - TAB SA
 
+#VA BCMAMedicationLog data element
   drug_class:
-    description: "An alphanumeric code that specifies a drug classification."
+    description: "An alphanumeric code that specifies a drug classification in VA BCMAMedicationLog."
     type: string
 
+#VA BCMAMedicationLog data element
   drug_classification:
-    description: "The general classification of a drug."
+    description: "The general classification of a drug in VA BCMAMedicationLog."
     type: string
 
+#VA RxOutpat
+  fill_type:
+    description: "A one-letter code for the type of Rx fill in VA RxOupat."
+    enum:
+      - O
+      - P
+      - R
+
+#VA BCMAMedicationLog data element
   findings:
-    description: "A description of any abnormal results."uro
+    description: "A description of any abnormal results."
     type: string
 
+#VA RxOutpat
+  head_neck_cancer:
+    description: "A flag that denotes whether a patient receiving Rx has head or neck cancer in VA RxOutpat."
+    type: boolean
+
+#VA BCMAMedicationLog data element
   high_risk_medication:
     description: "A code that indicates the high risk or alert level for medication."
     type: integer
 
+#VA CPRSOrder data element
   imaging_type:
     description: "The type of clinical imaging test ordered."
     enum:
@@ -158,18 +326,44 @@ properties:
     description: "The anatomical site of an injection."
     type: string
 
+#VA CPRSOrder data element
   inpatient_flag:
     desciption: "A flag that denotes whether a treatment order is InPatient or not."
     type: boolean
 
+#VA RxOutpat
+  instruction_number:
+    description: "The instruction number for Rx in VA RxOutpat."
+    type: integer
+
+#VA RxOutpat
+  ionizing_radiation:
+    description: "A flag that denotes whether a patient receiving Rx was exposed to ionizing radiation in VA RxOutpat."
+    type: boolean
+
+#VA CPRSOrder data element
   iv_base_flag:
     description: "A flag that denotes whether an order is IV base."
     type: boolean
 
+#VA CPRSOrder data element
   iv_additive_flag:
     description: "A flag that denotes whether an order is IV additive."
     type: boolean
 
+#VA RxOutpat
+  mail_window:
+    description: "One-letter code denoting whether Rx is mailed (M) or picked up at window (W)."
+    enum:
+      - M
+      - W
+
+#VA RxOutpat
+  max_refills:
+    description: "The maximum number of refills allowed for an Rx in VA RxOutpat."
+    type: integer
+
+#VA BCMAMedicationLog data element
   medication_route:
     description: "The route of administered medications."
     enum:
@@ -223,14 +417,27 @@ properties:
       - Topical
       - Transdermal
 
+#VA RxOutpat
+  military_sexual_trauma:
+    description: "A flag that denotes whether a patient receiving Rx is victim of military sexual trauama in VA RxOutpat."
+    type: boolean
+
+#VA RxOutpat
+  ndc:
+    description: "The NDC for Rx in VA Rx Outpat."
+    type: string
+
+#VA CPRSOrder data element
   non_formulary_flag:
     description: "A flag that denotes whether a CPRS order is non-formulary."
     type: boolean
 
+#VA CPRSOrder data element
   non_va_flag:
     description: "A flag that denotes whether a CPRS medication order is non-VA."
     type: boolean
 
+#VA CPRSOrder data element
   order_type:
     description: "A classification for the type of CPRS Order."
     enum:
@@ -243,6 +450,7 @@ properties:
       - Copy
       - BCMA
 
+#VA CPRSOrder data element
   orderable_group:
     description: "The group display name of an CPRS order."
     enum:
@@ -317,13 +525,50 @@ properties:
       - VENOUS LINES
       - VITALS/MEASUREMENTS
 
+#VA CPRSOrder data element
   outpatient_flag:
     description: "A flag that denotes whether a CPRS order was for outpatient treatment."
     type: boolean
 
+#VA RxOutpat
+  patient_status:
+    description: "The code for patient status in VA RxOutpat."
+    enum:
+      - AUTH ABS -96
+      - AUTH ABS +96
+      - CLINIC INJECTION
+      - CLINIC USE
+      - DISCH
+      - DOM
+      - EMPLOYEE
+      - ER
+      - INPATIENT
+      - NSC VA PENSION
+      - OPC
+      - OUTPATIENT SC
+      - OTHER FEDERAL
+      - OUTPATIENT NON-SC
+      - OUTPT NON-SC
+      - PENSION NSC
+      - PENSION VA NSC
+      - REGULAR DISCHARGE
+      - SC
+      - SC 50-100%
+      - SC LESS THAN 50%
+      - SERVICE CONNECTED
+      - TRICARE-CHAMPUS
+      - NSC MAINTENANCE
+      - SC MAINTENANCE
+
+#VA CPRSOrder data element
   prn_reason:
     description: "The reason for using pro re nata (PRN) / when necessary medications."
     type: string
+
+#VA RxOutpat
+  quantity:
+    description: "The quantity of Rx in VA RxOutpat."
+    type: integer
 
   regimen_or_line_of_therapy:
     term:
@@ -641,41 +886,106 @@ properties:
       - Wrist
       - Not Reported
 
+#VA RxOutpat data element
+  partial_prescription:
+    description: "A flag denoting whether an Rx is a partial prescription in VA RxOutpat."
+    type: boolean
+
+#VA RxOutpat
+  rx_status:
+    description: "The status of an Rx in VA RxOutpat."
+    enum:
+      - ACTIVE
+      - DISCONTINUED
+      - DISCONTINUED BY PROVIDER
+      - EXPIRED
+      - HOLD
+      - SUSPENDED
+
+#VA RxOutpat
+  sig:
+    description: "The sig (directions for use) for Rx in VA RxOutpat."
+    type: string
+
+#VA RxOutpat
+  service_connected:
+    description: "A flag denoting whether an Rx is service connected in VA RxOutpat."
+    type: boolean
+
+#VA RxOutpat
+  sw_asia:
+    description: "A flag denoting whether a patient receiving Rx toured in SW Asia in VA RxOutpat."
+    type: boolean
+
+#VA CPRSOrder data element
   specialty:
     description: "The treating specialty name for a CPRS order."
     type: string
 
+#VA CPRSOrder data element
   time_appointment:
     description: "The time of an appointment in CPRS orders."
     type: string
 
+#VA CPRSOrder data element
   time_completed:
     description: "The time of completed CPRS orders."
     type: string
 
+#VA CPRSOrder data element
   time_discontinued:
     description: "The time of discontinued CPRS orders."
     type: string
 
+#VA RxOutpat
+  time_fill:
+     description: "The time of Rx fill in VA RxOutpat."
+     type: string
+
+#VA RxOutpat
+  time_finishing:
+     description: "The time of Rx finishing in VA RxOutpat."
+     type: string
+
+#VA CPRSOrder data element
   time_last_activity:
     description: "The time of last activity in CPRS orders."
     type: string
 
+#VA CPRSOrder data element
   time_lapsed:
     description: "The time of lapsed CPRS order."
     type: string
 
+#VA CPRSOrder data element
   time_order_end:
     description: "The time that a CPRS order was ended."
     type: string
 
+#VA CPRSOrder data element
   time_order_start:
     description: "The time that a CPRS order was started."
     type: string
 
+#VA RxOutpat
+  time_release:
+     description: "The time of Rx fill release in VA RxOutpat."
+     type: string
+
+#VA CPRSOrder data element
   time_results:
     description: "The time results received for CPRS order."
     type: string
+
+#VA RxOutpat
+  time_returned:
+     description: "The time of Rx fill returned to stock in VA RxOutpat."
+     type: string
+
+#VA RxOutpat
+  time_validated:
+     description: "The time of Rx fill validated in VA RxOutpat."
+     type: string
 
   treatment_intent_type:
     term:
@@ -762,14 +1072,39 @@ properties:
       - Unknown
       - Not Reported
 
+#VA RxOutpat
+  understood:
+    description: "A flag that denotes whether a patient understood their Rx counseling in VA RxOutpat."
+    type: boolean
+
+#VA RxOutpat
+  units:
+    description: "The units for a dispensed Rx in VA RxOutpat."
+    enum:
+      - MG
+      - MEQ
+      - MG/24Hrs
+      - MCG
+      - UNIT
+      - GM
+      - MCG/0.5ML
+
+#VA RxOutpat
+  unit_price:
+    description: "The unit price of Rx in VA RxOutpat."
+    type: number
+
+#VA CPRSOrder data element
   vista_package:
     description: "The vista package for a CPRS Order."
     type: string
 
+#VA CPRSOrder data element
   vista_package_description:
     description: "The VistA package short description for a CPRS Order."
     type: string
 
+#VA CPRSOrder data element
   veiled_flag:
     description: "A flag for whether CPRS Order is veiled."
     type: boolean
