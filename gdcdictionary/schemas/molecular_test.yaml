@@ -140,6 +140,10 @@ properties:
     description: "Flag for whether a mutation is deemed clinically actionable."
     type: boolean
 
+  component:
+    description: "The component measured in VA PatientLabChem domain."
+    type: string
+
   copy_number:
     term:
       $ref: "_terms.yaml#/copy_number"
@@ -953,6 +957,42 @@ properties:
     description: "The name of a test done in VA's patient lab chemistry domain."
     type: string
 
+  lab_code:
+    description: "The labcode specified in the VA PatientLabChem domain."
+    enum:
+      - Missing
+      - Blood arterial
+      - Blood capillary
+      - Blood venous
+      - Body fluid, unspecified
+      - Bone marrow
+      - Bronchial
+      - Calculus (=Stone)
+      - Cerebral spinal fluid
+      - Cervix
+      - Drain
+      - Nose
+      - Other
+      - Penis
+      - Peritoneal fluid / ascites
+      - Plasma
+      - Pleural fluid (thoracentesis fluid)
+      - Pus
+      - SER/PLAS
+      - Serum
+      - Skin
+      - Stool=Fecal
+      - Synovial fluid (Joint fluid)
+      - Throat
+      - Tissue lung
+      - Tissue, unspecified
+      - Vagina
+      - Urethra
+      - Urine
+      - Whole blood
+      - Whole body
+      - Wound
+
   loci_abnormal_count:
     term:
       $ref: "_terms.yaml#/loci_abnormal_count"
@@ -1058,6 +1098,14 @@ properties:
       - Tetraploid
       - Unknown
       - Not Reported
+
+  ref_high:
+    description: "The reference value for an abnormally high test result in VA PatientLabChem domain."
+    type: string
+
+  ref_low:
+    description: "The reference value for an abnormally low test result in VA PatientLabChem domain."
+    type: string
 
   rna_change:
     term:
@@ -1822,6 +1870,77 @@ properties:
   time_specimen:
     description: "The time of day a specimen was collected."
     type: string
+
+# VA PatientLabChem data element
+  topography:
+    description: "The topography of VA PatientLabChem test."
+    enum:
+      - 24 HR URINE
+      - ADRENAL GLAND
+      - ARTERIAL BLOOD
+      - AXILLARY LYMPH NODE
+      - BAL
+      - BLOOD
+      - BLOOD (UNSPUN)
+      - BLOOD (VENOUS)
+      - BLOOD (WHOLE)
+      - WHOLE BODY
+      - BODY FLUID, NOS
+      - BONE MARROW
+      - BRONCHUS
+      - CAPILLARY
+      - CEREBROSPINAL FLUID
+      - CERVIX
+      - COLON
+      - ENDOCERVIX
+      - ESOPHAGEAL BRUSHING
+      - FECES
+      - FLUID
+      - GASTRIC EPITHELIUM
+      - JACKSON-PRATT DRAIN
+      - LESION
+      - LIVER
+      - LUNG
+      - LYMPH NODE
+      - MIXED-VENOUS BLOOD
+      - MUCOUS MEMBRANE
+      - MUCOUS MEMBRANE OF NASOPHARYNX
+      - NARES
+      - NARIS
+      - NASAL CAVITY
+      - NASAL FLUID
+      - NASAL MEATUS
+      - NASOPHARYNX
+      - NOSE
+      - OTHER
+      - PENIS
+      - PERICARDIAL FLUID
+      - PERITONEAL FLUID
+      - PHARYNX
+      - PLASMA
+      - PLASMA (BUFFERED SODIUM CITRATE)
+      - PLEURAL
+      - PLEURAL FLUID
+      - RETROPERITONEAL LYMPH NODE
+      - SCALP
+      - SERUM
+      - SKIN
+      - STONE
+      - STOOL
+      - SUPERNATANT
+      - SWAB
+      - SYNOVIAL FLUID
+      - TISSUE
+      - URETHRA
+      - URINE
+      - URINE (T-7X100)
+      - URINE 24HR
+      - URINE 24HR SPECIAL
+      - URINE RANDOM
+      - VAGINA
+      - VAGINAL-CERVICAL CYTOLOGIC MATERIAL
+      - VENOUS BLOOD
+      - WHOLE BLOOD
 
   transcript:
     term:
