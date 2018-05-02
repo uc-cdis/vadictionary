@@ -136,10 +136,12 @@ properties:
       - Unknown
       - Not Reported
 
+# VA ActionableMutations
   clinically_actionable:
     description: "Flag for whether a mutation is deemed clinically actionable."
     type: boolean
 
+# VA PatientLabChem
   component:
     description: "The component measured in VA PatientLabChem domain."
     type: string
@@ -957,6 +959,7 @@ properties:
     description: "The name of a test done in VA's patient lab chemistry domain."
     type: string
 
+# VA PatientLabChem
   lab_code:
     description: "The labcode specified in the VA PatientLabChem domain."
     enum:
@@ -1082,6 +1085,7 @@ properties:
       - Transcript Amplification
       - Upstream Gene Variant
 
+# VA ActionableMutations data element
   mutant_fraction:
     description: "The mutant fraction."
     type: number
@@ -1099,10 +1103,12 @@ properties:
       - Unknown
       - Not Reported
 
+# VA PatientLabChem
   ref_high:
     description: "The reference value for an abnormally high test result in VA PatientLabChem domain."
     type: string
 
+# VA PatientLabChem
   ref_low:
     description: "The reference value for an abnormally low test result in VA PatientLabChem domain."
     type: string
@@ -1863,10 +1869,12 @@ properties:
       $ref: "_terms.yaml#/test_value"
     type: number
 
+# VA PatientLabChem
   time_completion:
     description: "The time of day a lab chemistry test was completed."
     type: string
 
+# VA PatientLabChem
   time_specimen:
     description: "The time of day a specimen was collected."
     type: string
