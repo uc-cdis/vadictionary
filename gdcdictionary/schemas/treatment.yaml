@@ -45,14 +45,78 @@ properties:
     description: "A flag that denotes whether results are abnormal."
     type: boolean
 
+#VA SurgeryINTRA
+  airway_index:
+    description: "An indication of airway index in SurgeryINTRA."
+    type: integer
+
 #VA RxOutpat
   agent_orange:
     description: "A flag that denotes whether a patient was exposed to agent orange in VA RxOutpat."
     type: boolean
 
+#VA SurgeryINTRA
+  anesthesia_temp:
+    description: "The final anesthesia temperature in SurgeryINTRA."
+    type: number
+
+#VA SurgeryINTRA
+  anesthetist_category:
+    description: "The code for anesthetist category in SurgeryINTRA."
+    enum:
+      - A
+      - N
+      - O
+      - Y
+
+#VA SurgeryINTRA
+  antibiotic_prophylaxis:
+    description: "A flag for antibiotic prophylaxis use in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  asa_class:
+    description: "The ASA class for VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  asa_description:
+    description: "The ASA description for VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  attending_code:
+    description: "The attending code used in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  attending_description:
+    description: "The attending code description used in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  attending_name:
+    description: "The attending code name used in VA SurgeryINTRA."
+    type: string
+
 #VA RxOutpat
   bingo_wait_time:
     description: "The bingo wait time for Rx in VA RxOutpat."
+    type: integer
+
+#VA SurgeryINTRA
+  blood_availability:
+    description: "A flag for whether blood is available in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  blood_loss:
+    description: "The amount of blood loss in SurgeryINTRA."
+    type: integer
+
+#VA SurgeryINTRA
+  catheter_size:
+    description: "The size of a Foley catheter in SurgeryINTRA."
     type: integer
 
 #VA RxOutpat data element:
@@ -66,6 +130,11 @@ properties:
     enum:
       - PSO NSC RX COPAY NEW
       - PSO SC RX COPAY NEW
+
+#VA SurgeryINTRA
+  correct_medical_implants:
+    description: "A flag for whether medical implants are correct in SurgeryINTRA."
+    type: string
 
 #VA RxOutpat
   counseled:
@@ -101,6 +170,21 @@ properties:
     description: "The number of days from index date to the date of an appointment in CPRS orders."
     type: integer
 
+#VA SurgeryINTRA
+  days_to_anesthesia_start:
+    description: "The number of days between case index date and the date anesthesia is begun."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_anesthesia_end:
+    description: "The number of days between case index date and the date anesthesia ends."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_anesthetist:
+    description: "The number of days between case index date and the date anesthetist is available."
+    type: integer
+
 #VA RxOutpat data element:
   days_to_cancel:
     description: "The number of days from index date to the date of Rx cancellation in VA RxOutpat."
@@ -109,6 +193,11 @@ properties:
 #VA CPRSOrder data element
   days_to_completed:
     description: "The number of days from index date to the date of completion in CPRS orders."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_confirmed_site:
+    description: "The number of days from index date to the date of confirmed marked site in VA SurgeryINTRA."
     type: integer
 
 #VA CPRSOrder data element
@@ -136,6 +225,16 @@ properties:
     description: "The number of days from index date to the date of Rx hold in RxOutpat."
     type: integer
 
+#VA SurgeryINTRA
+  days_to_hold_area:
+    description: "The number of days from index date to the date patient is in hold area in VA SurgeryINTRA."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_induction:
+    description: "The number of days between case index date and the date of induction."
+    type: integer
+
 #VA RxOutpat data element:
   days_to_instructions:
     description: "The number of days from index date to the date of Rx instructions issued in VA RxOutpat."
@@ -149,16 +248,6 @@ properties:
 #VA RxOutpat data element:
   days_to_login:
     description: "The number of days from index date to the date of Rx fill login in VA RxOutpat."
-    type: integer
-
-#VA CPRSOrder data element
-  days_to_order_end:
-    description: "The number of days from index date to the day the CPRS order fulfilled."
-    type: integer
-
-#VA CPRSOrder data element
-  days_to_order_start:
-    description: "The number of days from index date to the day the CPRS order was placed."
     type: integer
 
 #VA CPRSOrder data element
@@ -181,9 +270,69 @@ properties:
     description: "The number of days from index date to the date of Rx next possible fill in RxOutpat."
     type: integer
 
+#VA SurgeryINTRA
+  days_to_non_or_proc_end:
+    description: "The number of days between case index date and the date a non-OR procedure ends."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_non_or_proc_start:
+    description: "The number of days between case index date and the date a non-OR procedure begins."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_nurse_out:
+    description: "The number of days from index date to the date nurse is out in VA SurgeryINTRA."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_nurse_present:
+    description: "The number of days from index date to the date nurse present in VA SurgeryINTRA."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_operation_end:
+    description: "The number of days between case index date and the date operation ends."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_operation_start:
+    description: "The number of days between case index date and the date operation is started."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_or_clean_end:
+    description: "The number of days between case index date and the date OR cleaning ends."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_or_clean_start:
+    description: "The number of days between case index date and the date OR cleaning begins."
+    type: integer
+
+#VA CPRSOrder data element
+  days_to_order_end:
+    description: "The number of days from index date to the day the CPRS order fulfilled."
+    type: integer
+
+#VA CPRSOrder data element
+  days_to_order_start:
+    description: "The number of days from index date to the day the CPRS order was placed."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_patient_out:
+    description: "The number of days between case index date and the date patient is out."
+    type: integer
+
 #VA RxOutpat
   days_to_prior_fill:
     description: "The number of days from index date to the date of Rx prior fill in RxOutpat."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_procedure:
+    description: "The number of days from index date to the date of procedure in VA SurgeryINTRA."
     type: integer
 
 #VA RxOutpat
@@ -206,9 +355,29 @@ properties:
     description: "The number of days from index date to the date of Rx sig (instructiosn for use) issued in RxOutpat."
     type: integer
 
+#VA SurgeryINTRA
+  days_to_surgeon_present:
+    description: "The number of days between case index date and the date surgeon is present."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_surgery:
+    description: "The number of days from index date to the date of surgery in VA SurgeryINTRA."
+    type: integer
+
 #VA RxOutpat
   days_to_suspense:
     description: "The number of days from index date to the date of Rx fill suspension in RxOutpat."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_timeout_verified:
+    description: "The number of days from index date to the date time out is verified in VA SurgeryINTRA."
+    type: integer
+
+#VA SurgeryINTRA
+  days_to_transport:
+    description: "The number of days between case index date and the date of patient transport."
     type: integer
 
   days_to_treatment_end:
@@ -225,6 +394,11 @@ properties:
   days_to_validated:
     description: "The number of days from index date to date Rx fill validated in VA RxOutpat."
     type: integer
+
+#VA SurgeryINTRA
+  devices:
+    description: "The devices used in surgery in VA SurgeryINTRA."
+    type: string
 
 #VA CPRSOrder data element
   discontinued_nature:
@@ -286,6 +460,36 @@ properties:
     description: "The general classification of a drug in VA BCMAMedicationLog."
     type: string
 
+#VA SurgeryINTRA
+  electroground_position:
+    description: "A surgery patient's electroground position used in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  electroground_code:
+    description: "A surgery patient's electroground position code used in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  equip_availability:
+    description: "A flag for whether special equipment is available in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  esu_coagulation_range:
+    description: "The ESU coagulation range in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  esu_cutting_range:
+    description: "The ESU cutting range in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  event_capture_specialty:
+    description: "The event capture specialty in VA SurgeryINTRA."
+    type: string
+
 #VA RxOutpat
   fill_type:
     description: "A one-letter code for the type of Rx fill in VA RxOupat."
@@ -298,6 +502,18 @@ properties:
   findings:
     description: "A description of any abnormal results."
     type: string
+
+#VA SurgeryINTRA
+  gastric_output:
+    description: "The gastric output in SurgeryINTRA."
+    type: integer
+
+#VA SurgeryINTRA
+  hair_removal_method:
+    description: "The hair removal method in SurgeryINTRA."
+    enum:
+      - C
+      - N
 
 #VA RxOutpat
   head_neck_cancer:
@@ -336,9 +552,29 @@ properties:
     description: "The instruction number for Rx in VA RxOutpat."
     type: integer
 
+#VA SurgeryINTRA
+  instrument_count_correct:
+    description: "A flag for correct instrument count in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  intra_op_temp:
+    description: "The intra-op temperature in SurgeryINTRA."
+    type: integer
+
+#VA SurgeryINTRA
+  intra_op_xray:
+    description: "A flag that denotes intra op xray in VA SurgeryINTRA."
+    type: boolean
+
 #VA RxOutpat
   ionizing_radiation:
     description: "A flag that denotes whether a patient receiving Rx was exposed to ionizing radiation in VA RxOutpat."
+    type: boolean
+
+#VA SurgeryINTRA
+  item_retention:
+    description: "A flag that denotes possible item retention in VA SurgeryINTRA."
     type: boolean
 
 #VA CPRSOrder data element
@@ -351,12 +587,32 @@ properties:
     description: "A flag that denotes whether an order is IV additive."
     type: boolean
 
+#VA SurgeryINTRA
+  laser_type:
+    description: "The type of laser used in surgery in SurgeryINTRA."
+    type: string
+
 #VA RxOutpat
   mail_window:
     description: "One-letter code denoting whether Rx is mailed (M) or picked up at window (W)."
     enum:
       - M
       - W
+
+#VA SurgeryINTRA
+  mandibular_space:
+    description: "The mandibular space in SurgeryINTRA."
+    type: integer
+
+#VA SurgeryINTRA
+  major_minor:
+    description: "A code for major or minor in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  site_confirmed:
+    description: "A flag for marked site confirmation in VA SurgeryINTRA."
+    type: string
 
 #VA RxOutpat
   max_refills:
@@ -530,6 +786,11 @@ properties:
     description: "A flag that denotes whether a CPRS order was for outpatient treatment."
     type: boolean
 
+#VA SurgeryINTRA
+  packing:
+    description: "A code for the packing used in VA SurgeryINTRA."
+    type: string
+
 #VA RxOutpat
   patient_status:
     description: "The code for patient status in VA RxOutpat."
@@ -560,6 +821,21 @@ properties:
       - NSC MAINTENANCE
       - SC MAINTENANCE
 
+#VA SurgeryINTRA
+  physical_status:
+    description: "The physical status of surgery patient in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  positive_drug_screen:
+    description: "A flag for a positive drug screen in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  preop_images_confirmed:
+    description: "A flag for whether pre-operative images are confirmed in SurgeryINTRA."
+    type: string
+
 #VA CPRSOrder data element
   prn_reason:
     description: "The reason for using pro re nata (PRN) / when necessary medications."
@@ -575,9 +851,283 @@ properties:
       $ref: "_terms.yaml#/regimen_or_line_of_therapy"
     type: string
 
+#VA RxOutpat data element
+  partial_prescription:
+    description: "A flag denoting whether an Rx is a partial prescription in VA RxOutpat."
+    type: boolean
+
+#VA SurgeryINTRA
+  preop_imaging_confirmed:
+    description: "A code for pre-operative imaging confirmed in VA SurgeryINTRA."
+    type: string
+
+#VA RxOutpat
+  rx_status:
+    description: "The status of an Rx in VA RxOutpat."
+    enum:
+      - ACTIVE
+      - DISCONTINUED
+      - DISCONTINUED BY PROVIDER
+      - EXPIRED
+      - HOLD
+      - SUSPENDED
+
+#VA RxOutpat
+  service_connected:
+    description: "A flag denoting whether an Rx is service connected in VA RxOutpat."
+    type: boolean
+
+#VA SurgeryINTRA
+  sharps_count_correct:
+    description: "A flag for correct sharps count in VA SurgeryINTRA."
+    type: string
+
+#VA RxOutpat
+  sig:
+    description: "The sig (directions for use) for Rx in VA RxOutpat."
+    type: string
+
+#VA SurgeryINTRA
+  skin_integrity:
+    description: "A surgery patient's skin integrity used in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  skin_integrity_code:
+    description: "A surgery patient's skin integrity code used in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  skin_prep_agent:
+    description: "The skin prep agent used in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  skin_prep_code:
+    description: "The skin prep agent code used in VA SurgeryINTRA."
+    type: string
+
+#VA CPRSOrder data element
+  specialty:
+    description: "The treating specialty name for a CPRS order."
+    type: string
+
+#VA SurgeryINTRA
+  sponge_count_correct:
+    description: "A flag for correct sponge count in VA SurgeryINTRA."
+    type: string
+
+
+#VA SurgeryINTRA
+  staff_or_resident:
+    description: "Code for whether staff or resident in SurgeryINTRA."
+    enum:
+      - R
+      - S
+
+#VA SurgeryINTRA
+  sterilization:
+    description: "Indication of sterilization in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  surgical_speciality:
+    description: "The local surgical specialty in VA SurgeryINTRA."
+    type: string
+
+#VA RxOutpat
+  sw_asia:
+    description: "A flag denoting whether a patient receiving Rx toured in SW Asia in VA RxOutpat."
+    type: boolean
+
   therapeutic_agents:
     term:
       $ref: "_terms.yaml#/therapeutic_agents"
+    type: string
+
+#VA SurgeryINTRA
+  time_anesthesia_start:
+    description: "The time anesthesia is begun in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_anesthesia_end:
+    description: "The time anesthesia is ended in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_anesthetist:
+    description: "The time an anesthetist is available in SurgeryINTRA."
+    type: string
+
+#VA CPRSOrder data element
+  time_appointment:
+    description: "The time of an appointment in CPRS orders."
+    type: string
+
+#VA CPRSOrder data element
+  time_completed:
+    description: "The time of completed CPRS orders."
+    type: string
+
+#VA SurgeryINTRA
+  time_confirmed_site:
+    description: "The time of confirmed marked site in SurgeryINTRA."
+    type: string
+
+#VA CPRSOrder data element
+  time_discontinued:
+    description: "The time of discontinued CPRS orders."
+    type: string
+
+#VA RxOutpat
+  time_fill:
+     description: "The time of Rx fill in VA RxOutpat."
+     type: string
+
+#VA RxOutpat
+  time_finishing:
+     description: "The time of Rx finishing in VA RxOutpat."
+     type: string
+
+#VA SurgeryINTRA
+  time_hold_area:
+    description: "The time a patient was in the hold area in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_induction:
+    description: "The time of induction in SurgeryINTRA."
+    type: string
+
+#VA CPRSOrder data element
+  time_last_activity:
+    description: "The time of last activity in CPRS orders."
+    type: string
+
+#VA CPRSOrder data element
+  time_lapsed:
+    description: "The time of lapsed CPRS order."
+    type: string
+
+#VA SurgeryINTRA
+  time_non_or_proc_end:
+    description: "The time a non-OR procedure is ended in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_non_or_proc_start:
+    description: "The time a non-OR procedure is begun in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_nurse_out:
+    description: "The time a nurse was out in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_nurse_present:
+    description: "The time a nurse was present in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_operation_end:
+    description: "The time an operation is ended in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_operation_start:
+    description: "The time an operation is begun in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_or_clean_end:
+    description: "The time OR clean is ended in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_or_clean_start:
+    description: "The time OR clean is started in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_or_setup:
+    description: "The time OR is setup in SurgeryINTRA."
+    type: string
+
+#VA CPRSOrder data element
+  time_order_end:
+    description: "The time that a CPRS order was ended."
+    type: string
+
+#VA CPRSOrder data element
+  time_order_start:
+    description: "The time that a CPRS order was started."
+    type: string
+
+#VA SurgeryINTRA
+  time_patient_out:
+    description: "The time a patient is out in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_procedure:
+    description: "The time of a procedure in SurgeryINTRA."
+    type: string
+
+#VA RxOutpat
+  time_release:
+     description: "The time of Rx fill release in VA RxOutpat."
+     type: string
+
+#VA CPRSOrder data element
+  time_results:
+    description: "The time results received for CPRS order."
+    type: string
+
+#VA RxOutpat
+  time_returned:
+     description: "The time of Rx fill returned to stock in VA RxOutpat."
+     type: string
+
+#VA SurgeryINTRA
+  time_surgeon_present:
+    description: "The time a surgeon is present in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_surgery:
+    description: "The time of surgery in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_timeout_verified:
+    description: "The time a time out was verified in SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  time_transport:
+    description: "The time a patient is transported in SurgeryINTRA."
+    type: string
+
+#VA RxOutpat
+  time_validated:
+     description: "The time of Rx fill validated in VA RxOutpat."
+     type: string
+
+#VA SurgeryINTRA
+  timeout_verified:
+    description: "A flag for whether time out was verified in VA SurgeryINTRA."
+    type: boolean
+
+#VA SurgeryINTRA
+  transport_device:
+    description: "The type of transport device used for surgery in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  transport_device_code:
+    description: "The code for type of transport device used for surgery in VA SurgeryINTRA."
     type: string
 
   treatment_anatomic_site:
@@ -886,107 +1436,6 @@ properties:
       - Wrist
       - Not Reported
 
-#VA RxOutpat data element
-  partial_prescription:
-    description: "A flag denoting whether an Rx is a partial prescription in VA RxOutpat."
-    type: boolean
-
-#VA RxOutpat
-  rx_status:
-    description: "The status of an Rx in VA RxOutpat."
-    enum:
-      - ACTIVE
-      - DISCONTINUED
-      - DISCONTINUED BY PROVIDER
-      - EXPIRED
-      - HOLD
-      - SUSPENDED
-
-#VA RxOutpat
-  sig:
-    description: "The sig (directions for use) for Rx in VA RxOutpat."
-    type: string
-
-#VA RxOutpat
-  service_connected:
-    description: "A flag denoting whether an Rx is service connected in VA RxOutpat."
-    type: boolean
-
-#VA RxOutpat
-  sw_asia:
-    description: "A flag denoting whether a patient receiving Rx toured in SW Asia in VA RxOutpat."
-    type: boolean
-
-#VA CPRSOrder data element
-  specialty:
-    description: "The treating specialty name for a CPRS order."
-    type: string
-
-#VA CPRSOrder data element
-  time_appointment:
-    description: "The time of an appointment in CPRS orders."
-    type: string
-
-#VA CPRSOrder data element
-  time_completed:
-    description: "The time of completed CPRS orders."
-    type: string
-
-#VA CPRSOrder data element
-  time_discontinued:
-    description: "The time of discontinued CPRS orders."
-    type: string
-
-#VA RxOutpat
-  time_fill:
-     description: "The time of Rx fill in VA RxOutpat."
-     type: string
-
-#VA RxOutpat
-  time_finishing:
-     description: "The time of Rx finishing in VA RxOutpat."
-     type: string
-
-#VA CPRSOrder data element
-  time_last_activity:
-    description: "The time of last activity in CPRS orders."
-    type: string
-
-#VA CPRSOrder data element
-  time_lapsed:
-    description: "The time of lapsed CPRS order."
-    type: string
-
-#VA CPRSOrder data element
-  time_order_end:
-    description: "The time that a CPRS order was ended."
-    type: string
-
-#VA CPRSOrder data element
-  time_order_start:
-    description: "The time that a CPRS order was started."
-    type: string
-
-#VA RxOutpat
-  time_release:
-     description: "The time of Rx fill release in VA RxOutpat."
-     type: string
-
-#VA CPRSOrder data element
-  time_results:
-    description: "The time results received for CPRS order."
-    type: string
-
-#VA RxOutpat
-  time_returned:
-     description: "The time of Rx fill returned to stock in VA RxOutpat."
-     type: string
-
-#VA RxOutpat
-  time_validated:
-     description: "The time of Rx fill validated in VA RxOutpat."
-     type: string
-
   treatment_intent_type:
     term:
       $ref: "_terms.yaml#/treatment_intent_type"
@@ -1094,6 +1543,11 @@ properties:
     description: "The unit price of Rx in VA RxOutpat."
     type: number
 
+#VA SurgeryINTRA
+  urine_output:
+    description: "The amount of urine output in SurgeryINTRA."
+    type: integer
+
 #VA CPRSOrder data element
   vista_package:
     description: "The vista package for a CPRS Order."
@@ -1107,6 +1561,16 @@ properties:
 #VA CPRSOrder data element
   veiled_flag:
     description: "A flag for whether CPRS Order is veiled."
+    type: boolean
+
+#VA SurgeryINTRA
+  wound_classification:
+    description: "A code that provides the wound classification in VA SurgeryINTRA."
+    type: string
+
+#VA SurgeryINTRA
+  wound_sweep:
+    description: "A flag that denotes whether wound sweep was performed in VA SurgeryINTRA."
     type: boolean
 
   diagnoses:
