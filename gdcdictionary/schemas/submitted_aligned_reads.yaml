@@ -24,12 +24,27 @@ systemProperties:
   - error_type
 
 links:
-  - name: read_groups
-    backref: submitted_aligned_reads_files # pretty ugly
-    label: data_from
-    target_type: read_group
-    multiplicity: one_to_many
+  - exclusive: false
     required: true
+    subgroup:
+      - name: read_groups
+        backref: submitted_aligned_reads_files # pretty ugly
+        label: data_from
+        target_type: read_group
+        multiplicity: one_to_many
+        required: false
+      - name: data_collections
+        backref: submitted_aligned_reads_files
+        label: data_from
+        target_type: data_collection
+        multiplicity: many_to_one
+        required: false
+#      - name: core_metadata_records
+#        backref: submitted_aligned_reads_files
+#        label: data_from
+#        target_type: core_metadata
+#        multiplicity: one_to_one
+#        required: false
 
 required:
   - submitter_id
@@ -82,3 +97,9 @@ properties:
 
   read_groups:
     $ref: "_definitions.yaml#/to_many"
+
+  data_collections:
+    $ref: "_definitions.yaml#/to_one"
+
+#  core_metadata_records:
+#    $ref: "_definitions.yaml#/to_one"
