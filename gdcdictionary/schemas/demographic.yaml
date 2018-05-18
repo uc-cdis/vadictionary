@@ -41,7 +41,6 @@ preferred:
   - year_of_death
 
 uniqueKeys:
-  #unclear if want submitter ID for clinical
   - [id]
   - [project_id, submitter_id]
 
