@@ -1,15 +1,9 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
 id: "immunoassay"
-<<<<<<< HEAD
 title: Immunoassay
 type: object
 namespace: https://www.bloodpac.org
-=======
-title: Immunossay
-type: object
-namespace: https://data.va.org/
->>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
 category: notation
 program: '*'
 project: '*'
@@ -42,11 +36,8 @@ required:
   - assay_target
   - target_measurement
   - target_measurement_units
-<<<<<<< HEAD
   - aliquots
-=======
   - analytes
->>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
 
 uniqueKeys:
   - [ id ]
@@ -57,13 +48,7 @@ properties:
 
   assay_instrument:
     description: "The specific instrument type used to perform the assay."
-<<<<<<< HEAD
     type: string
-=======
-    enum:
-      - Multi-Array Assay, Meso Scale Discovery
-      - Epic Sciences CTC Platform
->>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
   assay_instrument_model:
     description: "The specific model of instrument used to perform the assay."
     type: string
@@ -78,13 +63,7 @@ properties:
     type: string
   assay_method:
     description: "General methodology used to perform the assay."
-<<<<<<< HEAD
     type: string
-=======
-    enum:
-      - Enzyme-Linked Immunosorbent Assay (ELISA)
-      - Immunohistochemistry
->>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
   assay_target:
     description: "Target for the assay: can be a specific gene, protein, or otherwise."
     type: string
@@ -97,6 +76,5 @@ properties:
   target_measurement_units:
     description: "Units of measurement used when evaluating the assay target."
     type: string
-
   analytes:
     $ref: "_definitions.yaml#/to_one"
