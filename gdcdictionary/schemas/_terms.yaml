@@ -1601,7 +1601,7 @@ hpv_status:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2230033&version=1.0"
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 icd_10_code:
   description: >
     Alphanumeric value used to describe the  disease code from the tenth version of the
@@ -1623,7 +1623,7 @@ icd_10_code:
     cde_id: 3226287
     cde_version: 2.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3226287&version=2.0"
-=======
+#=======
 icd10_code:
   description: >
     The high-level icd10 classification of disease.
@@ -1633,7 +1633,7 @@ icd10_code:
     cde_id: null
     cde_version: null
     term_url: "https://www.cdc.gov/nchs/icd/icd10cm.htm"
->>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
+#>>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
 
 iga:
   description: >
