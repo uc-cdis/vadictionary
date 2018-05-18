@@ -99,7 +99,7 @@ properties:
       - WGS
       - WXS
 
-   read_pair_number:
+  read_pair_number:
     term:
       $ref: "_terms.yaml#/read_pair_number"
     enum:
