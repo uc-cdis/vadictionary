@@ -46,7 +46,6 @@ required:
 preferred:
   - site_of_resection_or_biopsy
 
-
 uniqueKeys:
   #unclear if want submitter ID for clinical
   - [id]
@@ -78,7 +77,6 @@ properties:
       - Unknown
       - Not Reported
 
-
   ajcc_clinical_n:
     term:
       $ref: "_terms.yaml#/ajcc_clinical_n"
@@ -109,7 +107,6 @@ properties:
       - NX
       - Unknown
       - Not Reported
-
 
   ajcc_clinical_stage:
     term:
@@ -147,7 +144,6 @@ properties:
       - Stage X
       - Unknown
       - Not Reported
-
 
   ajcc_clinical_t:
     term:
@@ -190,7 +186,6 @@ properties:
       - Unknown
       - Not Reported
 
-
   ajcc_pathologic_m:
     term:
       $ref: "_terms.yaml#/ajcc_pathologic_m"
@@ -205,7 +200,6 @@ properties:
       - cM0 (i+)
       - Unknown
       - Not Reported
-
 
   ajcc_pathologic_n:
     term:
@@ -237,7 +231,6 @@ properties:
       - NX
       - Unknown
       - Not Reported
-
 
   ajcc_pathologic_stage:
     term:
@@ -317,7 +310,6 @@ properties:
       - Unknown
       - Not Reported
 
-
   ajcc_staging_system_edition:
      term:
        $ref: "_terms.yaml#/ajcc_staging_system_edition"
@@ -364,7 +356,6 @@ properties:
       - Unknown
       - Not Reported
 
-
   ann_arbor_clinical_stage:
     term:
       $ref: "_terms.yaml#/ann_arbor_clinical_stage"
@@ -384,7 +375,6 @@ properties:
       - "No"
       - Unknown
       - Not Reported
-
 
   ann_arbor_pathologic_stage:
     term:
@@ -439,8 +429,6 @@ properties:
       - "Sporadic, pediatric"
       - Unknown
       - Not Reported
-
-
 
   child_pugh_classification:
     term:
@@ -648,7 +636,6 @@ properties:
       - Unknown
       - Not Reported
 
-
   first_symptom_prior_to_diagnosis:
     term:
       $ref: "_terms.yaml#/first_symptom_prior_to_diagnosis"
@@ -849,7 +836,6 @@ properties:
     type:
       - number
       - "null"
-
 
   lymph_nodes_positive:
     term:
