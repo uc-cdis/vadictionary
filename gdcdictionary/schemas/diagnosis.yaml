@@ -36,28 +36,12 @@ required:
   - days_to_last_follow_up
   - vital_status
   - primary_diagnosis
-<<<<<<< HEAD
-  #- morphology
-  #- tissue_or_organ_of_origin
-  #- site_of_resection_or_biopsy
-  #- tumor_stage
-  #- tumor_grade
-=======
-#  - morphology
-#  - tissue_or_organ_of_origin
-#  - site_of_resection_or_biopsy
-#  - tumor_stage
-#  - tumor_grade
->>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
   - progression_or_recurrence
   - days_to_recurrence
   - days_to_last_known_disease_status
   - last_known_disease_status
-<<<<<<< HEAD
   - icd_10_description
-=======
-  - icd10_code
->>>>>>> 5be676fdd04d4fa42df84d434f1eb56c1dadf41b
+  - icd_10_code
 
 preferred:
   - site_of_resection_or_biopsy
