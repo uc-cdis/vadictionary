@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "clinical_supplement"
 title: Clinical Supplement
 type: object
-namespace: http://gdc.nci.nih.gov
+namespace: https://gdc.cancer.gov
 category: data_file
 project: '*'
 program: '*'
@@ -11,6 +11,7 @@ description: >
   Data file containing clinical metadata information.
 additionalProperties: false
 submittable: true
+downloadable: true
 validators: null
 
 systemProperties:
@@ -23,18 +24,33 @@ systemProperties:
   - error_type
 
 links:
-  - name: cases
-    backref: clinical_supplements
-    label: derived_from
-    target_type: case
-    multiplicity: many_to_many
+  - exclusive: false
     required: true
-  - name: archives
-    backref: clinical_supplements
-    label: member_of
-    target_type: archive
-    multiplicity: many_to_one
-    required: false
+    subgroup:
+      - name: cases
+        backref: clinical_supplements
+        label: derived_from
+        target_type: case
+        multiplicity: many_to_many
+        required: false
+      - name: archives
+        backref: clinical_supplements
+        label: member_of
+        target_type: archive
+        multiplicity: many_to_one
+        required: false
+      - name: data_collections
+        backref: clinical_supplements
+        label: data_from
+        target_type: data_collection
+        multiplicity: many_to_one
+        required: false
+#      - name: core_metadata_records
+#        backref: clinical_supplements
+#        label: data_from
+#        target_type: core_metadata
+#        multiplicity: one_to_one
+#        required: false
 
 required:
   - submitter_id
@@ -44,7 +60,6 @@ required:
   - md5sum
   - data_category
   - data_type
-  - cases
 
 uniqueKeys:
   - [ id ]
@@ -52,25 +67,36 @@ uniqueKeys:
 
 properties:
   $ref: "_definitions.yaml#/data_file_properties"
-  type:
-    enum: [ "clinical_supplement" ]
+
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
     enum: [ "Clinical" ]
+
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
     enum: [ "Clinical Supplement" ]
+
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
-      - FoundationOne XML
+      - BCR Biotab
+      - BCR OMF XML
       - BCR XML
+      - CDC JSON
+      - FoundationOne XML
+      - TSV
       - XLSX
-      - OMF
+
   cases:
     $ref: "_definitions.yaml#/to_many"
   archives:
     $ref: "_definitions.yaml#/to_one"
+
+  data_collections:
+    $ref: "_definitions.yaml#/to_one"
+
+#  core_metadata_records:
+#    $ref: "_definitions.yaml#/to_one"
