@@ -23,8 +23,6 @@ systemProperties:
   - error_type
 
 links:
-
-links:
   - exclusive: false
     required: true
     subgroup:
@@ -40,13 +38,6 @@ links:
         target_type: data_collection
         multiplicity: many_to_one
         required: false
-#      - name: core_metadata_records
-#        backref: submitted_unaligned_reads_files
-#        label: data_from
-#        target_type: core_metadata
-#        multiplicity: one_to_one
-#        required: false
-
 
 required:
   - submitter_id
