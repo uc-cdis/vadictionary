@@ -197,7 +197,6 @@ properties:
       - Targeted Sequencing
       - Validation
       - Amplicon
-      - Targeted Sequencing
       - Other
 
   multiplex_barcode:
