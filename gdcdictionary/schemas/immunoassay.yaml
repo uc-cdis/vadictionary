@@ -37,7 +37,6 @@ required:
   - target_measurement
   - target_measurement_units
   - aliquots
-  - analytes
 
 uniqueKeys:
   - [ id ]
@@ -76,5 +75,5 @@ properties:
   target_measurement_units:
     description: "Units of measurement used when evaluating the assay target."
     type: string
-  analytes:
+  aliquots:
     $ref: "_definitions.yaml#/to_one"

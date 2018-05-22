@@ -102,6 +102,3 @@ properties:
 
   data_collections:
     $ref: "_definitions.yaml#/to_one"
-
-#  core_metadata_records:
-#    $ref: "_definitions.yaml#/to_one"

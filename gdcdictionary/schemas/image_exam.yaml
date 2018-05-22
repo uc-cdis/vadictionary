@@ -30,11 +30,11 @@ links:
   - exclusive: true
     required: false
     subgroup:
-      - name: followups
+      - name: follow_ups
         backref: image_exams
         label: performed_at
         multiplicity: one_to_one
-        target_type: followup
+        target_type: follow_up
         required: false
       - name: diagnoses
         backref: image_exams
@@ -365,5 +365,5 @@ properties:
     $ref: "_definitions.yaml#/to_one"
   diagnoses:
     $ref: "_definitions.yaml#/to_one"
-  followups:
+  follow_ups:
     $ref: "_definitions.yaml#/to_one"
