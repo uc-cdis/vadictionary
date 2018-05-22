@@ -143,6 +143,16 @@ uniqueKeys:
 properties:
   $ref: "_definitions.yaml#/data_file_properties"
 
+  data_type:
+    term:
+      $ref: "_terms.yaml#/data_type"
+    type: string
+
+  data_format:
+    term:
+      $ref: "_terms.yaml#/data_format"
+    type: string
+
   aliquots:
     $ref: "_definitions.yaml#/to_many"
   analytes:
