@@ -152,6 +152,11 @@ properties:
     term:
       $ref: "_terms.yaml#/data_format"
     type: string
+    
+  data_category:
+    term:
+      $ref: "_terms.yaml#/data_category"
+    type: string
 
   aliquots:
     $ref: "_definitions.yaml#/to_many"
