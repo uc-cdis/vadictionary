@@ -1101,7 +1101,7 @@ properties:
     type: string
 
 #VA SurgeryINTRA
-  surgical_speciality:
+  surgical_specialty:
     description: "The local surgical specialty in VA SurgeryINTRA."
     type: string
 
