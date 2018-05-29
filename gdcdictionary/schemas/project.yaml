@@ -97,6 +97,12 @@ properties:
     description: "Primary site for the project" # TOREVIEW
     type: string
 
+  availability_type:
+    description: "Is the project open or restricted?"
+    enum:
+      - Open
+      - Restricted
+
   state:
     description: >
       The possible states a project can be in.  All but `open` are
