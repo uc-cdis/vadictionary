@@ -93,12 +93,6 @@ links:
         target_type: case
         multiplicity: many_to_many
         required: false
-      - name: centers
-        label: annotates
-        backref: annotations
-        target_type: center
-        multiplicity: many_to_many
-        required: false
       - name: clinical_supplements
         label: annotates
         backref: annotations
@@ -291,12 +285,6 @@ links:
         target_type: submitted_unaligned_reads
         multiplicity: many_to_many
         required: false
-      - name: tissue_source_sites
-        label: annotates
-        backref: annotations
-        target_type: tissue_source_site
-        multiplicity: many_to_many
-        required: false
       - name: treatments
         label: annotates
         backref: annotations
@@ -400,8 +388,6 @@ properties:
     $ref: "_definitions.yaml#/to_many"
   cases:
     $ref: "_definitions.yaml#/to_many"
-  centers:
-    $ref: "_definitions.yaml#/to_many"
   clinical_supplements:
     $ref: "_definitions.yaml#/to_many"
   copy_number_segments:
@@ -465,8 +451,6 @@ properties:
   submitted_tangent_copy_numbers:
     $ref: "_definitions.yaml#/to_many"
   submitted_unaligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"
-  tissue_source_sites:
     $ref: "_definitions.yaml#/to_many"
   treatments:
     $ref: "_definitions.yaml#/to_many"
