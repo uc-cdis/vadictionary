@@ -78,12 +78,6 @@ links:
     target_type: file
     multiplicity: many_to_many
     required: false
-  - name: tags
-    backref: files
-    label: memeber_of
-    target_type: tag
-    multiplicity: many_to_many
-    required: false
   - name: archives
     backref: files
     label: member_of
