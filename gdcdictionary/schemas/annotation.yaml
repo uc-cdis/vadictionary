@@ -93,12 +93,6 @@ links:
         target_type: case
         multiplicity: many_to_many
         required: false
-      - name: centers
-        label: annotates
-        backref: annotations
-        target_type: center
-        multiplicity: many_to_many
-        required: false
       - name: clinical_supplements
         label: annotates
         backref: annotations
@@ -393,8 +387,6 @@ properties:
   biospecimen_supplements:
     $ref: "_definitions.yaml#/to_many"
   cases:
-    $ref: "_definitions.yaml#/to_many"
-  centers:
     $ref: "_definitions.yaml#/to_many"
   clinical_supplements:
     $ref: "_definitions.yaml#/to_many"
