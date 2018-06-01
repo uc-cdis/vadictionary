@@ -44,12 +44,6 @@ links:
         multiplicity: many_to_many
         target_type: sample
         required: false
-  - name: centers
-    label: shipped_to
-    backref: aliquots
-    multiplicity: many_to_one
-    target_type: center
-    required: false
 
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
@@ -136,6 +130,4 @@ properties:
   analytes:
     $ref: "_definitions.yaml#/to_one"
   samples:
-    $ref: "_definitions.yaml#/to_one"
-  centers:
     $ref: "_definitions.yaml#/to_one"
