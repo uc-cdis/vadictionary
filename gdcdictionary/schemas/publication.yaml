@@ -3,52 +3,59 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "publication"
 title: Publication
 type: object
-namespace: https://gdc.cancer.gov
-category: TBD
+namespace: http://gdc.nci.nih.gov
+category: administrative
 program: '*'
 project: '*'
-description: "Publication for a legacy file (depreciated)."
+description: "Publication for a project."
 additionalProperties: false
-submittable: false
-downloadable: false
+submittable: true
 validators: null
 
 systemProperties:
   - id
   - project_id
+  - state
   - created_datetime
   - updated_datetime
 
 links:
-  - name: files
+  - name: projects
     backref: publications
     label: refers_to
-    target_type: file
+    target_type: project
     multiplicity: many_to_many
     required: true
 
 required:
-  - pmid
-  - doi
-  - files
+  - submitter_id
+  - projects
 
 uniqueKeys:
-  - [id]
-  - [pmid]
-  - [doi]
+  - [ id ]
+  - [ project_id, submitter_id ] 
 
-# publication properties
 properties:
   type:
-    type: string
+    enum: [ "publication" ] 
   id:
     $ref: "_definitions.yaml#/UUID"
     systemAlias: node_id
+  state:
+    $ref: "_definitions.yaml#/state"
+  submitter_id:
+    type:
+      - string
+      - "null"
   pmid:
     type: string
   doi:
     type: string
-  files:
+  organization:
+    type: string
+  author:
+    type: string
+  projects:
     $ref: "_definitions.yaml#/to_many"
   project_id:
     type: string

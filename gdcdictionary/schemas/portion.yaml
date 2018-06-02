@@ -35,12 +35,6 @@ links:
     target_type: sample
     multiplicity: many_to_one
     required: true
-  - name: centers
-    backref: portions
-    label: shipped_to
-    target_type: center
-    multiplicity: many_to_one
-    required: false
 
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
@@ -63,6 +57,4 @@ properties:
     type: number
 
   samples:
-    $ref: "_definitions.yaml#/to_one"
-  centers:
     $ref: "_definitions.yaml#/to_one"

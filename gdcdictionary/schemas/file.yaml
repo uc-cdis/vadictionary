@@ -78,46 +78,10 @@ links:
     target_type: file
     multiplicity: many_to_many
     required: false
-  - name: tags
-    backref: files
-    label: memeber_of
-    target_type: tag
-    multiplicity: many_to_many
-    required: false
   - name: archives
     backref: files
     label: member_of
     target_type: archive
-    multiplicity: many_to_one
-    required: false
-  - name: data_subtypes
-    backref: files
-    label: member_of
-    target_type: data_subtype
-    multiplicity: many_to_one
-    required: false
-  - name: data_formats
-    backref: files
-    label: member_of
-    target_type: data_format
-    multiplicity: many_to_one
-    required: false
-  - name: experimental_strategies
-    backref: files
-    label: member_of
-    target_type: experimental_strategy
-    multiplicity: many_to_one
-    required: false
-  - name: centers
-    backref: files
-    label: submitted_by
-    target_type: center
-    multiplicity: many_to_one
-    required: false
-  - name: platforms
-    backref: files
-    label: generated_from
-    target_type: platform
     multiplicity: many_to_one
     required: false
   - name: described_cases
@@ -142,16 +106,6 @@ uniqueKeys:
 # File properties
 properties:
   $ref: "_definitions.yaml#/data_file_properties"
-
-  data_type:
-    term:
-      $ref: "_terms.yaml#/data_type"
-    type: string
-
-  data_format:
-    term:
-      $ref: "_terms.yaml#/data_format"
-    type: string
     
   data_category:
     term:
@@ -174,19 +128,7 @@ properties:
     $ref: "_definitions.yaml#/to_many"
   related_files:
     $ref: "_definitions.yaml#/to_many"
-  tags:
-    $ref: "_definitions.yaml#/to_many"
   archives:
-    $ref: "_definitions.yaml#/to_one"
-  data_subtypes:
-    $ref: "_definitions.yaml#/to_one"
-  data_formats:
-    $ref: "_definitions.yaml#/to_one"
-  experimental_strategies:
-    $ref: "_definitions.yaml#/to_one"
-  centers:
-    $ref: "_definitions.yaml#/to_one"
-  platforms:
     $ref: "_definitions.yaml#/to_one"
   described_cases:
     $ref: "_definitions.yaml#/to_one"
