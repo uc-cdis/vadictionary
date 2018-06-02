@@ -74,7 +74,8 @@ properties:
       - TIFF
       - PNG
       - GIF
-   
+      - DCM
+
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
