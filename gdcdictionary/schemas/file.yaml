@@ -112,6 +112,16 @@ properties:
       $ref: "_terms.yaml#/data_category"
     type: string
 
+  data_type:
+    term:
+      $ref: "_terms.yaml#/data_type"
+    type: string
+
+  data_format:
+    term:
+      $ref: "_terms.yaml#/data_format"
+    type: string
+
   aliquots:
     $ref: "_definitions.yaml#/to_many"
   analytes:
