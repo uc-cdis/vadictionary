@@ -98,3 +98,5 @@ properties:
     $ref: "_definitions.yaml#/to_one"
   somatic_mutation_calling_workflows:
     $ref: "_definitions.yaml#/to_one"
+  data_collections:
+    $ref: "_definitions.yaml#/to_one"
