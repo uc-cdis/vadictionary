@@ -40,6 +40,12 @@ links:
         target_type: genomic_profile_harmonization_workflow
         multiplicity: one_to_one
         required: false
+      - name: data_collections
+        backref: simple_somatic_mutations
+        label: data_from
+        target_type: data_collection
+        multiplicity: many_to_one
+        required: false
 
 required:
   - submitter_id
@@ -61,7 +67,7 @@ properties:
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum: 
+    enum:
       - Combined Nucleotide Variation
       - Simple Nucleotide Variation
 
@@ -75,7 +81,7 @@ properties:
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
-    enum: 
+    enum:
       - VCF
 
   experimental_strategy:
