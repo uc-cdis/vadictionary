@@ -25,7 +25,7 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
       - name: somatic_mutation_calling_workflows
