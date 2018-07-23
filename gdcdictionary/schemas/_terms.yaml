@@ -2251,6 +2251,10 @@ number_proliferating_cells:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=5432636&version=1.0"
 
+object_id:
+    type: string
+    description: "The GUID of the object in the index service."
+
 oct_embedded:
   description: >
     Indicator of whether or not the sample was embedded in Optimal Cutting Temperature (OCT) compound.
