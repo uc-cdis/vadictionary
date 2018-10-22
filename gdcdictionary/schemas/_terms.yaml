@@ -841,7 +841,7 @@ cytoband:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=6142405&version=1.0"
 
-gory: # TOREVIEW
+data_category: # TOREVIEW
   description: >
     Broad categorization of the contents of the data file.
 
