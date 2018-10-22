@@ -2051,18 +2051,18 @@ properties:
     enum:
       - "Yes"
       - "No"
-      - Unknown
-      - Not Reported
+      - "Unknown"
+      - "Not Reported"
 
   peripancreatic_lymph_nodes_positive:
     term:
       $ref: "_terms.yaml#/peripancreatic_lymph_nodes_positive"
     enum:
       - "0"
-      - 1-3
-      - 4 or More
-      - Unknown
-      - Not Reported
+      - "1-3"
+      - "4 or More"
+      - "Unknown"
+      - "Not Reported"
 
   peripancreatic_lymph_nodes_tested:
     term:
