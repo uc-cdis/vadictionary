@@ -1,13 +1,7 @@
 id: _definitions
 
 case_submitter_id:
-  anyOf:
-    - type: string
-    - type: array
-      items:
-        $ref: "#/submitter_id"
-        minItems: 1
-        maxItems: 999
+    type: array
     term:
         $ref: "_terms.yaml#/case_submitter_id"
 
