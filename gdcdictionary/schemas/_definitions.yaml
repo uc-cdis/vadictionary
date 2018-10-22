@@ -2,11 +2,12 @@ id: _definitions
 
 case_submitter_id:
   anyOf:
+    - type: string
     - type: array
       items:
-        $ref: "#/foreign_key"
+        $ref: "#/submitter_id"
         minItems: 1
-        maxItems:
+        maxItems: 999
     term:
         $ref: "_terms.yaml#/case_submitter_id"
 
