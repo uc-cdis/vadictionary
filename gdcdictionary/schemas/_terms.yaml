@@ -551,6 +551,10 @@ calcium:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2630716&version=1.0"
 
+case_submitter_id:
+  description: >
+    The submitter_id of the case (study subject) of a file (of any type). Used for associating a data_file with a particular case.
+
 catalog_reference:
   description: >
     HCMI catalog reference number for cancer model.
@@ -837,7 +841,7 @@ cytoband:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=6142405&version=1.0"
 
-data_category: # TOREVIEW
+gory: # TOREVIEW
   description: >
     Broad categorization of the contents of the data file.
 

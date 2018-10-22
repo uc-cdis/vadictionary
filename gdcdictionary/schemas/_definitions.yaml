@@ -51,6 +51,11 @@ datetime:
   term:
     $ref: "_terms.yaml#/datetime"
 
+case_submitter_id:
+    type: string
+    term:
+        $ref: "_terms.yaml#/case_submitter_id"
+
 file_name:
     type: string
     term:
@@ -164,6 +169,8 @@ project_id:
 
 data_file_properties:
   $ref: "#/ubiquitous_properties"
+  case_submitter_id:
+    $ref: "#/case_submitter_id"
   file_name:
     $ref: "#/file_name"
   file_size:
