@@ -551,6 +551,10 @@ calcium:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2630716&version=1.0"
 
+case_submitter_id:
+  description: >
+    The submitter_id of the case (study subject) of a file (of any type). Used for associating a data_file with a particular case.
+
 catalog_reference:
   description: >
     HCMI catalog reference number for cancer model.
@@ -2250,6 +2254,10 @@ number_proliferating_cells:
     cde_id: 5432636
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=5432636&version=1.0"
+
+object_id:
+    type: string
+    description: "The GUID of the object in the index service."
 
 oct_embedded:
   description: >

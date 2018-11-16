@@ -25,7 +25,7 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
       - name: somatic_mutation_calling_workflows
@@ -97,4 +97,6 @@ properties:
   genomic_profile_harmonization_workflows:
     $ref: "_definitions.yaml#/to_one"
   somatic_mutation_calling_workflows:
+    $ref: "_definitions.yaml#/to_one"
+  data_collections:
     $ref: "_definitions.yaml#/to_one"

@@ -175,10 +175,10 @@ properties:
   cmop_status:
     description: "The CMOP status of Rx in VA RxOutpat."
     enum:
-      - 0
-      - 1
-      - 2
-      - 3
+      - "0"
+      - "1"
+      - "2"
+      - "3"
 
 #VA RxOutpat
   daw_code:
@@ -1625,10 +1625,10 @@ properties:
     term:
       $ref: "_terms.yaml#/treatment_or_therapy"
     enum:
-      - Yes
-      - No
-      - Unknown
-      - Not Reported
+      - "Yes"
+      - "No"
+      - "Unknown"
+      - "Not Reported"
 
   treatment_outcome:
     term:

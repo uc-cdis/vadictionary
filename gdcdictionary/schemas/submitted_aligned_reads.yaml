@@ -34,7 +34,7 @@ links:
         multiplicity: one_to_many
         required: false
       - name: data_collections
-        backref: submitted_aligned_reads_files
+        backref: submitted_aligned_reads_datafiles
         label: data_from
         target_type: data_collection
         multiplicity: many_to_one
