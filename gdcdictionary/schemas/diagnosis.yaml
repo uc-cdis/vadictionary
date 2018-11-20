@@ -62,6 +62,13 @@ properties:
     maximum: 32872
     minimum: 0
 
+  age_at_diagnosis_gt89:
+    term:
+      $ref: "_terms.yaml#/age_at_diagnosis_gt89"
+    enum:
+      - "Yes"
+      - "No"
+
   ajcc_clinical_m:
     term:
       $ref: "_terms.yaml#/ajcc_clinical_m"

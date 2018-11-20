@@ -89,7 +89,7 @@ links:
     label: describes
     target_type: case
     multiplicity: many_to_one
-    required: false
+    required: true
 
 
 required:
@@ -106,7 +106,7 @@ uniqueKeys:
 # File properties
 properties:
   $ref: "_definitions.yaml#/data_file_properties"
-    
+
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"

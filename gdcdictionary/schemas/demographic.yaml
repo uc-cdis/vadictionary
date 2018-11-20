@@ -53,6 +53,15 @@ properties:
     type:
       - integer
       - "null"
+    maximum: 89
+    minimum: 0
+
+  age_at_index_gt89:
+    term:
+      $ref: "_terms.yaml#/age_at_index_gt89"
+    enum:
+      - "Yes"
+      - "No"
 
   cause_of_death:
     term:
@@ -71,6 +80,8 @@ properties:
     term:
       $ref: "_terms.yaml#/days_to_birth"
     type: integer
+    maximum: 0
+    minimum: -32872
 
   days_to_death:
     term:

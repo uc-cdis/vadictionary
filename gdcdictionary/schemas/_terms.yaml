@@ -57,7 +57,7 @@ adverse_event:
 
 age_at_diagnosis:
   description: >
-    Age at the time of diagnosis expressed in number of days since birth.
+    Age at the time of diagnosis expressed in number of days since birth. If the age is greater than 32,872 days (89 years) see 'age_at_diagnosis_gt89'.
   termDef:
     term: Patient Diagnosis Age Day Value
     source: caDSR
@@ -65,11 +65,31 @@ age_at_diagnosis:
     cde_version: 2.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3225640&version=2.0"
 
+age_at_diagnosis_gt89:
+  description: >
+    Indicate whether the 'Age at the time of diagnosis expressed in number of days since birth' is greater than 32,872 days (89 years).
+  termDef:
+    term: Patient Diagnosis Age Day Value Greater than 89
+    source: caDSR
+    cde_id: 3225640
+    cde_version: 2.0
+    term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3225640&version=2.0"
+
 age_at_index:
   description: >
-    The patient's age (in years) on the reference or anchor date date used during date obfuscation.
+    The patient's age (in years) on the reference or anchor date date used during date obfuscation. If the age is greater than 89 years, see 'age_at_index_gt89'.
   termDef:
     term: Patient Age at Index
+    source: caDSR
+    cde_id: 6028530
+    cde_version: 1.0
+    term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=6028530&version=1.0"
+
+age_at_index_gt89:
+  description: >
+    Indicate whether 'The patient's age (in years) on the reference or anchor date date used during date obfuscation' is greater than 89 years.
+  termDef:
+    term: Patient Age at Index Greater than 89
     source: caDSR
     cde_id: 6028530
     cde_version: 1.0
@@ -2733,9 +2753,19 @@ regimen_or_line_of_therapy:
 
 relationship_age_at_diagnosis:
   description: >
-    The age (in years) when the patient's relative was first diagnosed.
+    The age (in years) when the patient's relative was first diagnosed. If the age is greater than 89 years, see 'relationship_age_at_diagnosis_gt89'.
   termDef:
     term: Relative Diagnosis Age Value
+    source: caDSR
+    cde_id: 5300571
+    cde_version: 1.0
+    term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=5300571&version=1.0"
+
+relationship_age_at_diagnosis_gt89:
+  description: >
+    Indicate whether 'The age (in years) when the patient's relative was first diagnosed' is greater than 89 years.
+  termDef:
+    term: Relative Diagnosis Age Value Greater than 89
     source: caDSR
     cde_id: 5300571
     cde_version: 1.0
