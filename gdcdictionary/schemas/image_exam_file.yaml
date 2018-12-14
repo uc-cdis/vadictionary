@@ -89,9 +89,7 @@ properties:
     type: number
 
   image_exams:
-    description: "Metadata record for an image exam."
-    type: string
-
+    $ref: "_definitions.yaml#/to_one"
   data_collections:
     $ref: "_definitions.yaml#/to_one"
 
