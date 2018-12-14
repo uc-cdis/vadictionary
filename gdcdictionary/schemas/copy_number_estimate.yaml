@@ -24,9 +24,15 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
+      - name: core_metadata_collections
+        backref: copy_number_estimates
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
       - name: copy_number_variation_workflows
         backref: copy_number_estimates
         label: derived_from
@@ -97,4 +103,6 @@ properties:
   copy_number_variation_workflows:
     $ref: "_definitions.yaml#/to_one"
   genomic_profile_harmonization_workflows:
+    $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"

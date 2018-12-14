@@ -23,9 +23,15 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
+      - name: core_metadata_collections
+        backref: aligned_reads_metrics
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
       - name: alignment_workflows
         backref: aligned_reads_metrics
         label: data_from
@@ -88,4 +94,6 @@ properties:
   alignment_workflows:
     $ref: "_definitions.yaml#/to_one"
   alignment_cocleaning_workflows:
+    $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"

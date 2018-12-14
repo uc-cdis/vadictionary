@@ -24,12 +24,21 @@ systemProperties:
   - error_type
 
 links:
-  - name: somatic_annotation_workflows
-    backref: sample_level_mafs
-    label: data_from
-    target_type: somatic_annotation_workflow
-    multiplicity: one_to_one
+  - exclusive: false
     required: true
+    subgroup:
+      - name: core_metadata_collections
+        backref: sample_level_mafs
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
+      - name: somatic_annotation_workflows
+        backref: sample_level_mafs
+        label: data_from
+        target_type: somatic_annotation_workflow
+        multiplicity: one_to_one
+        required: false
 
 required:
   - submitter_id
@@ -74,4 +83,6 @@ properties:
       - Validation
 
   somatic_annotation_workflows:
+    $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"

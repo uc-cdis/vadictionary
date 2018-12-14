@@ -27,6 +27,12 @@ links:
   - exclusive: false
     required: true
     subgroup:
+      - name: core_metadata_collections
+        backref: annotated_somatic_mutations
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
       - name: somatic_annotation_workflows
         backref: annotated_somatic_mutations
         label: data_from
@@ -34,7 +40,7 @@ links:
         multiplicity: many_to_one
         required: false
       - name: data_collections
-        backref: submitted_aligned_reads_files
+        backref: annotated_somatic_mutations
         label: data_from
         target_type: data_collection
         multiplicity: many_to_one
@@ -84,6 +90,8 @@ properties:
       - Targeted Sequencing
 
   somatic_annotation_workflows:
+    $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
   data_collections:
     $ref: "_definitions.yaml#/to_one"
