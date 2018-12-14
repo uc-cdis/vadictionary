@@ -28,6 +28,12 @@ links:
   - exclusive: false
     required: true
     subgroup:
+      - name: core_metadata_collections
+        backref: simple_somatic_mutations
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
       - name: somatic_mutation_calling_workflows
         backref: simple_somatic_mutations
         label: data_from
@@ -39,12 +45,6 @@ links:
         label: data_from
         target_type: genomic_profile_harmonization_workflow
         multiplicity: one_to_one
-        required: false
-      - name: data_collections
-        backref: simple_somatic_mutations
-        label: data_from
-        target_type: data_collection
-        multiplicity: many_to_one
         required: false
 
 required:
@@ -98,5 +98,5 @@ properties:
     $ref: "_definitions.yaml#/to_one"
   somatic_mutation_calling_workflows:
     $ref: "_definitions.yaml#/to_one"
-  data_collections:
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"

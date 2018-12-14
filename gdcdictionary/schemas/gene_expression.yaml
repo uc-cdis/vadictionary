@@ -24,12 +24,21 @@ systemProperties:
   - error_type
 
 links:
-  - name: rna_expression_workflows
-    backref: gene_expressions
-    label: data_from
-    target_type: rna_expression_workflow
-    multiplicity: many_to_one
+  - exclusive: false
     required: true
+    subgroup:
+      - name: core_metadata_collections
+        backref: gene_expressions
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
+      - name: rna_expression_workflows
+        backref: gene_expressions
+        label: data_from
+        target_type: rna_expression_workflow
+        multiplicity: many_to_one
+        required: false
 
 required:
   - submitter_id
@@ -78,4 +87,6 @@ properties:
       - Total RNA-Seq
 
   rna_expression_workflows:
+    $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"

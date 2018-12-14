@@ -26,7 +26,7 @@ systemProperties:
 
 links:
   - exclusive: false
-    required: false # eg: bai file does not have edge to biospecimen
+    required: true # eg: bai file does not have edge to biospecimen
     subgroup:
       - name: aliquots
         backref: files
@@ -46,8 +46,6 @@ links:
         target_type: case
         multiplicity: many_to_many
         required: false
-        # this is according to the definition in current data model
-        # https://github.com/NCI-GDC/gdcdatamodel/blob/develop/gdcdatamodel/models/edges/data_from.py#L53
       - name: derived_files
         backref: source_files
         label: data_from
@@ -72,25 +70,30 @@ links:
         target_type: slide
         multiplicity: many_to_many
         required: false
-  - name: related_files
-    backref: parent_files
-    label: related_to
-    target_type: file
-    multiplicity: many_to_many
-    required: false
-  - name: archives
-    backref: files
-    label: member_of
-    target_type: archive
-    multiplicity: many_to_one
-    required: false
-  - name: described_cases
-    backref: describing_files
-    label: describes
-    target_type: case
-    multiplicity: many_to_one
-    required: true
-
+      - name: related_files
+        backref: parent_files
+        label: related_to
+        target_type: file
+        multiplicity: many_to_many
+        required: false
+      - name: archives
+        backref: files
+        label: member_of
+        target_type: archive
+        multiplicity: many_to_one
+        required: false
+      - name: described_cases
+        backref: describing_files
+        label: describes
+        target_type: case
+        multiplicity: many_to_one
+        required: false
+      - name: core_metadata_collections
+        backref: files
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
 
 required:
   - submitter_id
@@ -141,4 +144,6 @@ properties:
   archives:
     $ref: "_definitions.yaml#/to_one"
   described_cases:
+    $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
