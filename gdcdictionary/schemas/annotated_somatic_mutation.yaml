@@ -39,12 +39,6 @@ links:
         target_type: somatic_annotation_workflow
         multiplicity: many_to_one
         required: false
-      - name: data_collections
-        backref: annotated_somatic_mutations
-        label: data_from
-        target_type: data_collection
-        multiplicity: many_to_one
-        required: false
 
 required:
   - submitter_id
@@ -92,6 +86,4 @@ properties:
   somatic_annotation_workflows:
     $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
-    $ref: "_definitions.yaml#/to_one"
-  data_collections:
     $ref: "_definitions.yaml#/to_one"

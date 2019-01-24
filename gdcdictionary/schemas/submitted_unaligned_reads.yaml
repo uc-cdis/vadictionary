@@ -38,15 +38,10 @@ links:
         target_type: read_group
         multiplicity: many_to_one
         required: false
-      - name: data_collections
-        backref: submitted_unaligned_reads_files
-        label: data_from
-        target_type: data_collection
-        multiplicity: many_to_one
-        required: false
 
 required:
   - submitter_id
+  - type
   - file_name
   - file_size
   - md5sum
@@ -106,6 +101,4 @@ properties:
   read_groups:
     $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
-    $ref: "_definitions.yaml#/to_one"
-  data_collections:
     $ref: "_definitions.yaml#/to_one"

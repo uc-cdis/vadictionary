@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "follow_up"
+id: "followup"
 title: Follow-Up
 type: object
 namespace: https://va.datacommons.io/
@@ -28,13 +28,13 @@ systemProperties:
 
 links:
   - name: cases
-    backref: follow_ups
+    backref: followups
     label: describes
     target_type: case
     multiplicity: many_to_one
     required: true
   - name: diagnoses
-    backref: follow_ups
+    backref: followups
     label: describes
     target_type: diagnosis
     multiplicity: many_to_one
@@ -42,7 +42,8 @@ links:
 
 required:
   - submitter_id
-  - days_to_follow_up
+  - type
+  - days_to_followup
   - cases
 
 uniqueKeys:
@@ -854,7 +855,7 @@ properties:
       - "Yes"
       - "No"
       - Unknown
-      - Not Reported
+#      - Not Reported
   bmi:
     term:
       $ref: "_terms.yaml#/bmi"
@@ -998,7 +999,7 @@ properties:
       - Tyrosinemia
       - Ulcerative Colitis
       - Unknown
-      - Not Reported
+      # - Not Reported
 
   comorbidity_method_of_diagnosis:
     term:
@@ -1008,7 +1009,7 @@ properties:
       - Pathology
       - Radiology
       - Unknown
-      - Not Reported
+      # - Not Reported
 
   days_to_adverse_event:
     term:
@@ -1049,7 +1050,7 @@ properties:
       - Thiazolidinedione
       - Other
       - Unknown
-      - Not Reported
+      # - Not Reported
 
   disease_response:
     term:
@@ -1147,7 +1148,7 @@ properties:
       - "82"
       - Other
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   karnofsky_performance_status:
     term:
@@ -1165,7 +1166,7 @@ properties:
       - "90"
       - "100"
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   menopause_status:
     term:
@@ -1175,7 +1176,7 @@ properties:
       - Perimenopausal
       - Postmenopausal
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   pancreatitis_onset_year:
     term:
@@ -1189,7 +1190,7 @@ properties:
       - "Yes"
       - "No"
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   progression_or_recurrence_anatomic_site:
     term:
@@ -1526,7 +1527,7 @@ properties:
       - Clitoris
       - Overlapping lesion of biliary tract
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   progression_or_recurrence_type:
     term:
@@ -1536,7 +1537,7 @@ properties:
       - Local
       - Regional
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   reflux_treatment:
     term:
@@ -1545,7 +1546,7 @@ properties:
       - "Yes"
       - "No"
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   reflux_treatment_type:
     term:
@@ -1556,7 +1557,7 @@ properties:
       - Medically Treated
       - No Treatment
       - Not Applicable
-      - Not Reported
+#      - Not Reported
       - Proton Pump Inhibitors
       - Surgically Treated
       - Unknown
@@ -1581,7 +1582,7 @@ properties:
       - Turcot Syndrome
       - Wagr Syndrome
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   viral_hepatitis_serologies:
     term:
@@ -1596,7 +1597,7 @@ properties:
       - Hepatitis C Antibody
       - Hepatitis C Virus RNA
       - Unknown
-      - Not Reported
+#      - Not Reported
 
   weight:
     term:

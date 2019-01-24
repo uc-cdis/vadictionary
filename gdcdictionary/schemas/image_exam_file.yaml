@@ -39,15 +39,10 @@ links:
         target_type: image_exam
         multiplicity: many_to_one
         required: false
-      - name: data_collections
-        backref: image_exam_files
-        label: data_from
-        target_type: data_collection
-        multiplicity: many_to_one
-        required: false
 
 required:
   - submitter_id
+  - type
   - file_name
   - file_size
   - md5sum
@@ -89,8 +84,6 @@ properties:
     type: number
 
   image_exams:
-    $ref: "_definitions.yaml#/to_one"
-  data_collections:
     $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
