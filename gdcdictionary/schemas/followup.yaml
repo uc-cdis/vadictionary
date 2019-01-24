@@ -1021,9 +1021,9 @@ properties:
       $ref: "_terms.yaml#days_to_comorbidity"
     type: integer
 
-  days_to_follow_up:
+  days_to_followup:
     term:
-      $ref: "_terms.yaml#/days_to_follow_up"
+      $ref: "_terms.yaml#/days_to_followup"
     type: integer
 
   days_to_progression:

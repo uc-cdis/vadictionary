@@ -147,10 +147,10 @@ links:
         target_type: filtered_copy_number_segment
         multiplicity: many_to_many
         required: false
-      - name: follow_ups
+      - name: followups
         label: annotates
         backref: annotations
-        target_type: follow_up
+        target_type: followup
         multiplicity: many_to_many
         required: false
       - name: gene_expressions
@@ -200,7 +200,7 @@ links:
         backref: annotations
         target_type: read_group
         multiplicity: many_to_many
-        required: false  
+        required: false
       - name: run_metadata_files
         label: annotates
         backref: annotations
@@ -406,7 +406,7 @@ properties:
     $ref: "_definitions.yaml#/to_many"
   filtered_copy_number_segments:
     $ref: "_definitions.yaml#/to_many"
-  follow_ups:
+  followups:
     $ref: "_definitions.yaml#/to_many"
   gene_expressions:
     $ref: "_definitions.yaml#/to_many"

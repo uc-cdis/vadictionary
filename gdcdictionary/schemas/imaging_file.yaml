@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "image_exam_file"
-title: Image Exam File
+id: "imaging_file"
+title: Imaging File
 type: object
 namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'
 description: >
-  Data file containing diagnostic image from clinical image exam.
+  Data file containing diagnostic image from clinical imaging exam.
 additionalProperties: false
 submittable: true
 downloadable: true
@@ -28,15 +28,15 @@ links:
     required: true
     subgroup:
       - name: core_metadata_collections
-        backref: image_exam_files
+        backref: imaging_files
         label: data_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: image_exams
-        backref: image_exam_files
+      - name: imaging_exams
+        backref: imaging_files
         label: data_from
-        target_type: image_exam
+        target_type: imaging_exam
         multiplicity: many_to_one
         required: false
 
@@ -83,7 +83,7 @@ properties:
     description: "Magnification used to capture the iamge."
     type: number
 
-  image_exams:
+  imaging_exams:
     $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"

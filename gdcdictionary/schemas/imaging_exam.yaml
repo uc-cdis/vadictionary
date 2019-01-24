@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "image_exam"
-title: Image Exam
+id: "imaging_exam"
+title: Imaging Exam
 type: object
 namespace: https://va.datacommons.io/
 category: clinical
 program: '*'
 project: '*'
 description: >
-  Image exam
+  Information about an imaging exam that generates one or more imaging files.
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: image_exams
+    backref: imaging_exam
     label: performed_on
     multiplicity: many_to_one
     target_type: case
@@ -30,14 +30,14 @@ links:
   - exclusive: true
     required: false
     subgroup:
-      - name: follow_ups
-        backref: image_exams
+      - name: followups
+        backref: imaging_exams
         label: performed_at
         multiplicity: one_to_one
-        target_type: follow_up
+        target_type: followup
         required: false
       - name: diagnoses
-        backref: image_exams
+        backref: imaging_exams
         label: performed_at
         multiplicity: one_to_one
         target_type: diagnosis
@@ -72,7 +72,7 @@ properties:
       type: string
 
   imaging_type:
-      description: "The type of image exam performed."
+      description: "The type of imaging exam performed."
       enum:
         - MRI
         - CT Scan
@@ -365,5 +365,5 @@ properties:
     $ref: "_definitions.yaml#/to_one"
   diagnoses:
     $ref: "_definitions.yaml#/to_one"
-  follow_ups:
+  followups:
     $ref: "_definitions.yaml#/to_one"

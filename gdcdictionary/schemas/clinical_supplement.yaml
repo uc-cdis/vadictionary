@@ -39,12 +39,6 @@ links:
         target_type: case
         multiplicity: many_to_many
         required: false
-      - name: archives
-        backref: clinical_supplements
-        label: member_of
-        target_type: archive
-        multiplicity: many_to_one
-        required: false
 
 required:
   - submitter_id
@@ -87,7 +81,5 @@ properties:
 
   cases:
     $ref: "_definitions.yaml#/to_many"
-  archives:
-    $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"

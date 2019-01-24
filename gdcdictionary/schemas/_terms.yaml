@@ -956,7 +956,7 @@ days_to_diagnosis:
     cde_version: null
     term_url: null
 
-days_to_follow_up:
+days_to_followup:
   description: >
     Number of days between the date used for index and the date the patient was seen or contacted at
     follow-up.
@@ -978,7 +978,7 @@ days_to_hiv_diagnosis:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=4618491&version=1.0"
 
-days_to_last_follow_up:
+days_to_last_followup:
   description: >
     Time interval from the date of last follow up to the date of initial pathologic diagnosis,
     represented as a calculated number of days.

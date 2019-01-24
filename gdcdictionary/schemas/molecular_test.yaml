@@ -32,10 +32,10 @@ uniqueKeys:
   - [project_id, submitter_id]
 
 links:
-  - name: follow_ups
+  - name: followups
     backref: molecular_tests
     label: performed_at
-    target_type: follow_up
+    target_type: followup
     multiplicity: many_to_one
     required: true
 
@@ -1997,5 +1997,5 @@ properties:
       - Unknown
       - Not Reported
 
-  follow_ups:
+  followups:
     $ref: "_definitions.yaml#/to_one"

@@ -33,7 +33,7 @@ links:
 
 required:
   - age_at_diagnosis
-  - days_to_last_follow_up
+  - days_to_last_followup
   - vital_status
   - primary_diagnosis
   - progression_or_recurrence
@@ -523,9 +523,9 @@ properties:
       $ref: "_terms.yaml#/days_to_diagnosis"
     type: integer
 
-  days_to_last_follow_up:
+  days_to_last_followup:
     term:
-      $ref: "_terms.yaml#/days_to_last_follow_up"
+      $ref: "_terms.yaml#/days_to_last_followup"
     type:
       - number
       - "null"
