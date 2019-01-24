@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "mirna_expression_workflow"
 title: miRNA Expression Workflow
 type: object
-namespace: https://gdc.cancer.gov
+namespace: https://va.datacommons.io/
 category: analysis
 program: '*'
 project: '*'

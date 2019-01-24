@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "structural_variation"
 title: Structural Variation
 type: object
-namespace: https://gdc.cancer.gov
+namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'

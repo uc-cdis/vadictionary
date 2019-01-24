@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "image_exam"
 title: Image Exam
 type: object
-namespace: https://data.va.org/
+namespace: https://va.datacommons.io/
 category: clinical
 program: '*'
 project: '*'

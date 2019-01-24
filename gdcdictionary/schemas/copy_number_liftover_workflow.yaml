@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "copy_number_liftover_workflow"
 title: Copy Number Liftover Workflow
 type: object
-namespace: https://gdc.cancer.gov
+namespace: https://va.datacommons.io/
 category: analysis
 program: '*'
 project: '*'

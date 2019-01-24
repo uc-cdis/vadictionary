@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "run_metadata"
 title: Run Metadata
 type: object
-namespace: https://gdc.cancer.gov
+namespace: https://va.datacommons.io/
 category: metadata_file
 project: '*'
 program: '*'

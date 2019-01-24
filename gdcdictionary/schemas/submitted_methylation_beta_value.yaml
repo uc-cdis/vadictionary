@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "submitted_methylation_beta_value"
 title: Submitted Methylation Beta Value
 type: object
-namespace: http://gdc.nci.hit.gov
+namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'

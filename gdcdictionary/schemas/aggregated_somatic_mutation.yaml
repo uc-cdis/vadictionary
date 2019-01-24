@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "aggregated_somatic_mutation"
 title: Aggregated Somatic Mutation
 type: object
-namespace: https://gdc.cancer.gov
+namespace: https://va.datacommons.io/
 category: data_file
 project: '*'
 program: '*'
