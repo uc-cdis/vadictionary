@@ -217,12 +217,12 @@ to_one_project:
 ubiquitous_properties:
   type:
     type: string
+    description: "The node name or id."
   id:
     $ref: "#/UUID"
     systemAlias: node_id
   submitter_id:
-    type:
-      - string
+    type: string
     description: >
       A project-specific identifier for a node. This property is the calling card/nickname/alias for
       a unit of submission. It can be used in place of the UUID for identifying or recalling a node.
