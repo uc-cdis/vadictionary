@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "annotated_somatic_mutation"
-title: Annotated Somatic Mutation
+id: "variant_call_file"
+title: Variant Call File (VCF)
 type: object
 namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'
 description: >
-  Data file containing the annotated somatic mutations calls from an aligned reads file.
+  Data file containing variants called from sequencing reads.
 additionalProperties: false
 submittable: false
 downloadable: true
@@ -28,27 +28,26 @@ links:
     required: true
     subgroup:
       - name: core_metadata_collections
-        backref: annotated_somatic_mutations
+        backref: variant_call_files
         label: data_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: submitted_aligned_reads_files
-        backref: annotated_somatic_mutations
+      - name: aligned_reads_files
+        backref: variant_call_files
         label: data_from
-        target_type: submitted_aligned_reads
+        target_type: aligned_reads_file
         multiplicity: one_to_many
         required: false
-      - name: submitted_unaligned_reads_files
-        backref: annotated_somatic_mutations
+      - name: unaligned_reads_files
+        backref: variant_call_files
         label: data_from
-        target_type: submitted_unaligned_reads
+        target_type: unaligned_reads_file
         multiplicity: one_to_many
         required: false
 
 required:
   - submitter_id
-  - type
   - file_name
   - file_size
   - md5sum
@@ -67,32 +66,36 @@ properties:
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum: [ "Simple Nucleotide Variation" ]
+    enum:
+      - "Simple Nucleotide Variation"
+      - "Combined Nucleotide Variation"
 
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Annotated Somatic Mutation" ]
+    enum:
+      - "Annotated Somatic Mutation"
+      - "Raw Simple Somatic Mutation"
+      - "Raw CGI Variant"
 
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
-    enum:
-      - VCF
+    enum: [ "VCF" ]
 
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
     enum:
-      - WGS
-      - WXS
-      - Low Pass WGS
-      - Validation
-      - Targeted Sequencing
+      - "WGS"
+      - "WXS"
+      - "Low Pass WGS"
+      - "Validation"
+      - "Targeted Sequencing"
 
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
-  submitted_aligned_reads_files:
+  aligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
-  submitted_unaligned_reads_files:
+  unaligned_reads_files:
     $ref: "_definitions.yaml#/to_many"

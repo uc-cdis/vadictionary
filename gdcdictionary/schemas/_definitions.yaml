@@ -1,7 +1,7 @@
 id: _definitions
 
 case_submitter_id:
-    type: array
+    type: string
     term:
         $ref: "_terms.yaml#/case_submitter_id"
 
@@ -98,6 +98,20 @@ foreign_key:
         submitter_id:
             type: string
 
+
+foreign_key_project:
+    type: object
+    # Allow true here because we can have other unique keys defined on
+    # a target type
+    additionalProperties: true
+    #Can either use 'id' which are Gen3 IDs (UUID) or 'code'
+    #which is the user defined ID for project
+    properties:
+        id:
+            $ref: "#/UUID"
+        code:
+            type: string
+
 md5sum:
     type: string
     term:
@@ -174,6 +188,14 @@ to_many:
         minItems: 1
     - $ref: "#/foreign_key"
 
+to_many_project:
+  anyOf:
+    - type: array
+      items:
+        $ref: "#/foreign_key_project"
+        minItems: 1
+    - $ref: "#/foreign_key_project"
+
 to_one:
   anyOf:
     - type: array
@@ -182,6 +204,15 @@ to_one:
         minItems: 1
         maxItems: 1
     - $ref: "#/foreign_key"
+
+to_one_project:
+  anyOf:
+    - type: array
+      items:
+        $ref: "#/foreign_key_project"
+        minItems: 1
+        maxItems: 1
+    - $ref: "#/foreign_key_project"
 
 ubiquitous_properties:
   type:
