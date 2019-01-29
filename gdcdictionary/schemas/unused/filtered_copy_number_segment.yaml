@@ -1,17 +1,18 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "annotated_somatic_mutation"
-title: Annotated Somatic Mutation
+id: "filtered_copy_number_segment"
+title: Filtered Copy Number Segment
 type: object
 namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'
 description: >
-  Data file containing the annotated somatic mutations calls from an aligned reads file.
+  Data file containing copy number information that has been lifted over
+  and filtered.
 additionalProperties: false
 submittable: false
-downloadable: true
+downloadable: false
 validators: null
 
 systemProperties:
@@ -28,33 +29,26 @@ links:
     required: true
     subgroup:
       - name: core_metadata_collections
-        backref: annotated_somatic_mutations
+        backref: filtered_copy_number_segments
         label: data_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: aligned_reads_files
-        backref: annotated_somatic_mutations
+      - name: copy_number_liftover_workflows
+        backref: filtered_copy_number_segments
         label: data_from
-        target_type: aligned_reads_file
-        multiplicity: one_to_many
-        required: false
-      - name: submitted_unaligned_reads_files
-        backref: annotated_somatic_mutations
-        label: data_from
-        target_type: submitted_unaligned_reads
-        multiplicity: one_to_many
+        target_type: copy_number_liftover_workflow
+        multiplicity: many_to_one
         required: false
 
 required:
   - submitter_id
-  - type
   - file_name
   - file_size
+  - data_format
   - md5sum
   - data_category
   - data_type
-  - data_format
   - experimental_strategy
 
 uniqueKeys:
@@ -67,32 +61,29 @@ properties:
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum: [ "Simple Nucleotide Variation" ]
+    enum:
+      - Copy Number Variation
 
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Annotated Somatic Mutation" ]
+    enum:
+      - Copy Number Segment
+      - Masked Copy Number Segment
 
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
-      - VCF
+      - TXT
 
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
     enum:
-      - WGS
-      - WXS
-      - Low Pass WGS
-      - Validation
-      - Targeted Sequencing
+      - Genotyping Array
 
+  copy_number_liftover_workflows:
+    $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
-  aligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"
-  submitted_unaligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"

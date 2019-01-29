@@ -1,17 +1,16 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "annotated_somatic_mutation"
-title: Annotated Somatic Mutation
+id: "submitted_unaligned_reads"
+title: Submitted Unaligned Reads
 type: object
 namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'
-description: >
-  Data file containing the annotated somatic mutations calls from an aligned reads file.
+description: "Data file containing unaligned reads."
 additionalProperties: false
-submittable: false
-downloadable: true
+submittable: true
+downloadable: false
 validators: null
 
 systemProperties:
@@ -28,22 +27,16 @@ links:
     required: true
     subgroup:
       - name: core_metadata_collections
-        backref: annotated_somatic_mutations
+        backref: submitted_unaligned_reads_files
         label: data_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: aligned_reads_files
-        backref: annotated_somatic_mutations
+      - name: read_groups
+        backref: submitted_unaligned_reads_files
         label: data_from
-        target_type: aligned_reads_file
-        multiplicity: one_to_many
-        required: false
-      - name: submitted_unaligned_reads_files
-        backref: annotated_somatic_mutations
-        label: data_from
-        target_type: submitted_unaligned_reads
-        multiplicity: one_to_many
+        target_type: read_group
+        multiplicity: many_to_one
         required: false
 
 required:
@@ -67,32 +60,45 @@ properties:
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum: [ "Simple Nucleotide Variation" ]
+    enum:
+      - Sequencing Data
+      - Sequencing Reads
+      - Raw Sequencing Data
 
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Annotated Somatic Mutation" ]
+    enum: [ "Unaligned Reads" ]
 
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
-      - VCF
+      - BAM
+      - FASTQ
 
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
     enum:
+      - ATAC-Seq
+      - Bisulfite-Seq
+      - ChIP-Seq
+      - Low Pass WGS
+      - miRNA-Seq
+      - RNA-Seq
+      - Targeted Sequencing
       - WGS
       - WXS
-      - Low Pass WGS
-      - Validation
-      - Targeted Sequencing
 
+  read_pair_number:
+    term:
+      $ref: "_terms.yaml#/read_pair_number"
+    enum:
+      - R1
+      - R2
+
+  read_groups:
+    $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
-  aligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"
-  submitted_unaligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"

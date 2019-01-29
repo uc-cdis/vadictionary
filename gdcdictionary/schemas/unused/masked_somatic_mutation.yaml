@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "annotated_somatic_mutation"
-title: Annotated Somatic Mutation
+id: "masked_somatic_mutation"
+title: Masked Somatic Mutation
 type: object
 namespace: https://va.datacommons.io/
 category: data_file
-program: '*'
 project: '*'
+program: '*'
 description: >
-  Data file containing the annotated somatic mutations calls from an aligned reads file.
+  MAF/TSV files that contain all of the somatic mutations for all of the cases for a project.
 additionalProperties: false
 submittable: false
 downloadable: true
@@ -24,31 +24,36 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: false
+  - exclusive: true
     required: true
     subgroup:
       - name: core_metadata_collections
-        backref: annotated_somatic_mutations
+        backref: masked_somatic_mutations
         label: data_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: aligned_reads_files
-        backref: annotated_somatic_mutations
-        label: data_from
-        target_type: aligned_reads_file
-        multiplicity: one_to_many
+      - name: projects
+        backref: masked_somatic_mutations
+        label: derived_from
+        target_type: project
+        multiplicity: many_to_one
         required: false
-      - name: submitted_unaligned_reads_files
-        backref: annotated_somatic_mutations
+      - name: genomic_profile_harmonization_workflows
+        backref: masked_somatic_mutations
         label: data_from
-        target_type: submitted_unaligned_reads
-        multiplicity: one_to_many
+        target_type: genomic_profile_harmonization_workflow
+        multiplicity: many_to_many
+        required: false
+      - name: somatic_aggregation_workflows
+        backref: masked_somatic_mutations
+        label: data_from
+        target_type: somatic_aggregation_workflow
+        multiplicity: one_to_one
         required: false
 
 required:
   - submitter_id
-  - type
   - file_name
   - file_size
   - md5sum
@@ -72,27 +77,31 @@ properties:
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Annotated Somatic Mutation" ]
+    enum:
+      - Masked Somatic Mutation
 
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
-      - VCF
+      - MAF
+      - TSV
 
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
     enum:
+      - Low Pass WGS
+      - Targeted Sequencing
+      - Validation
       - WGS
       - WXS
-      - Low Pass WGS
-      - Validation
-      - Targeted Sequencing
 
+  projects:
+    $ref: "_definitions.yaml#/to_one"
+  genomic_profile_harmonization_workflows:
+    $ref: "_definitions.yaml#/to_many"
+  somatic_aggregation_workflows:
+    $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
-  aligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"
-  submitted_unaligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"

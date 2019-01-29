@@ -1,0 +1,149 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "file"
+title: File
+type: object
+namespace: https://va.datacommons.io/
+category: data_file
+program: '*'
+project: '*'
+description: >
+  A set of related records (either written or electronic) kept
+  together. (NCIt C42883)
+additionalProperties: false
+submittable: false
+downloadable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - file_state
+  - state
+  - error_type
+
+links:
+  - exclusive: false
+    required: true # eg: bai file does not have edge to biospecimen
+    subgroup:
+      - name: aliquots
+        backref: files
+        label: data_from
+        target_type: aliquot
+        multiplicity: many_to_many
+        required: false
+      - name: analytes
+        backref: files
+        label: data_from
+        target_type: analyte
+        multiplicity: many_to_many
+        required: false
+      - name: cases
+        backref: files
+        label: data_from
+        target_type: case
+        multiplicity: many_to_many
+        required: false
+      - name: derived_files
+        backref: source_files
+        label: data_from
+        target_type: file
+        multiplicity: many_to_many
+        required: false
+      - name: portions
+        backref: files
+        label: data_from
+        target_type: portion
+        multiplicity: many_to_many
+        required: false
+      - name: samples
+        backref: files
+        label: data_from
+        target_type: sample
+        multiplicity: many_to_many
+        required: false
+      - name: slides
+        backref: files
+        label: data_from
+        target_type: slide
+        multiplicity: many_to_many
+        required: false
+      - name: related_files
+        backref: parent_files
+        label: related_to
+        target_type: file
+        multiplicity: many_to_many
+        required: false
+      - name: archives
+        backref: files
+        label: member_of
+        target_type: archive
+        multiplicity: many_to_one
+        required: false
+      - name: described_cases
+        backref: describing_files
+        label: describes
+        target_type: case
+        multiplicity: many_to_one
+        required: false
+      - name: core_metadata_collections
+        backref: files
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
+
+required:
+  - submitter_id
+  - file_name
+  - file_size
+  - md5sum
+  - state
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+# File properties
+properties:
+  $ref: "_definitions.yaml#/data_file_properties"
+
+  data_category:
+    term:
+      $ref: "_terms.yaml#/data_category"
+    type: string
+
+  data_type:
+    term:
+      $ref: "_terms.yaml#/data_type"
+    type: string
+
+  data_format:
+    term:
+      $ref: "_terms.yaml#/data_format"
+    type: string
+
+  aliquots:
+    $ref: "_definitions.yaml#/to_many"
+  analytes:
+    $ref: "_definitions.yaml#/to_many"
+  cases:
+    $ref: "_definitions.yaml#/to_many"
+  portions:
+    $ref: "_definitions.yaml#/to_many"
+  samples:
+    $ref: "_definitions.yaml#/to_many"
+  slides:
+    $ref: "_definitions.yaml#/to_many"
+  derived_files:
+    $ref: "_definitions.yaml#/to_many"
+  related_files:
+    $ref: "_definitions.yaml#/to_many"
+  archives:
+    $ref: "_definitions.yaml#/to_one"
+  described_cases:
+    $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
+    $ref: "_definitions.yaml#/to_one"

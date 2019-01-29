@@ -33,10 +33,10 @@ links:
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: aligned_reads_files
+      - name: submitted_aligned_reads_files
         backref: annotated_somatic_mutations
         label: data_from
-        target_type: aligned_reads_file
+        target_type: submitted_aligned_reads
         multiplicity: one_to_many
         required: false
       - name: submitted_unaligned_reads_files
@@ -48,7 +48,6 @@ links:
 
 required:
   - submitter_id
-  - type
   - file_name
   - file_size
   - md5sum
@@ -92,7 +91,7 @@ properties:
 
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
-  aligned_reads_files:
+  submitted_aligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
   submitted_unaligned_reads_files:
     $ref: "_definitions.yaml#/to_many"

@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "annotated_somatic_mutation"
-title: Annotated Somatic Mutation
+id: "structural_variation"
+title: Structural Variation
 type: object
 namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'
 description: >
-  Data file containing the annotated somatic mutations calls from an aligned reads file.
+  Data file containing the structural variation data.
 additionalProperties: false
 submittable: false
 downloadable: true
@@ -28,38 +28,36 @@ links:
     required: true
     subgroup:
       - name: core_metadata_collections
-        backref: annotated_somatic_mutations
+        backref: structural_variations
         label: data_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: aligned_reads_files
-        backref: annotated_somatic_mutations
+      - name: genomic_profile_harmonization_workflows
+        backref: structural_variations
         label: data_from
-        target_type: aligned_reads_file
-        multiplicity: one_to_many
+        target_type: genomic_profile_harmonization_workflow
+        multiplicity: one_to_one
         required: false
-      - name: submitted_unaligned_reads_files
-        backref: annotated_somatic_mutations
+      - name: structural_variant_calling_workflows
+        backref: structural_variations
         label: data_from
-        target_type: submitted_unaligned_reads
-        multiplicity: one_to_many
+        target_type: structural_variant_calling_workflow
+        multiplicity: many_to_one
         required: false
-
-required:
-  - submitter_id
-  - type
-  - file_name
-  - file_size
-  - md5sum
-  - data_category
-  - data_type
-  - data_format
-  - experimental_strategy
 
 uniqueKeys:
   - [ id ]
   - [ project_id, submitter_id ]
+
+required:
+  - submitter_id
+  - file_name
+  - file_size
+  - data_format
+  - md5sum
+  - data_category
+  - data_type
 
 properties:
   $ref: "_definitions.yaml#/data_file_properties"
@@ -67,32 +65,41 @@ properties:
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum: [ "Simple Nucleotide Variation" ]
+    enum:
+      - Somatic Structural Variation
+      - Structural Variation
 
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Annotated Somatic Mutation" ]
+    enum:
+      - Structural Alteration
+      - Structural Rearrangement
+      - Transcript Fusion
 
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
-      - VCF
+      - CSV
+      - FASTA
+      - GVF
+      - JSON
+      - TSV
+      - TXT
 
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
     enum:
+      - RNA-Seq
+      - Targeted Sequencing
       - WGS
       - WXS
-      - Low Pass WGS
-      - Validation
-      - Targeted Sequencing
 
+  genomic_profile_harmonization_workflows:
+    $ref: "_definitions.yaml#/to_one"
+  structural_variant_calling_workflows:
+    $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
-  aligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"
-  submitted_unaligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"

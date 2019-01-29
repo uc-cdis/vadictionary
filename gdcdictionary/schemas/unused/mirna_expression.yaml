@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "annotated_somatic_mutation"
-title: Annotated Somatic Mutation
+id: "mirna_expression"
+title: miRNA Expression
 type: object
 namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'
 description: >
-  Data file containing the annotated somatic mutations calls from an aligned reads file.
+  Data file containing miRNA expression information  generated internally by the GDC.
 additionalProperties: false
 submittable: false
 downloadable: true
@@ -28,27 +28,20 @@ links:
     required: true
     subgroup:
       - name: core_metadata_collections
-        backref: annotated_somatic_mutations
+        backref: mirna_expressions
         label: data_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: aligned_reads_files
-        backref: annotated_somatic_mutations
+      - name: mirna_expression_workflows
+        backref: mirna_expressions
         label: data_from
-        target_type: aligned_reads_file
-        multiplicity: one_to_many
-        required: false
-      - name: submitted_unaligned_reads_files
-        backref: annotated_somatic_mutations
-        label: data_from
-        target_type: submitted_unaligned_reads
-        multiplicity: one_to_many
+        target_type: mirna_expression_workflow
+        multiplicity: many_to_one
         required: false
 
 required:
   - submitter_id
-  - type
   - file_name
   - file_size
   - md5sum
@@ -67,32 +60,31 @@ properties:
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum: [ "Simple Nucleotide Variation" ]
+    enum: [ "Transcriptome Profiling" ]
 
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Annotated Somatic Mutation" ]
+    enum:
+      - miRNA Expression Quantification
+      - Isoform Expression Quantification
+      - Supplementary Files
 
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
-      - VCF
+      - TXT
+      - TSV
+      - CSV
 
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
     enum:
-      - WGS
-      - WXS
-      - Low Pass WGS
-      - Validation
-      - Targeted Sequencing
+      - miRNA-Seq
 
+  mirna_expression_workflows:
+    $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
-  aligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"
-  submitted_unaligned_reads_files:
-    $ref: "_definitions.yaml#/to_many"

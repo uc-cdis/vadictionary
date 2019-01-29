@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "exposure"
 title: Exposure
 type: object
-namespace: https://gdc.cancer.gov
+namespace: https://va.datacommons.io/
 category: clinical
 program: '*'
 project: '*'
@@ -29,10 +29,10 @@ links:
     multiplicity: many_to_one
     required: true
 
-preferred:
-  - pack_years_smoked
-  - years_smoked
-
+required:
+  - submitter_id
+  - type
+  - cases
 
 uniqueKeys:
   #unclear if want submitter ID for clinical

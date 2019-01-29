@@ -1,7 +1,7 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "core_metadata_collection"
-title: Core Metadata Collection
+id: "data_collection"
+title: Data Collection
 type: object
 namespace: https://va.datacommons.io/
 category: administrative
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: projects
-    backref: core_metadata_collections
+    backref: data_collections
     label: data_from
     target_type: project
     multiplicity: many_to_one
@@ -56,7 +56,8 @@ properties:
     type: string
 
   date:
-    $ref: "_definitions.yaml#/datetime"
+    term:
+      $ref: "_definitions.yaml#/datetime"
 
   description:
     description: >
@@ -109,4 +110,4 @@ properties:
     type: string
 
   projects:
-    $ref: "_definitions.yaml#/to_one_project"
+    $ref: "_definitions.yaml#/to_one"

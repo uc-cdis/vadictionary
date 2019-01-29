@@ -42,9 +42,6 @@ links:
 
 constraints: null
 
-# project properties
-# code, disease_type and primary_site are in the current data model for project
-# and likely shouldn't be
 properties:
   type:
     type: string
@@ -82,7 +79,7 @@ properties:
       Indicates whether a project will appear in the Legacy Archive.
     default: false
     type: boolean
-  
+
   in_review:
     description: >
       Indicates that the project is under review by the submitter. Upload and data modification is disabled.
@@ -188,4 +185,3 @@ properties:
     description: Tracks a Project's intended release date.
     type: string
     format: date-time
-

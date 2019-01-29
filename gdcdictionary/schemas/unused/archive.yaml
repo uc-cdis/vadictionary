@@ -1,15 +1,18 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "submitted_unaligned_reads"
-title: Submitted Unaligned Reads
+id: "archive"
+title: Archive
 type: object
 namespace: https://va.datacommons.io/
 category: data_file
 program: '*'
 project: '*'
-description: "Data file containing unaligned reads."
+description: >
+  A group of files containing program or project related data ingested by the
+  GDC. Archives may be submitted directly to GDC by a center, assembled by the
+  GDC, or obtained by another route. (GDC subclass of NCIt C114463)
 additionalProperties: false
-submittable: true
+submittable: false
 downloadable: false
 validators: null
 
@@ -18,8 +21,8 @@ systemProperties:
   - project_id
   - created_datetime
   - updated_datetime
-  - state
   - file_state
+  - state
   - error_type
 
 links:
@@ -27,78 +30,63 @@ links:
     required: true
     subgroup:
       - name: core_metadata_collections
-        backref: submitted_unaligned_reads_files
+        backref: archives
         label: data_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: read_groups
-        backref: submitted_unaligned_reads_files
-        label: data_from
-        target_type: read_group
+      - name: projects
+        backref: archives
+        label: member_of
+        target_type: project
         multiplicity: many_to_one
+        required: false
+      - name: related_to_files
+        backref: related_archives
+        label: related_to
+        target_type: file
+        multiplicity: one_to_many
         required: false
 
 required:
   - submitter_id
-  - type
+  - revision
+  - projects
   - file_name
   - file_size
   - md5sum
-  - data_category
-  - data_type
-  - data_format
-#  - experimental_strategy
+  - state
 
 uniqueKeys:
-  - [ id ]
-  - [ project_id, submitter_id ]
+  - [id]
+  - [project_id, submitter_id]
 
+# archive properties
 properties:
   $ref: "_definitions.yaml#/data_file_properties"
 
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum:
-      - Sequencing Data
-      - Sequencing Reads
-      - Raw Sequencing Data
+    enum: [ "Archive" ]
 
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Unaligned Reads" ]
+    enum: [ "TCGA DCC Archive", "TARGET DCC Archive" ]
 
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
-    enum:
-      - BAM
-      - FASTQ
+    enum: [ "TARGZ", "MAGETAB" ]
 
-  experimental_strategy:
-    term:
-      $ref: "_terms.yaml#/experimental_strategy"
-    enum:
-      - ATAC-Seq
-      - Bisulfite-Seq
-      - ChIP-Seq
-      - Low Pass WGS
-      - miRNA-Seq
-      - RNA-Seq
-      - Targeted Sequencing
-      - WGS
-      - WXS
+  revision:
+    type: number
+    description: The revision of this archive in the DCC.
 
-  read_pair_number:
-    term:
-      $ref: "_terms.yaml#/read_pair_number"
-    enum:
-      - R1
-      - R2
-
-  read_groups:
+  projects:
     $ref: "_definitions.yaml#/to_one"
+  related_to_files:
+    $ref: "_definitions.yaml#/to_many"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"

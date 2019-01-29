@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "case"
 title: Case
 type: object
-namespace: https://gdc.cancer.gov
+namespace: https://va.datacommons.io/
 category: administrative
 program: '*'
 project: '*'
@@ -32,6 +32,8 @@ links:
 
 required:
   - submitter_id
+  - type
+  - projects
 
 uniqueKeys:
   - [id]
@@ -108,7 +110,7 @@ properties:
       - Trophoblastic neoplasms
       - Unknown
       - Not Reported
-    
+
 
   index_date:
     term:
@@ -201,7 +203,6 @@ properties:
       - Vulva
       - Unknown
       - Not Reported
-   
 
   projects:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_one_project"
