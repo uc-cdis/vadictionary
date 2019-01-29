@@ -32,16 +32,18 @@ links:
     required: true
 
 required:
-  - age_at_diagnosis
-  - days_to_last_followup
-  - vital_status
-  - primary_diagnosis
-  - progression_or_recurrence
-  - days_to_recurrence
-  - days_to_last_known_disease_status
-  - last_known_disease_status
-  - icd_10_description
-  - icd_10_code
+  - submitter_id
+  - type
+#  - age_at_diagnosis
+#  - days_to_last_followup
+#  - vital_status
+#  - primary_diagnosis
+#  - progression_or_recurrence
+#  - days_to_recurrence
+#  - days_to_last_known_disease_status
+#  - last_known_disease_status
+#  - icd_10_description
+#  - icd_10_code
 
 preferred:
   - site_of_resection_or_biopsy

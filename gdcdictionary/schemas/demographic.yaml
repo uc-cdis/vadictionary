@@ -32,9 +32,10 @@ links:
 
 required:
   - submitter_id
-  - ethnicity
-  - gender
-  - race
+  - type
+#  - ethnicity
+#  - gender
+#  - race
 
 preferred:
   - days_to_birth

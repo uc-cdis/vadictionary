@@ -23,9 +23,10 @@ systemProperties:
 
 required:
   - submitter_id
-  #- gene_symbol
-  - molecular_analysis_method
-  - test_result
+  - type
+#  - gene_symbol
+#  - molecular_analysis_method
+#  - test_result
 
 uniqueKeys:
   - [id]
