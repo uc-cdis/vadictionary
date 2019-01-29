@@ -100,3 +100,5 @@ properties:
     $ref: "_definitions.yaml#/to_many"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
+  unaligned_reads_files:
+    $ref: "_definitions.yaml#/to_many"
