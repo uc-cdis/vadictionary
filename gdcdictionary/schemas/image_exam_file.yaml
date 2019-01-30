@@ -33,10 +33,10 @@ links:
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: image_exams
+      - name: imaging_exams
         backref: image_exam_files
         label: data_from
-        target_type: image_exam
+        target_type: imaging_exam
         multiplicity: many_to_one
         required: false
       - name: data_collections
@@ -88,7 +88,7 @@ properties:
     description: "Magnification used to capture the iamge."
     type: number
 
-  image_exams:
+  imaging_exams:
     $ref: "_definitions.yaml#/to_one"
   data_collections:
     $ref: "_definitions.yaml#/to_one"
