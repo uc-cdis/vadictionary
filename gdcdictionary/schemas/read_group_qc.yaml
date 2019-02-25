@@ -24,16 +24,16 @@ links:
   - exclusive: true
     required: true
     subgroup:
-      - name: submitted_aligned_reads_files
+      - name: aligned_reads_files
         backref: read_group_qcs
         label: data_from
-        target_type: submitted_aligned_reads
+        target_type: aligned_reads_file
         multiplicity: one_to_one
         required: false
-      - name: submitted_unaligned_reads_files
+      - name: unaligned_reads_files
         backref: read_group_qcs
         label: data_from
-        target_type: submitted_unaligned_reads
+        target_type: unaligned_reads_file
         multiplicity: one_to_many
         required: false
   - name: read_groups
@@ -45,22 +45,23 @@ links:
 
 required:
   - submitter_id
-  - adapter_content
-  - basic_statistics
-  - encoding
-  - kmer_content
-  - overrepresented_sequences
-  - per_base_sequence_quality
-  - per_tile_sequence_quality
-  - per_sequence_quality_score
-  - per_base_sequence_content
-  - per_sequence_gc_content
-  - per_base_n_content
-  - percent_gc_content
-  - sequence_length_distribution
-  - sequence_duplication_levels
-  - total_sequences
-  - workflow_link
+  - type
+  - read_groups
+#  - adapter_content
+#  - basic_statistics
+#  - encoding
+#  - kmer_content
+#  - overrepresented_sequences
+#  - per_base_sequence_quality
+#  - per_tile_sequence_quality
+#  - per_sequence_quality_score
+#  - per_base_sequence_content
+#  - per_sequence_gc_content
+#  - per_base_n_content
+#  - percent_gc_content
+#  - sequence_length_distribution
+#  - total_sequences
+#  - workflow_link
 
 uniqueKeys:
   - [ id ]
@@ -132,9 +133,9 @@ properties:
       $ref: "_terms.yaml#/workflow_type"
     enum: [ "Read Group Quality Control" ]
 
-  submitted_aligned_reads_files:
+  aligned_reads_files:
     $ref: "_definitions.yaml#/to_one"
-  submitted_unaligned_reads_files:
+  unaligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
   read_groups:
     $ref: "_definitions.yaml#/to_one"

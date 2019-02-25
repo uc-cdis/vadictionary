@@ -51,8 +51,8 @@ required:
   - submitter_id
   - type
   - cases
-  - imaging_type
-  - imaging_anatomical_site
+#  - imaging_type
+#  - imaging_anatomical_site
 
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"

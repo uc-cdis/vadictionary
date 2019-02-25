@@ -10,7 +10,7 @@ project: '*'
 description: "Data file containing the index for a set of aligned reads."
 additionalProperties: false
 submittable: true
-downloadable: true 
+downloadable: true
 validators: null
 
 systemProperties:
@@ -23,21 +23,12 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
-    required: true
-    subgroup:
-      - name: submitted_aligned_reads_files
-        backref: aligned_reads_indexes
-        label: derived_from
-        target_type: submitted_aligned_reads
-        multiplicity: one_to_one
-        required: false
-      - name: aligned_reads_files
-        backref: aligned_reads_indexes
-        label: derived_from
-        target_type: aligned_reads
-        multiplicity: one_to_one
-        required: false
+  - name: aligned_reads_files
+    backref: aligned_reads_indexes
+    label: derived_from
+    target_type: aligned_reads_file
+    multiplicity: one_to_one
+    required: false
 
 required:
   - submitter_id
@@ -73,7 +64,5 @@ properties:
       $ref: "_terms.yaml#/data_format"
     enum: [ "BAI" ]
 
-  submitted_aligned_reads_files:
-    $ref: "_definitions.yaml#/to_one"
   aligned_reads_files:
     $ref: "_definitions.yaml#/to_one"

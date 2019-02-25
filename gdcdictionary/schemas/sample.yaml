@@ -27,7 +27,8 @@ systemProperties:
 required:
   - submitter_id
   - type
-  - composition
+  - cases
+#  - composition
 
 uniqueKeys:
   - [id]

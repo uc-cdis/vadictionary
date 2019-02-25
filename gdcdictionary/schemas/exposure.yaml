@@ -29,10 +29,10 @@ links:
     multiplicity: many_to_one
     required: true
 
-preferred:
-  - pack_years_smoked
-  - years_smoked
-
+required:
+  - submitter_id
+  - type
+  - cases
 
 uniqueKeys:
   #unclear if want submitter ID for clinical
