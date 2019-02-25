@@ -33,7 +33,7 @@ links:
         multiplicity: many_to_one
         required: false
       - name: read_groups
-        backref: submitted_unaligned_reads_files # pretty ugly
+        backref: submitted_unaligned_reads_files
         label: data_from
         target_type: read_group
         multiplicity: many_to_one
