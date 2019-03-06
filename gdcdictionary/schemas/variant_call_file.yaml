@@ -52,9 +52,9 @@ required:
   - file_name
   - file_size
   - md5sum
-  - data_category
-  - data_type
-  - data_format
+#  - data_category
+#  - data_type
+#  - data_format
 #  - experimental_strategy
 
 uniqueKeys:
@@ -77,7 +77,6 @@ properties:
     enum:
       - "Annotated Somatic Mutation"
       - "Raw Simple Somatic Mutation"
-      - "Raw CGI Variant"
 
   data_format:
     term:
@@ -93,6 +92,11 @@ properties:
       - "Low Pass WGS"
       - "Validation"
       - "Targeted Sequencing"
+
+  variant_calling_workflow:
+    description: >
+      Indicate the variant calling workflow or pipeline used to generate the variant calls.
+    type: string
 
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
