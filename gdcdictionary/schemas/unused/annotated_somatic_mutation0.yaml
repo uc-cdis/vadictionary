@@ -39,10 +39,10 @@ links:
         target_type: aligned_reads_file
         multiplicity: one_to_many
         required: false
-      - name: submitted_unaligned_reads_files
+      - name: unaligned_reads_files
         backref: annotated_somatic_mutations
         label: data_from
-        target_type: submitted_unaligned_reads
+        target_type: unaligned_reads_file
         multiplicity: one_to_many
         required: false
 

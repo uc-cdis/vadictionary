@@ -271,10 +271,6 @@ aliquot_volume:
     cde_version: null
     term_url: null
 
-amount: # TOREVIEW
-  description: >
-    Weight in grams or volume in mL.
-
 analyte_quantity:
   description: >
     The quantity in micrograms (ug) of the analyte(s) derived from the analyte(s) shipped for
