@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "variant_call_file"
 title: Variant Call File (VCF)
 type: object
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: data_file
 program: '*'
 project: '*'

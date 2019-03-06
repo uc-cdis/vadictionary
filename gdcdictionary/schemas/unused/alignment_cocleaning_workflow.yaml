@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "alignment_cocleaning_workflow"
 title: Alignment Cocleaning Workflow
 type: object
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: analysis
 program: '*'
 project: '*'

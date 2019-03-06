@@ -4,7 +4,7 @@ id: "read_group"
 title: Read Group
 type: object
 description: "Sequencing reads from one lane of an NGS experiment."
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: biospecimen
 project: '*'
 program: '*'

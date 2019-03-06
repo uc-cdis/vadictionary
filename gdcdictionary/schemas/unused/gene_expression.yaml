@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "gene_expression"
 title: Gene Expression
 type: object
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: data_file
 program: '*'
 project: '*'

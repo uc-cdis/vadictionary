@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "annotation"
 title: Annotation
 type: object
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: notation
 program: '*'
 project: '*'
