@@ -1,0 +1,329 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "SurgeryPOST"
+title: Surgery POST
+type: object
+namespace: https://vpodc.org/
+category: clinical_CDW
+program: '*'
+project: '*'
+description: >
+  SurgeryPOST contains post-case data, provider notes, indications for operations, and information on surgically implanted prosthetics.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: SurgeryPOST
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AdmitPACUTime:
+    description: >
+      add_description_here
+    type: string
+
+  CPTOnNurseReportFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  CurrentAdmissionCumulativeOperations:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  DaysFromAnchorDateToAdmitPACUDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDeathDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDictationDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDischargeDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDischargePACUDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToObservationAdmissionDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToObservationDischargeDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToPostOpAnesthesiaNoteDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToProcedureDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToSterilityExpirationDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToSurgeryDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToTranscriptionDate:
+    description: >
+      add_description_here
+    type: integer
+
+  Death30DaysFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  DeviceQuantity:
+    description: >
+      add_description_here
+    type: number
+
+  DictatedSummaryFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  DictationTime:
+    description: >
+      add_description_here
+    type: string
+
+  DischargePACUTime:
+    description: >
+      add_description_here
+    type: string
+
+  DischargeSurgeryTransportDevice:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DischargeSurgeryTransportDeviceCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DressingCondition:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  DynamedNotifiedFlag:
+    description: >
+      add_description_here
+    type: number
+
+  EndBP:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  EndPulse:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  EndRespirationRate:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  EventCaptureSpecialty:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ICDOnNurseReportFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  ImplantSterilityCheckedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  LocalSurgicalSpecialty:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  LockCase:
+    description: >
+      add_description_here
+    type: number
+
+  NonORProcedureFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  OccurenceNoProcedureFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  OPSurgeryDisposition:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  OPSurgeryDispositionCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PACUAdmitScore:
+    description: >
+      add_description_here
+    type: number
+
+  PACUDischargeScore:
+    description: >
+      add_description_here
+    type: number
+
+  PACUSurgeryDisposition:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PACUSurgeryDispositionCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PostOpAnesthesiaNoteTime:
+    description: >
+      add_description_here
+    type: string
+
+  PostOpAttendingConcurFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  PostOpBP:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  PostOpPatientConsciousness:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PostOpPatientMood:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PostOpPatientMoodCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PostOpPulse:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  PostOpRespiratoryRate:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  PostOpSkinColor:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PostOpSkinIntegrity:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PostOpSkinIntegrityCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PreAdmitTestingFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  ProcedureTime:
+    description: >
+      add_description_here
+    type: string
+
+  ProsthesisName:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  SurgeryTime:
+    description: >
+      add_description_here
+    type: string
+
+  TranscriptionTime:
+    description: >
+      add_description_here
+    type: string
+
+  WoundOccurrences:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

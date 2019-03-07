@@ -1,0 +1,139 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "SurgeryProcedureDiagnosisCode"
+title: Surgery Procedure Diagnosis Code
+type: object
+namespace: https://vpodc.org/
+category: clinical_CDW
+program: '*'
+project: '*'
+description: >
+  Contains surgery-related ICD diagnosis & procedure codes and CPT procedure codes.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: SurgeryProcedureDiagnosisCode
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  CPTCategory:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  CPTDescription:
+    description: >
+      add_description_here
+    type: string
+
+  CPTModifier:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  CPTModifierName:
+    description: >
+      add_description_here
+    type: string
+
+  CPTName:
+    description: >
+      add_description_here
+    type: string
+
+  DaysFromAnchorDateToSurgeryDate:
+    description: >
+      add_description_here
+    type: integer
+
+  MajorCPTCategory:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  OtherPostopICD9Code:
+    description: >
+      add_description_here
+    type: string
+
+  OtherPostopICD9Desc:
+    description: >
+      add_description_here
+    type: string
+
+  PrincipalPostOpICD10Code:
+    description: >
+      add_description_here
+    type: string
+
+  PrincipalPostOpICD10Desc:
+    description: >
+      add_description_here
+    type: string
+
+  PrincipalPostOpICD9Code:
+    description: >
+      add_description_here
+    type: string
+
+  PrincipalPostOpICD9Desc:
+    description: >
+      add_description_here
+    type: string
+
+  ServiceConnectedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  SurgeryPrincipalAssociatedDiagnosisICD10Code:
+    description: >
+      add_description_here
+    type: string
+
+  SurgeryPrincipalAssociatedDiagnosisICD10Desc:
+    description: >
+      add_description_here
+    type: string
+
+  SurgeryPrincipalAssociatedDiagnosisICD9Code:
+    description: >
+      add_description_here
+    type: string
+
+  SurgeryPrincipalAssociatedDiagnosisICD9Desc:
+    description: >
+      add_description_here
+    type: string
+
+  SurgeryTime:
+    description: >
+      add_description_here
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

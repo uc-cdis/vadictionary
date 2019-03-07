@@ -1,0 +1,99 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "ICDCode"
+title: ICD Code
+type: object
+namespace: https://vpodc.org/
+category: clinical_CDW
+program: '*'
+project: '*'
+description: >
+  The ICD Code Domain provides details on the International Classification Codes (ICD) and Diagnostic Related Groups (DRG) identifiers. This domain includes descriptions for ICD9 and ICD10 codes as well as the status to indicate if the code is active or inactive.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: ICDCode
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  DaysFromAnchorDateToEndDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToStartDate:
+    description: >
+      add_description_here
+    type: integer
+
+  EndTime:
+    description: >
+      add_description_here
+    type: string
+
+  ICD10Code:
+    description: >
+      add_description_here
+    type: string
+
+  ICD10Description:
+    description: >
+      add_description_here
+    type: string
+
+  ICD9Code:
+    description: >
+      add_description_here
+    type: number
+
+  ICD9Description:
+    description: >
+      add_description_here
+    type: string
+
+  ParentTableName:
+    description: >
+      add_description_here
+    type: string
+
+  Sta3n:
+    description: >
+      add_description_here
+    type: integer
+
+  StartTime:
+    description: >
+      add_description_here
+    type: string
+
+  TableName:
+    description: >
+      add_description_here
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

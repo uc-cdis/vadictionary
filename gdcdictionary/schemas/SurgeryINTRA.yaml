@@ -1,0 +1,614 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "SurgeryINTRA"
+title: Surgery INTRA
+type: object
+namespace: https://vpodc.org/
+category: clinical_CDW
+program: '*'
+project: '*'
+description: >
+  SurgeryINTRA contains data captured during a surgical case progress.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: SurgeryINTRA
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AirwayIndex:
+    description: >
+      add_description_here
+    type: integer
+
+  AnesthesiaBillableCareFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  AnesthesiaMedicallyDirectedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  AnesthesiaPersonallyPerformedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  AnesthesiaPhysicianAvailableFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  AnesthetistAvailableTime:
+    description: >
+      add_description_here
+    type: string
+
+  AnesthetistCategory:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  AntibioticProphylaxis:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ASAClass:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ASAClassDescription:
+    description: >
+      add_description_here
+    type: string
+
+  AttendingCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  AttendingCodeDescription:
+    description: >
+      add_description_here
+    type: string
+
+  AttendingCodeName:
+    description: >
+      add_description_here
+    type: string
+
+  BatistaProcUsedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  BeginNonORProcedureTime:
+    description: >
+      add_description_here
+    type: string
+
+  BeginOperationTime:
+    description: >
+      add_description_here
+    type: string
+
+  BeginORCleanTime:
+    description: >
+      add_description_here
+    type: string
+
+  BloodAvailability:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  BloodLoss:
+    description: >
+      add_description_here
+    type: number
+
+  CaseVerificationFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  ConcurrentAnesthesiaCases:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  ConfirmedMarkedSiteTime:
+    description: >
+      add_description_here
+    type: string
+
+  ContaminationFlashSterilization:
+    description: >
+      add_description_here
+    type: number
+
+  CorrectMedicalImplants:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  DaysFromAnchorDateToAnesthetistAvailableDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToBeginNonORProcedureDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToBeginOperationDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToBeginORCleanDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToConfirmedMarkedSiteDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToEndAnesthesiaCareDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToEndNonORProcedureDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToEndOperationDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToEndORCleanDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToInductionCompleteDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToNurseOutDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToNursePresentDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToORPatientTransportDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToPatientHoldAreaDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToPatientOutDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToProcedureDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToStartAnesthesiaCareDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToSurgeonPresentDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToSurgeryDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToTimeOutVerifiedDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DecontaminationFlashSterilization:
+    description: >
+      add_description_here
+    type: number
+
+  Devices:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DiagnosticTherapeuticFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  ElectrogroundPosition:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ElectrogroundPositionCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  EmergencyCaseFlashSterilization:
+    description: >
+      add_description_here
+    type: number
+
+  EndAnesthesiaCareTime:
+    description: >
+      add_description_here
+    type: string
+
+  EndNonORProcedureTime:
+    description: >
+      add_description_here
+    type: string
+
+  EndOperationTime:
+    description: >
+      add_description_here
+    type: string
+
+  EndORCleanTime:
+    description: >
+      add_description_here
+    type: string
+
+  ESUCoagulationRange:
+    description: >
+      add_description_here
+    type: string
+
+  ESUCuttingRange:
+    description: >
+      add_description_here
+    type: string
+
+  EventCaptureSpecialty:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  FinalAnesthesiaTemperature:
+    description: >
+      add_description_here
+    type: number
+
+  FinalCountsVerifiedCorrect:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  FoleyCatheterSize:
+    description: >
+      add_description_here
+    type: number
+
+  GastricOutput:
+    description: >
+      add_description_here
+    type: number
+
+  HairRemovalMethod:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  InductionCompleteTime:
+    description: >
+      add_description_here
+    type: string
+
+  InstrumentCountCorrect:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  IntraOpTemperature:
+    description: >
+      add_description_here
+    type: number
+
+  IntraOpXRayCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  LaserType:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  LoanerInstrumentFlashSterilization:
+    description: >
+      add_description_here
+    type: number
+
+  LocalSurgicalSpecialty:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  MajorMinor:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  MajorPosition:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  MallampatiScale:
+    description: >
+      add_description_here
+    type: number
+
+  MandibularSpace:
+    description: >
+      add_description_here
+    type: number
+
+  MarkedSiteConfirmed:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  MarkedSiteConfirmedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  NoBetterOptionFlashSterilization:
+    description: >
+      add_description_here
+    type: number
+
+  NonORProcedureFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  NurseOutTime:
+    description: >
+      add_description_here
+    type: string
+
+  NursePresentTime:
+    description: >
+      add_description_here
+    type: string
+
+  ORPatientTransportTime:
+    description: >
+      add_description_here
+    type: string
+
+  ORSetupTime:
+    description: >
+      add_description_here
+    type: number
+
+  Packing:
+    description: >
+      add_description_here
+    type: number
+
+  PatientHoldAreaTime:
+    description: >
+      add_description_here
+    type: string
+
+  PatientIdentityConfirmedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  PatientOutTime:
+    description: >
+      add_description_here
+    type: string
+
+  PhysicalStatus:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PositiveDrugScreening:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  PossibleItemRetentionCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PreOperativeImagingConfirmed:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  PreOpImagesConfirmed:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  PreOpSkinColor:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  ProcedureTime:
+    description: >
+      add_description_here
+    type: string
+
+  SequentialBloodDeviceFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  SharpsCountCorrect:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  SkinIntegrity:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  SkinIntegrityCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  SkinPrepAgent:
+    description: >
+      add_description_here
+    type: string
+
+  SkinPrepAgentCode:
+    description: >
+      add_description_here
+    type: string
+
+  SPDFlashSterilization:
+    description: >
+      add_description_here
+    type: number
+
+  SpecialEquipmentAvailability:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  SpongeCountCorrect:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  StaffOrResident:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  StartAnesthesiaCareTime:
+    description: >
+      add_description_here
+    type: string
+
+  SurgeonPresentTime:
+    description: >
+      add_description_here
+    type: string
+
+  SurgeryPosition:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  SurgeryPositionCode:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  SurgeryTime:
+    description: >
+      add_description_here
+    type: string
+
+  SurgeryTransportDevice:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  SurgeryTransportDeviceCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  TimeOutVerified:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  TimeOutVerifiedTime:
+    description: >
+      add_description_here
+    type: string
+
+  UrineOutput:
+    description: >
+      add_description_here
+    type: number
+
+  WoundClassification:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  WoundSweepCode:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

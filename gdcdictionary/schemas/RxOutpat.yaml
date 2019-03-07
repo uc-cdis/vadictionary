@@ -1,0 +1,369 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "RxOutpat"
+title: Rx Outpat
+type: object
+namespace: https://vpodc.org/
+category: clinical_CDW
+program: '*'
+project: '*'
+description: >
+  Outpatient pharmacy data including prescription, refills, dosage, units and instructions to patients on taking medications.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: RxOutpat
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AgentOrangeFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  ArchivedFlag:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  BingoWaitTime:
+    description: >
+      add_description_here
+    type: number
+
+  CMOPFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  CMOPStatus:
+    description: >
+      add_description_here
+    type: number
+
+  CombatVeteranFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  CopayTransaction:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  CounseledFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  DAWCode:
+    description: >
+      add_description_here
+    type: number
+
+  DaysFromAnchorDateToCancelDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToFinishingDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToHoldDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToIssueDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToLastDispensedDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToNextPossibleFillDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToPriorFillDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillDispensedDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillExpirationDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillFillDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillIssueDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillLoginDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillReleaseDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillReturnedToStockDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillValidatedDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatSigIssueDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysSupply:
+    description: >
+      add_description_here
+    type: integer
+
+  DiscontinueType:
+    description: >
+      add_description_here
+    type: number
+
+  DispenseUnits:
+    description: >
+      add_description_here
+    type: number
+
+  DrugAllergyFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  DrugClass:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DrugClassification:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DrugInteractionAffectedMedication:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  DrugInteractionSeverity:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  DrugNameWithoutDose:
+    description: >
+      add_description_here
+    type: string
+
+  FillType:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  FinishingTime:
+    description: >
+      add_description_here
+    type: string
+
+  HeadNeckCancerFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  InstructionNumber:
+    description: >
+      add_description_here
+    type: number
+
+  IonizingRadiationFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  LocalDrugNameWithDose:
+    description: >
+      add_description_here
+    type: string
+
+  MailWindow:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  MaxRefills:
+    description: >
+      add_description_here
+    type: integer
+
+  MedRoute:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  MilitarySexualTraumaFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  NDC:
+    description: >
+      add_description_here
+    type: string
+
+  PartialPrescriptionFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  PatientStatus:
+    description: >
+      add_description_here
+    type: string
+
+  Qty:
+    description: >
+      add_description_here
+    type: number
+
+  QtyNumeric:
+    description: >
+      add_description_here
+    type: number
+
+  ReprintFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  RetransmitFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  RxOutpatFill_RxStatus:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  RxOutpatFillFillTime:
+    description: >
+      add_description_here
+    type: string
+
+  RxOutpatFillReleaseTime:
+    description: >
+      add_description_here
+    type: string
+
+  RxOutpatFillReturnedToStockTime:
+    description: >
+      add_description_here
+    type: string
+
+  RxOutpatFillValidatedTime:
+    description: >
+      add_description_here
+    type: string
+
+  RxStatus:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ServiceConnectedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Sig:
+    description: >
+      add_description_here
+    type: string
+
+  SWAsiaFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  UnderstoodFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Unit:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  UnitPrice:
+    description: >
+      add_description_here
+    type: number
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

@@ -1,0 +1,1719 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Oncology_Primary"
+title: Oncology Primary
+type: object
+namespace: https://vpodc.org/
+category: clinical_CDW
+program: '*'
+project: '*'
+description: >
+  Tumor-related data for Oncology patients. Data elements in this node uniquely define the tumor, the extent of disease, first course of treatment accorded, and all recurrence information.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: Oncology_Primary
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  Abdominalultrasound:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Abstractstatus:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Adjuvantchemotherapycol:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  AfipSubmission:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  AjccStagingBasis:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  AmbiguousterminologydX:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Androgendprvtntherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Antiegfrmoabtherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Apprchforbpsyofprmry:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  AutomaticStagingOverridden:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Bariumenema:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Biopsyofotherthanprimary:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Biopsyprocedure:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Bloodinsputumperpt:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Boneimaging:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Bonemarrowaspiration:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Boostdosecgy:
+    description: >
+      add_description_here
+    type: number
+
+  Boosttreatmentmodality:
+    description: >
+      add_description_here
+    type: number
+
+  Brachytherapy:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Bronchoscopy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Cancer1:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Cancer2:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Cancer3:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Cancer4:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Capprotocolreview:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Captext:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Casefindingsource:
+    description: >
+      add_description_here
+    type: number
+
+  Changeinbowelhabitsperpt:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Chemotherapeuticagent1:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Chemotherapeuticagent2:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Chemotherapeuticagent3:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Chemotherapeuticagent4:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Chemotherapeuticagent5:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Chemotherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ChemotherapyFac:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Chemotherapyrecommended:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Chestxray:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ClassCategory:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ClassofcaseX:
+    description: >
+      add_description_here
+    type: number
+
+  ClinicalM:
+    description: >
+      add_description_here
+    type: string
+
+  ClinicalN:
+    description: >
+      add_description_here
+    type: string
+
+  Clinicalriskfactors:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  ClinicalT:
+    description: >
+      add_description_here
+    type: string
+
+  Clinicaltrialsdiscussion:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ClintnmdocumentationpretX:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Colonoscopy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Csschemadiscriminator:
+    description: >
+      add_description_here
+    type: number
+
+  Ctofabdomenpelvis:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Ctscan:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Ctscanofchest:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Ctscanofneckthyroid:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  DaysFromAnchorDateToChemotherapyDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToChemotherapyFacDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToCltnmdocumentationdate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateadtinitiated:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatecasecompleted:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatecaseinitiated:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatecaselastchanged:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatechmthrpyrcmmndd:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatefirstsrgclprcdr:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatehospicecareinitiated:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatehspccnsltcmpltd:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatehspccnsltinttd:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateof1stPositiveBiopsy:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofbariumenema:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofbloodinsputumperpt:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofbronchoscopy:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofcancerconf:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofchangeinbowelhabits:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofchestXray:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofColonoscopy:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofconclusivedX:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofctofabdomenpelvis:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofctscan:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofdyspnea:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateoffever:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateoffirstcontact:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateOfFirstRecurrence:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateoffirstsymptoms:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateoffobt:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofincreasedcough:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofmediastinoscopy:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofmultipletumors:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofnightsweats:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofnotreatment:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofPetscan:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofsigmoidoscopy:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateofsurgeryconsult:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateonclgycnsltordrd:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateoncologyconsultdone:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateradiationended:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDatestartofworkupordered:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDateworkupstarted:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDiagnosisDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDredate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToFirstCourseOfTreatmentDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToHematransendcrnprocdate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToHormoneTherapyDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToHormoneTherapyFacDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToImmunotherapyDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToImmunotherapyFacDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToInpatientAdmissionDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToInpatientDischargeDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToMostdefinitivesurgDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToMostdefinitivesurgfacDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToOtherTreatmentFacilityDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToOtherTreatmentStartDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToPsadate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRadiationauxiliarydate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRadiationFacilityDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRadiationStartDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToRadiationTherapyToCnsDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToReportingdate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToScopeoflnsurgerydate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToScopeoflnsurgeryfacdate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToSurgDxstagingProcFacDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToSurgicalDxstagingProcDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToSurgprocothersitedate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToSurgprocothersitefacdate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToTreatmentguidelinedocdate:
+    description: >
+      add_description_here
+    type: integer
+
+  Depthoftumor:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Derivedss1977:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Derivedss2000:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DiagnosisTime:
+    description: >
+      add_description_here
+    type: string
+
+  DiagnosticConfirmation:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DiffuseRetinalInvolvement:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  DistantSite1:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DistantSite2:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DistantSite3:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Docfornoplatbasedchemo:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DRE:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Dyspnea:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Egfrmutation1:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Egfrmutation2:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Egfrmutationtesting:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Extension:
+    description: >
+      add_description_here
+    type: number
+
+  ExtensionCs:
+    description: >
+      add_description_here
+    type: number
+
+  Externalbeamradiation:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  FamilyHistory:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Fecaloccultbloodtestfobt:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Feebasis:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  FEVER:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Firstsitecode:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gaschemotherapeuticagent1:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gaschemotherapeuticagent2:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gaschemotherapeuticagent3:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomorbidcondition1:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomorbidcondition2:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomorbidcondition3:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomorbidcondition4:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomorbidcondition5:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomorbidcondition6:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomplication1:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomplication2:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomplication3:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomplication4:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gascomplication5:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gaspersonalhistothmalig:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Gleasonscoreclinical:
+    description: >
+      add_description_here
+    type: number
+
+  Gleasonscorepathologic:
+    description: >
+      add_description_here
+    type: number
+
+  Gradedifferentiation:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Gradepathsystem:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Gradepathvalue:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Guidance:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Hematransendocrineproc:
+    description: >
+      add_description_here
+    type: number
+
+  Histologyicdo2X:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Histologyicdo3X:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  HormoneTherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  HormoneTherapyFac:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ICDOSite:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Immunotherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ImmunotherapyFac:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ImmunotherapyhospitalX:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Increasedcough:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Infrasupra:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Inpatientoutpatientstatus:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Intentofchemotherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Intentofradiation:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Intentofsurgery:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  IrisciliaryBody:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Karnofskysratingdistrans:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  KarnofskysratingpriortotX:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Krnfskysratingrcrrnc:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lasttumorstatus:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Laterality:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Lesserpattern0240:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomorbidcondition1:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomorbidcondition2:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomorbidcondition3:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomorbidcondition4:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomorbidcondition5:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomorbidcondition6:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomplication1:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomplication2:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomplication3:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomplication4:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngcomplication5:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Lngpersonalhistothmalig:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  LocationofradiationtX:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  LymphNodes:
+    description: >
+      add_description_here
+    type: number
+
+  LymphNodesCs:
+    description: >
+      add_description_here
+    type: number
+
+  Lymphvascularinvasionl:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Mediastinoscopy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Metsatdxbone:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Metsatdxbrain:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  MetsAtDxCs:
+    description: >
+      add_description_here
+    type: number
+
+  Metsatdxliver:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Metsatdxlung:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  MetsEvalCs:
+    description: >
+      add_description_here
+    type: number
+
+  Mripelvisabdomen:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  MultimodalityTherapy:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  MultimodalityTherapyClin:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  MultipleTumors:
+    description: >
+      add_description_here
+    type: number
+
+  Multiplicitycounter:
+    description: >
+      add_description_here
+    type: number
+
+  Multtumrptasoneprim:
+    description: >
+      add_description_here
+    type: number
+
+  Neoadjuvanttherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Nightsweats:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Nonadtchemotherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Nslcstage13pathlnstaging:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Numberoflnremovedfacr:
+    description: >
+      add_description_here
+    type: number
+
+  Numberoflnremovedr:
+    description: >
+      add_description_here
+    type: number
+
+  Oncologyreferral:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Othercancer:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Otherm:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Othern:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Otherstagegroup:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Otherstagingsystem:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Othert:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  OtherTreatment:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  OtherTreatmentFac:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  OthertypeoffirstrecurrenceX:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Painassessment:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Palliativecare:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Palliativecarefac:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Palpabilityofprimary:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Papillaryfollicular:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Pathologicfracture:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Pathologicm:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PathologicN:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Pathologicriskfactors:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Pathologicsizeoftumor:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  PathologicT:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PerformanceStatus:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  PerformancestatusatdX:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PeripheralBloodInvolvement:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Perirectallninvolvement:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Petscan:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PhysiciansStage:
+    description: >
+      add_description_here
+    type: string
+
+  Predominantpattern0240:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Preopobstructinglesion:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Presenceofmultipletumors:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Presentationatcancerconf:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PrimarySiteCodePrefiX:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  PrimarysiteX:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Radiation:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Radiationauxiliaryvolume:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Radiationcompletionstatus:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  RadiationFacility:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  RadiationsurgerySequence:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  RadiationTherapyToCns:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  RadiationtherapytocnshospX:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Radiationtreatmentvolume:
+    description: >
+      add_description_here
+    type: number
+
+  Rdtnlocalcntrlstatus:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  ReadmissionWi30Dayssurg:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Reasonchemotherapystopped:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ReasonForNoChemotherapy:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  ReasonForNoHormoneTherapy:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Reasonfornolnbiopsy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ReasonForNoRadiation:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Reasonhrmnthrpystppd:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Reasonnosurgeryofprimary:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Reasonradiationstopped:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Reconstructionrestoration:
+    description: >
+      add_description_here
+    type: number
+
+  Referraltosupportservices:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Regionaldosecgy:
+    description: >
+      add_description_here
+    type: number
+
+  RegionalLymphNodesExamined:
+    description: >
+      add_description_here
+    type: number
+
+  RegionalLymphNodesPositive:
+    description: >
+      add_description_here
+    type: number
+
+  Regionaltreatmentmodality:
+    description: >
+      add_description_here
+    type: number
+
+  RegNodesEvalCs:
+    description: >
+      add_description_here
+    type: number
+
+  Riskofrecurrence:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Scopeoflnsurgeryf:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Scopeoflnsurgeryfacf:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Scopeoflnsurgeryfacr:
+    description: >
+      add_description_here
+    type: number
+
+  Scopeoflnsurgeryr:
+    description: >
+      add_description_here
+    type: number
+
+  Screeningresult:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Secondsitecode:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  SeerSummaryStage2000:
+    description: >
+      add_description_here
+    type: string
+
+  Sentinelnodesexaminedbr98:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Sentinelnodespositivebr98:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  SequenceNumber:
+    description: >
+      add_description_here
+    type: integer
+
+  Serumtumormarkers:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Sigmoidoscopy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  SitegpX:
+    description: >
+      add_description_here
+    type: string
+
+  SiteOfDistantMetastasis1:
+    description: >
+      add_description_here
+    type: string
+
+  SiteOfDistantMetastasis2:
+    description: >
+      add_description_here
+    type: string
+
+  SiteOfDistantMetastasis3:
+    description: >
+      add_description_here
+    type: string
+
+  SitespecificFactor1Cs:
+    description: >
+      add_description_here
+    type: number
+
+  Sizeoftumormelanoma:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Smokinghistory:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Sporadicpolyps:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Stagedbyotherstage:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Stagedbypathologicstage:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Stagegroupbest:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Stagegroupclinical:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  StageGroupingajcc:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Stagegrouppathologic:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Subsite:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  SurgDxstagingProcFac:
+    description: >
+      add_description_here
+    type: number
+
+  SurgeryOfPrimaryF:
+    description: >
+      add_description_here
+    type: number
+
+  SurgeryOfPrimaryFacF:
+    description: >
+      add_description_here
+    type: number
+
+  SurgicalMargins:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Surgprocothersitef:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Surgprocothersitefacf:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Surgprocothersitefacr:
+    description: >
+      add_description_here
+    type: number
+
+  Surgprocothersiter:
+    description: >
+      add_description_here
+    type: number
+
+  Systemicsurgerysequence:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Texthistologytitle:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Textprimarysitetitle:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Treatmentabbreviated:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Treatmentguideline1:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Treatmentguideline2:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Treatmentguideline3:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  TumorSize:
+    description: >
+      add_description_here
+    type: number
+
+  TumorSizeCs:
+    description: >
+      add_description_here
+    type: number
+
+  TumorSizeextEvalCs:
+    description: >
+      add_description_here
+    type: number
+
+  Tumorsizesource:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Typeofchemotherapy:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  TypeoffirstrecurrenceX:
+    description: >
+      add_description_here
+    type: number
+
+  TypeofreportingsourceX:
+    description: >
+      add_description_here
+    type: number
+
+  Typeofstagingsystemped:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Ulcerativecolitisuc:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Upperlower:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  Venousinvasionv:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Weightlossperpt:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  Whohistologicalcl:
+    description: >
+      add_description_here_all_null
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

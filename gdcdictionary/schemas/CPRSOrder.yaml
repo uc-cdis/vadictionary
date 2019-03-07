@@ -1,0 +1,279 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "CPRSOrder"
+title: CPRS Order
+type: object
+namespace: https://vpodc.org/
+category: clinical_CDW
+program: '*'
+project: '*'
+description: >
+  The Computerized Patient Record System (CPRS) domain stores information about a given order. Information on the type of order (whether it is related to medications, labs, consults, dietary, or activities) is available. In addition, this domain includes a timestamp of events related to the order which includes status changes, signatory authorities, other related orders/checks, and other components related to the staff or service who requested the order.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: CPRSOrder
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AbnormalResultsFlag:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  CompletedTime:
+    description: >
+      add_description_here
+    type: string
+
+  DaysFromAnchorDateToCompletedDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToDiscontinuedDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToEnteredDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToLapsedDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToLastActivityDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToOrderStartDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToOrderStoptDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToPatientAppointmentDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToResultsDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromDx2Order:
+    description: >
+      add_description_here
+    type: integer
+
+  DiscontinuedNatureOfOrderName:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DiscontinuedOrderReason:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  DiscontinuedTime:
+    description: >
+      add_description_here
+    type: string
+
+  DisplayGroupName:
+    description: >
+      add_description_here
+    type: string
+
+  EnteredTime:
+    description: >
+      add_description_here
+    type: string
+
+  Findings:
+    description: >
+      add_description_here
+    type: string
+
+  GraceDaysBeforePurge:
+    description: >
+      add_description_here
+    type: number
+
+  ImagingType:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  InPatientFlag:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  IVAdditiveFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  IVBaseFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  LapsedTime:
+    description: >
+      add_description_here
+    type: string
+
+  LastActivityTime:
+    description: >
+      add_description_here
+    type: string
+
+  LocationType:
+    description: >
+      add_description_here
+    type: string
+
+  MedicalService:
+    description: >
+      add_description_here
+    type: string
+
+  NonFormularyFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  NonVAMedsFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  OrderableItemCode:
+    description: >
+      add_description_here
+    type: number
+
+  OrderableItemCodeSource:
+    description: >
+      add_description_here
+    type: string
+
+  OrderableItemDisplayGroupName:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  OrderableItemName:
+    description: >
+      add_description_here
+    type: string
+
+  OrderStartTime:
+    description: >
+      add_description_here
+    type: string
+
+  OrderStatus:
+    description: >
+      add_description_here
+    type: string
+
+  OrderStopTime:
+    description: >
+      add_description_here
+    type: string
+
+  OrderType:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  OutpatientMedFlag:
+    description: >
+      add_description_here_boolean_as_string
+    type: string
+
+  PackageName:
+    description: >
+      add_description_here
+    type: string
+
+  PatientAppointmentTime:
+    description: >
+      add_description_here
+    type: string
+
+  ResultsTime:
+    description: >
+      add_description_here
+    type: string
+
+  SignatureRequired:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  Sta3n:
+    description: >
+      add_description_here
+    type: integer
+
+  TreatingSpecialtyName:
+    description: >
+      add_description_here
+    type: string
+
+  VeiledFlag:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  VistaPackage:
+    description: >
+      add_description_here
+    type: string
+
+  VistaPackageShortDesc:
+    description: >
+      add_description_here
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

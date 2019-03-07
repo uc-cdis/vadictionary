@@ -1,0 +1,259 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "BCMAMedicationLog"
+title: BCMA Medication Log
+type: object
+namespace: https://vpodc.org/
+category: clinical_CDW
+program: '*'
+project: '*'
+description: >
+  Barcode Medication Administration (BCMA) log for a patient.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: BCMAMedicationLog
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  ActionStatus:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  ActionTime:
+    description: >
+      add_description_here
+    type: string
+
+  BCMADispensedDrugIssueTime:
+    description: >
+      add_description_here
+    type: string
+
+  DayOrDoseLimit:
+    description: >
+      add_description_here
+    type: string
+
+  DaysFromAnchorDateToActionDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToBCMADispensedDrugIssueDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToEnteredDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToInactiveDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToPRNEffectivenessEnteredDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DaysFromAnchorDateToScheduledAdministrationDate:
+    description: >
+      add_description_here
+    type: integer
+
+  DosageForm:
+    description: >
+      add_description_here
+    type: string
+
+  DosesGiven:
+    description: >
+      add_description_here
+    type: number
+
+  DosesOrdered:
+    description: >
+      add_description_here
+    type: number
+
+  DrugClass:
+    description: >
+      add_description_here
+    type: string
+
+  DrugClassification:
+    description: >
+      add_description_here
+    type: string
+
+  DrugNameWithoutDose:
+    description: >
+      add_description_here
+    type: string
+
+  EnteredTime:
+    description: >
+      add_description_here
+    type: string
+
+  FormularyStatusFlag:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  HighRiskHighAlertMedication:
+    description: >
+      add_description_here
+    type: number
+
+  ImmunizationName:
+    description: >
+      add_description_here
+    type: string
+
+  InfusionRate:
+    description: >
+      add_description_here
+    type: number
+
+  InjectionSite:
+    description: >
+      add_description_here
+    type: string
+
+  IVFlag:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  LocalDrugNameWithDose:
+    description: >
+      add_description_here
+    type: string
+
+  MedicationRoute:
+    description: >
+      add_description_here
+    type: string
+
+  NonVAMedFlag:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  OrderAdministrationVariance:
+    description: >
+      add_description_here
+    type: number
+
+  OrderDosage:
+    description: >
+      add_description_here
+    type: string
+
+  OrderReferenceNumber:
+    description: >
+      add_description_here
+    type: string
+
+  OrderSchedule:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  OtherLanguageInstructions:
+    description: >
+      add_description_here
+    type: string
+
+  PharmacyOrderableItem:
+    description: >
+      add_description_here
+    type: string
+
+  PharmacyOrderableItemSchedule:
+    description: >
+      add_description_here
+    type: string
+
+  PRNEffectivenessEnteredTime:
+    description: >
+      add_description_here
+    type: string
+
+  PRNEffectivenessMinutes:
+    description: >
+      add_description_here
+    type: number
+
+  PRNReason:
+    description: >
+      add_description_here
+    type: string
+
+  PRNReasonNumber:
+    description: >
+      add_description_here
+    type: number
+
+  ScheduledAdministrationTime:
+    description: >
+      add_description_here
+    type: string
+
+  ScheduleType:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  SupplyFlag:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  WitnessDateTime:
+    description: >
+      add_description_here
+    type: string
+
+  WitnessFlag:
+    description: >
+      add_description_here_enum_as_string
+    type: string
+
+  WitnessHighRiskAlertStatus:
+    description: >
+      add_description_here
+    type: number
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"
