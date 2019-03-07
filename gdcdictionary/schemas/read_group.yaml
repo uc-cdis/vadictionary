@@ -222,6 +222,7 @@ properties:
     type: string
 
   read_length:
+    description: "Length of the reads"
     type: integer
 
   RIN:
