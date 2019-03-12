@@ -1,0 +1,269 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "BCMAMedicationLog"
+title: BCMA Medication Log
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  Barcode Medication Administration (BCMA) log for a patient.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: BCMAMedicationLogs
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  ActionStatus:
+    description: >
+      ActionStatus
+    type: string
+
+  ActionTime:
+    description: >
+      ActionTime
+    type: string
+
+  BCMADispensedDrugIssueTime:
+    description: >
+      BCMADispensedDrugIssueTime
+    type: string
+
+  DayOrDoseLimit:
+    description: >
+      DayOrDoseLimit
+    type: string
+
+  DaysFromAnchorDateToActionDate:
+    description: >
+      DaysFromAnchorDateToActionDate
+    type: integer
+
+  DaysFromAnchorDateToBCMADispensedDrugIssueDate:
+    description: >
+      DaysFromAnchorDateToBCMADispensedDrugIssueDate
+    type: integer
+
+  DaysFromAnchorDateToEnteredDate:
+    description: >
+      DaysFromAnchorDateToEnteredDate
+    type: integer
+
+  DaysFromAnchorDateToInactiveDate:
+    description: >
+      DaysFromAnchorDateToInactiveDate
+    type: integer
+
+  DaysFromAnchorDateToPRNEffectivenessEnteredDate:
+    description: >
+      DaysFromAnchorDateToPRNEffectivenessEnteredDate
+    type: integer
+
+  DaysFromAnchorDateToScheduledAdministrationDate:
+    description: >
+      DaysFromAnchorDateToScheduledAdministrationDate
+    type: integer
+
+  DaysFromAnchorDateToWitnessDate:
+    description: >
+      DaysFromAnchorDateToWitnessDate
+    type: integer
+
+  DosageForm:
+    description: >
+      DosageForm
+    type: string
+
+  DosesGiven:
+    description: >
+      DosesGiven
+    type: number
+
+  DosesOrdered:
+    description: >
+      DosesOrdered
+    type: number
+
+  DrugClass:
+    description: >
+      DrugClass
+    type: string
+
+  DrugClassification:
+    description: >
+      DrugClassification
+    type: string
+
+  DrugNameWithoutDose:
+    description: >
+      DrugNameWithoutDose
+    type: string
+
+  EnteredTime:
+    description: >
+      EnteredTime
+    type: string
+
+  FormularyStatusFlag:
+    description: >
+      FormularyStatusFlag
+    type: string
+
+  HighRiskHighAlertMedication:
+    description: >
+      HighRiskHighAlertMedication
+    type: number
+
+  ImmunizationName:
+    description: >
+      ImmunizationName
+    type: string
+
+  InfusionRate:
+    description: >
+      InfusionRate
+    type: number
+
+  InjectionSite:
+    description: >
+      InjectionSite
+    type: string
+
+  IVFlag:
+    description: >
+      IVFlag
+    type: string
+
+  LocalDrugNameWithDose:
+    description: >
+      LocalDrugNameWithDose
+    type: string
+
+  MedicationRoute:
+    description: >
+      MedicationRoute
+    type: string
+
+  NonVAMedFlag:
+    description: >
+      NonVAMedFlag
+    type: string
+
+  OrderAdministrationVariance:
+    description: >
+      OrderAdministrationVariance
+    type: number
+
+  OrderDosage:
+    description: >
+      OrderDosage
+    type: string
+
+  OrderReferenceNumber:
+    description: >
+      OrderReferenceNumber
+    type: string
+
+  OrderSchedule:
+    description: >
+      OrderSchedule
+    type: string
+
+  OtherLanguageInstructions:
+    description: >
+      OtherLanguageInstructions
+    type: string
+
+  PharmacyOrderableItem:
+    description: >
+      PharmacyOrderableItem
+    type: string
+
+  PharmacyOrderableItemSchedule:
+    description: >
+      PharmacyOrderableItemSchedule
+    type: string
+
+  PRNEffectivenessEnteredTime:
+    description: >
+      PRNEffectivenessEnteredTime
+    type: string
+
+  PRNEffectivenessMinutes:
+    description: >
+      PRNEffectivenessMinutes
+    type: number
+
+  PRNReason:
+    description: >
+      PRNReason
+    type: string
+
+  PRNReasonNumber:
+    description: >
+      PRNReasonNumber
+    type: number
+
+  ScheduledAdministrationTime:
+    description: >
+      ScheduledAdministrationTime
+    type: string
+
+  ScheduleType:
+    description: >
+      ScheduleType
+    type: string
+
+  SupplyFlag:
+    description: >
+      SupplyFlag
+    type: string
+
+  WitnessDateTime:
+    description: >
+      WitnessDateTime
+    type: string
+
+  WitnessFlag:
+    description: >
+      WitnessFlag
+    type: string
+
+  WitnessHighRiskAlertStatus:
+    description: >
+      WitnessHighRiskAlertStatus
+    type: number
+
+  WitnessTime:
+    description: >
+      WitnessTime
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

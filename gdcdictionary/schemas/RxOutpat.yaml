@@ -1,0 +1,374 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "RxOutpat"
+title: Rx Outpat
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  Outpatient pharmacy data including prescription, refills, dosage, units and instructions to patients on taking medications. 
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: RxOutpats
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AgentOrangeFlag:
+    description: >
+      AgentOrangeFlag
+    type: string
+
+  ArchivedFlag:
+    description: >
+      ArchivedFlag
+    type: string
+
+  BingoWaitTime:
+    description: >
+      BingoWaitTime
+    type: number
+
+  CMOPFlag:
+    description: >
+      CMOPFlag
+    type: string
+
+  CMOPStatus:
+    description: >
+      CMOPStatus
+    type: number
+
+  CombatVeteranFlag:
+    description: >
+      CombatVeteranFlag
+    type: string
+
+  CopayTransaction:
+    description: >
+      CopayTransaction
+    type: string
+
+  CounseledFlag:
+    description: >
+      CounseledFlag
+    type: string
+
+  DAWCode:
+    description: >
+      DAWCode
+    type: number
+
+  DaysFromAnchorDateToCancelDate:
+    description: >
+      DaysFromAnchorDateToCancelDate
+    type: integer
+
+  DaysFromAnchorDateToFinishingDate:
+    description: >
+      DaysFromAnchorDateToFinishingDate
+    type: integer
+
+  DaysFromAnchorDateToHoldDate:
+    description: >
+      DaysFromAnchorDateToHoldDate
+    type: integer
+
+  DaysFromAnchorDateToIssueDate:
+    description: >
+      DaysFromAnchorDateToIssueDate
+    type: integer
+
+  DaysFromAnchorDateToLastDispensedDate:
+    description: >
+      DaysFromAnchorDateToLastDispensedDate
+    type: integer
+
+  DaysFromAnchorDateToNextPossibleFillDate:
+    description: >
+      DaysFromAnchorDateToNextPossibleFillDate
+    type: integer
+
+  DaysFromAnchorDateToPriorFillDate:
+    description: >
+      DaysFromAnchorDateToPriorFillDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillDispensedDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillDispensedDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillExpirationDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillExpirationDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillFillDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillFillDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillIssueDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillIssueDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillLoginDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillLoginDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillReleaseDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillReleaseDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillReturnedToStockDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillReturnedToStockDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatFillValidatedDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatFillValidatedDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate
+    type: integer
+
+  DaysFromAnchorDateToRxOutpatSigIssueDate:
+    description: >
+      DaysFromAnchorDateToRxOutpatSigIssueDate
+    type: integer
+
+  DaysSupply:
+    description: >
+      DaysSupply
+    type: integer
+
+  DiscontinueType:
+    description: >
+      DiscontinueType
+    type: number
+
+  DispenseUnits:
+    description: >
+      DispenseUnits
+    type: number
+
+  DrugAllergyFlag:
+    description: >
+      DrugAllergyFlag
+    type: string
+
+  DrugClass:
+    description: >
+      DrugClass
+    type: string
+
+  DrugClassification:
+    description: >
+      DrugClassification
+    type: string
+
+  DrugInteractionAffectedMedication:
+    description: >
+      DrugInteractionAffectedMedication
+    type: string
+
+  DrugInteractionSeverity:
+    description: >
+      DrugInteractionSeverity
+    type: string
+
+  DrugNameWithoutDose:
+    description: >
+      DrugNameWithoutDose
+    type: string
+
+  FillType:
+    description: >
+      FillType
+    type: string
+
+  FinishingTime:
+    description: >
+      FinishingTime
+    type: string
+
+  HeadNeckCancerFlag:
+    description: >
+      HeadNeckCancerFlag
+    type: string
+
+  InstructionNumber:
+    description: >
+      InstructionNumber
+    type: number
+
+  IonizingRadiationFlag:
+    description: >
+      IonizingRadiationFlag
+    type: string
+
+  LocalDrugNameWithDose:
+    description: >
+      LocalDrugNameWithDose
+    type: string
+
+  MailWindow:
+    description: >
+      MailWindow
+    type: string
+
+  MaxRefills:
+    description: >
+      MaxRefills
+    type: integer
+
+  MedRoute:
+    description: >
+      MedRoute
+    type: string
+
+  MilitarySexualTraumaFlag:
+    description: >
+      MilitarySexualTraumaFlag
+    type: string
+
+  NDC:
+    description: >
+      NDC
+    type: string
+
+  PartialPrescriptionFlag:
+    description: >
+      PartialPrescriptionFlag
+    type: string
+
+  PatientStatus:
+    description: >
+      PatientStatus
+    type: string
+
+  Qty:
+    description: >
+      Qty
+    type: number
+
+  QtyNumeric:
+    description: >
+      QtyNumeric
+    type: number
+
+  ReprintFlag:
+    description: >
+      ReprintFlag
+    type: string
+
+  RetransmitFlag:
+    description: >
+      RetransmitFlag
+    type: string
+
+  RxOutpatFill_RxStatus:
+    description: >
+      RxOutpatFill_RxStatus
+    type: string
+
+  RxOutpatFillFillTime:
+    description: >
+      RxOutpatFillFillTime
+    type: string
+
+  RxOutpatFillReleaseTime:
+    description: >
+      RxOutpatFillReleaseTime
+    type: string
+
+  RxOutpatFillReturnedToStockTime:
+    description: >
+      RxOutpatFillReturnedToStockTime
+    type: string
+
+  RxOutpatFillValidatedTime:
+    description: >
+      RxOutpatFillValidatedTime
+    type: string
+
+  RxStatus:
+    description: >
+      RxStatus
+    type: string
+
+  ServiceConnectedFlag:
+    description: >
+      ServiceConnectedFlag
+    type: string
+
+  Sig:
+    description: >
+      Sig
+    type: string
+
+  SWAsiaFlag:
+    description: >
+      SWAsiaFlag
+    type: string
+
+  TradeLabelName:
+    description: >
+      TradeLabelName
+    type: string
+
+  UnderstoodFlag:
+    description: >
+      UnderstoodFlag
+    type: string
+
+  Unit:
+    description: >
+      Unit
+    type: string
+
+  UnitPrice:
+    description: >
+      UnitPrice
+    type: number
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

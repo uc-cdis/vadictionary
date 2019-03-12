@@ -1,0 +1,129 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Outpat_VProcedureDiagnosis"
+title: Outpat VProcedureDiagnosis
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  Outpat VProcedureDiagnosis
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: Outpat_VProcedureDiagnoses
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  Chicago_VisitSID:
+    description: >
+      Chicago_VisitSID
+    type: string
+
+  CPTCategory:
+    description: >
+      CPTCategory
+    type: string
+
+  CPTCode:
+    description: >
+      CPTCode
+    type: string
+
+  CPTDescription:
+    description: >
+      CPTDescription
+    type: string
+
+  CPTName:
+    description: >
+      CPTName
+    type: string
+
+  DaysFromAnchorDateToEventDate:
+    description: >
+      DaysFromAnchorDateToEventDate
+    type: integer
+
+  DaysFromAnchorDateToVisitDate:
+    description: >
+      DaysFromAnchorDateToVisitDate
+    type: integer
+
+  DaysFromAnchorDateToVProcedureDate:
+    description: >
+      DaysFromAnchorDateToVProcedureDate
+    type: integer
+
+  EventTime:
+    description: >
+      EventTime
+    type: string
+
+  ICD10Code:
+    description: >
+      ICD10Code
+    type: string
+
+  ICD10Description:
+    description: >
+      ICD10Description
+    type: string
+
+  ICD9Code:
+    description: >
+      ICD9Code
+    type: string
+
+  ICD9Description:
+    description: >
+      ICD9Description
+    type: string
+
+  MajorCPTCategory:
+    description: >
+      MajorCPTCategory
+    type: string
+
+  OrdinalNumber:
+    description: >
+      OrdinalNumber
+    type: integer
+
+  VisitTime:
+    description: >
+      VisitTime
+    type: string
+
+  VProcedureTime:
+    description: >
+      VProcedureTime
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

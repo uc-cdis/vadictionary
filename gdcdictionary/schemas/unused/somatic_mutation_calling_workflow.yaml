@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "somatic_mutation_calling_workflow"
 title: Somatic Mutation Calling Workflow
 type: object
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: analysis
 program: '*'
 project: '*'

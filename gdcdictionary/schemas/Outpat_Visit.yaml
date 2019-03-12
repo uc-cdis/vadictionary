@@ -1,0 +1,219 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "Outpat_Visit"
+title: Outpat Visit
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  Outpat Visit
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: Outpat_Visits
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AgentOrangeFlag:
+    description: >
+      AgentOrangeFlag
+    type: string
+
+  AppointmentStatus:
+    description: >
+      AppointmentStatus
+    type: string
+
+  AppointmentType:
+    description: >
+      AppointmentType
+    type: string
+
+  CheckOutTime:
+    description: >
+      CheckOutTime
+    type: string
+
+  Chicago_VisitSID:
+    description: >
+      Chicago_VisitSID
+    type: string
+
+  COProcessCompleteTime:
+    description: >
+      COProcessCompleteTime
+    type: string
+
+  DaysFromAnchorDateToCheckOutDate:
+    description: >
+      DaysFromAnchorDateToCheckOutDate
+    type: integer
+
+  DaysFromAnchorDateToCOProcessCompleteDate:
+    description: >
+      DaysFromAnchorDateToCOProcessCompleteDate
+    type: integer
+
+  DaysFromAnchorDateToEncounterCreatedDate:
+    description: >
+      DaysFromAnchorDateToEncounterCreatedDate
+    type: integer
+
+  DaysFromAnchorDateToEncounterDate:
+    description: >
+      DaysFromAnchorDateToEncounterDate
+    type: integer
+
+  DaysFromAnchorDateToVisitCreatedDate:
+    description: >
+      DaysFromAnchorDateToVisitCreatedDate
+    type: integer
+
+  DaysFromAnchorDateToVisitDate:
+    description: >
+      DaysFromAnchorDateToVisitDate
+    type: integer
+
+  DiagnosisCount:
+    description: >
+      DiagnosisCount
+    type: number
+
+  EncounterComputerGeneratedFlag:
+    description: >
+      EncounterComputerGeneratedFlag
+    type: string
+
+  EncounterCreatedTime:
+    description: >
+      EncounterCreatedTime
+    type: string
+
+  EncounterTime:
+    description: >
+      EncounterTime
+    type: string
+
+  EncounterType:
+    description: >
+      EncounterType
+    type: string
+
+  HeadNeckCancerFlag:
+    description: >
+      HeadNeckCancerFlag
+    type: string
+
+  IonizingRadiationFlag:
+    description: >
+      IonizingRadiationFlag
+    type: string
+
+  NoncountClinicFlag:
+    description: >
+      NoncountClinicFlag
+    type: string
+
+  OriginatingProcessType:
+    description: >
+      OriginatingProcessType
+    type: string
+
+  PatientAgentOrangeFlag:
+    description: >
+      PatientAgentOrangeFlag
+    type: string
+
+  PatientIonizingRadiationCode:
+    description: >
+      PatientIonizingRadiationCode
+    type: string
+
+  PatientNoseThroatRadiumExposureFlag:
+    description: >
+      PatientNoseThroatRadiumExposureFlag
+    type: string
+
+  PatientShipboardHazardDefenseFlag:
+    description: >
+      PatientShipboardHazardDefenseFlag
+    type: string
+
+  PatientStatusInOut:
+    description: >
+      PatientStatusInOut
+    type: number
+
+  PrimaryStopCodeName:
+    description: >
+      PrimaryStopCodeName
+    type: string
+
+  ProcedureCount:
+    description: >
+      ProcedureCount
+    type: integer
+
+  ProviderCount:
+    description: >
+      ProviderCount
+    type: integer
+
+  SecondaryStopCodeName:
+    description: >
+      SecondaryStopCodeName
+    type: string
+
+  ServiceCategory:
+    description: >
+      ServiceCategory
+    type: string
+
+  ShipboardHazardDefenseFlag:
+    description: >
+      ShipboardHazardDefenseFlag
+    type: string
+
+  VisitCreatedTime:
+    description: >
+      VisitCreatedTime
+    type: string
+
+  VisitDependentEntryCount:
+    description: >
+      VisitDependentEntryCount
+    type: integer
+
+  VisitTime:
+    description: >
+      VisitTime
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

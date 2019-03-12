@@ -1,0 +1,329 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "SurgeryPOST"
+title: Surgery POST
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  SurgeryPOST contains post-case data, provider notes, indications for operations, and information on surgically implanted prosthetics.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: SurgeryPOSTs
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AdmitPACUTime:
+    description: >
+      AdmitPACUTime
+    type: string
+
+  CPTOnNurseReportFlag:
+    description: >
+      CPTOnNurseReportFlag
+    type: string
+
+  CurrentAdmissionCumulativeOperations:
+    description: >
+      CurrentAdmissionCumulativeOperations
+    type: string
+
+  DaysFromAnchorDateToAdmitPACUDate:
+    description: >
+      DaysFromAnchorDateToAdmitPACUDate
+    type: integer
+
+  DaysFromAnchorDateToDeathDate:
+    description: >
+      DaysFromAnchorDateToDeathDate
+    type: integer
+
+  DaysFromAnchorDateToDictationDate:
+    description: >
+      DaysFromAnchorDateToDictationDate
+    type: integer
+
+  DaysFromAnchorDateToDischargeDate:
+    description: >
+      DaysFromAnchorDateToDischargeDate
+    type: integer
+
+  DaysFromAnchorDateToDischargePACUDate:
+    description: >
+      DaysFromAnchorDateToDischargePACUDate
+    type: integer
+
+  DaysFromAnchorDateToObservationAdmissionDate:
+    description: >
+      DaysFromAnchorDateToObservationAdmissionDate
+    type: integer
+
+  DaysFromAnchorDateToObservationDischargeDate:
+    description: >
+      DaysFromAnchorDateToObservationDischargeDate
+    type: integer
+
+  DaysFromAnchorDateToPostOpAnesthesiaNoteDate:
+    description: >
+      DaysFromAnchorDateToPostOpAnesthesiaNoteDate
+    type: integer
+
+  DaysFromAnchorDateToProcedureDate:
+    description: >
+      DaysFromAnchorDateToProcedureDate
+    type: integer
+
+  DaysFromAnchorDateToSterilityExpirationDate:
+    description: >
+      DaysFromAnchorDateToSterilityExpirationDate
+    type: integer
+
+  DaysFromAnchorDateToSurgeryDate:
+    description: >
+      DaysFromAnchorDateToSurgeryDate
+    type: integer
+
+  DaysFromAnchorDateToTranscriptionDate:
+    description: >
+      DaysFromAnchorDateToTranscriptionDate
+    type: integer
+
+  Death30DaysFlag:
+    description: >
+      Death30DaysFlag
+    type: string
+
+  DeviceQuantity:
+    description: >
+      DeviceQuantity
+    type: number
+
+  DictatedSummaryFlag:
+    description: >
+      DictatedSummaryFlag
+    type: string
+
+  DictationTime:
+    description: >
+      DictationTime
+    type: string
+
+  DischargePACUTime:
+    description: >
+      DischargePACUTime
+    type: string
+
+  DischargeSurgeryTransportDevice:
+    description: >
+      DischargeSurgeryTransportDevice
+    type: string
+
+  DischargeSurgeryTransportDeviceCode:
+    description: >
+      DischargeSurgeryTransportDeviceCode
+    type: string
+
+  DressingCondition:
+    description: >
+      DressingCondition
+    type: string
+
+  DynamedNotifiedFlag:
+    description: >
+      DynamedNotifiedFlag
+    type: number
+
+  EndBP:
+    description: >
+      EndBP
+    type: string
+
+  EndPulse:
+    description: >
+      EndPulse
+    type: string
+
+  EndRespirationRate:
+    description: >
+      EndRespirationRate
+    type: string
+
+  EventCaptureSpecialty:
+    description: >
+      EventCaptureSpecialty
+    type: string
+
+  ICDOnNurseReportFlag:
+    description: >
+      ICDOnNurseReportFlag
+    type: string
+
+  ImplantSterilityCheckedFlag:
+    description: >
+      ImplantSterilityCheckedFlag
+    type: string
+
+  LocalSurgicalSpecialty:
+    description: >
+      LocalSurgicalSpecialty
+    type: string
+
+  LockCase:
+    description: >
+      LockCase
+    type: number
+
+  NonORProcedureFlag:
+    description: >
+      NonORProcedureFlag
+    type: string
+
+  OccurenceNoProcedureFlag:
+    description: >
+      OccurenceNoProcedureFlag
+    type: string
+
+  OPSurgeryDisposition:
+    description: >
+      OPSurgeryDisposition
+    type: string
+
+  OPSurgeryDispositionCode:
+    description: >
+      OPSurgeryDispositionCode
+    type: string
+
+  PACUAdmitScore:
+    description: >
+      PACUAdmitScore
+    type: number
+
+  PACUDischargeScore:
+    description: >
+      PACUDischargeScore
+    type: number
+
+  PACUSurgeryDisposition:
+    description: >
+      PACUSurgeryDisposition
+    type: string
+
+  PACUSurgeryDispositionCode:
+    description: >
+      PACUSurgeryDispositionCode
+    type: string
+
+  PostOpAnesthesiaNoteTime:
+    description: >
+      PostOpAnesthesiaNoteTime
+    type: string
+
+  PostOpAttendingConcurFlag:
+    description: >
+      PostOpAttendingConcurFlag
+    type: string
+
+  PostOpBP:
+    description: >
+      PostOpBP
+    type: string
+
+  PostOpPatientConsciousness:
+    description: >
+      PostOpPatientConsciousness
+    type: string
+
+  PostOpPatientMood:
+    description: >
+      PostOpPatientMood
+    type: string
+
+  PostOpPatientMoodCode:
+    description: >
+      PostOpPatientMoodCode
+    type: string
+
+  PostOpPulse:
+    description: >
+      PostOpPulse
+    type: string
+
+  PostOpRespiratoryRate:
+    description: >
+      PostOpRespiratoryRate
+    type: string
+
+  PostOpSkinColor:
+    description: >
+      PostOpSkinColor
+    type: string
+
+  PostOpSkinIntegrity:
+    description: >
+      PostOpSkinIntegrity
+    type: string
+
+  PostOpSkinIntegrityCode:
+    description: >
+      PostOpSkinIntegrityCode
+    type: string
+
+  PreAdmitTestingFlag:
+    description: >
+      PreAdmitTestingFlag
+    type: string
+
+  ProcedureTime:
+    description: >
+      ProcedureTime
+    type: string
+
+  ProsthesisName:
+    description: >
+      ProsthesisName
+    type: string
+
+  SurgeryTime:
+    description: >
+      SurgeryTime
+    type: string
+
+  TranscriptionTime:
+    description: >
+      TranscriptionTime
+    type: string
+
+  WoundOccurrences:
+    description: >
+      WoundOccurrences
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

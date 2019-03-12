@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "annotated_somatic_mutation"
 title: Annotated Somatic Mutation
 type: object
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: data_file
 program: '*'
 project: '*'
@@ -39,10 +39,10 @@ links:
         target_type: aligned_reads_file
         multiplicity: one_to_many
         required: false
-      - name: submitted_unaligned_reads_files
+      - name: unaligned_reads_files
         backref: annotated_somatic_mutations
         label: data_from
-        target_type: submitted_unaligned_reads
+        target_type: unaligned_reads_file
         multiplicity: one_to_many
         required: false
 

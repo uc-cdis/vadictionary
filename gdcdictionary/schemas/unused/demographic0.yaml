@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "demographic"
 title: Demographic
 type: object
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: clinical
 program: '*'
 project: '*'
@@ -37,10 +37,6 @@ required:
 #  - gender
 #  - race
 
-preferred:
-  - days_to_birth
-  - year_of_death
-
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
@@ -51,9 +47,7 @@ properties:
   age_at_index:
     term:
       $ref: "_terms.yaml#/age_at_index"
-    type:
-      - integer
-      - "null"
+    type: integer
     maximum: 89
     minimum: 0
 
@@ -63,19 +57,6 @@ properties:
     enum:
       - "Yes"
       - "No"
-
-  cause_of_death:
-    term:
-      $ref: "_terms.yaml#/cause_of_death"
-    enum:
-      - Cancer Related
-      - End-stage Renal Disease
-      - Infection
-      - Not Cancer Related
-      - Spinal Muscular Atrophy
-      - Toxicity
-      - Not Reported
-      - Unknown
 
   days_to_birth:
     term:
@@ -88,26 +69,27 @@ properties:
     term:
       $ref: "_terms.yaml#/days_to_death"
     type: integer
+    maximum: 32872
+    minimum: 0
 
   ethnicity:
     term:
       $ref: "_terms.yaml#/ethnicity"
     enum:
-      - Hispanic or Latino
-      - Not Hispanic or Latino
-      - Unknown
-      - Not Reported
-      - Not Allowed to Collect
+      - "Hispanic or Latino"
+      - "Not Hispanic or Latino"
+      - "Unknown"
+      - "Not Reported"
+      - "Not Allowed to Collect"
 
   gender:
     term:
       $ref: "_terms.yaml#/gender"
     enum:
-      - Female
-      - Male
-      - Unknown
-      - Unspecified
-      - Not Reported
+      - "Female"
+      - "Male"
+      - "Unknown"
+      - "Not Reported"
 
   premature_at_birth:
     term:
@@ -115,31 +97,30 @@ properties:
     enum:
       - "Yes"
       - "No"
-      - Unknown
-      - Not Reported
+      - "Unknown"
+      - "Not Reported"
 
   race:
     term:
       $ref: "_terms.yaml#/race"
     enum:
-      - White
-      - American Indian or Alaska Native
-      - Black or African American
-      - Asian
-      - Native Hawaiian or Other Pacific Islander
-      - Other
-      - Unknown
-      - Not Reported
-      - Not Allowed to Collect
+      - "White"
+      - "American Indian or Alaska Native"
+      - "Black or African American"
+      - "Asian"
+      - "Native Hawaiian or Other Pacific Islander"
+      - "Other"
+      - "Unknown"
+      - "Not Reported"
 
   vital_status:
     term:
       $ref: "_terms.yaml#/vital_status"
     enum:
-      - Alive
-      - Dead
-      - Unknown
-      - Not Reported
+      - "Alive"
+      - "Dead"
+      - "Unknown"
+      - "Not Reported"
 
   weeks_gestation_at_birth:
     term:
@@ -149,9 +130,7 @@ properties:
   year_of_birth:
     term:
       $ref: "_terms.yaml#/year_of_birth"
-    type:
-      - integer
-      - "null"
+    type: integer
 
   year_of_death:
     term:

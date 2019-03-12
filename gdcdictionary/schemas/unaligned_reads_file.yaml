@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "unaligned_reads_file"
 title: Unaligned Reads File
 type: object
-namespace: https://va.datacommons.io/
+namespace: https://vpodc.org/
 category: data_file
 program: '*'
 project: '*'
@@ -45,9 +45,9 @@ required:
   - file_name
   - file_size
   - md5sum
-  - data_category
-  - data_type
-  - data_format
+#  - data_category
+#  - data_type
+#  - data_format
 #  - experimental_strategy
 
 uniqueKeys:
@@ -61,9 +61,9 @@ properties:
     term:
       $ref: "_terms.yaml#/data_category"
     enum:
-      - Sequencing Data
-      - Sequencing Reads
-      - Raw Sequencing Data
+      - "Sequencing Data"
+      - "Sequencing Reads"
+      - "Raw Sequencing Data"
 
   data_type:
     term:
@@ -74,29 +74,30 @@ properties:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
-      - BAM
-      - FASTQ
+      - "BAM"
+      - "FASTQ"
+      - "FASTA"
 
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
     enum:
-      - ATAC-Seq
-      - Bisulfite-Seq
-      - ChIP-Seq
-      - Low Pass WGS
-      - miRNA-Seq
-      - RNA-Seq
-      - Targeted Sequencing
-      - WGS
-      - WXS
+      - "ATAC-Seq"
+      - "Bisulfite-Seq"
+      - "ChIP-Seq"
+      - "Low Pass WGS"
+      - "miRNA-Seq"
+      - "RNA-Seq"
+      - "Targeted Sequencing"
+      - "WGS"
+      - "WXS"
 
   read_pair_number:
     term:
       $ref: "_terms.yaml#/read_pair_number"
     enum:
-      - R1
-      - R2
+      - "R1"
+      - "R2"
 
   read_groups:
     $ref: "_definitions.yaml#/to_one"
