@@ -4,7 +4,7 @@ id: "CPRSOrder"
 title: CPRS Order
 type: object
 namespace: https://vpodc.org/
-category: clinical_CDW
+category: clinical
 program: '*'
 project: '*'
 description: >
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: CPRSOrder
+    backref: CPRSOrders
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -42,237 +42,237 @@ properties:
 
   AbnormalResultsFlag:
     description: >
-      add_description_here_enum_as_string
+      AbnormalResultsFlag
     type: string
 
   CompletedTime:
     description: >
-      add_description_here
+      CompletedTime
     type: string
 
   DaysFromAnchorDateToCompletedDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToCompletedDate
     type: integer
 
   DaysFromAnchorDateToDiscontinuedDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDiscontinuedDate
     type: integer
 
   DaysFromAnchorDateToEnteredDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToEnteredDate
     type: integer
 
   DaysFromAnchorDateToLapsedDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToLapsedDate
     type: integer
 
   DaysFromAnchorDateToLastActivityDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToLastActivityDate
     type: integer
 
   DaysFromAnchorDateToOrderStartDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToOrderStartDate
     type: integer
 
   DaysFromAnchorDateToOrderStoptDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToOrderStoptDate
     type: integer
 
   DaysFromAnchorDateToPatientAppointmentDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToPatientAppointmentDate
     type: integer
 
   DaysFromAnchorDateToResultsDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToResultsDate
     type: integer
 
   DaysFromDx2Order:
     description: >
-      add_description_here
+      DaysFromDx2Order
     type: integer
 
   DiscontinuedNatureOfOrderName:
     description: >
-      add_description_here_enum_as_string
+      DiscontinuedNatureOfOrderName
     type: string
 
   DiscontinuedOrderReason:
     description: >
-      add_description_here_enum_as_string
+      DiscontinuedOrderReason
     type: string
 
   DiscontinuedTime:
     description: >
-      add_description_here
+      DiscontinuedTime
     type: string
 
   DisplayGroupName:
     description: >
-      add_description_here
+      DisplayGroupName
     type: string
 
   EnteredTime:
     description: >
-      add_description_here
+      EnteredTime
     type: string
 
   Findings:
     description: >
-      add_description_here
+      Findings
     type: string
 
   GraceDaysBeforePurge:
     description: >
-      add_description_here
+      GraceDaysBeforePurge
     type: number
 
   ImagingType:
     description: >
-      add_description_here_enum_as_string
+      ImagingType
     type: string
 
   InPatientFlag:
     description: >
-      add_description_here_enum_as_string
+      InPatientFlag
     type: string
 
   IVAdditiveFlag:
     description: >
-      add_description_here_boolean_as_string
+      IVAdditiveFlag
     type: string
 
   IVBaseFlag:
     description: >
-      add_description_here_boolean_as_string
+      IVBaseFlag
     type: string
 
   LapsedTime:
     description: >
-      add_description_here
+      LapsedTime
     type: string
 
   LastActivityTime:
     description: >
-      add_description_here
+      LastActivityTime
     type: string
 
   LocationType:
     description: >
-      add_description_here
+      LocationType
     type: string
 
   MedicalService:
     description: >
-      add_description_here
+      MedicalService
     type: string
 
   NonFormularyFlag:
     description: >
-      add_description_here_boolean_as_string
+      NonFormularyFlag
     type: string
 
   NonVAMedsFlag:
     description: >
-      add_description_here_boolean_as_string
+      NonVAMedsFlag
     type: string
 
   OrderableItemCode:
     description: >
-      add_description_here
+      OrderableItemCode
     type: number
 
   OrderableItemCodeSource:
     description: >
-      add_description_here
+      OrderableItemCodeSource
     type: string
 
   OrderableItemDisplayGroupName:
     description: >
-      add_description_here_enum_as_string
+      OrderableItemDisplayGroupName
     type: string
 
   OrderableItemName:
     description: >
-      add_description_here
+      OrderableItemName
     type: string
 
   OrderStartTime:
     description: >
-      add_description_here
+      OrderStartTime
     type: string
 
   OrderStatus:
     description: >
-      add_description_here
+      OrderStatus
     type: string
 
   OrderStopTime:
     description: >
-      add_description_here
+      OrderStopTime
     type: string
 
   OrderType:
     description: >
-      add_description_here_enum_as_string
+      OrderType
     type: string
 
   OutpatientMedFlag:
     description: >
-      add_description_here_boolean_as_string
+      OutpatientMedFlag
     type: string
 
   PackageName:
     description: >
-      add_description_here
+      PackageName
     type: string
 
   PatientAppointmentTime:
     description: >
-      add_description_here
+      PatientAppointmentTime
     type: string
 
   ResultsTime:
     description: >
-      add_description_here
+      ResultsTime
     type: string
 
   SignatureRequired:
     description: >
-      add_description_here_enum_as_string
+      SignatureRequired
     type: string
 
   Sta3n:
     description: >
-      add_description_here
+      Sta3n
     type: integer
 
   TreatingSpecialtyName:
     description: >
-      add_description_here
+      TreatingSpecialtyName
     type: string
 
   VeiledFlag:
     description: >
-      add_description_here_enum_as_string
+      VeiledFlag
     type: string
 
   VistaPackage:
     description: >
-      add_description_here
+      VistaPackage
     type: string
 
   VistaPackageShortDesc:
     description: >
-      add_description_here
+      VistaPackageShortDesc
     type: string
 
   cases:

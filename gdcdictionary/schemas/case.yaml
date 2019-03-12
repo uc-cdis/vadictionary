@@ -48,7 +48,7 @@ properties:
       $ref: "_terms.yaml#/days_to_lost_to_followup"
     type: integer
 
-  index_date:
+  AnchorDate:
     term:
       $ref: "_terms.yaml#/index_date"
     enum:

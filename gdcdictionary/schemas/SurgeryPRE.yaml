@@ -4,7 +4,7 @@ id: "SurgeryPRE"
 title: Surgery PRE
 type: object
 namespace: https://vpodc.org/
-category: clinical_CDW
+category: clinical
 program: '*'
 project: '*'
 description: >
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: SurgeryPRE
+    backref: SurgeryPREs
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -42,467 +42,467 @@ properties:
 
   AgentOrangeFlag:
     description: >
-      add_description_here_boolean_as_string
+      AgentOrangeFlag
     type: string
 
   AsOrderedNPOCode:
     description: >
-      add_description_here_all_null
+      AsOrderedNPOCode
     type: string
 
   AvoidableFlag:
     description: >
-      add_description_here_all_null
+      AvoidableFlag
     type: string
 
   BathAndShampooCode:
     description: >
-      add_description_here_all_null
+      BathAndShampooCode
     type: string
 
   BeginOperationTime:
     description: >
-      add_description_here
+      BeginOperationTime
     type: string
 
   BloodScreenCode:
     description: >
-      add_description_here_enum_as_string
+      BloodScreenCode
     type: string
 
   BloodTypeAndMatchCode:
     description: >
-      add_description_here_all_null
+      BloodTypeAndMatchCode
     type: string
 
   CancellationComments:
     description: >
-      add_description_here
+      CancellationComments
     type: string
 
   CancelTime:
     description: >
-      add_description_here
+      CancelTime
     type: string
 
   CarePlanInChartCode:
     description: >
-      add_description_here_all_null
+      CarePlanInChartCode
     type: string
 
   CaseScheduleTypeCode:
     description: >
-      add_description_here_enum_as_string
+      CaseScheduleTypeCode
     type: string
 
   CBCIn48HoursCode:
     description: >
-      add_description_here_all_null
+      CBCIn48HoursCode
     type: string
 
   ChestXRayIn7DaysCode:
     description: >
-      add_description_here_all_null
+      ChestXRayIn7DaysCode
     type: string
 
   CigarettesRemovedCode:
     description: >
-      add_description_here_all_null
+      CigarettesRemovedCode
     type: string
 
   ClassificationEnteredFlag:
     description: >
-      add_description_here_boolean_as_string
+      ClassificationEnteredFlag
     type: string
 
   CleanDressingCode:
     description: >
-      add_description_here_all_null
+      CleanDressingCode
     type: string
 
   CleanHospitalClothCode:
     description: >
-      add_description_here_all_null
+      CleanHospitalClothCode
     type: string
 
   DaysFromAnchorDateToAdmissionDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToAdmissionDate
     type: integer
 
   DaysFromAnchorDateToBeginOperationDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToBeginOperationDate
     type: integer
 
   DaysFromAnchorDateToCancelDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToCancelDate
     type: integer
 
   DaysFromAnchorDateToDesiredProcedureDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDesiredProcedureDate
     type: integer
 
   DaysFromAnchorDateToDesiredProcedureEntryDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDesiredProcedureEntryDate
     type: integer
 
   DaysFromAnchorDateToEndOperationDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToEndOperationDate
     type: integer
 
   DaysFromAnchorDateToOriginalDesiredDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToOriginalDesiredDate
     type: integer
 
   DaysFromAnchorDateToOriginalScheduledDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToOriginalScheduledDate
     type: integer
 
   DaysFromAnchorDateToPreoperativeImagingDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToPreoperativeImagingDate
     type: integer
 
   DaysFromAnchorDateToProcedureDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToProcedureDate
     type: integer
 
   DaysFromAnchorDateToRequestMadeDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRequestMadeDate
     type: integer
 
   DaysFromAnchorDateToScheduledDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToScheduledDate
     type: integer
 
   DaysFromAnchorDateToScheduledEndDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToScheduledEndDate
     type: integer
 
   DaysFromAnchorDateToScheduledEntryDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToScheduledEntryDate
     type: integer
 
   DaysFromAnchorDateToScheduledStartDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToScheduledStartDate
     type: integer
 
   DaysFromAnchorDateToSurgeryConsultDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgeryConsultDate
     type: integer
 
   DaysFromAnchorDateToSurgeryDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgeryDate
     type: integer
 
   DaysFromAnchorDateToSurgicalWaitStartDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgicalWaitStartDate
     type: integer
 
   DelayPrimaryCauseCode:
     description: >
-      add_description_here_enum_as_string
+      DelayPrimaryCauseCode
     type: string
 
   DesiredProcedureEntryTime:
     description: >
-      add_description_here
+      DesiredProcedureEntryTime
     type: string
 
   EKGIn24HoursCode:
     description: >
-      add_description_here_all_null
+      EKGIn24HoursCode
     type: string
 
   EndOperationTime:
     description: >
-      add_description_here
+      EndOperationTime
     type: string
 
   EnemasCode:
     description: >
-      add_description_here_all_null
+      EnemasCode
     type: string
 
   EstimatedCaseLength:
     description: >
-      add_description_here
+      EstimatedCaseLength
     type: string
 
   EventCaptureSpecialty:
     description: >
-      add_description_here_enum_as_string
+      EventCaptureSpecialty
     type: string
 
   FreshlyShavedCode:
     description: >
-      add_description_here_all_null
+      FreshlyShavedCode
     type: string
 
   HospitalAdmissionStatusCode:
     description: >
-      add_description_here_enum_as_string
+      HospitalAdmissionStatusCode
     type: string
 
   IntraoperativeXRayCode:
     description: >
-      add_description_here_enum_as_string
+      IntraoperativeXRayCode
     type: string
 
   IonizingRadiationFlag:
     description: >
-      add_description_here_boolean_as_string
+      IonizingRadiationFlag
     type: string
 
   LevinTubeCode:
     description: >
-      add_description_here_all_null
+      LevinTubeCode
     type: string
 
   LocalSurgicalSpecialty:
     description: >
-      add_description_here
+      LocalSurgicalSpecialty
     type: string
 
   OralHygieneCode:
     description: >
-      add_description_here_all_null
+      OralHygieneCode
     type: string
 
   PatientAssessmentCode:
     description: >
-      add_description_here_enum_as_string
+      PatientAssessmentCode
     type: string
 
   PatientVoidedCode:
     description: >
-      add_description_here_all_null
+      PatientVoidedCode
     type: string
 
   PlannedPrincipalCPTCategory:
     description: >
-      add_description_here
+      PlannedPrincipalCPTCategory
     type: string
 
   PlannedPrincipalCPTCode:
     description: >
-      add_description_here
+      PlannedPrincipalCPTCode
     type: number
 
   PlannedPrincipalCPTDesc:
     description: >
-      add_description_here
+      PlannedPrincipalCPTDesc
     type: string
 
   PlannedPrincipalCPTName:
     description: >
-      add_description_here
+      PlannedPrincipalCPTName
     type: string
 
   PreOpBP:
     description: >
-      add_description_here_all_null
+      PreOpBP
     type: string
 
   PreOpConversationCode:
     description: >
-      add_description_here_enum_as_string
+      PreOpConversationCode
     type: string
 
   PreoperativeImagingTime:
     description: >
-      add_description_here
+      PreoperativeImagingTime
     type: string
 
   PreOpMedAndRailUpCode:
     description: >
-      add_description_here_all_null
+      PreOpMedAndRailUpCode
     type: string
 
   PreOpPatientConsciousness:
     description: >
-      add_description_here_enum_as_string
+      PreOpPatientConsciousness
     type: string
 
   PreOpPatientMood:
     description: >
-      add_description_here_enum_as_string
+      PreOpPatientMood
     type: string
 
   PreOpPatientMoodCode:
     description: >
-      add_description_here_enum_as_string
+      PreOpPatientMoodCode
     type: string
 
   PreOpPulse:
     description: >
-      add_description_here_all_null
+      PreOpPulse
     type: string
 
   PreOpRequiredXRay:
     description: >
-      add_description_here_enum_as_string
+      PreOpRequiredXRay
     type: string
 
   PreOpRespiratoryRate:
     description: >
-      add_description_here_all_null
+      PreOpRespiratoryRate
     type: string
 
   PreOpTemperature:
     description: >
-      add_description_here_all_null
+      PreOpTemperature
     type: string
 
   PreOpWeight:
     description: >
-      add_description_here_all_null
+      PreOpWeight
     type: string
 
   PrincipalDiagnosisText:
     description: >
-      add_description_here
+      PrincipalDiagnosisText
     type: string
 
   PrincipalPostOpDiagnosisText:
     description: >
-      add_description_here
+      PrincipalPostOpDiagnosisText
     type: string
 
   PrincipalPreOpDiagnosisText:
     description: >
-      add_description_here
+      PrincipalPreOpDiagnosisText
     type: string
 
   PrincipalPreOpICD10Code:
     description: >
-      add_description_here
+      PrincipalPreOpICD10Code
     type: string
 
   PrincipalPreOpICD10CodeDesc:
     description: >
-      add_description_here
+      PrincipalPreOpICD10CodeDesc
     type: string
 
   PrincipalPreOpICD9Code:
     description: >
-      add_description_here
+      PrincipalPreOpICD9Code
     type: string
 
   PrincipalPreOpICD9CodeDesc:
     description: >
-      add_description_here
+      PrincipalPreOpICD9CodeDesc
     type: string
 
   ProcedureTime:
     description: >
-      add_description_here
+      ProcedureTime
     type: string
 
   ProsthesisRemovedCode:
     description: >
-      add_description_here_all_null
+      ProsthesisRemovedCode
     type: string
 
   RequestedAnesthesiaTechniqueCode:
     description: >
-      add_description_here_enum_as_string
+      RequestedAnesthesiaTechniqueCode
     type: string
 
   RequestedFlag:
     description: >
-      add_description_here_enum_as_string
+      RequestedFlag
     type: string
 
   RequestMadeTime:
     description: >
-      add_description_here
+      RequestMadeTime
     type: string
 
   RequiresCleaningOrContaminatedCode:
     description: >
-      add_description_here_enum_as_string
+      RequiresCleaningOrContaminatedCode
     type: string
 
   ScheduledEndTime:
     description: >
-      add_description_here
+      ScheduledEndTime
     type: string
 
   ScheduledEntryTime:
     description: >
-      add_description_here
+      ScheduledEntryTime
     type: string
 
   ScheduledProcedure:
     description: >
-      add_description_here
+      ScheduledProcedure
     type: string
 
   ScheduledStartTime:
     description: >
-      add_description_here
+      ScheduledStartTime
     type: string
 
   ServiceConnectedFlag:
     description: >
-      add_description_here_boolean_as_string
+      ServiceConnectedFlag
     type: string
 
   SignedAndWitnessedConsentCode:
     description: >
-      add_description_here_all_null
+      SignedAndWitnessedConsentCode
     type: string
 
   SurgeryCancelReason:
     description: >
-      add_description_here_enum_as_string
+      SurgeryCancelReason
     type: string
 
   SurgeryDisposition:
     description: >
-      add_description_here_enum_as_string
+      SurgeryDisposition
     type: string
 
   SurgeryDispositionCode:
     description: >
-      add_description_here_enum_as_string
+      SurgeryDispositionCode
     type: string
 
   SurgeryTime:
     description: >
-      add_description_here
+      SurgeryTime
     type: string
 
   UrinalysisIn48HoursCode:
     description: >
-      add_description_here_all_null
+      UrinalysisIn48HoursCode
     type: string
 
   ValuablesSecuredCode:
     description: >
-      add_description_here_all_null
+      ValuablesSecuredCode
     type: string
 
   XRayReadyAndReceivedCode:
     description: >
-      add_description_here_all_null
+      XRayReadyAndReceivedCode
     type: string
 
   cases:

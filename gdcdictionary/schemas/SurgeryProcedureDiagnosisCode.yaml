@@ -4,7 +4,7 @@ id: "SurgeryProcedureDiagnosisCode"
 title: Surgery Procedure Diagnosis Code
 type: object
 namespace: https://vpodc.org/
-category: clinical_CDW
+category: clinical
 program: '*'
 project: '*'
 description: >
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: SurgeryProcedureDiagnosisCode
+    backref: SurgeryProcedureDiagnosisCodes
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -42,97 +42,97 @@ properties:
 
   CPTCategory:
     description: >
-      add_description_here_enum_as_string
+      CPTCategory
     type: string
 
   CPTDescription:
     description: >
-      add_description_here
+      CPTDescription
     type: string
 
   CPTModifier:
     description: >
-      add_description_here_enum_as_string
+      CPTModifier
     type: string
 
   CPTModifierName:
     description: >
-      add_description_here
+      CPTModifierName
     type: string
 
   CPTName:
     description: >
-      add_description_here
+      CPTName
     type: string
 
   DaysFromAnchorDateToSurgeryDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgeryDate
     type: integer
 
   MajorCPTCategory:
     description: >
-      add_description_here_enum_as_string
+      MajorCPTCategory
     type: string
 
   OtherPostopICD9Code:
     description: >
-      add_description_here
+      OtherPostopICD9Code
     type: string
 
   OtherPostopICD9Desc:
     description: >
-      add_description_here
+      OtherPostopICD9Desc
     type: string
 
   PrincipalPostOpICD10Code:
     description: >
-      add_description_here
+      PrincipalPostOpICD10Code
     type: string
 
   PrincipalPostOpICD10Desc:
     description: >
-      add_description_here
+      PrincipalPostOpICD10Desc
     type: string
 
   PrincipalPostOpICD9Code:
     description: >
-      add_description_here
+      PrincipalPostOpICD9Code
     type: string
 
   PrincipalPostOpICD9Desc:
     description: >
-      add_description_here
+      PrincipalPostOpICD9Desc
     type: string
 
   ServiceConnectedFlag:
     description: >
-      add_description_here_boolean_as_string
+      ServiceConnectedFlag
     type: string
 
   SurgeryPrincipalAssociatedDiagnosisICD10Code:
     description: >
-      add_description_here
+      SurgeryPrincipalAssociatedDiagnosisICD10Code
     type: string
 
   SurgeryPrincipalAssociatedDiagnosisICD10Desc:
     description: >
-      add_description_here
+      SurgeryPrincipalAssociatedDiagnosisICD10Desc
     type: string
 
   SurgeryPrincipalAssociatedDiagnosisICD9Code:
     description: >
-      add_description_here
+      SurgeryPrincipalAssociatedDiagnosisICD9Code
     type: string
 
   SurgeryPrincipalAssociatedDiagnosisICD9Desc:
     description: >
-      add_description_here
+      SurgeryPrincipalAssociatedDiagnosisICD9Desc
     type: string
 
   SurgeryTime:
     description: >
-      add_description_here
+      SurgeryTime
     type: string
 
   cases:

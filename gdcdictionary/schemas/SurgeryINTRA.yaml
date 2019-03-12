@@ -4,7 +4,7 @@ id: "SurgeryINTRA"
 title: Surgery INTRA
 type: object
 namespace: https://vpodc.org/
-category: clinical_CDW
+category: clinical
 program: '*'
 project: '*'
 description: >
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: SurgeryINTRA
+    backref: SurgeryINTRAs
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -42,572 +42,597 @@ properties:
 
   AirwayIndex:
     description: >
-      add_description_here
+      AirwayIndex
     type: integer
 
   AnesthesiaBillableCareFlag:
     description: >
-      add_description_here_boolean_as_string
+      AnesthesiaBillableCareFlag
     type: string
 
   AnesthesiaMedicallyDirectedFlag:
     description: >
-      add_description_here_boolean_as_string
+      AnesthesiaMedicallyDirectedFlag
     type: string
 
   AnesthesiaPersonallyPerformedFlag:
     description: >
-      add_description_here_boolean_as_string
+      AnesthesiaPersonallyPerformedFlag
     type: string
 
   AnesthesiaPhysicianAvailableFlag:
     description: >
-      add_description_here_boolean_as_string
+      AnesthesiaPhysicianAvailableFlag
     type: string
 
   AnesthetistAvailableTime:
     description: >
-      add_description_here
+      AnesthetistAvailableTime
     type: string
 
   AnesthetistCategory:
     description: >
-      add_description_here_enum_as_string
+      AnesthetistCategory
     type: string
 
   AntibioticProphylaxis:
     description: >
-      add_description_here_enum_as_string
+      AntibioticProphylaxis
     type: string
 
   ASAClass:
     description: >
-      add_description_here_enum_as_string
+      ASAClass
     type: string
 
   ASAClassDescription:
     description: >
-      add_description_here
+      ASAClassDescription
     type: string
 
   AttendingCode:
     description: >
-      add_description_here_enum_as_string
+      AttendingCode
     type: string
 
   AttendingCodeDescription:
     description: >
-      add_description_here
+      AttendingCodeDescription
     type: string
 
   AttendingCodeName:
     description: >
-      add_description_here
+      AttendingCodeName
     type: string
+
+  BatchID:
+    description: >
+      BatchID
+    type: integer
 
   BatistaProcUsedFlag:
     description: >
-      add_description_here_boolean_as_string
+      BatistaProcUsedFlag
     type: string
 
   BeginNonORProcedureTime:
     description: >
-      add_description_here
+      BeginNonORProcedureTime
     type: string
 
   BeginOperationTime:
     description: >
-      add_description_here
+      BeginOperationTime
     type: string
 
   BeginORCleanTime:
     description: >
-      add_description_here
+      BeginORCleanTime
     type: string
 
   BloodAvailability:
     description: >
-      add_description_here_enum_as_string
+      BloodAvailability
     type: string
 
   BloodLoss:
     description: >
-      add_description_here
+      BloodLoss
     type: number
 
   CaseVerificationFlag:
     description: >
-      add_description_here_boolean_as_string
+      CaseVerificationFlag
+    type: string
+
+  Cohort:
+    description: >
+      Cohort
     type: string
 
   ConcurrentAnesthesiaCases:
     description: >
-      add_description_here_all_null
+      ConcurrentAnesthesiaCases
     type: string
 
   ConfirmedMarkedSiteTime:
     description: >
-      add_description_here
+      ConfirmedMarkedSiteTime
     type: string
 
   ContaminationFlashSterilization:
     description: >
-      add_description_here
+      ContaminationFlashSterilization
     type: number
 
   CorrectMedicalImplants:
     description: >
-      add_description_here_boolean_as_string
+      CorrectMedicalImplants
+    type: string
+
+  CreatedAt:
+    description: >
+      CreatedAt
     type: string
 
   DaysFromAnchorDateToAnesthetistAvailableDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToAnesthetistAvailableDate
     type: integer
 
   DaysFromAnchorDateToBeginNonORProcedureDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToBeginNonORProcedureDate
     type: integer
 
   DaysFromAnchorDateToBeginOperationDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToBeginOperationDate
     type: integer
 
   DaysFromAnchorDateToBeginORCleanDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToBeginORCleanDate
     type: integer
 
   DaysFromAnchorDateToConfirmedMarkedSiteDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToConfirmedMarkedSiteDate
     type: integer
 
   DaysFromAnchorDateToEndAnesthesiaCareDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToEndAnesthesiaCareDate
     type: integer
 
   DaysFromAnchorDateToEndNonORProcedureDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToEndNonORProcedureDate
     type: integer
 
   DaysFromAnchorDateToEndOperationDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToEndOperationDate
     type: integer
 
   DaysFromAnchorDateToEndORCleanDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToEndORCleanDate
     type: integer
 
   DaysFromAnchorDateToInductionCompleteDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToInductionCompleteDate
     type: integer
 
   DaysFromAnchorDateToNurseOutDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToNurseOutDate
     type: integer
 
   DaysFromAnchorDateToNursePresentDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToNursePresentDate
     type: integer
 
   DaysFromAnchorDateToORPatientTransportDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToORPatientTransportDate
     type: integer
 
   DaysFromAnchorDateToPatientHoldAreaDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToPatientHoldAreaDate
     type: integer
 
   DaysFromAnchorDateToPatientOutDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToPatientOutDate
     type: integer
 
   DaysFromAnchorDateToProcedureDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToProcedureDate
     type: integer
 
   DaysFromAnchorDateToStartAnesthesiaCareDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToStartAnesthesiaCareDate
     type: integer
 
   DaysFromAnchorDateToSurgeonPresentDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgeonPresentDate
     type: integer
 
   DaysFromAnchorDateToSurgeryDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgeryDate
     type: integer
 
   DaysFromAnchorDateToTimeOutVerifiedDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToTimeOutVerifiedDate
     type: integer
 
   DecontaminationFlashSterilization:
     description: >
-      add_description_here
+      DecontaminationFlashSterilization
     type: number
 
   Devices:
     description: >
-      add_description_here_enum_as_string
+      Devices
     type: string
 
   DiagnosticTherapeuticFlag:
     description: >
-      add_description_here_boolean_as_string
+      DiagnosticTherapeuticFlag
     type: string
 
   ElectrogroundPosition:
     description: >
-      add_description_here_enum_as_string
+      ElectrogroundPosition
     type: string
 
   ElectrogroundPositionCode:
     description: >
-      add_description_here_enum_as_string
+      ElectrogroundPositionCode
     type: string
 
   EmergencyCaseFlashSterilization:
     description: >
-      add_description_here
+      EmergencyCaseFlashSterilization
     type: number
 
   EndAnesthesiaCareTime:
     description: >
-      add_description_here
+      EndAnesthesiaCareTime
     type: string
 
   EndNonORProcedureTime:
     description: >
-      add_description_here
+      EndNonORProcedureTime
     type: string
 
   EndOperationTime:
     description: >
-      add_description_here
+      EndOperationTime
     type: string
 
   EndORCleanTime:
     description: >
-      add_description_here
+      EndORCleanTime
     type: string
 
   ESUCoagulationRange:
     description: >
-      add_description_here
+      ESUCoagulationRange
     type: string
 
   ESUCuttingRange:
     description: >
-      add_description_here
+      ESUCuttingRange
     type: string
 
   EventCaptureSpecialty:
     description: >
-      add_description_here_enum_as_string
+      EventCaptureSpecialty
     type: string
 
   FinalAnesthesiaTemperature:
     description: >
-      add_description_here
+      FinalAnesthesiaTemperature
     type: number
 
   FinalCountsVerifiedCorrect:
     description: >
-      add_description_here_boolean_as_string
+      FinalCountsVerifiedCorrect
     type: string
 
   FoleyCatheterSize:
     description: >
-      add_description_here
+      FoleyCatheterSize
     type: number
 
   GastricOutput:
     description: >
-      add_description_here
+      GastricOutput
     type: number
 
   HairRemovalMethod:
     description: >
-      add_description_here_enum_as_string
+      HairRemovalMethod
     type: string
 
   InductionCompleteTime:
     description: >
-      add_description_here
+      InductionCompleteTime
     type: string
 
   InstrumentCountCorrect:
     description: >
-      add_description_here_boolean_as_string
+      InstrumentCountCorrect
     type: string
 
   IntraOpTemperature:
     description: >
-      add_description_here
+      IntraOpTemperature
     type: number
 
   IntraOpXRayCode:
     description: >
-      add_description_here_enum_as_string
+      IntraOpXRayCode
     type: string
 
   LaserType:
     description: >
-      add_description_here_enum_as_string
+      LaserType
     type: string
 
   LoanerInstrumentFlashSterilization:
     description: >
-      add_description_here
+      LoanerInstrumentFlashSterilization
     type: number
 
   LocalSurgicalSpecialty:
     description: >
-      add_description_here_enum_as_string
+      LocalSurgicalSpecialty
     type: string
 
   MajorMinor:
     description: >
-      add_description_here_enum_as_string
+      MajorMinor
     type: string
 
   MajorPosition:
     description: >
-      add_description_here_all_null
+      MajorPosition
     type: string
 
   MallampatiScale:
     description: >
-      add_description_here
+      MallampatiScale
     type: number
 
   MandibularSpace:
     description: >
-      add_description_here
+      MandibularSpace
     type: number
 
   MarkedSiteConfirmed:
     description: >
-      add_description_here_enum_as_string
+      MarkedSiteConfirmed
     type: string
 
   MarkedSiteConfirmedFlag:
     description: >
-      add_description_here_boolean_as_string
+      MarkedSiteConfirmedFlag
+    type: string
+
+  ModifiedAt:
+    description: >
+      ModifiedAt
     type: string
 
   NoBetterOptionFlashSterilization:
     description: >
-      add_description_here
+      NoBetterOptionFlashSterilization
     type: number
 
   NonORProcedureFlag:
     description: >
-      add_description_here_boolean_as_string
+      NonORProcedureFlag
     type: string
 
   NurseOutTime:
     description: >
-      add_description_here
+      NurseOutTime
     type: string
 
   NursePresentTime:
     description: >
-      add_description_here
+      NursePresentTime
     type: string
 
   ORPatientTransportTime:
     description: >
-      add_description_here
+      ORPatientTransportTime
     type: string
 
   ORSetupTime:
     description: >
-      add_description_here
+      ORSetupTime
     type: number
 
   Packing:
     description: >
-      add_description_here
+      Packing
     type: number
 
   PatientHoldAreaTime:
     description: >
-      add_description_here
+      PatientHoldAreaTime
     type: string
 
   PatientIdentityConfirmedFlag:
     description: >
-      add_description_here_boolean_as_string
+      PatientIdentityConfirmedFlag
     type: string
 
   PatientOutTime:
     description: >
-      add_description_here
+      PatientOutTime
     type: string
 
   PhysicalStatus:
     description: >
-      add_description_here_enum_as_string
+      PhysicalStatus
     type: string
 
   PositiveDrugScreening:
     description: >
-      add_description_here_boolean_as_string
+      PositiveDrugScreening
     type: string
 
   PossibleItemRetentionCode:
     description: >
-      add_description_here_enum_as_string
+      PossibleItemRetentionCode
     type: string
 
   PreOperativeImagingConfirmed:
     description: >
-      add_description_here_boolean_as_string
+      PreOperativeImagingConfirmed
     type: string
 
   PreOpImagesConfirmed:
     description: >
-      add_description_here_boolean_as_string
+      PreOpImagesConfirmed
     type: string
 
   PreOpSkinColor:
     description: >
-      add_description_here_all_null
+      PreOpSkinColor
     type: string
 
   ProcedureTime:
     description: >
-      add_description_here
+      ProcedureTime
     type: string
 
   SequentialBloodDeviceFlag:
     description: >
-      add_description_here_boolean_as_string
+      SequentialBloodDeviceFlag
     type: string
 
   SharpsCountCorrect:
     description: >
-      add_description_here_boolean_as_string
+      SharpsCountCorrect
     type: string
 
   SkinIntegrity:
     description: >
-      add_description_here_enum_as_string
+      SkinIntegrity
     type: string
 
   SkinIntegrityCode:
     description: >
-      add_description_here_enum_as_string
+      SkinIntegrityCode
     type: string
 
   SkinPrepAgent:
     description: >
-      add_description_here
+      SkinPrepAgent
     type: string
 
   SkinPrepAgentCode:
     description: >
-      add_description_here
+      SkinPrepAgentCode
     type: string
 
   SPDFlashSterilization:
     description: >
-      add_description_here
+      SPDFlashSterilization
     type: number
 
   SpecialEquipmentAvailability:
     description: >
-      add_description_here_enum_as_string
+      SpecialEquipmentAvailability
     type: string
 
   SpongeCountCorrect:
     description: >
-      add_description_here_boolean_as_string
+      SpongeCountCorrect
     type: string
 
   StaffOrResident:
     description: >
-      add_description_here_enum_as_string
+      StaffOrResident
     type: string
 
   StartAnesthesiaCareTime:
     description: >
-      add_description_here
+      StartAnesthesiaCareTime
     type: string
 
   SurgeonPresentTime:
     description: >
-      add_description_here
+      SurgeonPresentTime
     type: string
 
   SurgeryPosition:
     description: >
-      add_description_here_all_null
+      SurgeryPosition
     type: string
 
   SurgeryPositionCode:
     description: >
-      add_description_here_all_null
+      SurgeryPositionCode
     type: string
 
   SurgeryTime:
     description: >
-      add_description_here
+      SurgeryTime
     type: string
 
   SurgeryTransportDevice:
     description: >
-      add_description_here_enum_as_string
+      SurgeryTransportDevice
     type: string
 
   SurgeryTransportDeviceCode:
     description: >
-      add_description_here_enum_as_string
+      SurgeryTransportDeviceCode
     type: string
 
   TimeOutVerified:
     description: >
-      add_description_here_boolean_as_string
+      TimeOutVerified
     type: string
 
   TimeOutVerifiedTime:
     description: >
-      add_description_here
+      TimeOutVerifiedTime
     type: string
 
   UrineOutput:
     description: >
-      add_description_here
+      UrineOutput
     type: number
+
+  UserID:
+    description: >
+      UserID
+    type: string
 
   WoundClassification:
     description: >
-      add_description_here_enum_as_string
+      WoundClassification
     type: string
 
   WoundSweepCode:
     description: >
-      add_description_here_enum_as_string
+      WoundSweepCode
     type: string
 
   cases:

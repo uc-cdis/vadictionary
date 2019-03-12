@@ -4,7 +4,7 @@ id: "BCMAMedicationLog"
 title: BCMA Medication Log
 type: object
 namespace: https://vpodc.org/
-category: clinical_CDW
+category: clinical
 program: '*'
 project: '*'
 description: >
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: BCMAMedicationLog
+    backref: BCMAMedicationLogs
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -42,218 +42,228 @@ properties:
 
   ActionStatus:
     description: >
-      add_description_here_enum_as_string
+      ActionStatus
     type: string
 
   ActionTime:
     description: >
-      add_description_here
+      ActionTime
     type: string
 
   BCMADispensedDrugIssueTime:
     description: >
-      add_description_here
+      BCMADispensedDrugIssueTime
     type: string
 
   DayOrDoseLimit:
     description: >
-      add_description_here
+      DayOrDoseLimit
     type: string
 
   DaysFromAnchorDateToActionDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToActionDate
     type: integer
 
   DaysFromAnchorDateToBCMADispensedDrugIssueDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToBCMADispensedDrugIssueDate
     type: integer
 
   DaysFromAnchorDateToEnteredDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToEnteredDate
     type: integer
 
   DaysFromAnchorDateToInactiveDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToInactiveDate
     type: integer
 
   DaysFromAnchorDateToPRNEffectivenessEnteredDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToPRNEffectivenessEnteredDate
     type: integer
 
   DaysFromAnchorDateToScheduledAdministrationDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToScheduledAdministrationDate
+    type: integer
+
+  DaysFromAnchorDateToWitnessDate:
+    description: >
+      DaysFromAnchorDateToWitnessDate
     type: integer
 
   DosageForm:
     description: >
-      add_description_here
+      DosageForm
     type: string
 
   DosesGiven:
     description: >
-      add_description_here
+      DosesGiven
     type: number
 
   DosesOrdered:
     description: >
-      add_description_here
+      DosesOrdered
     type: number
 
   DrugClass:
     description: >
-      add_description_here
+      DrugClass
     type: string
 
   DrugClassification:
     description: >
-      add_description_here
+      DrugClassification
     type: string
 
   DrugNameWithoutDose:
     description: >
-      add_description_here
+      DrugNameWithoutDose
     type: string
 
   EnteredTime:
     description: >
-      add_description_here
+      EnteredTime
     type: string
 
   FormularyStatusFlag:
     description: >
-      add_description_here_enum_as_string
+      FormularyStatusFlag
     type: string
 
   HighRiskHighAlertMedication:
     description: >
-      add_description_here
+      HighRiskHighAlertMedication
     type: number
 
   ImmunizationName:
     description: >
-      add_description_here
+      ImmunizationName
     type: string
 
   InfusionRate:
     description: >
-      add_description_here
+      InfusionRate
     type: number
 
   InjectionSite:
     description: >
-      add_description_here
+      InjectionSite
     type: string
 
   IVFlag:
     description: >
-      add_description_here_enum_as_string
+      IVFlag
     type: string
 
   LocalDrugNameWithDose:
     description: >
-      add_description_here
+      LocalDrugNameWithDose
     type: string
 
   MedicationRoute:
     description: >
-      add_description_here
+      MedicationRoute
     type: string
 
   NonVAMedFlag:
     description: >
-      add_description_here_enum_as_string
+      NonVAMedFlag
     type: string
 
   OrderAdministrationVariance:
     description: >
-      add_description_here
+      OrderAdministrationVariance
     type: number
 
   OrderDosage:
     description: >
-      add_description_here
+      OrderDosage
     type: string
 
   OrderReferenceNumber:
     description: >
-      add_description_here
+      OrderReferenceNumber
     type: string
 
   OrderSchedule:
     description: >
-      add_description_here_enum_as_string
+      OrderSchedule
     type: string
 
   OtherLanguageInstructions:
     description: >
-      add_description_here
+      OtherLanguageInstructions
     type: string
 
   PharmacyOrderableItem:
     description: >
-      add_description_here
+      PharmacyOrderableItem
     type: string
 
   PharmacyOrderableItemSchedule:
     description: >
-      add_description_here
+      PharmacyOrderableItemSchedule
     type: string
 
   PRNEffectivenessEnteredTime:
     description: >
-      add_description_here
+      PRNEffectivenessEnteredTime
     type: string
 
   PRNEffectivenessMinutes:
     description: >
-      add_description_here
+      PRNEffectivenessMinutes
     type: number
 
   PRNReason:
     description: >
-      add_description_here
+      PRNReason
     type: string
 
   PRNReasonNumber:
     description: >
-      add_description_here
+      PRNReasonNumber
     type: number
 
   ScheduledAdministrationTime:
     description: >
-      add_description_here
+      ScheduledAdministrationTime
     type: string
 
   ScheduleType:
     description: >
-      add_description_here_enum_as_string
+      ScheduleType
     type: string
 
   SupplyFlag:
     description: >
-      add_description_here_enum_as_string
+      SupplyFlag
     type: string
 
   WitnessDateTime:
     description: >
-      add_description_here
+      WitnessDateTime
     type: string
 
   WitnessFlag:
     description: >
-      add_description_here_enum_as_string
+      WitnessFlag
     type: string
 
   WitnessHighRiskAlertStatus:
     description: >
-      add_description_here
+      WitnessHighRiskAlertStatus
     type: number
+
+  WitnessTime:
+    description: >
+      WitnessTime
+    type: string
 
   cases:
     $ref: "_definitions.yaml#/to_one"

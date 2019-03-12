@@ -4,11 +4,11 @@ id: "RxOutpat"
 title: Rx Outpat
 type: object
 namespace: https://vpodc.org/
-category: clinical_CDW
+category: clinical
 program: '*'
 project: '*'
 description: >
-  Outpatient pharmacy data including prescription, refills, dosage, units and instructions to patients on taking medications.
+  Outpatient pharmacy data including prescription, refills, dosage, units and instructions to patients on taking medications. 
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: RxOutpat
+    backref: RxOutpats
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -42,327 +42,332 @@ properties:
 
   AgentOrangeFlag:
     description: >
-      add_description_here_boolean_as_string
+      AgentOrangeFlag
     type: string
 
   ArchivedFlag:
     description: >
-      add_description_here_all_null
+      ArchivedFlag
     type: string
 
   BingoWaitTime:
     description: >
-      add_description_here
+      BingoWaitTime
     type: number
 
   CMOPFlag:
     description: >
-      add_description_here_boolean_as_string
+      CMOPFlag
     type: string
 
   CMOPStatus:
     description: >
-      add_description_here
+      CMOPStatus
     type: number
 
   CombatVeteranFlag:
     description: >
-      add_description_here_boolean_as_string
+      CombatVeteranFlag
     type: string
 
   CopayTransaction:
     description: >
-      add_description_here_enum_as_string
+      CopayTransaction
     type: string
 
   CounseledFlag:
     description: >
-      add_description_here_boolean_as_string
+      CounseledFlag
     type: string
 
   DAWCode:
     description: >
-      add_description_here
+      DAWCode
     type: number
 
   DaysFromAnchorDateToCancelDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToCancelDate
     type: integer
 
   DaysFromAnchorDateToFinishingDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToFinishingDate
     type: integer
 
   DaysFromAnchorDateToHoldDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToHoldDate
     type: integer
 
   DaysFromAnchorDateToIssueDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToIssueDate
     type: integer
 
   DaysFromAnchorDateToLastDispensedDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToLastDispensedDate
     type: integer
 
   DaysFromAnchorDateToNextPossibleFillDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToNextPossibleFillDate
     type: integer
 
   DaysFromAnchorDateToPriorFillDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToPriorFillDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillDispensedDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillDispensedDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillExpirationDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillExpirationDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillFillDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillFillDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillIssueDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillIssueDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillLoginDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillLoginDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillReleaseDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillReleaseDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillReturnedToStockDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillReturnedToStockDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatFillValidatedDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatFillValidatedDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate
     type: integer
 
   DaysFromAnchorDateToRxOutpatSigIssueDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRxOutpatSigIssueDate
     type: integer
 
   DaysSupply:
     description: >
-      add_description_here
+      DaysSupply
     type: integer
 
   DiscontinueType:
     description: >
-      add_description_here
+      DiscontinueType
     type: number
 
   DispenseUnits:
     description: >
-      add_description_here
+      DispenseUnits
     type: number
 
   DrugAllergyFlag:
     description: >
-      add_description_here_boolean_as_string
+      DrugAllergyFlag
     type: string
 
   DrugClass:
     description: >
-      add_description_here_enum_as_string
+      DrugClass
     type: string
 
   DrugClassification:
     description: >
-      add_description_here_enum_as_string
+      DrugClassification
     type: string
 
   DrugInteractionAffectedMedication:
     description: >
-      add_description_here_boolean_as_string
+      DrugInteractionAffectedMedication
     type: string
 
   DrugInteractionSeverity:
     description: >
-      add_description_here_all_null
+      DrugInteractionSeverity
     type: string
 
   DrugNameWithoutDose:
     description: >
-      add_description_here
+      DrugNameWithoutDose
     type: string
 
   FillType:
     description: >
-      add_description_here_enum_as_string
+      FillType
     type: string
 
   FinishingTime:
     description: >
-      add_description_here
+      FinishingTime
     type: string
 
   HeadNeckCancerFlag:
     description: >
-      add_description_here_boolean_as_string
+      HeadNeckCancerFlag
     type: string
 
   InstructionNumber:
     description: >
-      add_description_here
+      InstructionNumber
     type: number
 
   IonizingRadiationFlag:
     description: >
-      add_description_here_boolean_as_string
+      IonizingRadiationFlag
     type: string
 
   LocalDrugNameWithDose:
     description: >
-      add_description_here
+      LocalDrugNameWithDose
     type: string
 
   MailWindow:
     description: >
-      add_description_here_enum_as_string
+      MailWindow
     type: string
 
   MaxRefills:
     description: >
-      add_description_here
+      MaxRefills
     type: integer
 
   MedRoute:
     description: >
-      add_description_here_enum_as_string
+      MedRoute
     type: string
 
   MilitarySexualTraumaFlag:
     description: >
-      add_description_here_boolean_as_string
+      MilitarySexualTraumaFlag
     type: string
 
   NDC:
     description: >
-      add_description_here
+      NDC
     type: string
 
   PartialPrescriptionFlag:
     description: >
-      add_description_here_boolean_as_string
+      PartialPrescriptionFlag
     type: string
 
   PatientStatus:
     description: >
-      add_description_here
+      PatientStatus
     type: string
 
   Qty:
     description: >
-      add_description_here
+      Qty
     type: number
 
   QtyNumeric:
     description: >
-      add_description_here
+      QtyNumeric
     type: number
 
   ReprintFlag:
     description: >
-      add_description_here_boolean_as_string
+      ReprintFlag
     type: string
 
   RetransmitFlag:
     description: >
-      add_description_here_boolean_as_string
+      RetransmitFlag
     type: string
 
   RxOutpatFill_RxStatus:
     description: >
-      add_description_here_enum_as_string
+      RxOutpatFill_RxStatus
     type: string
 
   RxOutpatFillFillTime:
     description: >
-      add_description_here
+      RxOutpatFillFillTime
     type: string
 
   RxOutpatFillReleaseTime:
     description: >
-      add_description_here
+      RxOutpatFillReleaseTime
     type: string
 
   RxOutpatFillReturnedToStockTime:
     description: >
-      add_description_here
+      RxOutpatFillReturnedToStockTime
     type: string
 
   RxOutpatFillValidatedTime:
     description: >
-      add_description_here
+      RxOutpatFillValidatedTime
     type: string
 
   RxStatus:
     description: >
-      add_description_here_enum_as_string
+      RxStatus
     type: string
 
   ServiceConnectedFlag:
     description: >
-      add_description_here_boolean_as_string
+      ServiceConnectedFlag
     type: string
 
   Sig:
     description: >
-      add_description_here
+      Sig
     type: string
 
   SWAsiaFlag:
     description: >
-      add_description_here_boolean_as_string
+      SWAsiaFlag
+    type: string
+
+  TradeLabelName:
+    description: >
+      TradeLabelName
     type: string
 
   UnderstoodFlag:
     description: >
-      add_description_here_boolean_as_string
+      UnderstoodFlag
     type: string
 
   Unit:
     description: >
-      add_description_here_enum_as_string
+      Unit
     type: string
 
   UnitPrice:
     description: >
-      add_description_here
+      UnitPrice
     type: number
 
   cases:

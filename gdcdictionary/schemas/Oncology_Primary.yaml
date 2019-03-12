@@ -4,11 +4,11 @@ id: "Oncology_Primary"
 title: Oncology Primary
 type: object
 namespace: https://vpodc.org/
-category: clinical_CDW
+category: clinical
 program: '*'
 project: '*'
 description: >
-  Tumor-related data for Oncology patients. Data elements in this node uniquely define the tumor, the extent of disease, first course of treatment accorded, and all recurrence information.
+  Tumor-related data for Oncology patients. Data elements in this node uniquely define the tumor, the extent of disease, first course of treatment accorded, and all recurrence information.  
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Oncology_Primary
+    backref: Oncology_Primaries
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -42,1677 +42,1677 @@ properties:
 
   Abdominalultrasound:
     description: >
-      add_description_here_all_null
+      Abdominalultrasound
     type: string
 
   Abstractstatus:
     description: >
-      add_description_here_enum_as_string
+      Abstractstatus
     type: string
 
   Adjuvantchemotherapycol:
     description: >
-      add_description_here_all_null
+      Adjuvantchemotherapycol
     type: string
 
   AfipSubmission:
     description: >
-      add_description_here_boolean_as_string
+      AfipSubmission
     type: string
 
   AjccStagingBasis:
     description: >
-      add_description_here_all_null
+      AjccStagingBasis
     type: string
 
   AmbiguousterminologydX:
     description: >
-      add_description_here_enum_as_string
+      AmbiguousterminologydX
     type: string
 
   Androgendprvtntherapy:
     description: >
-      add_description_here_enum_as_string
+      Androgendprvtntherapy
     type: string
 
   Antiegfrmoabtherapy:
     description: >
-      add_description_here_enum_as_string
+      Antiegfrmoabtherapy
     type: string
 
   Apprchforbpsyofprmry:
     description: >
-      add_description_here_all_null
+      Apprchforbpsyofprmry
     type: string
 
   AutomaticStagingOverridden:
     description: >
-      add_description_here_all_null
+      AutomaticStagingOverridden
     type: string
 
   Bariumenema:
     description: >
-      add_description_here_enum_as_string
+      Bariumenema
     type: string
 
   Biopsyofotherthanprimary:
     description: >
-      add_description_here_all_null
+      Biopsyofotherthanprimary
     type: string
 
   Biopsyprocedure:
     description: >
-      add_description_here_all_null
+      Biopsyprocedure
     type: string
 
   Bloodinsputumperpt:
     description: >
-      add_description_here_boolean_as_string
+      Bloodinsputumperpt
     type: string
 
   Boneimaging:
     description: >
-      add_description_here_all_null
+      Boneimaging
     type: string
 
   Bonemarrowaspiration:
     description: >
-      add_description_here_all_null
+      Bonemarrowaspiration
     type: string
 
   Boostdosecgy:
     description: >
-      add_description_here
+      Boostdosecgy
     type: number
 
   Boosttreatmentmodality:
     description: >
-      add_description_here
+      Boosttreatmentmodality
     type: number
 
   Brachytherapy:
     description: >
-      add_description_here_all_null
+      Brachytherapy
     type: string
 
   Bronchoscopy:
     description: >
-      add_description_here_enum_as_string
+      Bronchoscopy
     type: string
 
   Cancer1:
     description: >
-      add_description_here_enum_as_string
+      Cancer1
     type: string
 
   Cancer2:
     description: >
-      add_description_here_enum_as_string
+      Cancer2
     type: string
 
   Cancer3:
     description: >
-      add_description_here_enum_as_string
+      Cancer3
     type: string
 
   Cancer4:
     description: >
-      add_description_here_enum_as_string
+      Cancer4
     type: string
 
   Capprotocolreview:
     description: >
-      add_description_here_enum_as_string
+      Capprotocolreview
     type: string
 
   Captext:
     description: >
-      add_description_here_all_null
+      Captext
     type: string
 
   Casefindingsource:
     description: >
-      add_description_here
+      Casefindingsource
     type: number
 
   Changeinbowelhabitsperpt:
     description: >
-      add_description_here_boolean_as_string
+      Changeinbowelhabitsperpt
     type: string
 
   Chemotherapeuticagent1:
     description: >
-      add_description_here_enum_as_string
+      Chemotherapeuticagent1
     type: string
 
   Chemotherapeuticagent2:
     description: >
-      add_description_here_enum_as_string
+      Chemotherapeuticagent2
     type: string
 
   Chemotherapeuticagent3:
     description: >
-      add_description_here_enum_as_string
+      Chemotherapeuticagent3
     type: string
 
   Chemotherapeuticagent4:
     description: >
-      add_description_here_enum_as_string
+      Chemotherapeuticagent4
     type: string
 
   Chemotherapeuticagent5:
     description: >
-      add_description_here_enum_as_string
+      Chemotherapeuticagent5
     type: string
 
   Chemotherapy:
     description: >
-      add_description_here_enum_as_string
+      Chemotherapy
     type: string
 
   ChemotherapyFac:
     description: >
-      add_description_here_enum_as_string
+      ChemotherapyFac
     type: string
 
   Chemotherapyrecommended:
     description: >
-      add_description_here_boolean_as_string
+      Chemotherapyrecommended
     type: string
 
   Chestxray:
     description: >
-      add_description_here_enum_as_string
+      Chestxray
     type: string
 
   ClassCategory:
     description: >
-      add_description_here_enum_as_string
+      ClassCategory
     type: string
 
   ClassofcaseX:
     description: >
-      add_description_here
+      ClassofcaseX
     type: number
 
   ClinicalM:
     description: >
-      add_description_here
+      ClinicalM
     type: string
 
   ClinicalN:
     description: >
-      add_description_here
+      ClinicalN
     type: string
 
   Clinicalriskfactors:
     description: >
-      add_description_here_all_null
+      Clinicalriskfactors
     type: string
 
   ClinicalT:
     description: >
-      add_description_here
+      ClinicalT
     type: string
 
   Clinicaltrialsdiscussion:
     description: >
-      add_description_here_enum_as_string
+      Clinicaltrialsdiscussion
     type: string
 
   ClintnmdocumentationpretX:
     description: >
-      add_description_here_boolean_as_string
+      ClintnmdocumentationpretX
     type: string
 
   Colonoscopy:
     description: >
-      add_description_here_enum_as_string
+      Colonoscopy
     type: string
 
   Csschemadiscriminator:
     description: >
-      add_description_here
+      Csschemadiscriminator
     type: number
 
   Ctofabdomenpelvis:
     description: >
-      add_description_here_enum_as_string
+      Ctofabdomenpelvis
     type: string
 
   Ctscan:
     description: >
-      add_description_here_enum_as_string
+      Ctscan
     type: string
 
   Ctscanofchest:
     description: >
-      add_description_here_all_null
+      Ctscanofchest
     type: string
 
   Ctscanofneckthyroid:
     description: >
-      add_description_here_all_null
+      Ctscanofneckthyroid
     type: string
 
   DaysFromAnchorDateToChemotherapyDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToChemotherapyDate
     type: integer
 
   DaysFromAnchorDateToChemotherapyFacDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToChemotherapyFacDate
     type: integer
 
   DaysFromAnchorDateToCltnmdocumentationdate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToCltnmdocumentationdate
     type: integer
 
   DaysFromAnchorDateToDateadtinitiated:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateadtinitiated
     type: integer
 
   DaysFromAnchorDateToDatecasecompleted:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatecasecompleted
     type: integer
 
   DaysFromAnchorDateToDatecaseinitiated:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatecaseinitiated
     type: integer
 
   DaysFromAnchorDateToDatecaselastchanged:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatecaselastchanged
     type: integer
 
   DaysFromAnchorDateToDatechmthrpyrcmmndd:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatechmthrpyrcmmndd
     type: integer
 
   DaysFromAnchorDateToDatefirstsrgclprcdr:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatefirstsrgclprcdr
     type: integer
 
   DaysFromAnchorDateToDatehospicecareinitiated:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatehospicecareinitiated
     type: integer
 
   DaysFromAnchorDateToDatehspccnsltcmpltd:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatehspccnsltcmpltd
     type: integer
 
   DaysFromAnchorDateToDatehspccnsltinttd:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatehspccnsltinttd
     type: integer
 
   DaysFromAnchorDateToDateof1stPositiveBiopsy:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateof1stPositiveBiopsy
     type: integer
 
   DaysFromAnchorDateToDateofbariumenema:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofbariumenema
     type: integer
 
   DaysFromAnchorDateToDateofbloodinsputumperpt:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofbloodinsputumperpt
     type: integer
 
   DaysFromAnchorDateToDateofbronchoscopy:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofbronchoscopy
     type: integer
 
   DaysFromAnchorDateToDateofcancerconf:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofcancerconf
     type: integer
 
   DaysFromAnchorDateToDateofchangeinbowelhabits:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofchangeinbowelhabits
     type: integer
 
   DaysFromAnchorDateToDateofchestXray:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofchestXray
     type: integer
 
   DaysFromAnchorDateToDateofColonoscopy:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofColonoscopy
     type: integer
 
   DaysFromAnchorDateToDateofconclusivedX:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofconclusivedX
     type: integer
 
   DaysFromAnchorDateToDateofctofabdomenpelvis:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofctofabdomenpelvis
     type: integer
 
   DaysFromAnchorDateToDateofctscan:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofctscan
     type: integer
 
   DaysFromAnchorDateToDateofdyspnea:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofdyspnea
     type: integer
 
   DaysFromAnchorDateToDateoffever:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateoffever
     type: integer
 
   DaysFromAnchorDateToDateoffirstcontact:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateoffirstcontact
     type: integer
 
   DaysFromAnchorDateToDateOfFirstRecurrence:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateOfFirstRecurrence
     type: integer
 
   DaysFromAnchorDateToDateoffirstsymptoms:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateoffirstsymptoms
     type: integer
 
   DaysFromAnchorDateToDateoffobt:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateoffobt
     type: integer
 
   DaysFromAnchorDateToDateofincreasedcough:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofincreasedcough
     type: integer
 
   DaysFromAnchorDateToDateofmediastinoscopy:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofmediastinoscopy
     type: integer
 
   DaysFromAnchorDateToDateofmultipletumors:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofmultipletumors
     type: integer
 
   DaysFromAnchorDateToDateofnightsweats:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofnightsweats
     type: integer
 
   DaysFromAnchorDateToDateofnotreatment:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofnotreatment
     type: integer
 
   DaysFromAnchorDateToDateofPetscan:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofPetscan
     type: integer
 
   DaysFromAnchorDateToDateofsigmoidoscopy:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofsigmoidoscopy
     type: integer
 
   DaysFromAnchorDateToDateofsurgeryconsult:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateofsurgeryconsult
     type: integer
 
   DaysFromAnchorDateToDateonclgycnsltordrd:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateonclgycnsltordrd
     type: integer
 
   DaysFromAnchorDateToDateoncologyconsultdone:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateoncologyconsultdone
     type: integer
 
   DaysFromAnchorDateToDateradiationended:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateradiationended
     type: integer
 
   DaysFromAnchorDateToDatestartofworkupordered:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDatestartofworkupordered
     type: integer
 
   DaysFromAnchorDateToDateworkupstarted:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDateworkupstarted
     type: integer
 
   DaysFromAnchorDateToDiagnosisDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDiagnosisDate
     type: integer
 
   DaysFromAnchorDateToDredate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToDredate
     type: integer
 
   DaysFromAnchorDateToFirstCourseOfTreatmentDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToFirstCourseOfTreatmentDate
     type: integer
 
   DaysFromAnchorDateToHematransendcrnprocdate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToHematransendcrnprocdate
     type: integer
 
   DaysFromAnchorDateToHormoneTherapyDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToHormoneTherapyDate
     type: integer
 
   DaysFromAnchorDateToHormoneTherapyFacDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToHormoneTherapyFacDate
     type: integer
 
   DaysFromAnchorDateToImmunotherapyDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToImmunotherapyDate
     type: integer
 
   DaysFromAnchorDateToImmunotherapyFacDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToImmunotherapyFacDate
     type: integer
 
   DaysFromAnchorDateToInpatientAdmissionDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToInpatientAdmissionDate
     type: integer
 
   DaysFromAnchorDateToInpatientDischargeDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToInpatientDischargeDate
     type: integer
 
   DaysFromAnchorDateToMostdefinitivesurgDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToMostdefinitivesurgDate
     type: integer
 
   DaysFromAnchorDateToMostdefinitivesurgfacDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToMostdefinitivesurgfacDate
     type: integer
 
   DaysFromAnchorDateToOtherTreatmentFacilityDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToOtherTreatmentFacilityDate
     type: integer
 
   DaysFromAnchorDateToOtherTreatmentStartDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToOtherTreatmentStartDate
     type: integer
 
   DaysFromAnchorDateToPsadate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToPsadate
     type: integer
 
   DaysFromAnchorDateToRadiationauxiliarydate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRadiationauxiliarydate
     type: integer
 
   DaysFromAnchorDateToRadiationFacilityDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRadiationFacilityDate
     type: integer
 
   DaysFromAnchorDateToRadiationStartDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRadiationStartDate
     type: integer
 
   DaysFromAnchorDateToRadiationTherapyToCnsDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToRadiationTherapyToCnsDate
     type: integer
 
   DaysFromAnchorDateToReportingdate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToReportingdate
     type: integer
 
   DaysFromAnchorDateToScopeoflnsurgerydate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToScopeoflnsurgerydate
     type: integer
 
   DaysFromAnchorDateToScopeoflnsurgeryfacdate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToScopeoflnsurgeryfacdate
     type: integer
 
   DaysFromAnchorDateToSurgDxstagingProcFacDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgDxstagingProcFacDate
     type: integer
 
   DaysFromAnchorDateToSurgicalDxstagingProcDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgicalDxstagingProcDate
     type: integer
 
   DaysFromAnchorDateToSurgprocothersitedate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgprocothersitedate
     type: integer
 
   DaysFromAnchorDateToSurgprocothersitefacdate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToSurgprocothersitefacdate
     type: integer
 
   DaysFromAnchorDateToTreatmentguidelinedocdate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToTreatmentguidelinedocdate
     type: integer
 
   Depthoftumor:
     description: >
-      add_description_here_all_null
+      Depthoftumor
     type: string
 
   Derivedss1977:
     description: >
-      add_description_here_enum_as_string
+      Derivedss1977
     type: string
 
   Derivedss2000:
     description: >
-      add_description_here_enum_as_string
+      Derivedss2000
     type: string
 
   DiagnosisTime:
     description: >
-      add_description_here
+      DiagnosisTime
     type: string
 
   DiagnosticConfirmation:
     description: >
-      add_description_here_enum_as_string
+      DiagnosticConfirmation
     type: string
 
   DiffuseRetinalInvolvement:
     description: >
-      add_description_here_all_null
+      DiffuseRetinalInvolvement
     type: string
 
   DistantSite1:
     description: >
-      add_description_here_enum_as_string
+      DistantSite1
     type: string
 
   DistantSite2:
     description: >
-      add_description_here_enum_as_string
+      DistantSite2
     type: string
 
   DistantSite3:
     description: >
-      add_description_here_enum_as_string
+      DistantSite3
     type: string
 
   Docfornoplatbasedchemo:
     description: >
-      add_description_here_enum_as_string
+      Docfornoplatbasedchemo
     type: string
 
   DRE:
     description: >
-      add_description_here_enum_as_string
+      DRE
     type: string
 
   Dyspnea:
     description: >
-      add_description_here_boolean_as_string
+      Dyspnea
     type: string
 
   Egfrmutation1:
     description: >
-      add_description_here_enum_as_string
+      Egfrmutation1
     type: string
 
   Egfrmutation2:
     description: >
-      add_description_here_enum_as_string
+      Egfrmutation2
     type: string
 
   Egfrmutationtesting:
     description: >
-      add_description_here_enum_as_string
+      Egfrmutationtesting
     type: string
 
   Extension:
     description: >
-      add_description_here
+      Extension
     type: number
 
   ExtensionCs:
     description: >
-      add_description_here
+      ExtensionCs
     type: number
 
   Externalbeamradiation:
     description: >
-      add_description_here_all_null
+      Externalbeamradiation
     type: string
 
   FamilyHistory:
     description: >
-      add_description_here_boolean_as_string
+      FamilyHistory
     type: string
 
   Fecaloccultbloodtestfobt:
     description: >
-      add_description_here_enum_as_string
+      Fecaloccultbloodtestfobt
     type: string
 
   Feebasis:
     description: >
-      add_description_here_boolean_as_string
+      Feebasis
     type: string
 
   FEVER:
     description: >
-      add_description_here_boolean_as_string
+      FEVER
     type: string
 
   Firstsitecode:
     description: >
-      add_description_here_all_null
+      Firstsitecode
     type: string
 
   Gaschemotherapeuticagent1:
     description: >
-      add_description_here_all_null
+      Gaschemotherapeuticagent1
     type: string
 
   Gaschemotherapeuticagent2:
     description: >
-      add_description_here_all_null
+      Gaschemotherapeuticagent2
     type: string
 
   Gaschemotherapeuticagent3:
     description: >
-      add_description_here_all_null
+      Gaschemotherapeuticagent3
     type: string
 
   Gascomorbidcondition1:
     description: >
-      add_description_here_all_null
+      Gascomorbidcondition1
     type: string
 
   Gascomorbidcondition2:
     description: >
-      add_description_here_all_null
+      Gascomorbidcondition2
     type: string
 
   Gascomorbidcondition3:
     description: >
-      add_description_here_all_null
+      Gascomorbidcondition3
     type: string
 
   Gascomorbidcondition4:
     description: >
-      add_description_here_all_null
+      Gascomorbidcondition4
     type: string
 
   Gascomorbidcondition5:
     description: >
-      add_description_here_all_null
+      Gascomorbidcondition5
     type: string
 
   Gascomorbidcondition6:
     description: >
-      add_description_here_all_null
+      Gascomorbidcondition6
     type: string
 
   Gascomplication1:
     description: >
-      add_description_here_all_null
+      Gascomplication1
     type: string
 
   Gascomplication2:
     description: >
-      add_description_here_all_null
+      Gascomplication2
     type: string
 
   Gascomplication3:
     description: >
-      add_description_here_all_null
+      Gascomplication3
     type: string
 
   Gascomplication4:
     description: >
-      add_description_here_all_null
+      Gascomplication4
     type: string
 
   Gascomplication5:
     description: >
-      add_description_here_all_null
+      Gascomplication5
     type: string
 
   Gaspersonalhistothmalig:
     description: >
-      add_description_here_all_null
+      Gaspersonalhistothmalig
     type: string
 
   Gleasonscoreclinical:
     description: >
-      add_description_here
+      Gleasonscoreclinical
     type: number
 
   Gleasonscorepathologic:
     description: >
-      add_description_here
+      Gleasonscorepathologic
     type: number
 
   Gradedifferentiation:
     description: >
-      add_description_here_enum_as_string
+      Gradedifferentiation
     type: string
 
   Gradepathsystem:
     description: >
-      add_description_here_enum_as_string
+      Gradepathsystem
     type: string
 
   Gradepathvalue:
     description: >
-      add_description_here_enum_as_string
+      Gradepathvalue
     type: string
 
   Guidance:
     description: >
-      add_description_here_all_null
+      Guidance
     type: string
 
   Hematransendocrineproc:
     description: >
-      add_description_here
+      Hematransendocrineproc
     type: number
 
   Histologyicdo2X:
     description: >
-      add_description_here_enum_as_string
+      Histologyicdo2X
     type: string
 
   Histologyicdo3X:
     description: >
-      add_description_here_enum_as_string
+      Histologyicdo3X
     type: string
 
   HormoneTherapy:
     description: >
-      add_description_here_enum_as_string
+      HormoneTherapy
     type: string
 
   HormoneTherapyFac:
     description: >
-      add_description_here_enum_as_string
+      HormoneTherapyFac
     type: string
 
   ICDOSite:
     description: >
-      add_description_here_enum_as_string
+      ICDOSite
     type: string
 
   Immunotherapy:
     description: >
-      add_description_here_enum_as_string
+      Immunotherapy
     type: string
 
   ImmunotherapyFac:
     description: >
-      add_description_here_enum_as_string
+      ImmunotherapyFac
     type: string
 
   ImmunotherapyhospitalX:
     description: >
-      add_description_here_all_null
+      ImmunotherapyhospitalX
     type: string
 
   Increasedcough:
     description: >
-      add_description_here_boolean_as_string
+      Increasedcough
     type: string
 
   Infrasupra:
     description: >
-      add_description_here_all_null
+      Infrasupra
     type: string
 
   Inpatientoutpatientstatus:
     description: >
-      add_description_here_all_null
+      Inpatientoutpatientstatus
     type: string
 
   Intentofchemotherapy:
     description: >
-      add_description_here_enum_as_string
+      Intentofchemotherapy
     type: string
 
   Intentofradiation:
     description: >
-      add_description_here_enum_as_string
+      Intentofradiation
     type: string
 
   Intentofsurgery:
     description: >
-      add_description_here_enum_as_string
+      Intentofsurgery
     type: string
 
   IrisciliaryBody:
     description: >
-      add_description_here_all_null
+      IrisciliaryBody
     type: string
 
   Karnofskysratingdistrans:
     description: >
-      add_description_here_all_null
+      Karnofskysratingdistrans
     type: string
 
   KarnofskysratingpriortotX:
     description: >
-      add_description_here_all_null
+      KarnofskysratingpriortotX
     type: string
 
   Krnfskysratingrcrrnc:
     description: >
-      add_description_here_all_null
+      Krnfskysratingrcrrnc
     type: string
 
   Lasttumorstatus:
     description: >
-      add_description_here_enum_as_string
+      Lasttumorstatus
     type: string
 
   Laterality:
     description: >
-      add_description_here_enum_as_string
+      Laterality
     type: string
 
   Lesserpattern0240:
     description: >
-      add_description_here_all_null
+      Lesserpattern0240
     type: string
 
   Lngcomorbidcondition1:
     description: >
-      add_description_here_all_null
+      Lngcomorbidcondition1
     type: string
 
   Lngcomorbidcondition2:
     description: >
-      add_description_here_all_null
+      Lngcomorbidcondition2
     type: string
 
   Lngcomorbidcondition3:
     description: >
-      add_description_here_all_null
+      Lngcomorbidcondition3
     type: string
 
   Lngcomorbidcondition4:
     description: >
-      add_description_here_all_null
+      Lngcomorbidcondition4
     type: string
 
   Lngcomorbidcondition5:
     description: >
-      add_description_here_all_null
+      Lngcomorbidcondition5
     type: string
 
   Lngcomorbidcondition6:
     description: >
-      add_description_here_all_null
+      Lngcomorbidcondition6
     type: string
 
   Lngcomplication1:
     description: >
-      add_description_here_all_null
+      Lngcomplication1
     type: string
 
   Lngcomplication2:
     description: >
-      add_description_here_all_null
+      Lngcomplication2
     type: string
 
   Lngcomplication3:
     description: >
-      add_description_here_all_null
+      Lngcomplication3
     type: string
 
   Lngcomplication4:
     description: >
-      add_description_here_all_null
+      Lngcomplication4
     type: string
 
   Lngcomplication5:
     description: >
-      add_description_here_all_null
+      Lngcomplication5
     type: string
 
   Lngpersonalhistothmalig:
     description: >
-      add_description_here_all_null
+      Lngpersonalhistothmalig
     type: string
 
   LocationofradiationtX:
     description: >
-      add_description_here_enum_as_string
+      LocationofradiationtX
     type: string
 
   LymphNodes:
     description: >
-      add_description_here
+      LymphNodes
     type: number
 
   LymphNodesCs:
     description: >
-      add_description_here
+      LymphNodesCs
     type: number
 
   Lymphvascularinvasionl:
     description: >
-      add_description_here_enum_as_string
+      Lymphvascularinvasionl
     type: string
 
   Mediastinoscopy:
     description: >
-      add_description_here_enum_as_string
+      Mediastinoscopy
     type: string
 
   Metsatdxbone:
     description: >
-      add_description_here_enum_as_string
+      Metsatdxbone
     type: string
 
   Metsatdxbrain:
     description: >
-      add_description_here_enum_as_string
+      Metsatdxbrain
     type: string
 
   MetsAtDxCs:
     description: >
-      add_description_here
+      MetsAtDxCs
     type: number
 
   Metsatdxliver:
     description: >
-      add_description_here_enum_as_string
+      Metsatdxliver
     type: string
 
   Metsatdxlung:
     description: >
-      add_description_here_enum_as_string
+      Metsatdxlung
     type: string
 
   MetsEvalCs:
     description: >
-      add_description_here
+      MetsEvalCs
     type: number
 
   Mripelvisabdomen:
     description: >
-      add_description_here_all_null
+      Mripelvisabdomen
     type: string
 
   MultimodalityTherapy:
     description: >
-      add_description_here_boolean_as_string
+      MultimodalityTherapy
     type: string
 
   MultimodalityTherapyClin:
     description: >
-      add_description_here_all_null
+      MultimodalityTherapyClin
     type: string
 
   MultipleTumors:
     description: >
-      add_description_here
+      MultipleTumors
     type: number
 
   Multiplicitycounter:
     description: >
-      add_description_here
+      Multiplicitycounter
     type: number
 
   Multtumrptasoneprim:
     description: >
-      add_description_here
+      Multtumrptasoneprim
     type: number
 
   Neoadjuvanttherapy:
     description: >
-      add_description_here_enum_as_string
+      Neoadjuvanttherapy
     type: string
 
   Nightsweats:
     description: >
-      add_description_here_boolean_as_string
+      Nightsweats
     type: string
 
   Nonadtchemotherapy:
     description: >
-      add_description_here_enum_as_string
+      Nonadtchemotherapy
     type: string
 
   Nslcstage13pathlnstaging:
     description: >
-      add_description_here_enum_as_string
+      Nslcstage13pathlnstaging
     type: string
 
   Numberoflnremovedfacr:
     description: >
-      add_description_here
+      Numberoflnremovedfacr
     type: number
 
   Numberoflnremovedr:
     description: >
-      add_description_here
+      Numberoflnremovedr
     type: number
 
   Oncologyreferral:
     description: >
-      add_description_here_enum_as_string
+      Oncologyreferral
     type: string
 
   Othercancer:
     description: >
-      add_description_here_boolean_as_string
+      Othercancer
     type: string
 
   Otherm:
     description: >
-      add_description_here_all_null
+      Otherm
     type: string
 
   Othern:
     description: >
-      add_description_here_all_null
+      Othern
     type: string
 
   Otherstagegroup:
     description: >
-      add_description_here_all_null
+      Otherstagegroup
     type: string
 
   Otherstagingsystem:
     description: >
-      add_description_here_all_null
+      Otherstagingsystem
     type: string
 
   Othert:
     description: >
-      add_description_here_all_null
+      Othert
     type: string
 
   OtherTreatment:
     description: >
-      add_description_here_enum_as_string
+      OtherTreatment
     type: string
 
   OtherTreatmentFac:
     description: >
-      add_description_here_enum_as_string
+      OtherTreatmentFac
     type: string
 
   OthertypeoffirstrecurrenceX:
     description: >
-      add_description_here_all_null
+      OthertypeoffirstrecurrenceX
     type: string
 
   Painassessment:
     description: >
-      add_description_here_all_null
+      Painassessment
     type: string
 
   Palliativecare:
     description: >
-      add_description_here_enum_as_string
+      Palliativecare
     type: string
 
   Palliativecarefac:
     description: >
-      add_description_here_enum_as_string
+      Palliativecarefac
     type: string
 
   Palpabilityofprimary:
     description: >
-      add_description_here_all_null
+      Palpabilityofprimary
     type: string
 
   Papillaryfollicular:
     description: >
-      add_description_here_all_null
+      Papillaryfollicular
     type: string
 
   Pathologicfracture:
     description: >
-      add_description_here_all_null
+      Pathologicfracture
     type: string
 
   Pathologicm:
     description: >
-      add_description_here_enum_as_string
+      Pathologicm
     type: string
 
   PathologicN:
     description: >
-      add_description_here_enum_as_string
+      PathologicN
     type: string
 
   Pathologicriskfactors:
     description: >
-      add_description_here_all_null
+      Pathologicriskfactors
     type: string
 
   Pathologicsizeoftumor:
     description: >
-      add_description_here_all_null
+      Pathologicsizeoftumor
     type: string
 
   PathologicT:
     description: >
-      add_description_here_enum_as_string
+      PathologicT
     type: string
 
   PerformanceStatus:
     description: >
-      add_description_here_all_null
+      PerformanceStatus
     type: string
 
   PerformancestatusatdX:
     description: >
-      add_description_here_enum_as_string
+      PerformancestatusatdX
     type: string
 
   PeripheralBloodInvolvement:
     description: >
-      add_description_here_all_null
+      PeripheralBloodInvolvement
     type: string
 
   Perirectallninvolvement:
     description: >
-      add_description_here_enum_as_string
+      Perirectallninvolvement
     type: string
 
   Petscan:
     description: >
-      add_description_here_enum_as_string
+      Petscan
     type: string
 
   PhysiciansStage:
     description: >
-      add_description_here
+      PhysiciansStage
     type: string
 
   Predominantpattern0240:
     description: >
-      add_description_here_all_null
+      Predominantpattern0240
     type: string
 
   Preopobstructinglesion:
     description: >
-      add_description_here_boolean_as_string
+      Preopobstructinglesion
     type: string
 
   Presenceofmultipletumors:
     description: >
-      add_description_here_all_null
+      Presenceofmultipletumors
     type: string
 
   Presentationatcancerconf:
     description: >
-      add_description_here_enum_as_string
+      Presentationatcancerconf
     type: string
 
   PrimarySiteCodePrefiX:
     description: >
-      add_description_here_enum_as_string
+      PrimarySiteCodePrefiX
     type: string
 
   PrimarysiteX:
     description: >
-      add_description_here_enum_as_string
+      PrimarysiteX
     type: string
 
   Radiation:
     description: >
-      add_description_here_enum_as_string
+      Radiation
     type: string
 
   Radiationauxiliaryvolume:
     description: >
-      add_description_here_all_null
+      Radiationauxiliaryvolume
     type: string
 
   Radiationcompletionstatus:
     description: >
-      add_description_here_all_null
+      Radiationcompletionstatus
     type: string
 
   RadiationFacility:
     description: >
-      add_description_here_enum_as_string
+      RadiationFacility
     type: string
 
   RadiationsurgerySequence:
     description: >
-      add_description_here_enum_as_string
+      RadiationsurgerySequence
     type: string
 
   RadiationTherapyToCns:
     description: >
-      add_description_here_all_null
+      RadiationTherapyToCns
     type: string
 
   RadiationtherapytocnshospX:
     description: >
-      add_description_here_all_null
+      RadiationtherapytocnshospX
     type: string
 
   Radiationtreatmentvolume:
     description: >
-      add_description_here
+      Radiationtreatmentvolume
     type: number
 
   Rdtnlocalcntrlstatus:
     description: >
-      add_description_here_all_null
+      Rdtnlocalcntrlstatus
     type: string
 
   ReadmissionWi30Dayssurg:
     description: >
-      add_description_here_enum_as_string
+      ReadmissionWi30Dayssurg
     type: string
 
   Reasonchemotherapystopped:
     description: >
-      add_description_here_enum_as_string
+      Reasonchemotherapystopped
     type: string
 
   ReasonForNoChemotherapy:
     description: >
-      add_description_here_all_null
+      ReasonForNoChemotherapy
     type: string
 
   ReasonForNoHormoneTherapy:
     description: >
-      add_description_here_all_null
+      ReasonForNoHormoneTherapy
     type: string
 
   Reasonfornolnbiopsy:
     description: >
-      add_description_here_enum_as_string
+      Reasonfornolnbiopsy
     type: string
 
   ReasonForNoRadiation:
     description: >
-      add_description_here_enum_as_string
+      ReasonForNoRadiation
     type: string
 
   Reasonhrmnthrpystppd:
     description: >
-      add_description_here_all_null
+      Reasonhrmnthrpystppd
     type: string
 
   Reasonnosurgeryofprimary:
     description: >
-      add_description_here_enum_as_string
+      Reasonnosurgeryofprimary
     type: string
 
   Reasonradiationstopped:
     description: >
-      add_description_here_enum_as_string
+      Reasonradiationstopped
     type: string
 
   Reconstructionrestoration:
     description: >
-      add_description_here
+      Reconstructionrestoration
     type: number
 
   Referraltosupportservices:
     description: >
-      add_description_here_all_null
+      Referraltosupportservices
     type: string
 
   Regionaldosecgy:
     description: >
-      add_description_here
+      Regionaldosecgy
     type: number
 
   RegionalLymphNodesExamined:
     description: >
-      add_description_here
+      RegionalLymphNodesExamined
     type: number
 
   RegionalLymphNodesPositive:
     description: >
-      add_description_here
+      RegionalLymphNodesPositive
     type: number
 
   Regionaltreatmentmodality:
     description: >
-      add_description_here
+      Regionaltreatmentmodality
     type: number
 
   RegNodesEvalCs:
     description: >
-      add_description_here
+      RegNodesEvalCs
     type: number
 
   Riskofrecurrence:
     description: >
-      add_description_here_enum_as_string
+      Riskofrecurrence
     type: string
 
   Scopeoflnsurgeryf:
     description: >
-      add_description_here_enum_as_string
+      Scopeoflnsurgeryf
     type: string
 
   Scopeoflnsurgeryfacf:
     description: >
-      add_description_here_enum_as_string
+      Scopeoflnsurgeryfacf
     type: string
 
   Scopeoflnsurgeryfacr:
     description: >
-      add_description_here
+      Scopeoflnsurgeryfacr
     type: number
 
   Scopeoflnsurgeryr:
     description: >
-      add_description_here
+      Scopeoflnsurgeryr
     type: number
 
   Screeningresult:
     description: >
-      add_description_here_all_null
+      Screeningresult
     type: string
 
   Secondsitecode:
     description: >
-      add_description_here_all_null
+      Secondsitecode
     type: string
 
   SeerSummaryStage2000:
     description: >
-      add_description_here
+      SeerSummaryStage2000
     type: string
 
   Sentinelnodesexaminedbr98:
     description: >
-      add_description_here_all_null
+      Sentinelnodesexaminedbr98
     type: string
 
   Sentinelnodespositivebr98:
     description: >
-      add_description_here_all_null
+      Sentinelnodespositivebr98
     type: string
 
   SequenceNumber:
     description: >
-      add_description_here
+      SequenceNumber
     type: integer
 
   Serumtumormarkers:
     description: >
-      add_description_here_all_null
+      Serumtumormarkers
     type: string
 
   Sigmoidoscopy:
     description: >
-      add_description_here_enum_as_string
+      Sigmoidoscopy
     type: string
 
   SitegpX:
     description: >
-      add_description_here
+      SitegpX
     type: string
 
   SiteOfDistantMetastasis1:
     description: >
-      add_description_here
+      SiteOfDistantMetastasis1
     type: string
 
   SiteOfDistantMetastasis2:
     description: >
-      add_description_here
+      SiteOfDistantMetastasis2
     type: string
 
   SiteOfDistantMetastasis3:
     description: >
-      add_description_here
+      SiteOfDistantMetastasis3
     type: string
 
   SitespecificFactor1Cs:
     description: >
-      add_description_here
+      SitespecificFactor1Cs
     type: number
 
   Sizeoftumormelanoma:
     description: >
-      add_description_here_all_null
+      Sizeoftumormelanoma
     type: string
 
   Smokinghistory:
     description: >
-      add_description_here_all_null
+      Smokinghistory
     type: string
 
   Sporadicpolyps:
     description: >
-      add_description_here_boolean_as_string
+      Sporadicpolyps
     type: string
 
   Stagedbyotherstage:
     description: >
-      add_description_here_all_null
+      Stagedbyotherstage
     type: string
 
   Stagedbypathologicstage:
     description: >
-      add_description_here_enum_as_string
+      Stagedbypathologicstage
     type: string
 
   Stagegroupbest:
     description: >
-      add_description_here_enum_as_string
+      Stagegroupbest
     type: string
 
   Stagegroupclinical:
     description: >
-      add_description_here_enum_as_string
+      Stagegroupclinical
     type: string
 
   StageGroupingajcc:
     description: >
-      add_description_here_enum_as_string
+      StageGroupingajcc
     type: string
 
   Stagegrouppathologic:
     description: >
-      add_description_here_enum_as_string
+      Stagegrouppathologic
     type: string
 
   Subsite:
     description: >
-      add_description_here_all_null
+      Subsite
     type: string
 
   SurgDxstagingProcFac:
     description: >
-      add_description_here
+      SurgDxstagingProcFac
     type: number
 
   SurgeryOfPrimaryF:
     description: >
-      add_description_here
+      SurgeryOfPrimaryF
     type: number
 
   SurgeryOfPrimaryFacF:
     description: >
-      add_description_here
+      SurgeryOfPrimaryFacF
     type: number
 
   SurgicalMargins:
     description: >
-      add_description_here_enum_as_string
+      SurgicalMargins
     type: string
 
   Surgprocothersitef:
     description: >
-      add_description_here_enum_as_string
+      Surgprocothersitef
     type: string
 
   Surgprocothersitefacf:
     description: >
-      add_description_here_enum_as_string
+      Surgprocothersitefacf
     type: string
 
   Surgprocothersitefacr:
     description: >
-      add_description_here
+      Surgprocothersitefacr
     type: number
 
   Surgprocothersiter:
     description: >
-      add_description_here
+      Surgprocothersiter
     type: number
 
   Systemicsurgerysequence:
     description: >
-      add_description_here_enum_as_string
+      Systemicsurgerysequence
     type: string
 
   Texthistologytitle:
     description: >
-      add_description_here_enum_as_string
+      Texthistologytitle
     type: string
 
   Textprimarysitetitle:
     description: >
-      add_description_here_enum_as_string
+      Textprimarysitetitle
     type: string
 
   Treatmentabbreviated:
     description: >
-      add_description_here_enum_as_string
+      Treatmentabbreviated
     type: string
 
   Treatmentguideline1:
     description: >
-      add_description_here_enum_as_string
+      Treatmentguideline1
     type: string
 
   Treatmentguideline2:
     description: >
-      add_description_here_enum_as_string
+      Treatmentguideline2
     type: string
 
   Treatmentguideline3:
     description: >
-      add_description_here_enum_as_string
+      Treatmentguideline3
     type: string
 
   TumorSize:
     description: >
-      add_description_here
+      TumorSize
     type: number
 
   TumorSizeCs:
     description: >
-      add_description_here
+      TumorSizeCs
     type: number
 
   TumorSizeextEvalCs:
     description: >
-      add_description_here
+      TumorSizeextEvalCs
     type: number
 
   Tumorsizesource:
     description: >
-      add_description_here_all_null
+      Tumorsizesource
     type: string
 
   Typeofchemotherapy:
     description: >
-      add_description_here_enum_as_string
+      Typeofchemotherapy
     type: string
 
   TypeoffirstrecurrenceX:
     description: >
-      add_description_here
+      TypeoffirstrecurrenceX
     type: number
 
   TypeofreportingsourceX:
     description: >
-      add_description_here
+      TypeofreportingsourceX
     type: number
 
   Typeofstagingsystemped:
     description: >
-      add_description_here_all_null
+      Typeofstagingsystemped
     type: string
 
   Ulcerativecolitisuc:
     description: >
-      add_description_here_enum_as_string
+      Ulcerativecolitisuc
     type: string
 
   Upperlower:
     description: >
-      add_description_here_all_null
+      Upperlower
     type: string
 
   Venousinvasionv:
     description: >
-      add_description_here_enum_as_string
+      Venousinvasionv
     type: string
 
   Weightlossperpt:
     description: >
-      add_description_here_boolean_as_string
+      Weightlossperpt
     type: string
 
   Whohistologicalcl:
     description: >
-      add_description_here_all_null
+      Whohistologicalcl
     type: string
 
   cases:

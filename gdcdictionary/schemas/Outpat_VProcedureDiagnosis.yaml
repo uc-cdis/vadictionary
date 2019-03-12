@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "ICDCode"
-title: ICD Code
+id: "Outpat_VProcedureDiagnosis"
+title: Outpat VProcedureDiagnosis
 type: object
 namespace: https://vpodc.org/
 category: clinical
 program: '*'
 project: '*'
 description: >
-  The ICD Code Domain provides details on the International Classification Codes (ICD) and Diagnostic Related Groups (DRG) identifiers. This domain includes descriptions for ICD9 and ICD10 codes as well as the status to indicate if the code is active or inactive.
+  Outpat VProcedureDiagnosis
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: ICDCodes
+    backref: Outpat_VProcedureDiagnoses
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,19 +40,49 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  DaysFromAnchorDateToEndDate:
+  Chicago_VisitSID:
     description: >
-      DaysFromAnchorDateToEndDate
+      Chicago_VisitSID
+    type: string
+
+  CPTCategory:
+    description: >
+      CPTCategory
+    type: string
+
+  CPTCode:
+    description: >
+      CPTCode
+    type: string
+
+  CPTDescription:
+    description: >
+      CPTDescription
+    type: string
+
+  CPTName:
+    description: >
+      CPTName
+    type: string
+
+  DaysFromAnchorDateToEventDate:
+    description: >
+      DaysFromAnchorDateToEventDate
     type: integer
 
-  DaysFromAnchorDateToStartDate:
+  DaysFromAnchorDateToVisitDate:
     description: >
-      DaysFromAnchorDateToStartDate
+      DaysFromAnchorDateToVisitDate
     type: integer
 
-  EndTime:
+  DaysFromAnchorDateToVProcedureDate:
     description: >
-      EndTime
+      DaysFromAnchorDateToVProcedureDate
+    type: integer
+
+  EventTime:
+    description: >
+      EventTime
     type: string
 
   ICD10Code:
@@ -68,31 +98,31 @@ properties:
   ICD9Code:
     description: >
       ICD9Code
-    type: number
+    type: string
 
   ICD9Description:
     description: >
       ICD9Description
     type: string
 
-  ParentTableName:
+  MajorCPTCategory:
     description: >
-      ParentTableName
+      MajorCPTCategory
     type: string
 
-  Sta3n:
+  OrdinalNumber:
     description: >
-      Sta3n
+      OrdinalNumber
     type: integer
 
-  StartTime:
+  VisitTime:
     description: >
-      StartTime
+      VisitTime
     type: string
 
-  TableName:
+  VProcedureTime:
     description: >
-      TableName
+      VProcedureTime
     type: string
 
   cases:

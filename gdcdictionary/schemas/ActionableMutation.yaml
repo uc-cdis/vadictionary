@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "ActionableMutations"
+id: "ActionableMutation"
 title: Actionable Mutations
 type: object
 namespace: https://vpodc.org/
-category: clinical_CDW
+category: clinical
 program: '*'
 project: '*'
 description: >
-  Mutations extracted from a patient's sequencing results.
+  Mutations extracted from a patient's sequencing results. 
 additionalProperties: false
 submittable: true
 validators: null
@@ -42,92 +42,92 @@ properties:
 
   ActiveClinicalTrials:
     description: >
-      add_description_here_enum_as_string
+      ActiveClinicalTrials
     type: string
 
   BxMorphology:
     description: >
-      add_description_here_enum_as_string
+      BxMorphology
     type: string
 
   BxType:
     description: >
-      add_description_here_enum_as_string
+      BxType
     type: string
 
   ClinicallyActionable:
     description: >
-      add_description_here
+      ClinicallyActionable
     type: number
 
   Consequence:
     description: >
-      add_description_here_enum_as_string
+      Consequence
     type: string
 
   DaysFromAnchorDateToBxDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToBxDate
     type: integer
 
   DaysFromAnchorDateToBxResultsDate:
     description: >
-      add_description_here
+      DaysFromAnchorDateToBxResultsDate
     type: integer
 
   DrugsAssociatedWithResistance_IndicatedTumorTypes:
     description: >
-      add_description_here
+      DrugsAssociatedWithResistance_IndicatedTumorTypes
     type: string
 
   DrugsAssociatedWithSensitivity_IndicatedTumorTypes:
     description: >
-      add_description_here
+      DrugsAssociatedWithSensitivity_IndicatedTumorTypes
     type: string
 
   DrugsAssociatedWithSensitivity_OtherTumorTypes:
     description: >
-      add_description_here
+      DrugsAssociatedWithSensitivity_OtherTumorTypes
     type: string
 
   Exon_PGDonly:
     description: >
-      add_description_here
+      Exon_PGDonly
     type: number
 
   Fold:
     description: >
-      add_description_here
+      Fold
     type: number
 
   Gene:
     description: >
-      add_description_here
+      Gene
     type: string
 
   Lab:
     description: >
-      add_description_here_enum_as_string
+      Lab
     type: string
 
   MutantFraction:
     description: >
-      add_description_here
+      MutantFraction
     type: number
 
   Mutation:
     description: >
-      add_description_here
+      Mutation
     type: string
 
   TotalNumberMutations:
     description: >
-      add_description_here
+      TotalNumberMutations
     type: integer
 
   TrialPhase:
     description: >
-      add_description_here
+      TrialPhase
     type: number
 
   cases:
