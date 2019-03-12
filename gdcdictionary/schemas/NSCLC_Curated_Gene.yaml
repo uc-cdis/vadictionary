@@ -65,7 +65,7 @@ properties:
       ALK_Col2
     type: string
 
-  ALK_ALK:
+  ALK-ALK:
     description: >
       ALK-ALK
     type: string
@@ -130,7 +130,7 @@ properties:
       BRCA2
     type: string
 
-  BRCA2_BRCA2:
+  BRCA2-BRCA2:
     description: >
       BRCA2-BRCA2
     type: string
@@ -225,7 +225,7 @@ properties:
       EGFR
     type: string
 
-  EML4_ALK:
+  EML4-ALK:
     description: >
       EML4-ALK
     type: string
@@ -305,7 +305,7 @@ properties:
       FGFR2
     type: string
 
-  FGFR2_KIAA1217:
+  FGFR2-KIAA1217:
     description: >
       FGFR2-KIAA1217
     type: string
@@ -425,7 +425,7 @@ properties:
       KRAS_Col2
     type: string
 
-  LDLRAD3_BCL2:
+  LDLRAD3-BCL2:
     description: >
       LDLRAD3-BCL2
     type: string
@@ -705,7 +705,7 @@ properties:
       Sequence_Number
     type: integer
 
-  SLC34A2_ROS1:
+  SLC34A2-ROS1:
     description: >
       SLC34A2-ROS1
     type: string
@@ -765,12 +765,12 @@ properties:
       TMPRSS2
     type: string
 
-  TMPRSS2_CASQ2:
+  TMPRSS2-CASQ2:
     description: >
       TMPRSS2-CASQ2
     type: string
 
-  TMPRSS2_ERG:
+  TMPRSS2-ERG:
     description: >
       TMPRSS2-ERG
     type: string
