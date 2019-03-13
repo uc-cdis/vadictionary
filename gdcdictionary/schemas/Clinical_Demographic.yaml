@@ -8,7 +8,7 @@ category: clinical
 program: '*'
 project: '*'
 description: >
-  Clinical demographic data for a patient.
+  Clinical demographic data for a patient, including data from "Clinical_Demographic" and "Patients" CDW tables.
 additionalProperties: false
 submittable: true
 validators: null
