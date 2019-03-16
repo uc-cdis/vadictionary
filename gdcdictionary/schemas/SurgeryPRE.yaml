@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "SurgeryPRE"
+id: "surgerypre"
 title: Surgery PRE
 type: object
 namespace: https://vpodc.org/

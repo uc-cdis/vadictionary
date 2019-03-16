@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Outpat_VSkinTest"
+id: "outpat_vskintest"
 title: Outpat VSkinTest
 type: object
 namespace: https://vpodc.org/

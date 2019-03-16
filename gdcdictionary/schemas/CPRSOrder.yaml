@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "CPRSOrder"
+id: "cprsorder"
 title: CPRS Order
 type: object
 namespace: https://vpodc.org/

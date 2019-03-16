@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Outpat_VPatientEd"
+id: "outpat_vpatiented"
 title: Outpat VPatientEd
 type: object
 namespace: https://vpodc.org/

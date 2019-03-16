@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "NSCLC_Curated_Gene"
+id: "nsclc_curated_gene"
 title: NSCLC Curated Genes
 type: object
 namespace: https://vpodc.org/

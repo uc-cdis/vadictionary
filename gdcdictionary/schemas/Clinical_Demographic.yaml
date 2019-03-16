@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Clinical_Demographic"
+id: "clinical_demographic"
 title: Clinical Demographic
 type: object
 namespace: https://vpodc.org/

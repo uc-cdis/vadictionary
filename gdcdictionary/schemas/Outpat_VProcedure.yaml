@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Outpat_VProcedure"
+id: "outpat_vprocedure"
 title: Outpat VProcedure
 type: object
 namespace: https://vpodc.org/

@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Outpat_VDiagnosis"
+id: "outpat_vdiagnosis"
 title: Outpat VDiagnosis
 type: object
 namespace: https://vpodc.org/
