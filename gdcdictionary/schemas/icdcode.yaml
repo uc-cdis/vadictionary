@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Outpat_VSkinTest"
-title: Outpat VSkinTest
+id: "icdcode"
+title: ICD Code
 type: object
 namespace: https://vpodc.org/
 category: clinical
 program: '*'
 project: '*'
 description: >
-  Outpat VSkinTest
+  The ICD Code Domain provides details on the International Classification Codes (ICD) and Diagnostic Related Groups (DRG) identifiers. This domain includes descriptions for ICD9 and ICD10 codes as well as the status to indicate if the code is active or inactive.
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Outpat_VSkinTests
+    backref: ICDCodes
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,69 +40,59 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Chicago_VisitSID:
+  DaysFromAnchorDateToEndDate:
     description: >
-      Chicago_VisitSID
+      DaysFromAnchorDateToEndDate
+    type: integer
+
+  DaysFromAnchorDateToStartDate:
+    description: >
+      DaysFromAnchorDateToStartDate
+    type: integer
+
+  EndTime:
+    description: >
+      EndTime
     type: string
 
-  DaysFromAnchorDateToEventDate:
+  ICD10Code:
     description: >
-      DaysFromAnchorDateToEventDate
-    type: integer
-
-  DaysFromAnchorDateToReadDate:
-    description: >
-      DaysFromAnchorDateToReadDate
-    type: integer
-
-  DaysFromAnchorDateToVisitDate:
-    description: >
-      DaysFromAnchorDateToVisitDate
-    type: integer
-
-  DaysFromAnchorDateToVSkinTestDate:
-    description: >
-      DaysFromAnchorDateToVSkinTestDate
-    type: integer
-
-  EditedFlag:
-    description: >
-      EditedFlag
+      ICD10Code
     type: string
 
-  EventTime:
+  ICD10Description:
     description: >
-      EventTime
+      ICD10Description
     type: string
 
-  Reading:
+  ICD9Code:
     description: >
-      Reading
+      ICD9Code
     type: number
 
-  ReadTime:
+  ICD9Description:
     description: >
-      ReadTime
+      ICD9Description
     type: string
 
-  Results:
+  ParentTableName:
     description: >
-      Results
+      ParentTableName
     type: string
 
-  SkinTest:
+  Sta3n:
     description: >
-      SkinTest
+      Sta3n
+    type: integer
+
+  StartTime:
+    description: >
+      StartTime
     type: string
 
-  VisitTime:
+  TableName:
     description: >
-      VisitTime
-    type: string
-
-  VSkinTestTime:
-    description: >
-      VSkinTestTime
+      TableName
     type: string
 
   cases:

@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "PatientMeansTest"
+id: "patientmeanstest"
 title: Patient Means Test
 type: object
 namespace: https://vpodc.org/

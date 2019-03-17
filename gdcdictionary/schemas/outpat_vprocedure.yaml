@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Outpat_VPatientEd"
-title: Outpat VPatientEd
+id: "outpat_vprocedure"
+title: Outpat VProcedure
 type: object
 namespace: https://vpodc.org/
 category: clinical
 program: '*'
 project: '*'
 description: >
-  Outpat VPatientEd
+  Outpat Vprocedure
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Outpat_VPatientEds
+    backref: Outpat_VProcedures
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -45,6 +45,26 @@ properties:
       Chicago_VisitSID
     type: string
 
+  CPTCategory:
+    description: >
+      CPTCategory
+    type: string
+
+  CPTCode:
+    description: >
+      CPTCode
+    type: string
+
+  CPTDescription:
+    description: >
+      CPTDescription
+    type: string
+
+  CPTName:
+    description: >
+      CPTName
+    type: string
+
   DaysFromAnchorDateToEventDate:
     description: >
       DaysFromAnchorDateToEventDate
@@ -55,29 +75,19 @@ properties:
       DaysFromAnchorDateToVisitDate
     type: integer
 
-  DaysFromAnchorDateToVPatientEdDate:
+  DaysFromAnchorDateToVProcedureDate:
     description: >
-      DaysFromAnchorDateToVPatientEdDate
+      DaysFromAnchorDateToVProcedureDate
     type: integer
-
-  EducationTopic:
-    description: >
-      EducationTopic
-    type: string
-
-  EducationTopicPrintName:
-    description: >
-      EducationTopicPrintName
-    type: string
 
   EventTime:
     description: >
       EventTime
     type: string
 
-  LevelOfUnderstanding:
+  MajorCPTCategory:
     description: >
-      LevelOfUnderstanding
+      MajorCPTCategory
     type: string
 
   VisitTime:
@@ -85,9 +95,9 @@ properties:
       VisitTime
     type: string
 
-  VPatientEdTime:
+  VProcedureTime:
     description: >
-      VPatientEdTime
+      VProcedureTime
     type: string
 
   cases:

@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Outpat_Visit"
+id: "outpat_visit"
 title: Outpat Visit
 type: object
 namespace: https://vpodc.org/

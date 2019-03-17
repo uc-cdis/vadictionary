@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "SurgeryPOST"
+id: "surgerypost"
 title: Surgery POST
 type: object
 namespace: https://vpodc.org/
