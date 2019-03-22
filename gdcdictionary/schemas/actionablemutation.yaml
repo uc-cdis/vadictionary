@@ -8,7 +8,7 @@ category: clinical
 program: '*'
 project: '*'
 description: >
-  Mutations extracted from a patient's sequencing results. 
+  Mutations extracted from a patient's sequencing results.
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: ActionableMutations
+    backref: actionablemutations
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,92 +40,92 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  ActiveClinicalTrials:
+  activeclinicaltrials:
     description: >
       ActiveClinicalTrials
     type: string
 
-  BxMorphology:
+  bxmorphology:
     description: >
       BxMorphology
     type: string
 
-  BxType:
+  bxtype:
     description: >
       BxType
     type: string
 
-  ClinicallyActionable:
+  clinicallyactionable:
     description: >
       ClinicallyActionable
     type: number
 
-  Consequence:
+  consequence:
     description: >
       Consequence
     type: string
 
-  DaysFromAnchorDateToBxDate:
+  daysfromanchordatetobxdate:
     description: >
       DaysFromAnchorDateToBxDate
     type: integer
 
-  DaysFromAnchorDateToBxResultsDate:
+  daysfromanchordatetobxresultsdate:
     description: >
       DaysFromAnchorDateToBxResultsDate
     type: integer
 
-  DrugsAssociatedWithResistance_IndicatedTumorTypes:
+  drugsassociatedwithresistance_indicatedtumortypes:
     description: >
       DrugsAssociatedWithResistance_IndicatedTumorTypes
     type: string
 
-  DrugsAssociatedWithSensitivity_IndicatedTumorTypes:
+  drugsassociatedwithsensitivity_indicatedtumortypes:
     description: >
       DrugsAssociatedWithSensitivity_IndicatedTumorTypes
     type: string
 
-  DrugsAssociatedWithSensitivity_OtherTumorTypes:
+  drugsassociatedwithsensitivity_othertumortypes:
     description: >
       DrugsAssociatedWithSensitivity_OtherTumorTypes
     type: string
 
-  Exon_PGDonly:
+  exon_pgdonly:
     description: >
       Exon_PGDonly
     type: number
 
-  Fold:
+  fold:
     description: >
       Fold
     type: number
 
-  Gene:
+  gene:
     description: >
       Gene
     type: string
 
-  Lab:
+  lab:
     description: >
       Lab
     type: string
 
-  MutantFraction:
+  mutantfraction:
     description: >
       MutantFraction
     type: number
 
-  Mutation:
+  mutation:
     description: >
       Mutation
     type: string
 
-  TotalNumberMutations:
+  totalnumbermutations:
     description: >
       TotalNumberMutations
     type: integer
 
-  TrialPhase:
+  trialphase:
     description: >
       TrialPhase
     type: number

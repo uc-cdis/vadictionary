@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Outpat_VSkinTests
+    backref: outpat_vskintests
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,67 +40,67 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Chicago_VisitSID:
+  chicago_visitsid:
     description: >
       Chicago_VisitSID
     type: string
 
-  DaysFromAnchorDateToEventDate:
+  daysfromanchordatetoeventdate:
     description: >
       DaysFromAnchorDateToEventDate
     type: integer
 
-  DaysFromAnchorDateToReadDate:
+  daysfromanchordatetoreaddate:
     description: >
       DaysFromAnchorDateToReadDate
     type: integer
 
-  DaysFromAnchorDateToVisitDate:
+  daysfromanchordatetovisitdate:
     description: >
       DaysFromAnchorDateToVisitDate
     type: integer
 
-  DaysFromAnchorDateToVSkinTestDate:
+  daysfromanchordatetovskintestdate:
     description: >
       DaysFromAnchorDateToVSkinTestDate
     type: integer
 
-  EditedFlag:
+  editedflag:
     description: >
       EditedFlag
     type: string
 
-  EventTime:
+  eventtime:
     description: >
       EventTime
     type: string
 
-  Reading:
+  reading:
     description: >
       Reading
     type: number
 
-  ReadTime:
+  readtime:
     description: >
       ReadTime
     type: string
 
-  Results:
+  results:
     description: >
       Results
     type: string
 
-  SkinTest:
+  skintest:
     description: >
       SkinTest
     type: string
 
-  VisitTime:
+  visittime:
     description: >
       VisitTime
     type: string
 
-  VSkinTestTime:
+  vskintesttime:
     description: >
       VSkinTestTime
     type: string

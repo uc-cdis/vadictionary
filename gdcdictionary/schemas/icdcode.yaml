@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: ICDCodes
+    backref: icdcodes
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,57 +40,57 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  DaysFromAnchorDateToEndDate:
+  daysfromanchordatetoenddate:
     description: >
       DaysFromAnchorDateToEndDate
     type: integer
 
-  DaysFromAnchorDateToStartDate:
+  daysfromanchordatetostartdate:
     description: >
       DaysFromAnchorDateToStartDate
     type: integer
 
-  EndTime:
+  endtime:
     description: >
       EndTime
     type: string
 
-  ICD10Code:
+  icd10code:
     description: >
       ICD10Code
     type: string
 
-  ICD10Description:
+  icd10description:
     description: >
       ICD10Description
     type: string
 
-  ICD9Code:
+  icd9code:
     description: >
       ICD9Code
     type: number
 
-  ICD9Description:
+  icd9description:
     description: >
       ICD9Description
     type: string
 
-  ParentTableName:
+  parenttablename:
     description: >
       ParentTableName
     type: string
 
-  Sta3n:
+  sta3n:
     description: >
       Sta3n
     type: integer
 
-  StartTime:
+  starttime:
     description: >
       StartTime
     type: string
 
-  TableName:
+  tablename:
     description: >
       TableName
     type: string

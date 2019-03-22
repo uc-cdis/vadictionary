@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Outpat_VProcedureDiagnoses
+    backref: outpat_vprocedurediagnoses
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,87 +40,87 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Chicago_VisitSID:
+  chicago_visitsid:
     description: >
       Chicago_VisitSID
     type: string
 
-  CPTCategory:
+  cptcategory:
     description: >
       CPTCategory
     type: string
 
-  CPTCode:
+  cptcode:
     description: >
       CPTCode
     type: string
 
-  CPTDescription:
+  cptdescription:
     description: >
       CPTDescription
     type: string
 
-  CPTName:
+  cptname:
     description: >
       CPTName
     type: string
 
-  DaysFromAnchorDateToEventDate:
+  daysfromanchordatetoeventdate:
     description: >
       DaysFromAnchorDateToEventDate
     type: integer
 
-  DaysFromAnchorDateToVisitDate:
+  daysfromanchordatetovisitdate:
     description: >
       DaysFromAnchorDateToVisitDate
     type: integer
 
-  DaysFromAnchorDateToVProcedureDate:
+  daysfromanchordatetovproceduredate:
     description: >
       DaysFromAnchorDateToVProcedureDate
     type: integer
 
-  EventTime:
+  eventtime:
     description: >
       EventTime
     type: string
 
-  ICD10Code:
+  icd10code:
     description: >
       ICD10Code
     type: string
 
-  ICD10Description:
+  icd10description:
     description: >
       ICD10Description
     type: string
 
-  ICD9Code:
+  icd9code:
     description: >
       ICD9Code
     type: string
 
-  ICD9Description:
+  icd9description:
     description: >
       ICD9Description
     type: string
 
-  MajorCPTCategory:
+  majorcptcategory:
     description: >
       MajorCPTCategory
     type: string
 
-  OrdinalNumber:
+  ordinalnumber:
     description: >
       OrdinalNumber
     type: integer
 
-  VisitTime:
+  visittime:
     description: >
       VisitTime
     type: string
 
-  VProcedureTime:
+  vproceduretime:
     description: >
       VProcedureTime
     type: string
