@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Outpat_Visits
+    backref: outpat_visits
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,177 +40,177 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  AgentOrangeFlag:
+  agentorangeflag:
     description: >
       AgentOrangeFlag
     type: string
 
-  AppointmentStatus:
+  appointmentstatus:
     description: >
       AppointmentStatus
     type: string
 
-  AppointmentType:
+  appointmenttype:
     description: >
       AppointmentType
     type: string
 
-  CheckOutTime:
+  checkouttime:
     description: >
       CheckOutTime
     type: string
 
-  Chicago_VisitSID:
+  chicago_visitsid:
     description: >
       Chicago_VisitSID
     type: string
 
-  COProcessCompleteTime:
+  coprocesscompletetime:
     description: >
       COProcessCompleteTime
     type: string
 
-  DaysFromAnchorDateToCheckOutDate:
+  daysfromanchordatetocheckoutdate:
     description: >
       DaysFromAnchorDateToCheckOutDate
     type: integer
 
-  DaysFromAnchorDateToCOProcessCompleteDate:
+  daysfromanchordatetocoprocesscompletedate:
     description: >
       DaysFromAnchorDateToCOProcessCompleteDate
     type: integer
 
-  DaysFromAnchorDateToEncounterCreatedDate:
+  daysfromanchordatetoencountercreateddate:
     description: >
       DaysFromAnchorDateToEncounterCreatedDate
     type: integer
 
-  DaysFromAnchorDateToEncounterDate:
+  daysfromanchordatetoencounterdate:
     description: >
       DaysFromAnchorDateToEncounterDate
     type: integer
 
-  DaysFromAnchorDateToVisitCreatedDate:
+  daysfromanchordatetovisitcreateddate:
     description: >
       DaysFromAnchorDateToVisitCreatedDate
     type: integer
 
-  DaysFromAnchorDateToVisitDate:
+  daysfromanchordatetovisitdate:
     description: >
       DaysFromAnchorDateToVisitDate
     type: integer
 
-  DiagnosisCount:
+  diagnosiscount:
     description: >
       DiagnosisCount
     type: number
 
-  EncounterComputerGeneratedFlag:
+  encountercomputergeneratedflag:
     description: >
       EncounterComputerGeneratedFlag
     type: string
 
-  EncounterCreatedTime:
+  encountercreatedtime:
     description: >
       EncounterCreatedTime
     type: string
 
-  EncounterTime:
+  encountertime:
     description: >
       EncounterTime
     type: string
 
-  EncounterType:
+  encountertype:
     description: >
       EncounterType
     type: string
 
-  HeadNeckCancerFlag:
+  headneckcancerflag:
     description: >
       HeadNeckCancerFlag
     type: string
 
-  IonizingRadiationFlag:
+  ionizingradiationflag:
     description: >
       IonizingRadiationFlag
     type: string
 
-  NoncountClinicFlag:
+  noncountclinicflag:
     description: >
       NoncountClinicFlag
     type: string
 
-  OriginatingProcessType:
+  originatingprocesstype:
     description: >
       OriginatingProcessType
     type: string
 
-  PatientAgentOrangeFlag:
+  patientagentorangeflag:
     description: >
       PatientAgentOrangeFlag
     type: string
 
-  PatientIonizingRadiationCode:
+  patientionizingradiationcode:
     description: >
       PatientIonizingRadiationCode
     type: string
 
-  PatientNoseThroatRadiumExposureFlag:
+  patientnosethroatradiumexposureflag:
     description: >
       PatientNoseThroatRadiumExposureFlag
     type: string
 
-  PatientShipboardHazardDefenseFlag:
+  patientshipboardhazarddefenseflag:
     description: >
       PatientShipboardHazardDefenseFlag
     type: string
 
-  PatientStatusInOut:
+  patientstatusinout:
     description: >
       PatientStatusInOut
     type: number
 
-  PrimaryStopCodeName:
+  primarystopcodename:
     description: >
       PrimaryStopCodeName
     type: string
 
-  ProcedureCount:
+  procedurecount:
     description: >
       ProcedureCount
     type: integer
 
-  ProviderCount:
+  providercount:
     description: >
       ProviderCount
     type: integer
 
-  SecondaryStopCodeName:
+  secondarystopcodename:
     description: >
       SecondaryStopCodeName
     type: string
 
-  ServiceCategory:
+  servicecategory:
     description: >
       ServiceCategory
     type: string
 
-  ShipboardHazardDefenseFlag:
+  shipboardhazarddefenseflag:
     description: >
       ShipboardHazardDefenseFlag
     type: string
 
-  VisitCreatedTime:
+  visitcreatedtime:
     description: >
       VisitCreatedTime
     type: string
 
-  VisitDependentEntryCount:
+  visitdependententrycount:
     description: >
       VisitDependentEntryCount
     type: integer
 
-  VisitTime:
+  visittime:
     description: >
       VisitTime
     type: string

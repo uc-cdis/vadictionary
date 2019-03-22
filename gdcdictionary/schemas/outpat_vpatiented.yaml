@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Outpat_VPatientEds
+    backref: outpat_vpatienteds
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,52 +40,52 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Chicago_VisitSID:
+  chicago_visitsid:
     description: >
       Chicago_VisitSID
     type: string
 
-  DaysFromAnchorDateToEventDate:
+  daysfromanchordatetoeventdate:
     description: >
       DaysFromAnchorDateToEventDate
     type: integer
 
-  DaysFromAnchorDateToVisitDate:
+  daysfromanchordatetovisitdate:
     description: >
       DaysFromAnchorDateToVisitDate
     type: integer
 
-  DaysFromAnchorDateToVPatientEdDate:
+  daysfromanchordatetovpatienteddate:
     description: >
       DaysFromAnchorDateToVPatientEdDate
     type: integer
 
-  EducationTopic:
+  educationtopic:
     description: >
       EducationTopic
     type: string
 
-  EducationTopicPrintName:
+  educationtopicprintname:
     description: >
       EducationTopicPrintName
     type: string
 
-  EventTime:
+  eventtime:
     description: >
       EventTime
     type: string
 
-  LevelOfUnderstanding:
+  levelofunderstanding:
     description: >
       LevelOfUnderstanding
     type: string
 
-  VisitTime:
+  visittime:
     description: >
       VisitTime
     type: string
 
-  VPatientEdTime:
+  vpatientedtime:
     description: >
       VPatientEdTime
     type: string

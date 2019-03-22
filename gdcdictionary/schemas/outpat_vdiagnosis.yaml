@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Outpat_VDiagnoses
+    backref: outpat_vdiagnoses
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,117 +40,117 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  AgentOrangeFlag:
+  agentorangeflag:
     description: >
       AgentOrangeFlag
     type: string
 
-  CategoryOfProviderNarrative:
+  categoryofprovidernarrative:
     description: >
       CategoryOfProviderNarrative
     type: string
 
-  Chicago_VisitSID:
+  chicago_visitsid:
     description: >
       Chicago_VisitSID
     type: string
 
-  ClinicalTerm:
+  clinicalterm:
     description: >
       ClinicalTerm
     type: string
 
-  DaysFromAnchorDateToEventDate:
+  daysfromanchordatetoeventdate:
     description: >
       DaysFromAnchorDateToEventDate
     type: integer
 
-  DaysFromAnchorDateToInjuryDate:
+  daysfromanchordatetoinjurydate:
     description: >
       DaysFromAnchorDateToInjuryDate
     type: integer
 
-  DaysFromAnchorDateToVDiagnosisDate:
+  daysfromanchordatetovdiagnosisdate:
     description: >
       DaysFromAnchorDateToVDiagnosisDate
     type: integer
 
-  DaysFromAnchorDateToVisitDate:
+  daysfromanchordatetovisitdate:
     description: >
       DaysFromAnchorDateToVisitDate
     type: integer
 
-  EventTime:
+  eventtime:
     description: >
       EventTime
     type: string
 
-  HeadNeckCancerFlag:
+  headneckcancerflag:
     description: >
       HeadNeckCancerFlag
     type: string
 
-  ICD10Code:
+  icd10code:
     description: >
       ICD10Code
     type: string
 
-  ICD10Description:
+  icd10description:
     description: >
       ICD10Description
     type: string
 
-  ICD9Code:
+  icd9code:
     description: >
       ICD9Code
     type: number
 
-  ICD9Description:
+  icd9description:
     description: >
       ICD9Description
     type: string
 
-  InjuryTime:
+  injurytime:
     description: >
       InjuryTime
     type: string
 
-  IonizingRadiationFlag:
+  ionizingradiationflag:
     description: >
       IonizingRadiationFlag
     type: string
 
-  OrderingResulting:
+  orderingresulting:
     description: >
       OrderingResulting
     type: string
 
-  PrimarySecondary:
+  primarysecondary:
     description: >
       PrimarySecondary
     type: string
 
-  ProviderNarrative:
+  providernarrative:
     description: >
       ProviderNarrative
     type: string
 
-  ServiceConnectedFlag:
+  serviceconnectedflag:
     description: >
       ServiceConnectedFlag
     type: string
 
-  SWAsiaConditionsFlag:
+  swasiaconditionsflag:
     description: >
       SWAsiaConditionsFlag
     type: string
 
-  VDiagnosisTime:
+  vdiagnosistime:
     description: >
       VDiagnosisTime
     type: string
 
-  VisitTime:
+  visittime:
     description: >
       VisitTime
     type: string

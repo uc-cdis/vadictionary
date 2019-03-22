@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: RxOutpats
+    backref: rxoutpats
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,332 +40,332 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  AgentOrangeFlag:
+  agentorangeflag:
     description: >
       AgentOrangeFlag
     type: string
 
-  ArchivedFlag:
+  archivedflag:
     description: >
       ArchivedFlag
     type: string
 
-  BingoWaitTime:
+  bingowaittime:
     description: >
       BingoWaitTime
     type: number
 
-  CMOPFlag:
+  cmopflag:
     description: >
       CMOPFlag
     type: string
 
-  CMOPStatus:
+  cmopstatus:
     description: >
       CMOPStatus
     type: number
 
-  CombatVeteranFlag:
+  combatveteranflag:
     description: >
       CombatVeteranFlag
     type: string
 
-  CopayTransaction:
+  copaytransaction:
     description: >
       CopayTransaction
     type: string
 
-  CounseledFlag:
+  counseledflag:
     description: >
       CounseledFlag
     type: string
 
-  DAWCode:
+  dawcode:
     description: >
       DAWCode
     type: number
 
-  DaysFromAnchorDateToCancelDate:
+  daysfromanchordatetocanceldate:
     description: >
       DaysFromAnchorDateToCancelDate
     type: integer
 
-  DaysFromAnchorDateToFinishingDate:
+  daysfromanchordatetofinishingdate:
     description: >
       DaysFromAnchorDateToFinishingDate
     type: integer
 
-  DaysFromAnchorDateToHoldDate:
+  daysfromanchordatetoholddate:
     description: >
       DaysFromAnchorDateToHoldDate
     type: integer
 
-  DaysFromAnchorDateToIssueDate:
+  daysfromanchordatetoissuedate:
     description: >
       DaysFromAnchorDateToIssueDate
     type: integer
 
-  DaysFromAnchorDateToLastDispensedDate:
+  daysfromanchordatetolastdispenseddate:
     description: >
       DaysFromAnchorDateToLastDispensedDate
     type: integer
 
-  DaysFromAnchorDateToNextPossibleFillDate:
+  daysfromanchordatetonextpossiblefilldate:
     description: >
       DaysFromAnchorDateToNextPossibleFillDate
     type: integer
 
-  DaysFromAnchorDateToPriorFillDate:
+  daysfromanchordatetopriorfilldate:
     description: >
       DaysFromAnchorDateToPriorFillDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillDispensedDate:
+  daysfromanchordatetorxoutpatfilldispenseddate:
     description: >
       DaysFromAnchorDateToRxOutpatFillDispensedDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillExpirationDate:
+  daysfromanchordatetorxoutpatfillexpirationdate:
     description: >
       DaysFromAnchorDateToRxOutpatFillExpirationDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillFillDate:
+  daysfromanchordatetorxoutpatfillfilldate:
     description: >
       DaysFromAnchorDateToRxOutpatFillFillDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillIssueDate:
+  daysfromanchordatetorxoutpatfillissuedate:
     description: >
       DaysFromAnchorDateToRxOutpatFillIssueDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillLoginDate:
+  daysfromanchordatetorxoutpatfilllogindate:
     description: >
       DaysFromAnchorDateToRxOutpatFillLoginDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillReleaseDate:
+  daysfromanchordatetorxoutpatfillreleasedate:
     description: >
       DaysFromAnchorDateToRxOutpatFillReleaseDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillReturnedToStockDate:
+  daysfromanchordatetorxoutpatfillreturnedtostockdate:
     description: >
       DaysFromAnchorDateToRxOutpatFillReturnedToStockDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate:
+  daysfromanchordatetorxoutpatfillsuspenseholddate:
     description: >
       DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatFillValidatedDate:
+  daysfromanchordatetorxoutpatfillvalidateddate:
     description: >
       DaysFromAnchorDateToRxOutpatFillValidatedDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate:
+  daysfromanchordatetorxoutpatmedinstructionsissuedate:
     description: >
       DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate
     type: integer
 
-  DaysFromAnchorDateToRxOutpatSigIssueDate:
+  daysfromanchordatetorxoutpatsigissuedate:
     description: >
       DaysFromAnchorDateToRxOutpatSigIssueDate
     type: integer
 
-  DaysSupply:
+  dayssupply:
     description: >
       DaysSupply
     type: integer
 
-  DiscontinueType:
+  discontinuetype:
     description: >
       DiscontinueType
     type: number
 
-  DispenseUnits:
+  dispenseunits:
     description: >
       DispenseUnits
     type: number
 
-  DrugAllergyFlag:
+  drugallergyflag:
     description: >
       DrugAllergyFlag
     type: string
 
-  DrugClass:
+  drugclass:
     description: >
       DrugClass
     type: string
 
-  DrugClassification:
+  drugclassification:
     description: >
       DrugClassification
     type: string
 
-  DrugInteractionAffectedMedication:
+  druginteractionaffectedmedication:
     description: >
       DrugInteractionAffectedMedication
     type: string
 
-  DrugInteractionSeverity:
+  druginteractionseverity:
     description: >
       DrugInteractionSeverity
     type: string
 
-  DrugNameWithoutDose:
+  drugnamewithoutdose:
     description: >
       DrugNameWithoutDose
     type: string
 
-  FillType:
+  filltype:
     description: >
       FillType
     type: string
 
-  FinishingTime:
+  finishingtime:
     description: >
       FinishingTime
     type: string
 
-  HeadNeckCancerFlag:
+  headneckcancerflag:
     description: >
       HeadNeckCancerFlag
     type: string
 
-  InstructionNumber:
+  instructionnumber:
     description: >
       InstructionNumber
     type: number
 
-  IonizingRadiationFlag:
+  ionizingradiationflag:
     description: >
       IonizingRadiationFlag
     type: string
 
-  LocalDrugNameWithDose:
+  localdrugnamewithdose:
     description: >
       LocalDrugNameWithDose
     type: string
 
-  MailWindow:
+  mailwindow:
     description: >
       MailWindow
     type: string
 
-  MaxRefills:
+  maxrefills:
     description: >
       MaxRefills
     type: integer
 
-  MedRoute:
+  medroute:
     description: >
       MedRoute
     type: string
 
-  MilitarySexualTraumaFlag:
+  militarysexualtraumaflag:
     description: >
       MilitarySexualTraumaFlag
     type: string
 
-  NDC:
+  ndc:
     description: >
       NDC
     type: string
 
-  PartialPrescriptionFlag:
+  partialprescriptionflag:
     description: >
       PartialPrescriptionFlag
     type: string
 
-  PatientStatus:
+  patientstatus:
     description: >
       PatientStatus
     type: string
 
-  Qty:
+  qty:
     description: >
       Qty
     type: number
 
-  QtyNumeric:
+  qtynumeric:
     description: >
       QtyNumeric
     type: number
 
-  ReprintFlag:
+  reprintflag:
     description: >
       ReprintFlag
     type: string
 
-  RetransmitFlag:
+  retransmitflag:
     description: >
       RetransmitFlag
     type: string
 
-  RxOutpatFill_RxStatus:
+  rxoutpatfill_rxstatus:
     description: >
       RxOutpatFill_RxStatus
     type: string
 
-  RxOutpatFillFillTime:
+  rxoutpatfillfilltime:
     description: >
       RxOutpatFillFillTime
     type: string
 
-  RxOutpatFillReleaseTime:
+  rxoutpatfillreleasetime:
     description: >
       RxOutpatFillReleaseTime
     type: string
 
-  RxOutpatFillReturnedToStockTime:
+  rxoutpatfillreturnedtostocktime:
     description: >
       RxOutpatFillReturnedToStockTime
     type: string
 
-  RxOutpatFillValidatedTime:
+  rxoutpatfillvalidatedtime:
     description: >
       RxOutpatFillValidatedTime
     type: string
 
-  RxStatus:
+  rxstatus:
     description: >
       RxStatus
     type: string
 
-  ServiceConnectedFlag:
+  serviceconnectedflag:
     description: >
       ServiceConnectedFlag
     type: string
 
-  Sig:
+  sig:
     description: >
       Sig
     type: string
 
-  SWAsiaFlag:
+  swasiaflag:
     description: >
       SWAsiaFlag
     type: string
 
-  TradeLabelName:
+  tradelabelname:
     description: >
       TradeLabelName
     type: string
 
-  UnderstoodFlag:
+  understoodflag:
     description: >
       UnderstoodFlag
     type: string
 
-  Unit:
+  unit:
     description: >
       Unit
     type: string
 
-  UnitPrice:
+  unitprice:
     description: >
       UnitPrice
     type: number

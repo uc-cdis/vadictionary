@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: PatientMeansTests
+    backref: patientmeanstests
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,12 +40,12 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  DaysFromAnchorDateToMeansTestDate:
+  daysfromanchordatetomeanstestdate:
     description: >
       DaysFromAnchorDateToMeansTestDate
     type: integer
 
-  Income:
+  income:
     description: >
       Income
     type: string

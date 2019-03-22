@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: SurgeryPOSTs
+    backref: surgeryposts
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,287 +40,287 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  AdmitPACUTime:
+  admitpacutime:
     description: >
       AdmitPACUTime
     type: string
 
-  CPTOnNurseReportFlag:
+  cptonnursereportflag:
     description: >
       CPTOnNurseReportFlag
     type: string
 
-  CurrentAdmissionCumulativeOperations:
+  currentadmissioncumulativeoperations:
     description: >
       CurrentAdmissionCumulativeOperations
     type: string
 
-  DaysFromAnchorDateToAdmitPACUDate:
+  daysfromanchordatetoadmitpacudate:
     description: >
       DaysFromAnchorDateToAdmitPACUDate
     type: integer
 
-  DaysFromAnchorDateToDeathDate:
+  daysfromanchordatetodeathdate:
     description: >
       DaysFromAnchorDateToDeathDate
     type: integer
 
-  DaysFromAnchorDateToDictationDate:
+  daysfromanchordatetodictationdate:
     description: >
       DaysFromAnchorDateToDictationDate
     type: integer
 
-  DaysFromAnchorDateToDischargeDate:
+  daysfromanchordatetodischargedate:
     description: >
       DaysFromAnchorDateToDischargeDate
     type: integer
 
-  DaysFromAnchorDateToDischargePACUDate:
+  daysfromanchordatetodischargepacudate:
     description: >
       DaysFromAnchorDateToDischargePACUDate
     type: integer
 
-  DaysFromAnchorDateToObservationAdmissionDate:
+  daysfromanchordatetoobservationadmissiondate:
     description: >
       DaysFromAnchorDateToObservationAdmissionDate
     type: integer
 
-  DaysFromAnchorDateToObservationDischargeDate:
+  daysfromanchordatetoobservationdischargedate:
     description: >
       DaysFromAnchorDateToObservationDischargeDate
     type: integer
 
-  DaysFromAnchorDateToPostOpAnesthesiaNoteDate:
+  daysfromanchordatetopostopanesthesianotedate:
     description: >
       DaysFromAnchorDateToPostOpAnesthesiaNoteDate
     type: integer
 
-  DaysFromAnchorDateToProcedureDate:
+  daysfromanchordatetoproceduredate:
     description: >
       DaysFromAnchorDateToProcedureDate
     type: integer
 
-  DaysFromAnchorDateToSterilityExpirationDate:
+  daysfromanchordatetosterilityexpirationdate:
     description: >
       DaysFromAnchorDateToSterilityExpirationDate
     type: integer
 
-  DaysFromAnchorDateToSurgeryDate:
+  daysfromanchordatetosurgerydate:
     description: >
       DaysFromAnchorDateToSurgeryDate
     type: integer
 
-  DaysFromAnchorDateToTranscriptionDate:
+  daysfromanchordatetotranscriptiondate:
     description: >
       DaysFromAnchorDateToTranscriptionDate
     type: integer
 
-  Death30DaysFlag:
+  death30daysflag:
     description: >
       Death30DaysFlag
     type: string
 
-  DeviceQuantity:
+  devicequantity:
     description: >
       DeviceQuantity
     type: number
 
-  DictatedSummaryFlag:
+  dictatedsummaryflag:
     description: >
       DictatedSummaryFlag
     type: string
 
-  DictationTime:
+  dictationtime:
     description: >
       DictationTime
     type: string
 
-  DischargePACUTime:
+  dischargepacutime:
     description: >
       DischargePACUTime
     type: string
 
-  DischargeSurgeryTransportDevice:
+  dischargesurgerytransportdevice:
     description: >
       DischargeSurgeryTransportDevice
     type: string
 
-  DischargeSurgeryTransportDeviceCode:
+  dischargesurgerytransportdevicecode:
     description: >
       DischargeSurgeryTransportDeviceCode
     type: string
 
-  DressingCondition:
+  dressingcondition:
     description: >
       DressingCondition
     type: string
 
-  DynamedNotifiedFlag:
+  dynamednotifiedflag:
     description: >
       DynamedNotifiedFlag
     type: number
 
-  EndBP:
+  endbp:
     description: >
       EndBP
     type: string
 
-  EndPulse:
+  endpulse:
     description: >
       EndPulse
     type: string
 
-  EndRespirationRate:
+  endrespirationrate:
     description: >
       EndRespirationRate
     type: string
 
-  EventCaptureSpecialty:
+  eventcapturespecialty:
     description: >
       EventCaptureSpecialty
     type: string
 
-  ICDOnNurseReportFlag:
+  icdonnursereportflag:
     description: >
       ICDOnNurseReportFlag
     type: string
 
-  ImplantSterilityCheckedFlag:
+  implantsterilitycheckedflag:
     description: >
       ImplantSterilityCheckedFlag
     type: string
 
-  LocalSurgicalSpecialty:
+  localsurgicalspecialty:
     description: >
       LocalSurgicalSpecialty
     type: string
 
-  LockCase:
+  lockcase:
     description: >
       LockCase
     type: number
 
-  NonORProcedureFlag:
+  nonorprocedureflag:
     description: >
       NonORProcedureFlag
     type: string
 
-  OccurenceNoProcedureFlag:
+  occurencenoprocedureflag:
     description: >
       OccurenceNoProcedureFlag
     type: string
 
-  OPSurgeryDisposition:
+  opsurgerydisposition:
     description: >
       OPSurgeryDisposition
     type: string
 
-  OPSurgeryDispositionCode:
+  opsurgerydispositioncode:
     description: >
       OPSurgeryDispositionCode
     type: string
 
-  PACUAdmitScore:
+  pacuadmitscore:
     description: >
       PACUAdmitScore
     type: number
 
-  PACUDischargeScore:
+  pacudischargescore:
     description: >
       PACUDischargeScore
     type: number
 
-  PACUSurgeryDisposition:
+  pacusurgerydisposition:
     description: >
       PACUSurgeryDisposition
     type: string
 
-  PACUSurgeryDispositionCode:
+  pacusurgerydispositioncode:
     description: >
       PACUSurgeryDispositionCode
     type: string
 
-  PostOpAnesthesiaNoteTime:
+  postopanesthesianotetime:
     description: >
       PostOpAnesthesiaNoteTime
     type: string
 
-  PostOpAttendingConcurFlag:
+  postopattendingconcurflag:
     description: >
       PostOpAttendingConcurFlag
     type: string
 
-  PostOpBP:
+  postopbp:
     description: >
       PostOpBP
     type: string
 
-  PostOpPatientConsciousness:
+  postoppatientconsciousness:
     description: >
       PostOpPatientConsciousness
     type: string
 
-  PostOpPatientMood:
+  postoppatientmood:
     description: >
       PostOpPatientMood
     type: string
 
-  PostOpPatientMoodCode:
+  postoppatientmoodcode:
     description: >
       PostOpPatientMoodCode
     type: string
 
-  PostOpPulse:
+  postoppulse:
     description: >
       PostOpPulse
     type: string
 
-  PostOpRespiratoryRate:
+  postoprespiratoryrate:
     description: >
       PostOpRespiratoryRate
     type: string
 
-  PostOpSkinColor:
+  postopskincolor:
     description: >
       PostOpSkinColor
     type: string
 
-  PostOpSkinIntegrity:
+  postopskinintegrity:
     description: >
       PostOpSkinIntegrity
     type: string
 
-  PostOpSkinIntegrityCode:
+  postopskinintegritycode:
     description: >
       PostOpSkinIntegrityCode
     type: string
 
-  PreAdmitTestingFlag:
+  preadmittestingflag:
     description: >
       PreAdmitTestingFlag
     type: string
 
-  ProcedureTime:
+  proceduretime:
     description: >
       ProcedureTime
     type: string
 
-  ProsthesisName:
+  prosthesisname:
     description: >
       ProsthesisName
     type: string
 
-  SurgeryTime:
+  surgerytime:
     description: >
       SurgeryTime
     type: string
 
-  TranscriptionTime:
+  transcriptiontime:
     description: >
       TranscriptionTime
     type: string
 
-  WoundOccurrences:
+  woundoccurrences:
     description: >
       WoundOccurrences
     type: string

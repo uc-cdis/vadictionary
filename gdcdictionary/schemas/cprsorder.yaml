@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: CPRSOrders
+    backref: cprsorders
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,237 +40,237 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  AbnormalResultsFlag:
+  abnormalresultsflag:
     description: >
       AbnormalResultsFlag
     type: string
 
-  CompletedTime:
+  completedtime:
     description: >
       CompletedTime
     type: string
 
-  DaysFromAnchorDateToCompletedDate:
+  daysfromanchordatetocompleteddate:
     description: >
       DaysFromAnchorDateToCompletedDate
     type: integer
 
-  DaysFromAnchorDateToDiscontinuedDate:
+  daysfromanchordatetodiscontinueddate:
     description: >
       DaysFromAnchorDateToDiscontinuedDate
     type: integer
 
-  DaysFromAnchorDateToEnteredDate:
+  daysfromanchordatetoentereddate:
     description: >
       DaysFromAnchorDateToEnteredDate
     type: integer
 
-  DaysFromAnchorDateToLapsedDate:
+  daysfromanchordatetolapseddate:
     description: >
       DaysFromAnchorDateToLapsedDate
     type: integer
 
-  DaysFromAnchorDateToLastActivityDate:
+  daysfromanchordatetolastactivitydate:
     description: >
       DaysFromAnchorDateToLastActivityDate
     type: integer
 
-  DaysFromAnchorDateToOrderStartDate:
+  daysfromanchordatetoorderstartdate:
     description: >
       DaysFromAnchorDateToOrderStartDate
     type: integer
 
-  DaysFromAnchorDateToOrderStoptDate:
+  daysfromanchordatetoorderstoptdate:
     description: >
       DaysFromAnchorDateToOrderStoptDate
     type: integer
 
-  DaysFromAnchorDateToPatientAppointmentDate:
+  daysfromanchordatetopatientappointmentdate:
     description: >
       DaysFromAnchorDateToPatientAppointmentDate
     type: integer
 
-  DaysFromAnchorDateToResultsDate:
+  daysfromanchordatetoresultsdate:
     description: >
       DaysFromAnchorDateToResultsDate
     type: integer
 
-  DaysFromDx2Order:
+  daysfromdx2order:
     description: >
       DaysFromDx2Order
     type: integer
 
-  DiscontinuedNatureOfOrderName:
+  discontinuednatureofordername:
     description: >
       DiscontinuedNatureOfOrderName
     type: string
 
-  DiscontinuedOrderReason:
+  discontinuedorderreason:
     description: >
       DiscontinuedOrderReason
     type: string
 
-  DiscontinuedTime:
+  discontinuedtime:
     description: >
       DiscontinuedTime
     type: string
 
-  DisplayGroupName:
+  displaygroupname:
     description: >
       DisplayGroupName
     type: string
 
-  EnteredTime:
+  enteredtime:
     description: >
       EnteredTime
     type: string
 
-  Findings:
+  findings:
     description: >
       Findings
     type: string
 
-  GraceDaysBeforePurge:
+  gracedaysbeforepurge:
     description: >
       GraceDaysBeforePurge
     type: number
 
-  ImagingType:
+  imagingtype:
     description: >
       ImagingType
     type: string
 
-  InPatientFlag:
+  inpatientflag:
     description: >
       InPatientFlag
     type: string
 
-  IVAdditiveFlag:
+  ivadditiveflag:
     description: >
       IVAdditiveFlag
     type: string
 
-  IVBaseFlag:
+  ivbaseflag:
     description: >
       IVBaseFlag
     type: string
 
-  LapsedTime:
+  lapsedtime:
     description: >
       LapsedTime
     type: string
 
-  LastActivityTime:
+  lastactivitytime:
     description: >
       LastActivityTime
     type: string
 
-  LocationType:
+  locationtype:
     description: >
       LocationType
     type: string
 
-  MedicalService:
+  medicalservice:
     description: >
       MedicalService
     type: string
 
-  NonFormularyFlag:
+  nonformularyflag:
     description: >
       NonFormularyFlag
     type: string
 
-  NonVAMedsFlag:
+  nonvamedsflag:
     description: >
       NonVAMedsFlag
     type: string
 
-  OrderableItemCode:
+  orderableitemcode:
     description: >
       OrderableItemCode
     type: number
 
-  OrderableItemCodeSource:
+  orderableitemcodesource:
     description: >
       OrderableItemCodeSource
     type: string
 
-  OrderableItemDisplayGroupName:
+  orderableitemdisplaygroupname:
     description: >
       OrderableItemDisplayGroupName
     type: string
 
-  OrderableItemName:
+  orderableitemname:
     description: >
       OrderableItemName
     type: string
 
-  OrderStartTime:
+  orderstarttime:
     description: >
       OrderStartTime
     type: string
 
-  OrderStatus:
+  orderstatus:
     description: >
       OrderStatus
     type: string
 
-  OrderStopTime:
+  orderstoptime:
     description: >
       OrderStopTime
     type: string
 
-  OrderType:
+  ordertype:
     description: >
       OrderType
     type: string
 
-  OutpatientMedFlag:
+  outpatientmedflag:
     description: >
       OutpatientMedFlag
     type: string
 
-  PackageName:
+  packagename:
     description: >
       PackageName
     type: string
 
-  PatientAppointmentTime:
+  patientappointmenttime:
     description: >
       PatientAppointmentTime
     type: string
 
-  ResultsTime:
+  resultstime:
     description: >
       ResultsTime
     type: string
 
-  SignatureRequired:
+  signaturerequired:
     description: >
       SignatureRequired
     type: string
 
-  Sta3n:
+  sta3n:
     description: >
       Sta3n
     type: integer
 
-  TreatingSpecialtyName:
+  treatingspecialtyname:
     description: >
       TreatingSpecialtyName
     type: string
 
-  VeiledFlag:
+  veiledflag:
     description: >
       VeiledFlag
     type: string
 
-  VistaPackage:
+  vistapackage:
     description: >
       VistaPackage
     type: string
 
-  VistaPackageShortDesc:
+  vistapackageshortdesc:
     description: >
       VistaPackageShortDesc
     type: string

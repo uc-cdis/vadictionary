@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: Outpat_VProcedures
+    backref: outpat_vprocedures
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,62 +40,62 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Chicago_VisitSID:
+  chicago_visitsid:
     description: >
       Chicago_VisitSID
     type: string
 
-  CPTCategory:
+  cptcategory:
     description: >
       CPTCategory
     type: string
 
-  CPTCode:
+  cptcode:
     description: >
       CPTCode
     type: string
 
-  CPTDescription:
+  cptdescription:
     description: >
       CPTDescription
     type: string
 
-  CPTName:
+  cptname:
     description: >
       CPTName
     type: string
 
-  DaysFromAnchorDateToEventDate:
+  daysfromanchordatetoeventdate:
     description: >
       DaysFromAnchorDateToEventDate
     type: integer
 
-  DaysFromAnchorDateToVisitDate:
+  daysfromanchordatetovisitdate:
     description: >
       DaysFromAnchorDateToVisitDate
     type: integer
 
-  DaysFromAnchorDateToVProcedureDate:
+  daysfromanchordatetovproceduredate:
     description: >
       DaysFromAnchorDateToVProcedureDate
     type: integer
 
-  EventTime:
+  eventtime:
     description: >
       EventTime
     type: string
 
-  MajorCPTCategory:
+  majorcptcategory:
     description: >
       MajorCPTCategory
     type: string
 
-  VisitTime:
+  visittime:
     description: >
       VisitTime
     type: string
 
-  VProcedureTime:
+  vproceduretime:
     description: >
       VProcedureTime
     type: string

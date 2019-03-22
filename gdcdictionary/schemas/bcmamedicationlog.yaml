@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: BCMAMedicationLogs
+    backref: bcmamedicationlogs
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,227 +40,227 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  ActionStatus:
+  actionstatus:
     description: >
       ActionStatus
     type: string
 
-  ActionTime:
+  actiontime:
     description: >
       ActionTime
     type: string
 
-  BCMADispensedDrugIssueTime:
+  bcmadispenseddrugissuetime:
     description: >
       BCMADispensedDrugIssueTime
     type: string
 
-  DayOrDoseLimit:
+  dayordoselimit:
     description: >
       DayOrDoseLimit
     type: string
 
-  DaysFromAnchorDateToActionDate:
+  daysfromanchordatetoactiondate:
     description: >
       DaysFromAnchorDateToActionDate
     type: integer
 
-  DaysFromAnchorDateToBCMADispensedDrugIssueDate:
+  daysfromanchordatetobcmadispenseddrugissuedate:
     description: >
       DaysFromAnchorDateToBCMADispensedDrugIssueDate
     type: integer
 
-  DaysFromAnchorDateToEnteredDate:
+  daysfromanchordatetoentereddate:
     description: >
       DaysFromAnchorDateToEnteredDate
     type: integer
 
-  DaysFromAnchorDateToInactiveDate:
+  daysfromanchordatetoinactivedate:
     description: >
       DaysFromAnchorDateToInactiveDate
     type: integer
 
-  DaysFromAnchorDateToPRNEffectivenessEnteredDate:
+  daysfromanchordatetoprneffectivenessentereddate:
     description: >
       DaysFromAnchorDateToPRNEffectivenessEnteredDate
     type: integer
 
-  DaysFromAnchorDateToScheduledAdministrationDate:
+  daysfromanchordatetoscheduledadministrationdate:
     description: >
       DaysFromAnchorDateToScheduledAdministrationDate
     type: integer
 
-  DaysFromAnchorDateToWitnessDate:
+  daysfromanchordatetowitnessdate:
     description: >
       DaysFromAnchorDateToWitnessDate
     type: integer
 
-  DosageForm:
+  dosageform:
     description: >
       DosageForm
     type: string
 
-  DosesGiven:
+  dosesgiven:
     description: >
       DosesGiven
     type: number
 
-  DosesOrdered:
+  dosesordered:
     description: >
       DosesOrdered
     type: number
 
-  DrugClass:
+  drugclass:
     description: >
       DrugClass
     type: string
 
-  DrugClassification:
+  drugclassification:
     description: >
       DrugClassification
     type: string
 
-  DrugNameWithoutDose:
+  drugnamewithoutdose:
     description: >
       DrugNameWithoutDose
     type: string
 
-  EnteredTime:
+  enteredtime:
     description: >
       EnteredTime
     type: string
 
-  FormularyStatusFlag:
+  formularystatusflag:
     description: >
       FormularyStatusFlag
     type: string
 
-  HighRiskHighAlertMedication:
+  highriskhighalertmedication:
     description: >
       HighRiskHighAlertMedication
     type: number
 
-  ImmunizationName:
+  immunizationname:
     description: >
       ImmunizationName
     type: string
 
-  InfusionRate:
+  infusionrate:
     description: >
       InfusionRate
     type: number
 
-  InjectionSite:
+  injectionsite:
     description: >
       InjectionSite
     type: string
 
-  IVFlag:
+  ivflag:
     description: >
       IVFlag
     type: string
 
-  LocalDrugNameWithDose:
+  localdrugnamewithdose:
     description: >
       LocalDrugNameWithDose
     type: string
 
-  MedicationRoute:
+  medicationroute:
     description: >
       MedicationRoute
     type: string
 
-  NonVAMedFlag:
+  nonvamedflag:
     description: >
       NonVAMedFlag
     type: string
 
-  OrderAdministrationVariance:
+  orderadministrationvariance:
     description: >
       OrderAdministrationVariance
     type: number
 
-  OrderDosage:
+  orderdosage:
     description: >
       OrderDosage
     type: string
 
-  OrderReferenceNumber:
+  orderreferencenumber:
     description: >
       OrderReferenceNumber
     type: string
 
-  OrderSchedule:
+  orderschedule:
     description: >
       OrderSchedule
     type: string
 
-  OtherLanguageInstructions:
+  otherlanguageinstructions:
     description: >
       OtherLanguageInstructions
     type: string
 
-  PharmacyOrderableItem:
+  pharmacyorderableitem:
     description: >
       PharmacyOrderableItem
     type: string
 
-  PharmacyOrderableItemSchedule:
+  pharmacyorderableitemschedule:
     description: >
       PharmacyOrderableItemSchedule
     type: string
 
-  PRNEffectivenessEnteredTime:
+  prneffectivenessenteredtime:
     description: >
       PRNEffectivenessEnteredTime
     type: string
 
-  PRNEffectivenessMinutes:
+  prneffectivenessminutes:
     description: >
       PRNEffectivenessMinutes
     type: number
 
-  PRNReason:
+  prnreason:
     description: >
       PRNReason
     type: string
 
-  PRNReasonNumber:
+  prnreasonnumber:
     description: >
       PRNReasonNumber
     type: number
 
-  ScheduledAdministrationTime:
+  scheduledadministrationtime:
     description: >
       ScheduledAdministrationTime
     type: string
 
-  ScheduleType:
+  scheduletype:
     description: >
       ScheduleType
     type: string
 
-  SupplyFlag:
+  supplyflag:
     description: >
       SupplyFlag
     type: string
 
-  WitnessDateTime:
+  witnessdatetime:
     description: >
       WitnessDateTime
     type: string
 
-  WitnessFlag:
+  witnessflag:
     description: >
       WitnessFlag
     type: string
 
-  WitnessHighRiskAlertStatus:
+  witnesshighriskalertstatus:
     description: >
       WitnessHighRiskAlertStatus
     type: number
 
-  WitnessTime:
+  witnesstime:
     description: >
       WitnessTime
     type: string

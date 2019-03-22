@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: SurgeryProcedureDiagnosisCodes
+    backref: surgeryprocedurediagnosiscodes
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,97 +40,97 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  CPTCategory:
+  cptcategory:
     description: >
       CPTCategory
     type: string
 
-  CPTDescription:
+  cptdescription:
     description: >
       CPTDescription
     type: string
 
-  CPTModifier:
+  cptmodifier:
     description: >
       CPTModifier
     type: string
 
-  CPTModifierName:
+  cptmodifiername:
     description: >
       CPTModifierName
     type: string
 
-  CPTName:
+  cptname:
     description: >
       CPTName
     type: string
 
-  DaysFromAnchorDateToSurgeryDate:
+  daysfromanchordatetosurgerydate:
     description: >
       DaysFromAnchorDateToSurgeryDate
     type: integer
 
-  MajorCPTCategory:
+  majorcptcategory:
     description: >
       MajorCPTCategory
     type: string
 
-  OtherPostopICD9Code:
+  otherpostopicd9code:
     description: >
       OtherPostopICD9Code
     type: string
 
-  OtherPostopICD9Desc:
+  otherpostopicd9desc:
     description: >
       OtherPostopICD9Desc
     type: string
 
-  PrincipalPostOpICD10Code:
+  principalpostopicd10code:
     description: >
       PrincipalPostOpICD10Code
     type: string
 
-  PrincipalPostOpICD10Desc:
+  principalpostopicd10desc:
     description: >
       PrincipalPostOpICD10Desc
     type: string
 
-  PrincipalPostOpICD9Code:
+  principalpostopicd9code:
     description: >
       PrincipalPostOpICD9Code
     type: string
 
-  PrincipalPostOpICD9Desc:
+  principalpostopicd9desc:
     description: >
       PrincipalPostOpICD9Desc
     type: string
 
-  ServiceConnectedFlag:
+  serviceconnectedflag:
     description: >
       ServiceConnectedFlag
     type: string
 
-  SurgeryPrincipalAssociatedDiagnosisICD10Code:
+  surgeryprincipalassociateddiagnosisicd10code:
     description: >
       SurgeryPrincipalAssociatedDiagnosisICD10Code
     type: string
 
-  SurgeryPrincipalAssociatedDiagnosisICD10Desc:
+  surgeryprincipalassociateddiagnosisicd10desc:
     description: >
       SurgeryPrincipalAssociatedDiagnosisICD10Desc
     type: string
 
-  SurgeryPrincipalAssociatedDiagnosisICD9Code:
+  surgeryprincipalassociateddiagnosisicd9code:
     description: >
       SurgeryPrincipalAssociatedDiagnosisICD9Code
     type: string
 
-  SurgeryPrincipalAssociatedDiagnosisICD9Desc:
+  surgeryprincipalassociateddiagnosisicd9desc:
     description: >
       SurgeryPrincipalAssociatedDiagnosisICD9Desc
     type: string
 
-  SurgeryTime:
+  surgerytime:
     description: >
       SurgeryTime
     type: string

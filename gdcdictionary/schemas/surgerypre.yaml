@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: SurgeryPREs
+    backref: surgerypres
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,467 +40,467 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  AgentOrangeFlag:
+  agentorangeflag:
     description: >
       AgentOrangeFlag
     type: string
 
-  AsOrderedNPOCode:
+  asorderednpocode:
     description: >
       AsOrderedNPOCode
     type: string
 
-  AvoidableFlag:
+  avoidableflag:
     description: >
       AvoidableFlag
     type: string
 
-  BathAndShampooCode:
+  bathandshampoocode:
     description: >
       BathAndShampooCode
     type: string
 
-  BeginOperationTime:
+  beginoperationtime:
     description: >
       BeginOperationTime
     type: string
 
-  BloodScreenCode:
+  bloodscreencode:
     description: >
       BloodScreenCode
     type: string
 
-  BloodTypeAndMatchCode:
+  bloodtypeandmatchcode:
     description: >
       BloodTypeAndMatchCode
     type: string
 
-  CancellationComments:
+  cancellationcomments:
     description: >
       CancellationComments
     type: string
 
-  CancelTime:
+  canceltime:
     description: >
       CancelTime
     type: string
 
-  CarePlanInChartCode:
+  careplaninchartcode:
     description: >
       CarePlanInChartCode
     type: string
 
-  CaseScheduleTypeCode:
+  casescheduletypecode:
     description: >
       CaseScheduleTypeCode
     type: string
 
-  CBCIn48HoursCode:
+  cbcin48hourscode:
     description: >
       CBCIn48HoursCode
     type: string
 
-  ChestXRayIn7DaysCode:
+  chestxrayin7dayscode:
     description: >
       ChestXRayIn7DaysCode
     type: string
 
-  CigarettesRemovedCode:
+  cigarettesremovedcode:
     description: >
       CigarettesRemovedCode
     type: string
 
-  ClassificationEnteredFlag:
+  classificationenteredflag:
     description: >
       ClassificationEnteredFlag
     type: string
 
-  CleanDressingCode:
+  cleandressingcode:
     description: >
       CleanDressingCode
     type: string
 
-  CleanHospitalClothCode:
+  cleanhospitalclothcode:
     description: >
       CleanHospitalClothCode
     type: string
 
-  DaysFromAnchorDateToAdmissionDate:
+  daysfromanchordatetoadmissiondate:
     description: >
       DaysFromAnchorDateToAdmissionDate
     type: integer
 
-  DaysFromAnchorDateToBeginOperationDate:
+  daysfromanchordatetobeginoperationdate:
     description: >
       DaysFromAnchorDateToBeginOperationDate
     type: integer
 
-  DaysFromAnchorDateToCancelDate:
+  daysfromanchordatetocanceldate:
     description: >
       DaysFromAnchorDateToCancelDate
     type: integer
 
-  DaysFromAnchorDateToDesiredProcedureDate:
+  daysfromanchordatetodesiredproceduredate:
     description: >
       DaysFromAnchorDateToDesiredProcedureDate
     type: integer
 
-  DaysFromAnchorDateToDesiredProcedureEntryDate:
+  daysfromanchordatetodesiredprocedureentrydate:
     description: >
       DaysFromAnchorDateToDesiredProcedureEntryDate
     type: integer
 
-  DaysFromAnchorDateToEndOperationDate:
+  daysfromanchordatetoendoperationdate:
     description: >
       DaysFromAnchorDateToEndOperationDate
     type: integer
 
-  DaysFromAnchorDateToOriginalDesiredDate:
+  daysfromanchordatetooriginaldesireddate:
     description: >
       DaysFromAnchorDateToOriginalDesiredDate
     type: integer
 
-  DaysFromAnchorDateToOriginalScheduledDate:
+  daysfromanchordatetooriginalscheduleddate:
     description: >
       DaysFromAnchorDateToOriginalScheduledDate
     type: integer
 
-  DaysFromAnchorDateToPreoperativeImagingDate:
+  daysfromanchordatetopreoperativeimagingdate:
     description: >
       DaysFromAnchorDateToPreoperativeImagingDate
     type: integer
 
-  DaysFromAnchorDateToProcedureDate:
+  daysfromanchordatetoproceduredate:
     description: >
       DaysFromAnchorDateToProcedureDate
     type: integer
 
-  DaysFromAnchorDateToRequestMadeDate:
+  daysfromanchordatetorequestmadedate:
     description: >
       DaysFromAnchorDateToRequestMadeDate
     type: integer
 
-  DaysFromAnchorDateToScheduledDate:
+  daysfromanchordatetoscheduleddate:
     description: >
       DaysFromAnchorDateToScheduledDate
     type: integer
 
-  DaysFromAnchorDateToScheduledEndDate:
+  daysfromanchordatetoscheduledenddate:
     description: >
       DaysFromAnchorDateToScheduledEndDate
     type: integer
 
-  DaysFromAnchorDateToScheduledEntryDate:
+  daysfromanchordatetoscheduledentrydate:
     description: >
       DaysFromAnchorDateToScheduledEntryDate
     type: integer
 
-  DaysFromAnchorDateToScheduledStartDate:
+  daysfromanchordatetoscheduledstartdate:
     description: >
       DaysFromAnchorDateToScheduledStartDate
     type: integer
 
-  DaysFromAnchorDateToSurgeryConsultDate:
+  daysfromanchordatetosurgeryconsultdate:
     description: >
       DaysFromAnchorDateToSurgeryConsultDate
     type: integer
 
-  DaysFromAnchorDateToSurgeryDate:
+  daysfromanchordatetosurgerydate:
     description: >
       DaysFromAnchorDateToSurgeryDate
     type: integer
 
-  DaysFromAnchorDateToSurgicalWaitStartDate:
+  daysfromanchordatetosurgicalwaitstartdate:
     description: >
       DaysFromAnchorDateToSurgicalWaitStartDate
     type: integer
 
-  DelayPrimaryCauseCode:
+  delayprimarycausecode:
     description: >
       DelayPrimaryCauseCode
     type: string
 
-  DesiredProcedureEntryTime:
+  desiredprocedureentrytime:
     description: >
       DesiredProcedureEntryTime
     type: string
 
-  EKGIn24HoursCode:
+  ekgin24hourscode:
     description: >
       EKGIn24HoursCode
     type: string
 
-  EndOperationTime:
+  endoperationtime:
     description: >
       EndOperationTime
     type: string
 
-  EnemasCode:
+  enemascode:
     description: >
       EnemasCode
     type: string
 
-  EstimatedCaseLength:
+  estimatedcaselength:
     description: >
       EstimatedCaseLength
     type: string
 
-  EventCaptureSpecialty:
+  eventcapturespecialty:
     description: >
       EventCaptureSpecialty
     type: string
 
-  FreshlyShavedCode:
+  freshlyshavedcode:
     description: >
       FreshlyShavedCode
     type: string
 
-  HospitalAdmissionStatusCode:
+  hospitaladmissionstatuscode:
     description: >
       HospitalAdmissionStatusCode
     type: string
 
-  IntraoperativeXRayCode:
+  intraoperativexraycode:
     description: >
       IntraoperativeXRayCode
     type: string
 
-  IonizingRadiationFlag:
+  ionizingradiationflag:
     description: >
       IonizingRadiationFlag
     type: string
 
-  LevinTubeCode:
+  levintubecode:
     description: >
       LevinTubeCode
     type: string
 
-  LocalSurgicalSpecialty:
+  localsurgicalspecialty:
     description: >
       LocalSurgicalSpecialty
     type: string
 
-  OralHygieneCode:
+  oralhygienecode:
     description: >
       OralHygieneCode
     type: string
 
-  PatientAssessmentCode:
+  patientassessmentcode:
     description: >
       PatientAssessmentCode
     type: string
 
-  PatientVoidedCode:
+  patientvoidedcode:
     description: >
       PatientVoidedCode
     type: string
 
-  PlannedPrincipalCPTCategory:
+  plannedprincipalcptcategory:
     description: >
       PlannedPrincipalCPTCategory
     type: string
 
-  PlannedPrincipalCPTCode:
+  plannedprincipalcptcode:
     description: >
       PlannedPrincipalCPTCode
     type: number
 
-  PlannedPrincipalCPTDesc:
+  plannedprincipalcptdesc:
     description: >
       PlannedPrincipalCPTDesc
     type: string
 
-  PlannedPrincipalCPTName:
+  plannedprincipalcptname:
     description: >
       PlannedPrincipalCPTName
     type: string
 
-  PreOpBP:
+  preopbp:
     description: >
       PreOpBP
     type: string
 
-  PreOpConversationCode:
+  preopconversationcode:
     description: >
       PreOpConversationCode
     type: string
 
-  PreoperativeImagingTime:
+  preoperativeimagingtime:
     description: >
       PreoperativeImagingTime
     type: string
 
-  PreOpMedAndRailUpCode:
+  preopmedandrailupcode:
     description: >
       PreOpMedAndRailUpCode
     type: string
 
-  PreOpPatientConsciousness:
+  preoppatientconsciousness:
     description: >
       PreOpPatientConsciousness
     type: string
 
-  PreOpPatientMood:
+  preoppatientmood:
     description: >
       PreOpPatientMood
     type: string
 
-  PreOpPatientMoodCode:
+  preoppatientmoodcode:
     description: >
       PreOpPatientMoodCode
     type: string
 
-  PreOpPulse:
+  preoppulse:
     description: >
       PreOpPulse
     type: string
 
-  PreOpRequiredXRay:
+  preoprequiredxray:
     description: >
       PreOpRequiredXRay
     type: string
 
-  PreOpRespiratoryRate:
+  preoprespiratoryrate:
     description: >
       PreOpRespiratoryRate
     type: string
 
-  PreOpTemperature:
+  preoptemperature:
     description: >
       PreOpTemperature
     type: string
 
-  PreOpWeight:
+  preopweight:
     description: >
       PreOpWeight
     type: string
 
-  PrincipalDiagnosisText:
+  principaldiagnosistext:
     description: >
       PrincipalDiagnosisText
     type: string
 
-  PrincipalPostOpDiagnosisText:
+  principalpostopdiagnosistext:
     description: >
       PrincipalPostOpDiagnosisText
     type: string
 
-  PrincipalPreOpDiagnosisText:
+  principalpreopdiagnosistext:
     description: >
       PrincipalPreOpDiagnosisText
     type: string
 
-  PrincipalPreOpICD10Code:
+  principalpreopicd10code:
     description: >
       PrincipalPreOpICD10Code
     type: string
 
-  PrincipalPreOpICD10CodeDesc:
+  principalpreopicd10codedesc:
     description: >
       PrincipalPreOpICD10CodeDesc
     type: string
 
-  PrincipalPreOpICD9Code:
+  principalpreopicd9code:
     description: >
       PrincipalPreOpICD9Code
     type: string
 
-  PrincipalPreOpICD9CodeDesc:
+  principalpreopicd9codedesc:
     description: >
       PrincipalPreOpICD9CodeDesc
     type: string
 
-  ProcedureTime:
+  proceduretime:
     description: >
       ProcedureTime
     type: string
 
-  ProsthesisRemovedCode:
+  prosthesisremovedcode:
     description: >
       ProsthesisRemovedCode
     type: string
 
-  RequestedAnesthesiaTechniqueCode:
+  requestedanesthesiatechniquecode:
     description: >
       RequestedAnesthesiaTechniqueCode
     type: string
 
-  RequestedFlag:
+  requestedflag:
     description: >
       RequestedFlag
     type: string
 
-  RequestMadeTime:
+  requestmadetime:
     description: >
       RequestMadeTime
     type: string
 
-  RequiresCleaningOrContaminatedCode:
+  requirescleaningorcontaminatedcode:
     description: >
       RequiresCleaningOrContaminatedCode
     type: string
 
-  ScheduledEndTime:
+  scheduledendtime:
     description: >
       ScheduledEndTime
     type: string
 
-  ScheduledEntryTime:
+  scheduledentrytime:
     description: >
       ScheduledEntryTime
     type: string
 
-  ScheduledProcedure:
+  scheduledprocedure:
     description: >
       ScheduledProcedure
     type: string
 
-  ScheduledStartTime:
+  scheduledstarttime:
     description: >
       ScheduledStartTime
     type: string
 
-  ServiceConnectedFlag:
+  serviceconnectedflag:
     description: >
       ServiceConnectedFlag
     type: string
 
-  SignedAndWitnessedConsentCode:
+  signedandwitnessedconsentcode:
     description: >
       SignedAndWitnessedConsentCode
     type: string
 
-  SurgeryCancelReason:
+  surgerycancelreason:
     description: >
       SurgeryCancelReason
     type: string
 
-  SurgeryDisposition:
+  surgerydisposition:
     description: >
       SurgeryDisposition
     type: string
 
-  SurgeryDispositionCode:
+  surgerydispositioncode:
     description: >
       SurgeryDispositionCode
     type: string
 
-  SurgeryTime:
+  surgerytime:
     description: >
       SurgeryTime
     type: string
 
-  UrinalysisIn48HoursCode:
+  urinalysisin48hourscode:
     description: >
       UrinalysisIn48HoursCode
     type: string
 
-  ValuablesSecuredCode:
+  valuablessecuredcode:
     description: >
       ValuablesSecuredCode
     type: string
 
-  XRayReadyAndReceivedCode:
+  xrayreadyandreceivedcode:
     description: >
       XRayReadyAndReceivedCode
     type: string
