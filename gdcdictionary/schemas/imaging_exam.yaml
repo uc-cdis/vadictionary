@@ -51,7 +51,7 @@ properties:
         The instrument model used to acquire the image.
       type: string
 
-  imaging_modality:
+  Modality:
       description: >
         What mode the imaging instrument was in during image acquisition.
       type: string
@@ -62,6 +62,10 @@ properties:
         - "MRI"
         - "CT Scan"
         - "Ultrasound"
+        
+   BodyPartExamined:
+      description: "What part of the body was studied."
+      type: string
 
   cases:
     $ref: "_definitions.yaml#/to_one"
