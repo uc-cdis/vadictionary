@@ -76,12 +76,53 @@ properties:
       $ref: "_terms.yaml#/data_category"
     type: string
 
-  imaging_date:
+  study_date:
     $ref: "_definitions.yaml#/datetime"
 
   magnification:
     description: "Magnification used to capture the iamge."
     type: number
+
+  patient_sex:
+    description: "Patient's gender."
+    type: string
+
+  series_number:
+    description: "Number of serial studies."
+    type: number
+
+  series_description:
+    description: "Spesifics of a given study."
+    type: string
+
+  series_instance_uid:
+    description: "Unique identifier of a series."
+    type: string
+
+  sop_class_uid:
+    description: "Classification of image storage."
+    type: string
+
+  manufacturer:
+    description: "Manufacturer of the study equipment."
+    type: string
+
+  study_description:
+    description: "Type of the study and a studied body part."
+    type: string
+
+  study_id:
+    description: "Identifier of a study."
+    type: number
+
+  study_instance_uid:
+    description: "Unique identifier of a study."
+    type: string
+
+  patient_id:
+    description: "Scrambled patient dentifier."
+    type: string
+
 
   imaging_exams:
     $ref: "_definitions.yaml#/to_one"
