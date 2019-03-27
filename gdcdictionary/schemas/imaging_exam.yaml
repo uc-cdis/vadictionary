@@ -63,7 +63,7 @@ properties:
         - "CT Scan"
         - "Ultrasound"
         
-   body_part_examined:
+  body_part_examined:
       description: "What part of the body was studied."
       type: string
 
