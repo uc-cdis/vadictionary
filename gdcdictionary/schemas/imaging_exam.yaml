@@ -51,7 +51,7 @@ properties:
         The instrument model used to acquire the image.
       type: string
 
-  Modality:
+  modality:
       description: >
         What mode the imaging instrument was in during image acquisition.
       type: string
@@ -63,7 +63,7 @@ properties:
         - "CT Scan"
         - "Ultrasound"
         
-   BodyPartExamined:
+   body_part_examined:
       description: "What part of the body was studied."
       type: string
 
