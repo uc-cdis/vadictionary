@@ -75,6 +75,7 @@ properties:
       - BCR OMF XML
       - BCR XML
       - CDC JSON
+      - CSV
       - FoundationOne XML
       - TSV
       - XLSX
