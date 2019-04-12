@@ -67,15 +67,10 @@ properties:
         What mode the imaging instrument was in during image acquisition.
       type: string
 
-  stack_id:
+  scan_id:
       description: >
-        The identification number for a stack of images.
+        The identification number for a stack of images generated during a single scan.
       type: string
-
-  year_of_imaging:
-      description: >
-        The year the imaging exam took place.
-      type: integer
 
   cases:
     $ref: "_definitions.yaml#/to_one"
