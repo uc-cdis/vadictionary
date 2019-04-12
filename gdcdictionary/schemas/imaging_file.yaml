@@ -120,7 +120,7 @@ properties:
     type: string
 
   patient_id:
-    description: "Scrambled patient dentifier."
+    description: "Scrambled patient identifier."
     type: string
 
   imaging_exams:
