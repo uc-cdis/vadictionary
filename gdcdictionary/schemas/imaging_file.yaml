@@ -80,7 +80,7 @@ properties:
     $ref: "_definitions.yaml#/datetime"
 
   magnification:
-    description: "Magnification used to capture the iamge."
+    description: "Magnification used to capture the image."
     type: number
 
   patient_sex:
@@ -92,7 +92,7 @@ properties:
     type: number
 
   series_description:
-    description: "Spesifics of a given study."
+    description: "Specifics of a given study."
     type: string
 
   series_instance_uid:
@@ -122,7 +122,6 @@ properties:
   patient_id:
     description: "Scrambled patient dentifier."
     type: string
-
 
   imaging_exams:
     $ref: "_definitions.yaml#/to_one"
