@@ -42,6 +42,10 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
+  body_part_examined:
+      description: "What part of the body was studied."
+      type: string
+
   days_to_exam:
       description: "Days from the case index date to the date the image was acquired."
       type: integer
@@ -51,20 +55,21 @@ properties:
         The instrument model used to acquire the image.
       type: string
 
-  modality:
-      description: >
-        What mode the imaging instrument was in during image acquisition.
-      type: string
-
   imaging_type:
       description: "The type of imaging exam performed."
       enum:
         - "MRI"
         - "CT Scan"
         - "Ultrasound"
-        
-  body_part_examined:
-      description: "What part of the body was studied."
+
+  modality:
+      description: >
+        What mode the imaging instrument was in during image acquisition.
+      type: string
+
+  scan_id:
+      description: >
+        The identification number for a stack of images generated during a single scan.
       type: string
 
   cases:
