@@ -37,13 +37,13 @@ links:
         backref: variant_call_files
         label: data_from
         target_type: aligned_reads_file
-        multiplicity: one_to_many
+        multiplicity: many_to_many
         required: false
       - name: unaligned_reads_files
         backref: variant_call_files
         label: data_from
         target_type: unaligned_reads_file
-        multiplicity: one_to_many
+        multiplicity: many_to_many
         required: false
 
 required:
