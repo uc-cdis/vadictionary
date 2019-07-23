@@ -39,6 +39,12 @@ links:
         target_type: imaging_exam
         multiplicity: many_to_one
         required: false
+      - name: cases
+        backref: imaging_files
+        label: data_from
+        target_type: case
+        multiplicity: many_to_one
+        required: false
 
 required:
   - submitter_id
@@ -126,4 +132,6 @@ properties:
   imaging_exams:
     $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
+    $ref: "_definitions.yaml#/to_one"
+  cases:
     $ref: "_definitions.yaml#/to_one"

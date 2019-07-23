@@ -36,7 +36,13 @@ links:
         backref: unaligned_reads_files
         label: data_from
         target_type: read_group
-        multiplicity: many_to_one
+        multiplicity: many_to_many
+        required: false
+      - name: cases
+        backref: unaligned_reads_files
+        label: data_from
+        target_type: case
+        multiplicity: many_to_many
         required: false
 
 required:
@@ -103,3 +109,5 @@ properties:
     $ref: "_definitions.yaml#/to_one"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
+  cases:
+    $ref: "_definitions.yaml#/to_many"
