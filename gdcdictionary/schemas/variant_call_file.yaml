@@ -45,6 +45,12 @@ links:
         target_type: unaligned_reads_file
         multiplicity: many_to_many
         required: false
+      - name: cases
+        backref: variant_call_files
+        label: data_from
+        target_type: case
+        multiplicity: many_to_many
+        required: false
 
 required:
   - submitter_id
@@ -101,6 +107,8 @@ properties:
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
   aligned_reads_files:
+    $ref: "_definitions.yaml#/to_many"
+  cases:
     $ref: "_definitions.yaml#/to_many"
   unaligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
