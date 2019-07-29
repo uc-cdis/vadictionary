@@ -33,12 +33,6 @@ links:
         target_type: core_metadata_collection
         multiplicity: many_to_one
         required: false
-      - name: imaging_exams
-        backref: imaging_files
-        label: data_from
-        target_type: imaging_exam
-        multiplicity: many_to_one
-        required: false
       - name: cases
         backref: imaging_files
         label: data_from
@@ -129,8 +123,38 @@ properties:
     description: "Scrambled patient identifier."
     type: string
 
-  imaging_exams:
-    $ref: "_definitions.yaml#/to_one"
+# originally from imaging_exam node:
+  body_part_examined:
+      description: "What part of the body was studied."
+      type: string
+
+  days_to_exam:
+      description: "Days from the case index date to the date the image was acquired."
+      type: integer
+
+  imaging_instrument:
+      description: >
+        The instrument model used to acquire the image.
+      type: string
+
+  imaging_type:
+      description: "The type of imaging exam performed."
+      enum:
+        - "MRI"
+        - "CT Scan"
+        - "Ultrasound"
+        - "Pathology Slide"
+
+  modality:
+      description: >
+        What mode the imaging instrument was in during image acquisition.
+      type: string
+
+  scan_id:
+      description: >
+        The identification number for a stack of images generated during a single scan.
+      type: string
+
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_one"
   cases:
