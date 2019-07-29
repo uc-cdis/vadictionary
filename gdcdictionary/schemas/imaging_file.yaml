@@ -128,7 +128,7 @@ properties:
     description: "What part of the body was studied."
     type: string
 
-  days_to_exam:
+  days_to_image:
     description: "Days from the case index date to the date the image was acquired."
     type: integer
 
@@ -143,7 +143,6 @@ properties:
       - "MRI"
       - "CT Scan"
       - "Ultrasound"
-      - "Pathology Slide"
 
   modality:
     description: >
