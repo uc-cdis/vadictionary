@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "clinical_demographic"
-title: Clinical Demographic
+id: "icd_code"
+title: ICD Code
 type: object
 namespace: https://vpodc.org/
 category: clinical
 program: '*'
 project: '*'
 description: >
-  Clinical demographic data for a patient.
+  The ICD Code Domain provides details on the International Classification Codes (ICD) and Diagnostic Related Groups (DRG) identifiers. This domain includes descriptions for ICD9 and ICD10 codes as well as the status to indicate if the code is active or inactive.
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: clinical_demographics
+    backref: icd_codes
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,59 +40,59 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Days_To_Birth:
+  DaysFromAnchorDateToEndDate:
     description: >
-      Days_To_Birth
+      DaysFromAnchorDateToEndDate
     type: integer
 
-  Days_To_Death:
+  DaysFromAnchorDateToStartDate:
     description: >
-      Days_To_Death
-    type: number
-
-  Ethnicity:
-    description: >
-      Ethnicity
-    type: string
-
-  Gender:
-    description: >
-      Gender
-    type: string
-
-  Race:
-    description: >
-      Race
-    type: string
-
-  Vital_Status:
-    description: >
-      Vital_Status
-    type: string
-
-  Year_Of_Birth:
-    description: >
-      Year_Of_Birth
+      DaysFromAnchorDateToStartDate
     type: integer
 
-  Year_Of_Death:
+  EndTime:
     description: >
-      Year_Of_Death
+      EndTime
+    type: string
+
+  ICD10Code:
+    description: >
+      ICD10Code
+    type: string
+
+  ICD10Description:
+    description: >
+      ICD10Description
+    type: string
+
+  ICD9Code:
+    description: >
+      ICD9Code
     type: number
 
-  DeceasedFlag:
+  ICD9Description:
     description: >
-      DeceasedFlag
+      ICD9Description
     type: string
 
-  MaritalStatus:
+  ParentTableName:
     description: >
-      MaritalStatus
+      ParentTableName
     type: string
 
-  PatientOver90Flag:
+  Sta3n:
     description: >
-      PatientOver90Flag
+      Sta3n
+    type: integer
+
+  StartTime:
+    description: >
+      StartTime
+    type: string
+
+  TableName:
+    description: >
+      TableName
     type: string
 
   cases:

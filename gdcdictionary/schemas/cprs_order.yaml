@@ -1,0 +1,279 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "cprs_order"
+title: CPRS Order
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  The Computerized Patient Record System (CPRS) domain stores information about a given order. Information on the type of order (whether it is related to medications, labs, consults, dietary, or activities) is available. In addition, this domain includes a timestamp of events related to the order which includes status changes, signatory authorities, other related orders/checks, and other components related to the staff or service who requested the order.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: cprs_orders
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AbnormalResultsFlag:
+    description: >
+      AbnormalResultsFlag
+    type: string
+
+  CompletedTime:
+    description: >
+      CompletedTime
+    type: string
+
+  DaysFromAnchorDateToCompletedDate:
+    description: >
+      DaysFromAnchorDateToCompletedDate
+    type: integer
+
+  DaysFromAnchorDateToDiscontinuedDate:
+    description: >
+      DaysFromAnchorDateToDiscontinuedDate
+    type: integer
+
+  DaysFromAnchorDateToEnteredDate:
+    description: >
+      DaysFromAnchorDateToEnteredDate
+    type: integer
+
+  DaysFromAnchorDateToLapsedDate:
+    description: >
+      DaysFromAnchorDateToLapsedDate
+    type: integer
+
+  DaysFromAnchorDateToLastActivityDate:
+    description: >
+      DaysFromAnchorDateToLastActivityDate
+    type: integer
+
+  DaysFromAnchorDateToOrderStartDate:
+    description: >
+      DaysFromAnchorDateToOrderStartDate
+    type: integer
+
+  DaysFromAnchorDateToOrderStoptDate:
+    description: >
+      DaysFromAnchorDateToOrderStoptDate
+    type: integer
+
+  DaysFromAnchorDateToPatientAppointmentDate:
+    description: >
+      DaysFromAnchorDateToPatientAppointmentDate
+    type: integer
+
+  DaysFromAnchorDateToResultsDate:
+    description: >
+      DaysFromAnchorDateToResultsDate
+    type: integer
+
+  DaysFromDx2Order:
+    description: >
+      DaysFromDx2Order
+    type: integer
+
+  DiscontinuedNatureOfOrderName:
+    description: >
+      DiscontinuedNatureOfOrderName
+    type: string
+
+  DiscontinuedOrderReason:
+    description: >
+      DiscontinuedOrderReason
+    type: string
+
+  DiscontinuedTime:
+    description: >
+      DiscontinuedTime
+    type: string
+
+  DisplayGroupName:
+    description: >
+      DisplayGroupName
+    type: string
+
+  EnteredTime:
+    description: >
+      EnteredTime
+    type: string
+
+  Findings:
+    description: >
+      Findings
+    type: string
+
+  GraceDaysBeforePurge:
+    description: >
+      GraceDaysBeforePurge
+    type: number
+
+  ImagingType:
+    description: >
+      ImagingType
+    type: string
+
+  InPatientFlag:
+    description: >
+      InPatientFlag
+    type: string
+
+  IVAdditiveFlag:
+    description: >
+      IVAdditiveFlag
+    type: string
+
+  IVBaseFlag:
+    description: >
+      IVBaseFlag
+    type: string
+
+  LapsedTime:
+    description: >
+      LapsedTime
+    type: string
+
+  LastActivityTime:
+    description: >
+      LastActivityTime
+    type: string
+
+  LocationType:
+    description: >
+      LocationType
+    type: string
+
+  MedicalService:
+    description: >
+      MedicalService
+    type: string
+
+  NonFormularyFlag:
+    description: >
+      NonFormularyFlag
+    type: string
+
+  NonVAMedsFlag:
+    description: >
+      NonVAMedsFlag
+    type: string
+
+  OrderableItemCode:
+    description: >
+      OrderableItemCode
+    type: number
+
+  OrderableItemCodeSource:
+    description: >
+      OrderableItemCodeSource
+    type: string
+
+  OrderableItemDisplayGroupName:
+    description: >
+      OrderableItemDisplayGroupName
+    type: string
+
+  OrderableItemName:
+    description: >
+      OrderableItemName
+    type: string
+
+  OrderStartTime:
+    description: >
+      OrderStartTime
+    type: string
+
+  OrderStatus:
+    description: >
+      OrderStatus
+    type: string
+
+  OrderStopTime:
+    description: >
+      OrderStopTime
+    type: string
+
+  OrderType:
+    description: >
+      OrderType
+    type: string
+
+  OutpatientMedFlag:
+    description: >
+      OutpatientMedFlag
+    type: string
+
+  PackageName:
+    description: >
+      PackageName
+    type: string
+
+  PatientAppointmentTime:
+    description: >
+      PatientAppointmentTime
+    type: string
+
+  ResultsTime:
+    description: >
+      ResultsTime
+    type: string
+
+  SignatureRequired:
+    description: >
+      SignatureRequired
+    type: string
+
+  Sta3n:
+    description: >
+      Sta3n
+    type: integer
+
+  TreatingSpecialtyName:
+    description: >
+      TreatingSpecialtyName
+    type: string
+
+  VeiledFlag:
+    description: >
+      VeiledFlag
+    type: string
+
+  VistaPackage:
+    description: >
+      VistaPackage
+    type: string
+
+  VistaPackageShortDesc:
+    description: >
+      VistaPackageShortDesc
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

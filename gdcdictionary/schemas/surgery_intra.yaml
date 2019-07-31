@@ -1,0 +1,639 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "surgery_intra"
+title: Surgery INTRA
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  SurgeryINTRA contains data captured during a surgical case progress.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: surgery_intras
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  AirwayIndex:
+    description: >
+      AirwayIndex
+    type: integer
+
+  AnesthesiaBillableCareFlag:
+    description: >
+      AnesthesiaBillableCareFlag
+    type: string
+
+  AnesthesiaMedicallyDirectedFlag:
+    description: >
+      AnesthesiaMedicallyDirectedFlag
+    type: string
+
+  AnesthesiaPersonallyPerformedFlag:
+    description: >
+      AnesthesiaPersonallyPerformedFlag
+    type: string
+
+  AnesthesiaPhysicianAvailableFlag:
+    description: >
+      AnesthesiaPhysicianAvailableFlag
+    type: string
+
+  AnesthetistAvailableTime:
+    description: >
+      AnesthetistAvailableTime
+    type: string
+
+  AnesthetistCategory:
+    description: >
+      AnesthetistCategory
+    type: string
+
+  AntibioticProphylaxis:
+    description: >
+      AntibioticProphylaxis
+    type: string
+
+  ASAClass:
+    description: >
+      ASAClass
+    type: string
+
+  ASAClassDescription:
+    description: >
+      ASAClassDescription
+    type: string
+
+  AttendingCode:
+    description: >
+      AttendingCode
+    type: string
+
+  AttendingCodeDescription:
+    description: >
+      AttendingCodeDescription
+    type: string
+
+  AttendingCodeName:
+    description: >
+      AttendingCodeName
+    type: string
+
+  BatchID:
+    description: >
+      BatchID
+    type: integer
+
+  BatistaProcUsedFlag:
+    description: >
+      BatistaProcUsedFlag
+    type: string
+
+  BeginNonORProcedureTime:
+    description: >
+      BeginNonORProcedureTime
+    type: string
+
+  BeginOperationTime:
+    description: >
+      BeginOperationTime
+    type: string
+
+  BeginORCleanTime:
+    description: >
+      BeginORCleanTime
+    type: string
+
+  BloodAvailability:
+    description: >
+      BloodAvailability
+    type: string
+
+  BloodLoss:
+    description: >
+      BloodLoss
+    type: number
+
+  CaseVerificationFlag:
+    description: >
+      CaseVerificationFlag
+    type: string
+
+  Cohort:
+    description: >
+      Cohort
+    type: string
+
+  ConcurrentAnesthesiaCases:
+    description: >
+      ConcurrentAnesthesiaCases
+    type: string
+
+  ConfirmedMarkedSiteTime:
+    description: >
+      ConfirmedMarkedSiteTime
+    type: string
+
+  ContaminationFlashSterilization:
+    description: >
+      ContaminationFlashSterilization
+    type: number
+
+  CorrectMedicalImplants:
+    description: >
+      CorrectMedicalImplants
+    type: string
+
+  CreatedAt:
+    description: >
+      CreatedAt
+    type: string
+
+  DaysFromAnchorDateToAnesthetistAvailableDate:
+    description: >
+      DaysFromAnchorDateToAnesthetistAvailableDate
+    type: integer
+
+  DaysFromAnchorDateToBeginNonORProcedureDate:
+    description: >
+      DaysFromAnchorDateToBeginNonORProcedureDate
+    type: integer
+
+  DaysFromAnchorDateToBeginOperationDate:
+    description: >
+      DaysFromAnchorDateToBeginOperationDate
+    type: integer
+
+  DaysFromAnchorDateToBeginORCleanDate:
+    description: >
+      DaysFromAnchorDateToBeginORCleanDate
+    type: integer
+
+  DaysFromAnchorDateToConfirmedMarkedSiteDate:
+    description: >
+      DaysFromAnchorDateToConfirmedMarkedSiteDate
+    type: integer
+
+  DaysFromAnchorDateToEndAnesthesiaCareDate:
+    description: >
+      DaysFromAnchorDateToEndAnesthesiaCareDate
+    type: integer
+
+  DaysFromAnchorDateToEndNonORProcedureDate:
+    description: >
+      DaysFromAnchorDateToEndNonORProcedureDate
+    type: integer
+
+  DaysFromAnchorDateToEndOperationDate:
+    description: >
+      DaysFromAnchorDateToEndOperationDate
+    type: integer
+
+  DaysFromAnchorDateToEndORCleanDate:
+    description: >
+      DaysFromAnchorDateToEndORCleanDate
+    type: integer
+
+  DaysFromAnchorDateToInductionCompleteDate:
+    description: >
+      DaysFromAnchorDateToInductionCompleteDate
+    type: integer
+
+  DaysFromAnchorDateToNurseOutDate:
+    description: >
+      DaysFromAnchorDateToNurseOutDate
+    type: integer
+
+  DaysFromAnchorDateToNursePresentDate:
+    description: >
+      DaysFromAnchorDateToNursePresentDate
+    type: integer
+
+  DaysFromAnchorDateToORPatientTransportDate:
+    description: >
+      DaysFromAnchorDateToORPatientTransportDate
+    type: integer
+
+  DaysFromAnchorDateToPatientHoldAreaDate:
+    description: >
+      DaysFromAnchorDateToPatientHoldAreaDate
+    type: integer
+
+  DaysFromAnchorDateToPatientOutDate:
+    description: >
+      DaysFromAnchorDateToPatientOutDate
+    type: integer
+
+  DaysFromAnchorDateToProcedureDate:
+    description: >
+      DaysFromAnchorDateToProcedureDate
+    type: integer
+
+  DaysFromAnchorDateToStartAnesthesiaCareDate:
+    description: >
+      DaysFromAnchorDateToStartAnesthesiaCareDate
+    type: integer
+
+  DaysFromAnchorDateToSurgeonPresentDate:
+    description: >
+      DaysFromAnchorDateToSurgeonPresentDate
+    type: integer
+
+  DaysFromAnchorDateToSurgeryDate:
+    description: >
+      DaysFromAnchorDateToSurgeryDate
+    type: integer
+
+  DaysFromAnchorDateToTimeOutVerifiedDate:
+    description: >
+      DaysFromAnchorDateToTimeOutVerifiedDate
+    type: integer
+
+  DecontaminationFlashSterilization:
+    description: >
+      DecontaminationFlashSterilization
+    type: number
+
+  Devices:
+    description: >
+      Devices
+    type: string
+
+  DiagnosticTherapeuticFlag:
+    description: >
+      DiagnosticTherapeuticFlag
+    type: string
+
+  ElectrogroundPosition:
+    description: >
+      ElectrogroundPosition
+    type: string
+
+  ElectrogroundPositionCode:
+    description: >
+      ElectrogroundPositionCode
+    type: string
+
+  EmergencyCaseFlashSterilization:
+    description: >
+      EmergencyCaseFlashSterilization
+    type: number
+
+  EndAnesthesiaCareTime:
+    description: >
+      EndAnesthesiaCareTime
+    type: string
+
+  EndNonORProcedureTime:
+    description: >
+      EndNonORProcedureTime
+    type: string
+
+  EndOperationTime:
+    description: >
+      EndOperationTime
+    type: string
+
+  EndORCleanTime:
+    description: >
+      EndORCleanTime
+    type: string
+
+  ESUCoagulationRange:
+    description: >
+      ESUCoagulationRange
+    type: string
+
+  ESUCuttingRange:
+    description: >
+      ESUCuttingRange
+    type: string
+
+  EventCaptureSpecialty:
+    description: >
+      EventCaptureSpecialty
+    type: string
+
+  FinalAnesthesiaTemperature:
+    description: >
+      FinalAnesthesiaTemperature
+    type: number
+
+  FinalCountsVerifiedCorrect:
+    description: >
+      FinalCountsVerifiedCorrect
+    type: string
+
+  FoleyCatheterSize:
+    description: >
+      FoleyCatheterSize
+    type: number
+
+  GastricOutput:
+    description: >
+      GastricOutput
+    type: number
+
+  HairRemovalMethod:
+    description: >
+      HairRemovalMethod
+    type: string
+
+  InductionCompleteTime:
+    description: >
+      InductionCompleteTime
+    type: string
+
+  InstrumentCountCorrect:
+    description: >
+      InstrumentCountCorrect
+    type: string
+
+  IntraOpTemperature:
+    description: >
+      IntraOpTemperature
+    type: number
+
+  IntraOpXRayCode:
+    description: >
+      IntraOpXRayCode
+    type: string
+
+  LaserType:
+    description: >
+      LaserType
+    type: string
+
+  LoanerInstrumentFlashSterilization:
+    description: >
+      LoanerInstrumentFlashSterilization
+    type: number
+
+  LocalSurgicalSpecialty:
+    description: >
+      LocalSurgicalSpecialty
+    type: string
+
+  MajorMinor:
+    description: >
+      MajorMinor
+    type: string
+
+  MajorPosition:
+    description: >
+      MajorPosition
+    type: string
+
+  MallampatiScale:
+    description: >
+      MallampatiScale
+    type: number
+
+  MandibularSpace:
+    description: >
+      MandibularSpace
+    type: number
+
+  MarkedSiteConfirmed:
+    description: >
+      MarkedSiteConfirmed
+    type: string
+
+  MarkedSiteConfirmedFlag:
+    description: >
+      MarkedSiteConfirmedFlag
+    type: string
+
+  ModifiedAt:
+    description: >
+      ModifiedAt
+    type: string
+
+  NoBetterOptionFlashSterilization:
+    description: >
+      NoBetterOptionFlashSterilization
+    type: number
+
+  NonORProcedureFlag:
+    description: >
+      NonORProcedureFlag
+    type: string
+
+  NurseOutTime:
+    description: >
+      NurseOutTime
+    type: string
+
+  NursePresentTime:
+    description: >
+      NursePresentTime
+    type: string
+
+  ORPatientTransportTime:
+    description: >
+      ORPatientTransportTime
+    type: string
+
+  ORSetupTime:
+    description: >
+      ORSetupTime
+    type: number
+
+  Packing:
+    description: >
+      Packing
+    type: number
+
+  PatientHoldAreaTime:
+    description: >
+      PatientHoldAreaTime
+    type: string
+
+  PatientIdentityConfirmedFlag:
+    description: >
+      PatientIdentityConfirmedFlag
+    type: string
+
+  PatientOutTime:
+    description: >
+      PatientOutTime
+    type: string
+
+  PhysicalStatus:
+    description: >
+      PhysicalStatus
+    type: string
+
+  PositiveDrugScreening:
+    description: >
+      PositiveDrugScreening
+    type: string
+
+  PossibleItemRetentionCode:
+    description: >
+      PossibleItemRetentionCode
+    type: string
+
+  PreOperativeImagingConfirmed:
+    description: >
+      PreOperativeImagingConfirmed
+    type: string
+
+  PreOpImagesConfirmed:
+    description: >
+      PreOpImagesConfirmed
+    type: string
+
+  PreOpSkinColor:
+    description: >
+      PreOpSkinColor
+    type: string
+
+  ProcedureTime:
+    description: >
+      ProcedureTime
+    type: string
+
+  SequentialBloodDeviceFlag:
+    description: >
+      SequentialBloodDeviceFlag
+    type: string
+
+  SharpsCountCorrect:
+    description: >
+      SharpsCountCorrect
+    type: string
+
+  SkinIntegrity:
+    description: >
+      SkinIntegrity
+    type: string
+
+  SkinIntegrityCode:
+    description: >
+      SkinIntegrityCode
+    type: string
+
+  SkinPrepAgent:
+    description: >
+      SkinPrepAgent
+    type: string
+
+  SkinPrepAgentCode:
+    description: >
+      SkinPrepAgentCode
+    type: string
+
+  SPDFlashSterilization:
+    description: >
+      SPDFlashSterilization
+    type: number
+
+  SpecialEquipmentAvailability:
+    description: >
+      SpecialEquipmentAvailability
+    type: string
+
+  SpongeCountCorrect:
+    description: >
+      SpongeCountCorrect
+    type: string
+
+  StaffOrResident:
+    description: >
+      StaffOrResident
+    type: string
+
+  StartAnesthesiaCareTime:
+    description: >
+      StartAnesthesiaCareTime
+    type: string
+
+  SurgeonPresentTime:
+    description: >
+      SurgeonPresentTime
+    type: string
+
+  SurgeryPosition:
+    description: >
+      SurgeryPosition
+    type: string
+
+  SurgeryPositionCode:
+    description: >
+      SurgeryPositionCode
+    type: string
+
+  SurgeryTime:
+    description: >
+      SurgeryTime
+    type: string
+
+  SurgeryTransportDevice:
+    description: >
+      SurgeryTransportDevice
+    type: string
+
+  SurgeryTransportDeviceCode:
+    description: >
+      SurgeryTransportDeviceCode
+    type: string
+
+  TimeOutVerified:
+    description: >
+      TimeOutVerified
+    type: string
+
+  TimeOutVerifiedTime:
+    description: >
+      TimeOutVerifiedTime
+    type: string
+
+  UrineOutput:
+    description: >
+      UrineOutput
+    type: number
+
+  UserID:
+    description: >
+      UserID
+    type: string
+
+  WoundClassification:
+    description: >
+      WoundClassification
+    type: string
+
+  WoundSweepCode:
+    description: >
+      WoundSweepCode
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"

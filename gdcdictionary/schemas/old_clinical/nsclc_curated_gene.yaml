@@ -40,537 +40,537 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  ABL1:
+  abl1:
     description: >
       ABL1
     type: string
 
-  Age:
+  age:
     description: >
       Age
     type: number
 
-  AKT1:
+  akt1:
     description: >
       AKT1
     type: string
 
-  ALK_Col1:
+  alk_col1:
     description: >
       ALK_Col1
     type: string
 
-  ALK_Col2:
+  alk_col2:
     description: >
       ALK_Col2
     type: string
 
-  ALK_ALK:
+  alk_alk:
     description: >
       ALK-ALK
     type: string
 
-  APC:
+  apc:
     description: >
       APC
     type: string
 
-  AR:
+  ar:
     description: >
       AR
     type: string
 
-  ARID1A:
+  arid1a:
     description: >
       ARID1A
     type: string
 
-  ARID1B:
+  arid1b:
     description: >
       ARID1B
     type: string
 
-  ATM_Col1:
+  atm_col1:
     description: >
       ATM_Col1
     type: string
 
-  ATM_Col2:
+  atm_col2:
     description: >
       ATM_Col2
     type: string
 
-  AXIN2:
+  axin2:
     description: >
       AXIN2
     type: string
 
-  AXL:
+  axl:
     description: >
       AXL
     type: string
 
-  BCL2:
+  bcl2:
     description: >
       BCL2
     type: string
 
-  BRAF:
+  braf:
     description: >
       BRAF
     type: string
 
-  BRCA1:
+  brca1:
     description: >
       BRCA1
     type: string
 
-  BRCA2:
+  brca2:
     description: >
       BRCA2
     type: string
 
-  BRCA2_BRCA2:
+  brca2_brca2:
     description: >
       BRCA2-BRCA2
     type: string
 
-  CCND1:
+  ccnd1:
     description: >
       CCND1
     type: string
 
-  CCND2:
+  ccnd2:
     description: >
       CCND2
     type: string
 
-  CCNE1:
+  ccne1:
     description: >
       CCNE1
     type: string
 
-  CDK4:
+  cdk4:
     description: >
       CDK4
     type: string
 
-  CDK6:
+  cdk6:
     description: >
       CDK6
     type: string
 
-  CDKN2A:
+  cdkn2a:
     description: >
       CDKN2A
     type: string
 
-  CEBPA:
+  cebpa:
     description: >
       CEBPA
     type: string
 
-  CREBBP:
+  crebbp:
     description: >
       CREBBP
     type: string
 
-  CS_Lymphnodes:
+  cs_lymphnodes:
     description: >
       CS_Lymphnodes
     type: integer
 
-  CSF1R:
+  csf1r:
     description: >
       CSF1R
     type: string
 
-  CTNNB1:
+  ctnnb1:
     description: >
       CTNNB1
     type: string
 
-  DaysFromAnchorDateToBirthDate:
+  daysfromanchordatetobirthdate:
     description: >
       DaysFromAnchorDateToBirthDate
     type: integer
 
-  DaysFromAnchorDateToDeathDate:
+  daysfromanchordatetodeathdate:
     description: >
       DaysFromAnchorDateToDeathDate
     type: integer
 
-  DaysFromAnchorDateToDiagnosisDate:
+  daysfromanchordatetodiagnosisdate:
     description: >
       DaysFromAnchorDateToDiagnosisDate
     type: integer
 
-  DDR2:
+  ddr2:
     description: >
       DDR2
     type: string
 
-  DerivedSS1977:
+  derivedss1977:
     description: >
       DerivedSS1977
     type: integer
 
-  DNMT3A:
+  dnmt3a:
     description: >
       DNMT3A
     type: string
 
-  EGFR:
+  egfr:
     description: >
       EGFR
     type: string
 
-  EML4_ALK:
+  eml4_alk:
     description: >
       EML4-ALK
     type: string
 
-  EP300:
+  ep300:
     description: >
       EP300
     type: string
 
-  EPHA2:
+  epha2:
     description: >
       EPHA2
     type: string
 
-  ERBB2:
+  erbb2:
     description: >
       ERBB2
     type: string
 
-  ERBB3:
+  erbb3:
     description: >
       ERBB3
     type: string
 
-  ERBB4:
+  erbb4:
     description: >
       ERBB4
     type: string
 
-  ERG:
+  erg:
     description: >
       ERG
     type: string
 
-  ESR1:
+  esr1:
     description: >
       ESR1
     type: string
 
-  FANCA:
+  fanca:
     description: >
       FANCA
     type: string
 
-  FANCB:
+  fancb:
     description: >
       FANCB
     type: string
 
-  FANCD2:
+  fancd2:
     description: >
       FANCD2
     type: string
 
-  FANCI:
+  fanci:
     description: >
       FANCI
     type: string
 
-  FANCM:
+  fancm:
     description: >
       FANCM
     type: string
 
-  FBXW7:
+  fbxw7:
     description: >
       FBXW7
     type: string
 
-  FGFR1:
+  fgfr1:
     description: >
       FGFR1
     type: string
 
-  FGFR2:
+  fgfr2:
     description: >
       FGFR2
     type: string
 
-  FGFR2_KIAA1217:
+  fgfr2_kiaa1217:
     description: >
       FGFR2-KIAA1217
     type: string
 
-  FGFR3:
+  fgfr3:
     description: >
       FGFR3
     type: string
 
-  FGFR4:
+  fgfr4:
     description: >
       FGFR4
     type: string
 
-  First_Malignant_Primary_Indicator:
+  first_malignant_primary_indicator:
     description: >
       First_Malignant_Primary_Indicator
     type: integer
 
-  FLT1:
+  flt1:
     description: >
       FLT1
     type: string
 
-  FLT3:
+  flt3:
     description: >
       FLT3
     type: string
 
-  FLT4:
+  flt4:
     description: >
       FLT4
     type: string
 
-  FOXL2:
+  foxl2:
     description: >
       FOXL2
     type: string
 
-  GNAS:
+  gnas:
     description: >
       GNAS
     type: string
 
-  GPC3:
+  gpc3:
     description: >
       GPC3
     type: string
 
-  Grade:
+  grade:
     description: >
       Grade
     type: integer
 
-  H3F3A:
+  h3f3a:
     description: >
       H3F3A
     type: string
 
-  Histology_Recode_Broad_Groupings:
+  histology_recode_broad_groupings:
     description: >
       Histology_Recode_Broad_Groupings
     type: integer
 
-  HNF1A:
+  hnf1a:
     description: >
       HNF1A
     type: string
 
-  HRAS:
+  hras:
     description: >
       HRAS
     type: string
 
-  IDH1:
+  idh1:
     description: >
       IDH1
     type: string
 
-  IDH2:
+  idh2:
     description: >
       IDH2
     type: string
 
-  JAK1:
+  jak1:
     description: >
       JAK1
     type: string
 
-  JAK3:
+  jak3:
     description: >
       JAK3
     type: string
 
-  KDR:
+  kdr:
     description: >
       KDR
     type: string
 
-  KIT:
+  kit:
     description: >
       KIT
     type: string
 
-  KMT2A:
+  kmt2a:
     description: >
       KMT2A
     type: string
 
-  KRAS_Col1:
+  kras_col1:
     description: >
       KRAS_Col1
     type: string
 
-  KRAS_Col2:
+  kras_col2:
     description: >
       KRAS_Col2
     type: string
 
-  LDLRAD3_BCL2:
+  ldlrad3_bcl2:
     description: >
       LDLRAD3-BCL2
     type: string
 
-  M:
+  m:
     description: >
       M
     type: number
 
-  MAML1:
+  maml1:
     description: >
       MAML1
     type: string
 
-  MAP2K1:
+  map2k1:
     description: >
       MAP2K1
     type: string
 
-  MAP2K2:
+  map2k2:
     description: >
       MAP2K2
     type: string
 
-  MDM2:
+  mdm2:
     description: >
       MDM2
     type: string
 
-  MET:
+  met:
     description: >
       MET
     type: string
 
-  MLH_Col1:
+  mlh_col1:
     description: >
       MLH_Col1
     type: string
 
-  MLH_Col2:
+  mlh_col2:
     description: >
       MLH_Col2
     type: string
 
-  MLH_Col3:
+  mlh_col3:
     description: >
       MLH_Col3
     type: string
 
-  MPL:
+  mpl:
     description: >
       MPL
     type: string
 
-  MSH2:
+  msh2:
     description: >
       MSH2
     type: string
 
-  MSH6:
+  msh6:
     description: >
       MSH6
     type: string
 
-  MSI:
+  msi:
     description: >
       MSI
     type: string
 
-  MTOR:
+  mtor:
     description: >
       MTOR
     type: string
 
-  MYC:
+  myc:
     description: >
       MYC
     type: string
 
-  MYCN:
+  mycn:
     description: >
       MYCN
     type: string
 
-  N:
+  n:
     description: >
       N
     type: number
 
-  NF_Col1:
+  nf_col1:
     description: >
       NF_Col1
     type: string
 
-  NF_Col2:
+  nf_col2:
     description: >
       NF_Col2
     type: string
 
-  NF_Col3:
+  nf_col3:
     description: >
       NF_Col3
     type: string
 
-  NF_Col4:
+  nf_col4:
     description: >
       NF_Col4
     type: string
 
-  NF_Col5:
+  nf_col5:
     description: >
       NF_Col5
     type: string
 
-  NOTCH1:
+  notch1:
     description: >
       NOTCH1
     type: string
 
-  NOTCH2:
+  notch2:
     description: >
       NOTCH2
     type: string
 
-  NOTCH3:
+  notch3:
     description: >
       NOTCH3
     type: string
 
-  NRAS:
+  nras:
     description: >
       NRAS
     type: string
 
-  NTRK1:
+  ntrk1:
     description: >
       NTRK1
     type: string
 
-  NTRK2:
+  ntrk2:
     description: >
       NTRK2
     type: string
 
-  Number_Mutation:
+  number_mutation:
     description: >
       Number_Mutation
     type: integer
@@ -580,227 +580,227 @@ properties:
       number_of_primaries
     type: integer
 
-  Outcome:
+  outcome:
     description: >
       Outcome
     type: string
 
-  PAX5:
+  pax5:
     description: >
       PAX5
     type: string
 
-  PBRM1:
+  pbrm1:
     description: >
       PBRM1
     type: string
 
-  PDGFRA:
+  pdgfra:
     description: >
       PDGFRA
     type: string
 
-  PDGFRB:
+  pdgfrb:
     description: >
       PDGFRB
     type: string
 
-  PIK3CA:
+  pik3ca:
     description: >
       PIK3CA
     type: string
 
-  PIK3CB:
+  pik3cb:
     description: >
       PIK3CB
     type: string
 
-  PMS2:
+  pms2:
     description: >
       PMS2
     type: string
 
-  POLD_Col1:
+  pold_col1:
     description: >
       POLD_Col1
     type: string
 
-  POLD_Col2:
+  pold_col2:
     description: >
       POLD_Col2
     type: string
 
-  POLE:
+  pole:
     description: >
       POLE
     type: string
 
-  Primary_Site:
+  primary_site:
     description: >
       Primary_Site
     type: string
 
-  PTCH1:
+  ptch1:
     description: >
       PTCH1
     type: string
 
-  PTEN:
+  pten:
     description: >
       PTEN
     type: string
 
-  PTPN11:
+  ptpn11:
     description: >
       PTPN11
     type: string
 
-  Radiation:
+  radiation:
     description: >
       Radiation
     type: integer
 
-  Radiation_Sequence_with_Surgery:
+  radiation_sequence_with_surgery:
     description: >
       Radiation_Sequence_with_Surgery
     type: integer
 
-  RB1:
+  rb1:
     description: >
       RB1
     type: string
 
-  RET:
+  ret:
     description: >
       RET
     type: string
 
-  RNF43:
+  rnf43:
     description: >
       RNF43
     type: string
 
-  ROS1:
+  ros1:
     description: >
       ROS1
     type: string
 
-  RUNX1:
+  runx1:
     description: >
       RUNX1
     type: string
 
-  RXSumm_ScopeRegLNSur:
+  rxsumm_scopereglnsur:
     description: >
       RXSumm_ScopeRegLNSur
     type: integer
 
-  RXSumm_SurgPrimSite:
+  rxsumm_surgprimsite:
     description: >
       RXSumm_SurgPrimSite
     type: integer
 
-  Sequence_Number:
+  sequence_number:
     description: >
       Sequence_Number
     type: integer
 
-  SLC34A2_ROS1:
+  slc34a2_ros1:
     description: >
       SLC34A2-ROS1
     type: string
 
-  SMARCA4:
+  smarca4:
     description: >
       SMARCA4
     type: string
 
-  SMARCB1:
+  smarcb1:
     description: >
       SMARCB1
     type: string
 
-  SMO:
+  smo:
     description: >
       SMO
     type: string
 
-  SRC:
+  src:
     description: >
       SRC
     type: string
 
-  Stage:
+  stage:
     description: >
       Stage
     type: string
 
-  STK11:
+  stk11:
     description: >
       STK11
     type: string
 
-  Survival_time_Month:
+  survival_time_month:
     description: >
       Survival_time_Month
     type: integer
 
-  T:
+  t:
     description: >
       T
     type: string
 
-  TERT:
+  tert:
     description: >
       TERT
     type: string
 
-  TET2:
+  tet2:
     description: >
       TET2
     type: string
 
-  TMPRSS2:
+  tmprss2:
     description: >
       TMPRSS2
     type: string
 
-  TMPRSS2_CASQ2:
+  tmprss2_casq2:
     description: >
       TMPRSS2-CASQ2
     type: string
 
-  TMPRSS2_ERG:
+  tmprss2_erg:
     description: >
       TMPRSS2-ERG
     type: string
 
-  TNFAIP3:
+  tnfaip3:
     description: >
       TNFAIP3
     type: string
 
-  TP53_Col1:
+  tp53_col1:
     description: >
       TP53_Col1
     type: string
 
-  TP53_Col2:
+  tp53_col2:
     description: >
       TP53_Col2
     type: string
 
-  TSC2:
+  tsc2:
     description: >
       TSC2
     type: string
 
-  TumorSize :
+  tumorsize_:
     description: >
-      TumorSize
+      TumorSize 
     type: number
 
-  VEGFA:
+  vegfa:
     description: >
       VEGFA
     type: string
