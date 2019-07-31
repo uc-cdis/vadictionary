@@ -40,57 +40,57 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Days_To_Birth:
+  days_to_birth:
     description: >
       Days_To_Birth
     type: integer
 
-  Days_To_Death:
+  days_to_death:
     description: >
       Days_To_Death
     type: number
 
-  Ethnicity:
+  ethnicity:
     description: >
       Ethnicity
     type: string
 
-  Gender:
+  gender:
     description: >
       Gender
     type: string
 
-  Race:
+  race:
     description: >
       Race
     type: string
 
-  Vital_Status:
+  vital_status:
     description: >
       Vital_Status
     type: string
 
-  Year_Of_Birth:
+  year_of_birth:
     description: >
       Year_Of_Birth
     type: integer
 
-  Year_Of_Death:
+  year_of_death:
     description: >
       Year_Of_Death
     type: number
 
-  DeceasedFlag:
+  deceasedflag:
     description: >
       DeceasedFlag
     type: string
 
-  MaritalStatus:
+  maritalstatus:
     description: >
       MaritalStatus
     type: string
 
-  PatientOver90Flag:
+  patientover90flag:
     description: >
       PatientOver90Flag
     type: string

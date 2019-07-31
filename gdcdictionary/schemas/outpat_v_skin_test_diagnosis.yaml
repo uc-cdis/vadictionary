@@ -1,14 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "clinical_demographic"
-title: Clinical Demographic
+id: "outpat_v_skin_test_diagnosis"
+title: Outpat VSkinTestDiagnosis
 type: object
 namespace: https://vpodc.org/
 category: clinical
 program: '*'
 project: '*'
 description: >
-  Clinical demographic data for a patient.
+  Outpat VSkinTestDiagnosis
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: cases
-    backref: clinical_demographics
+    backref: outpat_v_skin_test_diagnoses
     label: associated_with
     target_type: case
     multiplicity: many_to_one
@@ -40,59 +40,64 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Days_To_Birth:
+  Chicago_VisitSID:
     description: >
-      Days_To_Birth
+      Chicago_VisitSID
+    type: string
+
+  DaysFromAnchorDateToEventDate:
+    description: >
+      DaysFromAnchorDateToEventDate
     type: integer
 
-  Days_To_Death:
+  DaysFromAnchorDateToVisitDate:
     description: >
-      Days_To_Death
-    type: number
-
-  Ethnicity:
-    description: >
-      Ethnicity
-    type: string
-
-  Gender:
-    description: >
-      Gender
-    type: string
-
-  Race:
-    description: >
-      Race
-    type: string
-
-  Vital_Status:
-    description: >
-      Vital_Status
-    type: string
-
-  Year_Of_Birth:
-    description: >
-      Year_Of_Birth
+      DaysFromAnchorDateToVisitDate
     type: integer
 
-  Year_Of_Death:
+  DaysFromAnchorDateToVSkinTestDate:
     description: >
-      Year_Of_Death
-    type: number
+      DaysFromAnchorDateToVSkinTestDate
+    type: integer
 
-  DeceasedFlag:
+  EventTime:
     description: >
-      DeceasedFlag
+      EventTime
     type: string
 
-  MaritalStatus:
+  ICD10Code:
     description: >
-      MaritalStatus
+      ICD10Code
     type: string
 
-  PatientOver90Flag:
+  ICD10Description:
     description: >
-      PatientOver90Flag
+      ICD10Description
+    type: string
+
+  ICD9Code:
+    description: >
+      ICD9Code
+    type: string
+
+  ICD9Description:
+    description: >
+      ICD9Description
+    type: string
+
+  OrdinalNumber:
+    description: >
+      OrdinalNumber
+    type: integer
+
+  VisitTime:
+    description: >
+      VisitTime
+    type: string
+
+  VSkinTestTime:
+    description: >
+      VSkinTestTime
     type: string
 
   cases:

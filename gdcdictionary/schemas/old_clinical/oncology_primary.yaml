@@ -8,7 +8,7 @@ category: clinical
 program: '*'
 project: '*'
 description: >
-  Tumor-related data for Oncology patients. Data elements in this node uniquely define the tumor, the extent of disease, first course of treatment accorded, and all recurrence information.
+  Tumor-related data for Oncology patients. Data elements in this node uniquely define the tumor, the extent of disease, first course of treatment accorded, and all recurrence information.  
 additionalProperties: false
 submittable: true
 validators: null
@@ -40,1677 +40,1677 @@ required:
 properties:
   $ref: "_definitions.yaml#/ubiquitous_properties"
 
-  Abdominalultrasound:
+  abdominalultrasound:
     description: >
       Abdominalultrasound
     type: string
 
-  Abstractstatus:
+  abstractstatus:
     description: >
       Abstractstatus
     type: string
 
-  Adjuvantchemotherapycol:
+  adjuvantchemotherapycol:
     description: >
       Adjuvantchemotherapycol
     type: string
 
-  AfipSubmission:
+  afipsubmission:
     description: >
       AfipSubmission
     type: string
 
-  AjccStagingBasis:
+  ajccstagingbasis:
     description: >
       AjccStagingBasis
     type: string
 
-  AmbiguousterminologydX:
+  ambiguousterminologydx:
     description: >
       AmbiguousterminologydX
     type: string
 
-  Androgendprvtntherapy:
+  androgendprvtntherapy:
     description: >
       Androgendprvtntherapy
     type: string
 
-  Antiegfrmoabtherapy:
+  antiegfrmoabtherapy:
     description: >
       Antiegfrmoabtherapy
     type: string
 
-  Apprchforbpsyofprmry:
+  apprchforbpsyofprmry:
     description: >
       Apprchforbpsyofprmry
     type: string
 
-  AutomaticStagingOverridden:
+  automaticstagingoverridden:
     description: >
       AutomaticStagingOverridden
     type: string
 
-  Bariumenema:
+  bariumenema:
     description: >
       Bariumenema
     type: string
 
-  Biopsyofotherthanprimary:
+  biopsyofotherthanprimary:
     description: >
       Biopsyofotherthanprimary
     type: string
 
-  Biopsyprocedure:
+  biopsyprocedure:
     description: >
       Biopsyprocedure
     type: string
 
-  Bloodinsputumperpt:
+  bloodinsputumperpt:
     description: >
       Bloodinsputumperpt
     type: string
 
-  Boneimaging:
+  boneimaging:
     description: >
       Boneimaging
     type: string
 
-  Bonemarrowaspiration:
+  bonemarrowaspiration:
     description: >
       Bonemarrowaspiration
     type: string
 
-  Boostdosecgy:
+  boostdosecgy:
     description: >
       Boostdosecgy
     type: number
 
-  Boosttreatmentmodality:
+  boosttreatmentmodality:
     description: >
       Boosttreatmentmodality
     type: number
 
-  Brachytherapy:
+  brachytherapy:
     description: >
       Brachytherapy
     type: string
 
-  Bronchoscopy:
+  bronchoscopy:
     description: >
       Bronchoscopy
     type: string
 
-  Cancer1:
+  cancer1:
     description: >
       Cancer1
     type: string
 
-  Cancer2:
+  cancer2:
     description: >
       Cancer2
     type: string
 
-  Cancer3:
+  cancer3:
     description: >
       Cancer3
     type: string
 
-  Cancer4:
+  cancer4:
     description: >
       Cancer4
     type: string
 
-  Capprotocolreview:
+  capprotocolreview:
     description: >
       Capprotocolreview
     type: string
 
-  Captext:
+  captext:
     description: >
       Captext
     type: string
 
-  Casefindingsource:
+  casefindingsource:
     description: >
       Casefindingsource
     type: number
 
-  Changeinbowelhabitsperpt:
+  changeinbowelhabitsperpt:
     description: >
       Changeinbowelhabitsperpt
     type: string
 
-  Chemotherapeuticagent1:
+  chemotherapeuticagent1:
     description: >
       Chemotherapeuticagent1
     type: string
 
-  Chemotherapeuticagent2:
+  chemotherapeuticagent2:
     description: >
       Chemotherapeuticagent2
     type: string
 
-  Chemotherapeuticagent3:
+  chemotherapeuticagent3:
     description: >
       Chemotherapeuticagent3
     type: string
 
-  Chemotherapeuticagent4:
+  chemotherapeuticagent4:
     description: >
       Chemotherapeuticagent4
     type: string
 
-  Chemotherapeuticagent5:
+  chemotherapeuticagent5:
     description: >
       Chemotherapeuticagent5
     type: string
 
-  Chemotherapy:
+  chemotherapy:
     description: >
       Chemotherapy
     type: string
 
-  ChemotherapyFac:
+  chemotherapyfac:
     description: >
       ChemotherapyFac
     type: string
 
-  Chemotherapyrecommended:
+  chemotherapyrecommended:
     description: >
       Chemotherapyrecommended
     type: string
 
-  Chestxray:
+  chestxray:
     description: >
       Chestxray
     type: string
 
-  ClassCategory:
+  classcategory:
     description: >
       ClassCategory
     type: string
 
-  ClassofcaseX:
+  classofcasex:
     description: >
       ClassofcaseX
     type: number
 
-  ClinicalM:
+  clinicalm:
     description: >
       ClinicalM
     type: string
 
-  ClinicalN:
+  clinicaln:
     description: >
       ClinicalN
     type: string
 
-  Clinicalriskfactors:
+  clinicalriskfactors:
     description: >
       Clinicalriskfactors
     type: string
 
-  ClinicalT:
+  clinicalt:
     description: >
       ClinicalT
     type: string
 
-  Clinicaltrialsdiscussion:
+  clinicaltrialsdiscussion:
     description: >
       Clinicaltrialsdiscussion
     type: string
 
-  ClintnmdocumentationpretX:
+  clintnmdocumentationpretx:
     description: >
       ClintnmdocumentationpretX
     type: string
 
-  Colonoscopy:
+  colonoscopy:
     description: >
       Colonoscopy
     type: string
 
-  Csschemadiscriminator:
+  csschemadiscriminator:
     description: >
       Csschemadiscriminator
     type: number
 
-  Ctofabdomenpelvis:
+  ctofabdomenpelvis:
     description: >
       Ctofabdomenpelvis
     type: string
 
-  Ctscan:
+  ctscan:
     description: >
       Ctscan
     type: string
 
-  Ctscanofchest:
+  ctscanofchest:
     description: >
       Ctscanofchest
     type: string
 
-  Ctscanofneckthyroid:
+  ctscanofneckthyroid:
     description: >
       Ctscanofneckthyroid
     type: string
 
-  DaysFromAnchorDateToChemotherapyDate:
+  daysfromanchordatetochemotherapydate:
     description: >
       DaysFromAnchorDateToChemotherapyDate
     type: integer
 
-  DaysFromAnchorDateToChemotherapyFacDate:
+  daysfromanchordatetochemotherapyfacdate:
     description: >
       DaysFromAnchorDateToChemotherapyFacDate
     type: integer
 
-  DaysFromAnchorDateToCltnmdocumentationdate:
+  daysfromanchordatetocltnmdocumentationdate:
     description: >
       DaysFromAnchorDateToCltnmdocumentationdate
     type: integer
 
-  DaysFromAnchorDateToDateadtinitiated:
+  daysfromanchordatetodateadtinitiated:
     description: >
       DaysFromAnchorDateToDateadtinitiated
     type: integer
 
-  DaysFromAnchorDateToDatecasecompleted:
+  daysfromanchordatetodatecasecompleted:
     description: >
       DaysFromAnchorDateToDatecasecompleted
     type: integer
 
-  DaysFromAnchorDateToDatecaseinitiated:
+  daysfromanchordatetodatecaseinitiated:
     description: >
       DaysFromAnchorDateToDatecaseinitiated
     type: integer
 
-  DaysFromAnchorDateToDatecaselastchanged:
+  daysfromanchordatetodatecaselastchanged:
     description: >
       DaysFromAnchorDateToDatecaselastchanged
     type: integer
 
-  DaysFromAnchorDateToDatechmthrpyrcmmndd:
+  daysfromanchordatetodatechmthrpyrcmmndd:
     description: >
       DaysFromAnchorDateToDatechmthrpyrcmmndd
     type: integer
 
-  DaysFromAnchorDateToDatefirstsrgclprcdr:
+  daysfromanchordatetodatefirstsrgclprcdr:
     description: >
       DaysFromAnchorDateToDatefirstsrgclprcdr
     type: integer
 
-  DaysFromAnchorDateToDatehospicecareinitiated:
+  daysfromanchordatetodatehospicecareinitiated:
     description: >
       DaysFromAnchorDateToDatehospicecareinitiated
     type: integer
 
-  DaysFromAnchorDateToDatehspccnsltcmpltd:
+  daysfromanchordatetodatehspccnsltcmpltd:
     description: >
       DaysFromAnchorDateToDatehspccnsltcmpltd
     type: integer
 
-  DaysFromAnchorDateToDatehspccnsltinttd:
+  daysfromanchordatetodatehspccnsltinttd:
     description: >
       DaysFromAnchorDateToDatehspccnsltinttd
     type: integer
 
-  DaysFromAnchorDateToDateof1stPositiveBiopsy:
+  daysfromanchordatetodateof1stpositivebiopsy:
     description: >
       DaysFromAnchorDateToDateof1stPositiveBiopsy
     type: integer
 
-  DaysFromAnchorDateToDateofbariumenema:
+  daysfromanchordatetodateofbariumenema:
     description: >
       DaysFromAnchorDateToDateofbariumenema
     type: integer
 
-  DaysFromAnchorDateToDateofbloodinsputumperpt:
+  daysfromanchordatetodateofbloodinsputumperpt:
     description: >
       DaysFromAnchorDateToDateofbloodinsputumperpt
     type: integer
 
-  DaysFromAnchorDateToDateofbronchoscopy:
+  daysfromanchordatetodateofbronchoscopy:
     description: >
       DaysFromAnchorDateToDateofbronchoscopy
     type: integer
 
-  DaysFromAnchorDateToDateofcancerconf:
+  daysfromanchordatetodateofcancerconf:
     description: >
       DaysFromAnchorDateToDateofcancerconf
     type: integer
 
-  DaysFromAnchorDateToDateofchangeinbowelhabits:
+  daysfromanchordatetodateofchangeinbowelhabits:
     description: >
       DaysFromAnchorDateToDateofchangeinbowelhabits
     type: integer
 
-  DaysFromAnchorDateToDateofchestXray:
+  daysfromanchordatetodateofchestxray:
     description: >
       DaysFromAnchorDateToDateofchestXray
     type: integer
 
-  DaysFromAnchorDateToDateofColonoscopy:
+  daysfromanchordatetodateofcolonoscopy:
     description: >
       DaysFromAnchorDateToDateofColonoscopy
     type: integer
 
-  DaysFromAnchorDateToDateofconclusivedX:
+  daysfromanchordatetodateofconclusivedx:
     description: >
       DaysFromAnchorDateToDateofconclusivedX
     type: integer
 
-  DaysFromAnchorDateToDateofctofabdomenpelvis:
+  daysfromanchordatetodateofctofabdomenpelvis:
     description: >
       DaysFromAnchorDateToDateofctofabdomenpelvis
     type: integer
 
-  DaysFromAnchorDateToDateofctscan:
+  daysfromanchordatetodateofctscan:
     description: >
       DaysFromAnchorDateToDateofctscan
     type: integer
 
-  DaysFromAnchorDateToDateofdyspnea:
+  daysfromanchordatetodateofdyspnea:
     description: >
       DaysFromAnchorDateToDateofdyspnea
     type: integer
 
-  DaysFromAnchorDateToDateoffever:
+  daysfromanchordatetodateoffever:
     description: >
       DaysFromAnchorDateToDateoffever
     type: integer
 
-  DaysFromAnchorDateToDateoffirstcontact:
+  daysfromanchordatetodateoffirstcontact:
     description: >
       DaysFromAnchorDateToDateoffirstcontact
     type: integer
 
-  DaysFromAnchorDateToDateOfFirstRecurrence:
+  daysfromanchordatetodateoffirstrecurrence:
     description: >
       DaysFromAnchorDateToDateOfFirstRecurrence
     type: integer
 
-  DaysFromAnchorDateToDateoffirstsymptoms:
+  daysfromanchordatetodateoffirstsymptoms:
     description: >
       DaysFromAnchorDateToDateoffirstsymptoms
     type: integer
 
-  DaysFromAnchorDateToDateoffobt:
+  daysfromanchordatetodateoffobt:
     description: >
       DaysFromAnchorDateToDateoffobt
     type: integer
 
-  DaysFromAnchorDateToDateofincreasedcough:
+  daysfromanchordatetodateofincreasedcough:
     description: >
       DaysFromAnchorDateToDateofincreasedcough
     type: integer
 
-  DaysFromAnchorDateToDateofmediastinoscopy:
+  daysfromanchordatetodateofmediastinoscopy:
     description: >
       DaysFromAnchorDateToDateofmediastinoscopy
     type: integer
 
-  DaysFromAnchorDateToDateofmultipletumors:
+  daysfromanchordatetodateofmultipletumors:
     description: >
       DaysFromAnchorDateToDateofmultipletumors
     type: integer
 
-  DaysFromAnchorDateToDateofnightsweats:
+  daysfromanchordatetodateofnightsweats:
     description: >
       DaysFromAnchorDateToDateofnightsweats
     type: integer
 
-  DaysFromAnchorDateToDateofnotreatment:
+  daysfromanchordatetodateofnotreatment:
     description: >
       DaysFromAnchorDateToDateofnotreatment
     type: integer
 
-  DaysFromAnchorDateToDateofPetscan:
+  daysfromanchordatetodateofpetscan:
     description: >
       DaysFromAnchorDateToDateofPetscan
     type: integer
 
-  DaysFromAnchorDateToDateofsigmoidoscopy:
+  daysfromanchordatetodateofsigmoidoscopy:
     description: >
       DaysFromAnchorDateToDateofsigmoidoscopy
     type: integer
 
-  DaysFromAnchorDateToDateofsurgeryconsult:
+  daysfromanchordatetodateofsurgeryconsult:
     description: >
       DaysFromAnchorDateToDateofsurgeryconsult
     type: integer
 
-  DaysFromAnchorDateToDateonclgycnsltordrd:
+  daysfromanchordatetodateonclgycnsltordrd:
     description: >
       DaysFromAnchorDateToDateonclgycnsltordrd
     type: integer
 
-  DaysFromAnchorDateToDateoncologyconsultdone:
+  daysfromanchordatetodateoncologyconsultdone:
     description: >
       DaysFromAnchorDateToDateoncologyconsultdone
     type: integer
 
-  DaysFromAnchorDateToDateradiationended:
+  daysfromanchordatetodateradiationended:
     description: >
       DaysFromAnchorDateToDateradiationended
     type: integer
 
-  DaysFromAnchorDateToDatestartofworkupordered:
+  daysfromanchordatetodatestartofworkupordered:
     description: >
       DaysFromAnchorDateToDatestartofworkupordered
     type: integer
 
-  DaysFromAnchorDateToDateworkupstarted:
+  daysfromanchordatetodateworkupstarted:
     description: >
       DaysFromAnchorDateToDateworkupstarted
     type: integer
 
-  DaysFromAnchorDateToDiagnosisDate:
+  daysfromanchordatetodiagnosisdate:
     description: >
       DaysFromAnchorDateToDiagnosisDate
     type: integer
 
-  DaysFromAnchorDateToDredate:
+  daysfromanchordatetodredate:
     description: >
       DaysFromAnchorDateToDredate
     type: integer
 
-  DaysFromAnchorDateToFirstCourseOfTreatmentDate:
+  daysfromanchordatetofirstcourseoftreatmentdate:
     description: >
       DaysFromAnchorDateToFirstCourseOfTreatmentDate
     type: integer
 
-  DaysFromAnchorDateToHematransendcrnprocdate:
+  daysfromanchordatetohematransendcrnprocdate:
     description: >
       DaysFromAnchorDateToHematransendcrnprocdate
     type: integer
 
-  DaysFromAnchorDateToHormoneTherapyDate:
+  daysfromanchordatetohormonetherapydate:
     description: >
       DaysFromAnchorDateToHormoneTherapyDate
     type: integer
 
-  DaysFromAnchorDateToHormoneTherapyFacDate:
+  daysfromanchordatetohormonetherapyfacdate:
     description: >
       DaysFromAnchorDateToHormoneTherapyFacDate
     type: integer
 
-  DaysFromAnchorDateToImmunotherapyDate:
+  daysfromanchordatetoimmunotherapydate:
     description: >
       DaysFromAnchorDateToImmunotherapyDate
     type: integer
 
-  DaysFromAnchorDateToImmunotherapyFacDate:
+  daysfromanchordatetoimmunotherapyfacdate:
     description: >
       DaysFromAnchorDateToImmunotherapyFacDate
     type: integer
 
-  DaysFromAnchorDateToInpatientAdmissionDate:
+  daysfromanchordatetoinpatientadmissiondate:
     description: >
       DaysFromAnchorDateToInpatientAdmissionDate
     type: integer
 
-  DaysFromAnchorDateToInpatientDischargeDate:
+  daysfromanchordatetoinpatientdischargedate:
     description: >
       DaysFromAnchorDateToInpatientDischargeDate
     type: integer
 
-  DaysFromAnchorDateToMostdefinitivesurgDate:
+  daysfromanchordatetomostdefinitivesurgdate:
     description: >
       DaysFromAnchorDateToMostdefinitivesurgDate
     type: integer
 
-  DaysFromAnchorDateToMostdefinitivesurgfacDate:
+  daysfromanchordatetomostdefinitivesurgfacdate:
     description: >
       DaysFromAnchorDateToMostdefinitivesurgfacDate
     type: integer
 
-  DaysFromAnchorDateToOtherTreatmentFacilityDate:
+  daysfromanchordatetoothertreatmentfacilitydate:
     description: >
       DaysFromAnchorDateToOtherTreatmentFacilityDate
     type: integer
 
-  DaysFromAnchorDateToOtherTreatmentStartDate:
+  daysfromanchordatetoothertreatmentstartdate:
     description: >
       DaysFromAnchorDateToOtherTreatmentStartDate
     type: integer
 
-  DaysFromAnchorDateToPsadate:
+  daysfromanchordatetopsadate:
     description: >
       DaysFromAnchorDateToPsadate
     type: integer
 
-  DaysFromAnchorDateToRadiationauxiliarydate:
+  daysfromanchordatetoradiationauxiliarydate:
     description: >
       DaysFromAnchorDateToRadiationauxiliarydate
     type: integer
 
-  DaysFromAnchorDateToRadiationFacilityDate:
+  daysfromanchordatetoradiationfacilitydate:
     description: >
       DaysFromAnchorDateToRadiationFacilityDate
     type: integer
 
-  DaysFromAnchorDateToRadiationStartDate:
+  daysfromanchordatetoradiationstartdate:
     description: >
       DaysFromAnchorDateToRadiationStartDate
     type: integer
 
-  DaysFromAnchorDateToRadiationTherapyToCnsDate:
+  daysfromanchordatetoradiationtherapytocnsdate:
     description: >
       DaysFromAnchorDateToRadiationTherapyToCnsDate
     type: integer
 
-  DaysFromAnchorDateToReportingdate:
+  daysfromanchordatetoreportingdate:
     description: >
       DaysFromAnchorDateToReportingdate
     type: integer
 
-  DaysFromAnchorDateToScopeoflnsurgerydate:
+  daysfromanchordatetoscopeoflnsurgerydate:
     description: >
       DaysFromAnchorDateToScopeoflnsurgerydate
     type: integer
 
-  DaysFromAnchorDateToScopeoflnsurgeryfacdate:
+  daysfromanchordatetoscopeoflnsurgeryfacdate:
     description: >
       DaysFromAnchorDateToScopeoflnsurgeryfacdate
     type: integer
 
-  DaysFromAnchorDateToSurgDxstagingProcFacDate:
+  daysfromanchordatetosurgdxstagingprocfacdate:
     description: >
       DaysFromAnchorDateToSurgDxstagingProcFacDate
     type: integer
 
-  DaysFromAnchorDateToSurgicalDxstagingProcDate:
+  daysfromanchordatetosurgicaldxstagingprocdate:
     description: >
       DaysFromAnchorDateToSurgicalDxstagingProcDate
     type: integer
 
-  DaysFromAnchorDateToSurgprocothersitedate:
+  daysfromanchordatetosurgprocothersitedate:
     description: >
       DaysFromAnchorDateToSurgprocothersitedate
     type: integer
 
-  DaysFromAnchorDateToSurgprocothersitefacdate:
+  daysfromanchordatetosurgprocothersitefacdate:
     description: >
       DaysFromAnchorDateToSurgprocothersitefacdate
     type: integer
 
-  DaysFromAnchorDateToTreatmentguidelinedocdate:
+  daysfromanchordatetotreatmentguidelinedocdate:
     description: >
       DaysFromAnchorDateToTreatmentguidelinedocdate
     type: integer
 
-  Depthoftumor:
+  depthoftumor:
     description: >
       Depthoftumor
     type: string
 
-  Derivedss1977:
+  derivedss1977:
     description: >
       Derivedss1977
     type: string
 
-  Derivedss2000:
+  derivedss2000:
     description: >
       Derivedss2000
     type: string
 
-  DiagnosisTime:
+  diagnosistime:
     description: >
       DiagnosisTime
     type: string
 
-  DiagnosticConfirmation:
+  diagnosticconfirmation:
     description: >
       DiagnosticConfirmation
     type: string
 
-  DiffuseRetinalInvolvement:
+  diffuseretinalinvolvement:
     description: >
       DiffuseRetinalInvolvement
     type: string
 
-  DistantSite1:
+  distantsite1:
     description: >
       DistantSite1
     type: string
 
-  DistantSite2:
+  distantsite2:
     description: >
       DistantSite2
     type: string
 
-  DistantSite3:
+  distantsite3:
     description: >
       DistantSite3
     type: string
 
-  Docfornoplatbasedchemo:
+  docfornoplatbasedchemo:
     description: >
       Docfornoplatbasedchemo
     type: string
 
-  DRE:
+  dre:
     description: >
       DRE
     type: string
 
-  Dyspnea:
+  dyspnea:
     description: >
       Dyspnea
     type: string
 
-  Egfrmutation1:
+  egfrmutation1:
     description: >
       Egfrmutation1
     type: string
 
-  Egfrmutation2:
+  egfrmutation2:
     description: >
       Egfrmutation2
     type: string
 
-  Egfrmutationtesting:
+  egfrmutationtesting:
     description: >
       Egfrmutationtesting
     type: string
 
-  Extension:
+  extension:
     description: >
       Extension
     type: number
 
-  ExtensionCs:
+  extensioncs:
     description: >
       ExtensionCs
     type: number
 
-  Externalbeamradiation:
+  externalbeamradiation:
     description: >
       Externalbeamradiation
     type: string
 
-  FamilyHistory:
+  familyhistory:
     description: >
       FamilyHistory
     type: string
 
-  Fecaloccultbloodtestfobt:
+  fecaloccultbloodtestfobt:
     description: >
       Fecaloccultbloodtestfobt
     type: string
 
-  Feebasis:
+  feebasis:
     description: >
       Feebasis
     type: string
 
-  FEVER:
+  fever:
     description: >
       FEVER
     type: string
 
-  Firstsitecode:
+  firstsitecode:
     description: >
       Firstsitecode
     type: string
 
-  Gaschemotherapeuticagent1:
+  gaschemotherapeuticagent1:
     description: >
       Gaschemotherapeuticagent1
     type: string
 
-  Gaschemotherapeuticagent2:
+  gaschemotherapeuticagent2:
     description: >
       Gaschemotherapeuticagent2
     type: string
 
-  Gaschemotherapeuticagent3:
+  gaschemotherapeuticagent3:
     description: >
       Gaschemotherapeuticagent3
     type: string
 
-  Gascomorbidcondition1:
+  gascomorbidcondition1:
     description: >
       Gascomorbidcondition1
     type: string
 
-  Gascomorbidcondition2:
+  gascomorbidcondition2:
     description: >
       Gascomorbidcondition2
     type: string
 
-  Gascomorbidcondition3:
+  gascomorbidcondition3:
     description: >
       Gascomorbidcondition3
     type: string
 
-  Gascomorbidcondition4:
+  gascomorbidcondition4:
     description: >
       Gascomorbidcondition4
     type: string
 
-  Gascomorbidcondition5:
+  gascomorbidcondition5:
     description: >
       Gascomorbidcondition5
     type: string
 
-  Gascomorbidcondition6:
+  gascomorbidcondition6:
     description: >
       Gascomorbidcondition6
     type: string
 
-  Gascomplication1:
+  gascomplication1:
     description: >
       Gascomplication1
     type: string
 
-  Gascomplication2:
+  gascomplication2:
     description: >
       Gascomplication2
     type: string
 
-  Gascomplication3:
+  gascomplication3:
     description: >
       Gascomplication3
     type: string
 
-  Gascomplication4:
+  gascomplication4:
     description: >
       Gascomplication4
     type: string
 
-  Gascomplication5:
+  gascomplication5:
     description: >
       Gascomplication5
     type: string
 
-  Gaspersonalhistothmalig:
+  gaspersonalhistothmalig:
     description: >
       Gaspersonalhistothmalig
     type: string
 
-  Gleasonscoreclinical:
+  gleasonscoreclinical:
     description: >
       Gleasonscoreclinical
     type: number
 
-  Gleasonscorepathologic:
+  gleasonscorepathologic:
     description: >
       Gleasonscorepathologic
     type: number
 
-  Gradedifferentiation:
+  gradedifferentiation:
     description: >
       Gradedifferentiation
     type: string
 
-  Gradepathsystem:
+  gradepathsystem:
     description: >
       Gradepathsystem
     type: string
 
-  Gradepathvalue:
+  gradepathvalue:
     description: >
       Gradepathvalue
     type: string
 
-  Guidance:
+  guidance:
     description: >
       Guidance
     type: string
 
-  Hematransendocrineproc:
+  hematransendocrineproc:
     description: >
       Hematransendocrineproc
     type: number
 
-  Histologyicdo2X:
+  histologyicdo2x:
     description: >
       Histologyicdo2X
     type: string
 
-  Histologyicdo3X:
+  histologyicdo3x:
     description: >
       Histologyicdo3X
     type: string
 
-  HormoneTherapy:
+  hormonetherapy:
     description: >
       HormoneTherapy
     type: string
 
-  HormoneTherapyFac:
+  hormonetherapyfac:
     description: >
       HormoneTherapyFac
     type: string
 
-  ICDOSite:
+  icdosite:
     description: >
       ICDOSite
     type: string
 
-  Immunotherapy:
+  immunotherapy:
     description: >
       Immunotherapy
     type: string
 
-  ImmunotherapyFac:
+  immunotherapyfac:
     description: >
       ImmunotherapyFac
     type: string
 
-  ImmunotherapyhospitalX:
+  immunotherapyhospitalx:
     description: >
       ImmunotherapyhospitalX
     type: string
 
-  Increasedcough:
+  increasedcough:
     description: >
       Increasedcough
     type: string
 
-  Infrasupra:
+  infrasupra:
     description: >
       Infrasupra
     type: string
 
-  Inpatientoutpatientstatus:
+  inpatientoutpatientstatus:
     description: >
       Inpatientoutpatientstatus
     type: string
 
-  Intentofchemotherapy:
+  intentofchemotherapy:
     description: >
       Intentofchemotherapy
     type: string
 
-  Intentofradiation:
+  intentofradiation:
     description: >
       Intentofradiation
     type: string
 
-  Intentofsurgery:
+  intentofsurgery:
     description: >
       Intentofsurgery
     type: string
 
-  IrisciliaryBody:
+  irisciliarybody:
     description: >
       IrisciliaryBody
     type: string
 
-  Karnofskysratingdistrans:
+  karnofskysratingdistrans:
     description: >
       Karnofskysratingdistrans
     type: string
 
-  KarnofskysratingpriortotX:
+  karnofskysratingpriortotx:
     description: >
       KarnofskysratingpriortotX
     type: string
 
-  Krnfskysratingrcrrnc:
+  krnfskysratingrcrrnc:
     description: >
       Krnfskysratingrcrrnc
     type: string
 
-  Lasttumorstatus:
+  lasttumorstatus:
     description: >
       Lasttumorstatus
     type: string
 
-  Laterality:
+  laterality:
     description: >
       Laterality
     type: string
 
-  Lesserpattern0240:
+  lesserpattern0240:
     description: >
       Lesserpattern0240
     type: string
 
-  Lngcomorbidcondition1:
+  lngcomorbidcondition1:
     description: >
       Lngcomorbidcondition1
     type: string
 
-  Lngcomorbidcondition2:
+  lngcomorbidcondition2:
     description: >
       Lngcomorbidcondition2
     type: string
 
-  Lngcomorbidcondition3:
+  lngcomorbidcondition3:
     description: >
       Lngcomorbidcondition3
     type: string
 
-  Lngcomorbidcondition4:
+  lngcomorbidcondition4:
     description: >
       Lngcomorbidcondition4
     type: string
 
-  Lngcomorbidcondition5:
+  lngcomorbidcondition5:
     description: >
       Lngcomorbidcondition5
     type: string
 
-  Lngcomorbidcondition6:
+  lngcomorbidcondition6:
     description: >
       Lngcomorbidcondition6
     type: string
 
-  Lngcomplication1:
+  lngcomplication1:
     description: >
       Lngcomplication1
     type: string
 
-  Lngcomplication2:
+  lngcomplication2:
     description: >
       Lngcomplication2
     type: string
 
-  Lngcomplication3:
+  lngcomplication3:
     description: >
       Lngcomplication3
     type: string
 
-  Lngcomplication4:
+  lngcomplication4:
     description: >
       Lngcomplication4
     type: string
 
-  Lngcomplication5:
+  lngcomplication5:
     description: >
       Lngcomplication5
     type: string
 
-  Lngpersonalhistothmalig:
+  lngpersonalhistothmalig:
     description: >
       Lngpersonalhistothmalig
     type: string
 
-  LocationofradiationtX:
+  locationofradiationtx:
     description: >
       LocationofradiationtX
     type: string
 
-  LymphNodes:
+  lymphnodes:
     description: >
       LymphNodes
     type: number
 
-  LymphNodesCs:
+  lymphnodescs:
     description: >
       LymphNodesCs
     type: number
 
-  Lymphvascularinvasionl:
+  lymphvascularinvasionl:
     description: >
       Lymphvascularinvasionl
     type: string
 
-  Mediastinoscopy:
+  mediastinoscopy:
     description: >
       Mediastinoscopy
     type: string
 
-  Metsatdxbone:
+  metsatdxbone:
     description: >
       Metsatdxbone
     type: string
 
-  Metsatdxbrain:
+  metsatdxbrain:
     description: >
       Metsatdxbrain
     type: string
 
-  MetsAtDxCs:
+  metsatdxcs:
     description: >
       MetsAtDxCs
     type: number
 
-  Metsatdxliver:
+  metsatdxliver:
     description: >
       Metsatdxliver
     type: string
 
-  Metsatdxlung:
+  metsatdxlung:
     description: >
       Metsatdxlung
     type: string
 
-  MetsEvalCs:
+  metsevalcs:
     description: >
       MetsEvalCs
     type: number
 
-  Mripelvisabdomen:
+  mripelvisabdomen:
     description: >
       Mripelvisabdomen
     type: string
 
-  MultimodalityTherapy:
+  multimodalitytherapy:
     description: >
       MultimodalityTherapy
     type: string
 
-  MultimodalityTherapyClin:
+  multimodalitytherapyclin:
     description: >
       MultimodalityTherapyClin
     type: string
 
-  MultipleTumors:
+  multipletumors:
     description: >
       MultipleTumors
     type: number
 
-  Multiplicitycounter:
+  multiplicitycounter:
     description: >
       Multiplicitycounter
     type: number
 
-  Multtumrptasoneprim:
+  multtumrptasoneprim:
     description: >
       Multtumrptasoneprim
     type: number
 
-  Neoadjuvanttherapy:
+  neoadjuvanttherapy:
     description: >
       Neoadjuvanttherapy
     type: string
 
-  Nightsweats:
+  nightsweats:
     description: >
       Nightsweats
     type: string
 
-  Nonadtchemotherapy:
+  nonadtchemotherapy:
     description: >
       Nonadtchemotherapy
     type: string
 
-  Nslcstage13pathlnstaging:
+  nslcstage13pathlnstaging:
     description: >
       Nslcstage13pathlnstaging
     type: string
 
-  Numberoflnremovedfacr:
+  numberoflnremovedfacr:
     description: >
       Numberoflnremovedfacr
     type: number
 
-  Numberoflnremovedr:
+  numberoflnremovedr:
     description: >
       Numberoflnremovedr
     type: number
 
-  Oncologyreferral:
+  oncologyreferral:
     description: >
       Oncologyreferral
     type: string
 
-  Othercancer:
+  othercancer:
     description: >
       Othercancer
     type: string
 
-  Otherm:
+  otherm:
     description: >
       Otherm
     type: string
 
-  Othern:
+  othern:
     description: >
       Othern
     type: string
 
-  Otherstagegroup:
+  otherstagegroup:
     description: >
       Otherstagegroup
     type: string
 
-  Otherstagingsystem:
+  otherstagingsystem:
     description: >
       Otherstagingsystem
     type: string
 
-  Othert:
+  othert:
     description: >
       Othert
     type: string
 
-  OtherTreatment:
+  othertreatment:
     description: >
       OtherTreatment
     type: string
 
-  OtherTreatmentFac:
+  othertreatmentfac:
     description: >
       OtherTreatmentFac
     type: string
 
-  OthertypeoffirstrecurrenceX:
+  othertypeoffirstrecurrencex:
     description: >
       OthertypeoffirstrecurrenceX
     type: string
 
-  Painassessment:
+  painassessment:
     description: >
       Painassessment
     type: string
 
-  Palliativecare:
+  palliativecare:
     description: >
       Palliativecare
     type: string
 
-  Palliativecarefac:
+  palliativecarefac:
     description: >
       Palliativecarefac
     type: string
 
-  Palpabilityofprimary:
+  palpabilityofprimary:
     description: >
       Palpabilityofprimary
     type: string
 
-  Papillaryfollicular:
+  papillaryfollicular:
     description: >
       Papillaryfollicular
     type: string
 
-  Pathologicfracture:
+  pathologicfracture:
     description: >
       Pathologicfracture
     type: string
 
-  Pathologicm:
+  pathologicm:
     description: >
       Pathologicm
     type: string
 
-  PathologicN:
+  pathologicn:
     description: >
       PathologicN
     type: string
 
-  Pathologicriskfactors:
+  pathologicriskfactors:
     description: >
       Pathologicriskfactors
     type: string
 
-  Pathologicsizeoftumor:
+  pathologicsizeoftumor:
     description: >
       Pathologicsizeoftumor
     type: string
 
-  PathologicT:
+  pathologict:
     description: >
       PathologicT
     type: string
 
-  PerformanceStatus:
+  performancestatus:
     description: >
       PerformanceStatus
     type: string
 
-  PerformancestatusatdX:
+  performancestatusatdx:
     description: >
       PerformancestatusatdX
     type: string
 
-  PeripheralBloodInvolvement:
+  peripheralbloodinvolvement:
     description: >
       PeripheralBloodInvolvement
     type: string
 
-  Perirectallninvolvement:
+  perirectallninvolvement:
     description: >
       Perirectallninvolvement
     type: string
 
-  Petscan:
+  petscan:
     description: >
       Petscan
     type: string
 
-  PhysiciansStage:
+  physiciansstage:
     description: >
       PhysiciansStage
     type: string
 
-  Predominantpattern0240:
+  predominantpattern0240:
     description: >
       Predominantpattern0240
     type: string
 
-  Preopobstructinglesion:
+  preopobstructinglesion:
     description: >
       Preopobstructinglesion
     type: string
 
-  Presenceofmultipletumors:
+  presenceofmultipletumors:
     description: >
       Presenceofmultipletumors
     type: string
 
-  Presentationatcancerconf:
+  presentationatcancerconf:
     description: >
       Presentationatcancerconf
     type: string
 
-  PrimarySiteCodePrefiX:
+  primarysitecodeprefix:
     description: >
       PrimarySiteCodePrefiX
     type: string
 
-  PrimarysiteX:
+  primarysitex:
     description: >
       PrimarysiteX
     type: string
 
-  Radiation:
+  radiation:
     description: >
       Radiation
     type: string
 
-  Radiationauxiliaryvolume:
+  radiationauxiliaryvolume:
     description: >
       Radiationauxiliaryvolume
     type: string
 
-  Radiationcompletionstatus:
+  radiationcompletionstatus:
     description: >
       Radiationcompletionstatus
     type: string
 
-  RadiationFacility:
+  radiationfacility:
     description: >
       RadiationFacility
     type: string
 
-  RadiationsurgerySequence:
+  radiationsurgerysequence:
     description: >
       RadiationsurgerySequence
     type: string
 
-  RadiationTherapyToCns:
+  radiationtherapytocns:
     description: >
       RadiationTherapyToCns
     type: string
 
-  RadiationtherapytocnshospX:
+  radiationtherapytocnshospx:
     description: >
       RadiationtherapytocnshospX
     type: string
 
-  Radiationtreatmentvolume:
+  radiationtreatmentvolume:
     description: >
       Radiationtreatmentvolume
     type: number
 
-  Rdtnlocalcntrlstatus:
+  rdtnlocalcntrlstatus:
     description: >
       Rdtnlocalcntrlstatus
     type: string
 
-  ReadmissionWi30Dayssurg:
+  readmissionwi30dayssurg:
     description: >
       ReadmissionWi30Dayssurg
     type: string
 
-  Reasonchemotherapystopped:
+  reasonchemotherapystopped:
     description: >
       Reasonchemotherapystopped
     type: string
 
-  ReasonForNoChemotherapy:
+  reasonfornochemotherapy:
     description: >
       ReasonForNoChemotherapy
     type: string
 
-  ReasonForNoHormoneTherapy:
+  reasonfornohormonetherapy:
     description: >
       ReasonForNoHormoneTherapy
     type: string
 
-  Reasonfornolnbiopsy:
+  reasonfornolnbiopsy:
     description: >
       Reasonfornolnbiopsy
     type: string
 
-  ReasonForNoRadiation:
+  reasonfornoradiation:
     description: >
       ReasonForNoRadiation
     type: string
 
-  Reasonhrmnthrpystppd:
+  reasonhrmnthrpystppd:
     description: >
       Reasonhrmnthrpystppd
     type: string
 
-  Reasonnosurgeryofprimary:
+  reasonnosurgeryofprimary:
     description: >
       Reasonnosurgeryofprimary
     type: string
 
-  Reasonradiationstopped:
+  reasonradiationstopped:
     description: >
       Reasonradiationstopped
     type: string
 
-  Reconstructionrestoration:
+  reconstructionrestoration:
     description: >
       Reconstructionrestoration
     type: number
 
-  Referraltosupportservices:
+  referraltosupportservices:
     description: >
       Referraltosupportservices
     type: string
 
-  Regionaldosecgy:
+  regionaldosecgy:
     description: >
       Regionaldosecgy
     type: number
 
-  RegionalLymphNodesExamined:
+  regionallymphnodesexamined:
     description: >
       RegionalLymphNodesExamined
     type: number
 
-  RegionalLymphNodesPositive:
+  regionallymphnodespositive:
     description: >
       RegionalLymphNodesPositive
     type: number
 
-  Regionaltreatmentmodality:
+  regionaltreatmentmodality:
     description: >
       Regionaltreatmentmodality
     type: number
 
-  RegNodesEvalCs:
+  regnodesevalcs:
     description: >
       RegNodesEvalCs
     type: number
 
-  Riskofrecurrence:
+  riskofrecurrence:
     description: >
       Riskofrecurrence
     type: string
 
-  Scopeoflnsurgeryf:
+  scopeoflnsurgeryf:
     description: >
       Scopeoflnsurgeryf
     type: string
 
-  Scopeoflnsurgeryfacf:
+  scopeoflnsurgeryfacf:
     description: >
       Scopeoflnsurgeryfacf
     type: string
 
-  Scopeoflnsurgeryfacr:
+  scopeoflnsurgeryfacr:
     description: >
       Scopeoflnsurgeryfacr
     type: number
 
-  Scopeoflnsurgeryr:
+  scopeoflnsurgeryr:
     description: >
       Scopeoflnsurgeryr
     type: number
 
-  Screeningresult:
+  screeningresult:
     description: >
       Screeningresult
     type: string
 
-  Secondsitecode:
+  secondsitecode:
     description: >
       Secondsitecode
     type: string
 
-  SeerSummaryStage2000:
+  seersummarystage2000:
     description: >
       SeerSummaryStage2000
     type: string
 
-  Sentinelnodesexaminedbr98:
+  sentinelnodesexaminedbr98:
     description: >
       Sentinelnodesexaminedbr98
     type: string
 
-  Sentinelnodespositivebr98:
+  sentinelnodespositivebr98:
     description: >
       Sentinelnodespositivebr98
     type: string
 
-  SequenceNumber:
+  sequencenumber:
     description: >
       SequenceNumber
     type: integer
 
-  Serumtumormarkers:
+  serumtumormarkers:
     description: >
       Serumtumormarkers
     type: string
 
-  Sigmoidoscopy:
+  sigmoidoscopy:
     description: >
       Sigmoidoscopy
     type: string
 
-  SitegpX:
+  sitegpx:
     description: >
       SitegpX
     type: string
 
-  SiteOfDistantMetastasis1:
+  siteofdistantmetastasis1:
     description: >
       SiteOfDistantMetastasis1
     type: string
 
-  SiteOfDistantMetastasis2:
+  siteofdistantmetastasis2:
     description: >
       SiteOfDistantMetastasis2
     type: string
 
-  SiteOfDistantMetastasis3:
+  siteofdistantmetastasis3:
     description: >
       SiteOfDistantMetastasis3
     type: string
 
-  SitespecificFactor1Cs:
+  sitespecificfactor1cs:
     description: >
       SitespecificFactor1Cs
     type: number
 
-  Sizeoftumormelanoma:
+  sizeoftumormelanoma:
     description: >
       Sizeoftumormelanoma
     type: string
 
-  Smokinghistory:
+  smokinghistory:
     description: >
       Smokinghistory
     type: string
 
-  Sporadicpolyps:
+  sporadicpolyps:
     description: >
       Sporadicpolyps
     type: string
 
-  Stagedbyotherstage:
+  stagedbyotherstage:
     description: >
       Stagedbyotherstage
     type: string
 
-  Stagedbypathologicstage:
+  stagedbypathologicstage:
     description: >
       Stagedbypathologicstage
     type: string
 
-  Stagegroupbest:
+  stagegroupbest:
     description: >
       Stagegroupbest
     type: string
 
-  Stagegroupclinical:
+  stagegroupclinical:
     description: >
       Stagegroupclinical
     type: string
 
-  StageGroupingajcc:
+  stagegroupingajcc:
     description: >
       StageGroupingajcc
     type: string
 
-  Stagegrouppathologic:
+  stagegrouppathologic:
     description: >
       Stagegrouppathologic
     type: string
 
-  Subsite:
+  subsite:
     description: >
       Subsite
     type: string
 
-  SurgDxstagingProcFac:
+  surgdxstagingprocfac:
     description: >
       SurgDxstagingProcFac
     type: number
 
-  SurgeryOfPrimaryF:
+  surgeryofprimaryf:
     description: >
       SurgeryOfPrimaryF
     type: number
 
-  SurgeryOfPrimaryFacF:
+  surgeryofprimaryfacf:
     description: >
       SurgeryOfPrimaryFacF
     type: number
 
-  SurgicalMargins:
+  surgicalmargins:
     description: >
       SurgicalMargins
     type: string
 
-  Surgprocothersitef:
+  surgprocothersitef:
     description: >
       Surgprocothersitef
     type: string
 
-  Surgprocothersitefacf:
+  surgprocothersitefacf:
     description: >
       Surgprocothersitefacf
     type: string
 
-  Surgprocothersitefacr:
+  surgprocothersitefacr:
     description: >
       Surgprocothersitefacr
     type: number
 
-  Surgprocothersiter:
+  surgprocothersiter:
     description: >
       Surgprocothersiter
     type: number
 
-  Systemicsurgerysequence:
+  systemicsurgerysequence:
     description: >
       Systemicsurgerysequence
     type: string
 
-  Texthistologytitle:
+  texthistologytitle:
     description: >
       Texthistologytitle
     type: string
 
-  Textprimarysitetitle:
+  textprimarysitetitle:
     description: >
       Textprimarysitetitle
     type: string
 
-  Treatmentabbreviated:
+  treatmentabbreviated:
     description: >
       Treatmentabbreviated
     type: string
 
-  Treatmentguideline1:
+  treatmentguideline1:
     description: >
       Treatmentguideline1
     type: string
 
-  Treatmentguideline2:
+  treatmentguideline2:
     description: >
       Treatmentguideline2
     type: string
 
-  Treatmentguideline3:
+  treatmentguideline3:
     description: >
       Treatmentguideline3
     type: string
 
-  TumorSize:
+  tumorsize:
     description: >
       TumorSize
     type: number
 
-  TumorSizeCs:
+  tumorsizecs:
     description: >
       TumorSizeCs
     type: number
 
-  TumorSizeextEvalCs:
+  tumorsizeextevalcs:
     description: >
       TumorSizeextEvalCs
     type: number
 
-  Tumorsizesource:
+  tumorsizesource:
     description: >
       Tumorsizesource
     type: string
 
-  Typeofchemotherapy:
+  typeofchemotherapy:
     description: >
       Typeofchemotherapy
     type: string
 
-  TypeoffirstrecurrenceX:
+  typeoffirstrecurrencex:
     description: >
       TypeoffirstrecurrenceX
     type: number
 
-  TypeofreportingsourceX:
+  typeofreportingsourcex:
     description: >
       TypeofreportingsourceX
     type: number
 
-  Typeofstagingsystemped:
+  typeofstagingsystemped:
     description: >
       Typeofstagingsystemped
     type: string
 
-  Ulcerativecolitisuc:
+  ulcerativecolitisuc:
     description: >
       Ulcerativecolitisuc
     type: string
 
-  Upperlower:
+  upperlower:
     description: >
       Upperlower
     type: string
 
-  Venousinvasionv:
+  venousinvasionv:
     description: >
       Venousinvasionv
     type: string
 
-  Weightlossperpt:
+  weightlossperpt:
     description: >
       Weightlossperpt
     type: string
 
-  Whohistologicalcl:
+  whohistologicalcl:
     description: >
       Whohistologicalcl
     type: string

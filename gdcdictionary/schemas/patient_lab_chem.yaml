@@ -1,0 +1,124 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "patient_lab_chem"
+title: Patient Lab Chem
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  Laboratory results for patients. Location information about the physical institution, physical laboratory, accession area and lab section is found in the domain�s tables. Details about the lab test itself (e.g., the type of test, whether the test qualifies as workload, whether the test is part of panel), the specimen collected for the test, the SNOMED code, the LOINC code and the National VA Lab Code are also included.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: patient_lab_chems
+    label: associated_with
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+uniqueKeys:
+  - [id]
+  - [project_id, submitter_id]
+
+required:
+  - cases
+  - submitter_id
+  - type
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  Abnormal:
+    description: >
+      Abnormal
+    type: string
+
+  Component:
+    description: >
+      Component
+    type: string
+
+  DaysFromAnchorDateToLabChemCompleteDate:
+    description: >
+      DaysFromAnchorDateToLabChemCompleteDate
+    type: number
+
+  DaysFromAnchorDateToLabChemSpecimenDate:
+    description: >
+      DaysFromAnchorDateToLabChemSpecimenDate
+    type: integer
+
+  ICDOncologyCode:
+    description: >
+      ICDOncologyCode
+    type: string
+
+  LabChemCompleteTime:
+    description: >
+      LabChemCompleteTime
+    type: string
+
+  LabChemPrintTestName:
+    description: >
+      LabChemPrintTestName
+    type: string
+
+  LabChemResultNumericValue:
+    description: >
+      LabChemResultNumericValue
+    type: number
+
+  LabChemResultValue:
+    description: >
+      LabChemResultValue
+    type: number
+
+  LabChemSpecimenTime:
+    description: >
+      LabChemSpecimenTime
+    type: string
+
+  LabChemTestName:
+    description: >
+      LabChemTestName
+    type: string
+
+  LabCode:
+    description: >
+      LabCode
+    type: string
+
+  RefHigh:
+    description: >
+      RefHigh
+    type: number
+
+  RefLow:
+    description: >
+      RefLow
+    type: number
+
+  Topography:
+    description: >
+      Topography
+    type: string
+
+  Units:
+    description: >
+      Units
+    type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"
