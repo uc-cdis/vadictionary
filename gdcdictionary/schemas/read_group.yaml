@@ -4,7 +4,7 @@ id: "read_group"
 title: Read Group
 type: object
 description: "Sequencing reads from one lane of an NGS experiment."
-namespace: https://vpodc.org/
+namespace: https://icgc.bionimbus.org/
 category: biospecimen
 project: '*'
 program: '*'
@@ -32,16 +32,6 @@ required:
   - submitter_id
   - type
   - aliquots
-#  - experiment_name
-#  - sequencing_center
-#  - platform
-#  - library_selection
-#  - library_strategy
-#  - library_name
-#  - is_paired_end
-#  - read_length
-#  - read_group_name
-#  - target_capture_kit
 
 uniqueKeys:
   - [ id ]
