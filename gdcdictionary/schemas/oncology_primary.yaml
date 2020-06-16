@@ -833,12 +833,12 @@ properties:
   Gleasonscoreclinical:
     description: >
       Gleasonscoreclinical
-    type: string
+    type: number
 
   Gleasonscorepathologic:
     description: >
       Gleasonscorepathologic
-    type: string
+    type: number
 
   Gradedifferentiation:
     description: >
@@ -1488,7 +1488,7 @@ properties:
   SequenceNumber:
     description: >
       SequenceNumber
-    type: string
+    type: integer
 
   Serumtumormarkers:
     description: >

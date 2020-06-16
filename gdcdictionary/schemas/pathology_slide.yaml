@@ -53,8 +53,6 @@ required:
   - file_size
   - md5sum
   - data_format
-  - data_category
-  - data_type
 
 uniqueKeys:
   - [ id ]
@@ -66,7 +64,7 @@ properties:
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Pathology Slide" ]
+    type: string
 
   data_format:
     term:
@@ -82,7 +80,7 @@ properties:
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum: [ "Pathology Slide" ]
+    type: string
 
   study_date:
     $ref: "_definitions.yaml#/datetime"
