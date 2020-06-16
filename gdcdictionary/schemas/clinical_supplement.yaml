@@ -71,6 +71,7 @@ properties:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
+      - BCP
       - BCR Biotab
       - BCR OMF XML
       - BCR XML
