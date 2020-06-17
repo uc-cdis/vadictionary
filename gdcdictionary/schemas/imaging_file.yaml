@@ -47,6 +47,8 @@ required:
   - file_size
   - md5sum
   - data_format
+  - data_type
+  - data_category
 
 uniqueKeys:
   - [ id ]
