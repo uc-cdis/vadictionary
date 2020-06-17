@@ -1,0 +1,2393 @@
+<node>	<field>	<description>	<type>	<terms>	<pattern>	<maximum>	<minimum>	<options1>	<options2>	<options3>	<options4>	<options5>	<options6>	<options7>	<options8>
+bcma_medication_log	ActionStatus	"ActionStatus
+"	string												
+bcma_medication_log	ActionTime	"ActionTime
+"	string												
+bcma_medication_log	BCMADispensedDrugIssueTime	"BCMADispensedDrugIssueTime
+"	string												
+bcma_medication_log	DayOrDoseLimit	"DayOrDoseLimit
+"	string												
+bcma_medication_log	DaysFromAnchorDateToActionDate	"DaysFromAnchorDateToActionDate
+"	integer												
+bcma_medication_log	DaysFromAnchorDateToBCMADispensedDrugIssueDate	"DaysFromAnchorDateToBCMADispensedDrugIssueDate
+"	integer												
+bcma_medication_log	DaysFromAnchorDateToEnteredDate	"DaysFromAnchorDateToEnteredDate
+"	integer												
+bcma_medication_log	DaysFromAnchorDateToInactiveDate	"DaysFromAnchorDateToInactiveDate
+"	integer												
+bcma_medication_log	DaysFromAnchorDateToPRNEffectivenessEnteredDate	"DaysFromAnchorDateToPRNEffectivenessEnteredDate
+"	integer												
+bcma_medication_log	DaysFromAnchorDateToScheduledAdministrationDate	"DaysFromAnchorDateToScheduledAdministrationDate
+"	integer												
+bcma_medication_log	DaysFromAnchorDateToWitnessDate	"DaysFromAnchorDateToWitnessDate
+"	integer												
+bcma_medication_log	DosageForm	"DosageForm
+"	string												
+bcma_medication_log	DosesGiven	"DosesGiven
+"	number												
+bcma_medication_log	DosesOrdered	"DosesOrdered
+"	number												
+bcma_medication_log	DrugClass	"DrugClass
+"	string												
+bcma_medication_log	DrugClassification	"DrugClassification
+"	string												
+bcma_medication_log	DrugNameWithoutDose	"DrugNameWithoutDose
+"	string												
+bcma_medication_log	EnteredTime	"EnteredTime
+"	string												
+bcma_medication_log	FormularyStatusFlag	"FormularyStatusFlag
+"	string												
+bcma_medication_log	HighRiskHighAlertMedication	"HighRiskHighAlertMedication
+"	number												
+bcma_medication_log	ImmunizationName	"ImmunizationName
+"	string												
+bcma_medication_log	InfusionRate	"InfusionRate
+"	number												
+bcma_medication_log	InjectionSite	"InjectionSite
+"	string												
+bcma_medication_log	IVFlag	"IVFlag
+"	string												
+bcma_medication_log	LocalDrugNameWithDose	"LocalDrugNameWithDose
+"	string												
+bcma_medication_log	MedicationRoute	"MedicationRoute
+"	string												
+bcma_medication_log	NonVAMedFlag	"NonVAMedFlag
+"	string												
+bcma_medication_log	OrderAdministrationVariance	"OrderAdministrationVariance
+"	number												
+bcma_medication_log	OrderDosage	"OrderDosage
+"	string												
+bcma_medication_log	OrderReferenceNumber	"OrderReferenceNumber
+"	string												
+bcma_medication_log	OrderSchedule	"OrderSchedule
+"	string												
+bcma_medication_log	OtherLanguageInstructions	"OtherLanguageInstructions
+"	string												
+bcma_medication_log	PharmacyOrderableItem	"PharmacyOrderableItem
+"	string												
+bcma_medication_log	PharmacyOrderableItemSchedule	"PharmacyOrderableItemSchedule
+"	string												
+bcma_medication_log	PRNEffectivenessEnteredTime	"PRNEffectivenessEnteredTime
+"	string												
+bcma_medication_log	PRNEffectivenessMinutes	"PRNEffectivenessMinutes
+"	number												
+bcma_medication_log	PRNReason	"PRNReason
+"	string												
+bcma_medication_log	PRNReasonNumber	"PRNReasonNumber
+"	number												
+bcma_medication_log	ScheduledAdministrationTime	"ScheduledAdministrationTime
+"	string												
+bcma_medication_log	ScheduleType	"ScheduleType
+"	string												
+bcma_medication_log	SupplyFlag	"SupplyFlag
+"	string												
+bcma_medication_log	WitnessDateTime	"WitnessDateTime
+"	string												
+bcma_medication_log	WitnessFlag	"WitnessFlag
+"	string												
+bcma_medication_log	WitnessHighRiskAlertStatus	"WitnessHighRiskAlertStatus
+"	number												
+bcma_medication_log	WitnessTime	"WitnessTime
+"	string												
+aliquot	aliquot_container	The device in which the final aliquot is held. Slides or vials.	enum					Slide | Vial | Other | Not Applicable 							
+aliquot	aliquot_quantity		number	_terms.yaml#/aliquot_quantity											
+aliquot	aliquot_volume		number	_terms.yaml#/aliquot_volume											
+aliquot	analyte_a260_a280_ratio	"The ratio of absorbance at 260 and 280 nm for nucleic acid analytes.
+"	number												
+aliquot	analyte_concentration	"Concentration of the analyte in the aliquot.
+"	number												
+aliquot	analyte_isolation_method	"The name or general description of the method used to isolate the analyte.
+"	string												
+aliquot	analyte_type	"Any aspect of an aliquot used in an analysis or assay to characterize the sample. These aspects range from molecules, such as DNA and RNA, that can be extracted from the aliquot to general descriptions of the aliquot's components, such as cell count and morphology.
+"	enum					DNA | RNA | Peptide | Protein | Morphology | Cell Count 							
+aliquot	days_to_aliquot	"The amount of time, in days, between the date used for index and the time the aliquot was separated from the whole sample.
+"	integer												
+aliquot	hours_to_analyte	"The amount of time, in hours, that it took between the sample being fractionated and the analyte being extracted.
+"	number												
+aliquot	hours_to_preservation	"The amount of time, in hours, that it took between the sample being fractionated and the aliquot being frozen or otherwise preserved.
+"	number												
+aliquot	preservation_method	"The method used to preserve the aliquot.
+"	enum					Cryopreserved | FFPE | Fresh | OCT | Snap Frozen | Frozen | Unknown 							
+aliquot	storage_temperature	"The temperature, in centigrade, at which the aliquot was preserved and/or stored.
+"	number												
+aliquot	source_center		string	_terms.yaml#/source_center											
+actionable_mutation	ActiveClinicalTrials	"ActiveClinicalTrials
+"	string												
+actionable_mutation	BxMorphology	"BxMorphology
+"	string												
+actionable_mutation	BxType	"BxType
+"	string												
+actionable_mutation	ClinicallyActionable	"ClinicallyActionable
+"	number												
+actionable_mutation	Consequence	"Consequence
+"	string												
+actionable_mutation	DaysFromAnchorDateToBxDate	"DaysFromAnchorDateToBxDate
+"	integer												
+actionable_mutation	DaysFromAnchorDateToBxResultsDate	"DaysFromAnchorDateToBxResultsDate
+"	integer												
+actionable_mutation	DrugsAssociatedWithResistance_IndicatedTumorTypes	"DrugsAssociatedWithResistance_IndicatedTumorTypes
+"	string												
+actionable_mutation	DrugsAssociatedWithSensitivity_IndicatedTumorTypes	"DrugsAssociatedWithSensitivity_IndicatedTumorTypes
+"	string												
+actionable_mutation	DrugsAssociatedWithSensitivity_OtherTumorTypes	"DrugsAssociatedWithSensitivity_OtherTumorTypes
+"	string												
+actionable_mutation	Exon_PGDonly	"Exon_PGDonly
+"	number												
+actionable_mutation	Fold	"Fold
+"	number												
+actionable_mutation	Gene	"Gene
+"	string												
+actionable_mutation	Lab	"Lab
+"	string												
+actionable_mutation	MutantFraction	"MutantFraction
+"	number												
+actionable_mutation	Mutation	"Mutation
+"	string												
+actionable_mutation	TotalNumberMutations	"TotalNumberMutations
+"	integer												
+actionable_mutation	TrialPhase	"TrialPhase
+"	number												
+imaging_file	data_type		enum	_terms.yaml#/data_type				Imaging File 							
+imaging_file	data_format		enum	_terms.yaml#/data_format				JPEG | SVS | TIFF | PNG | GIF | DCM 							
+imaging_file	data_category		enum	_terms.yaml#/data_category				MRI | CT Scan | Ultrasound 							
+imaging_file	study_date			_definitions.yaml#/datetime											
+imaging_file	magnification	Magnification used to capture the image.	number												
+imaging_file	patient_sex	Patient's gender.	string												
+imaging_file	series_number	Number of serial studies.	number												
+imaging_file	series_description	Specifics of a given study.	string												
+imaging_file	series_instance_uid	Unique identifier of a series.	string												
+imaging_file	sop_class_uid	Classification of image storage.	string												
+imaging_file	manufacturer	Manufacturer of the study equipment.	string												
+imaging_file	study_description	Type of the study and a studied body part.	string												
+imaging_file	study_id	Identifier of a study.	number												
+imaging_file	study_instance_uid	Unique identifier of a study.	string												
+imaging_file	patient_id	Scrambled patient identifier.	string												
+imaging_file	body_part_examined	What part of the body was studied.	string												
+imaging_file	days_to_image	Days from the case index date to the date the image was acquired.	integer												
+imaging_file	imaging_instrument	"The instrument model used to acquire the image.
+"	string												
+imaging_file	imaging_type	The type of imaging exam performed.	enum					MRI | CT Scan | Ultrasound 							
+imaging_file	modality	"What mode the imaging instrument was in during image acquisition.
+"	string												
+imaging_file	scan_id	"The identification number for a stack of images generated during a single scan.
+"	string												
+patient_lab_chem	Abnormal	"Abnormal
+"	string												
+patient_lab_chem	Component	"Component
+"	string												
+patient_lab_chem	DaysFromAnchorDateToLabChemCompleteDate	"DaysFromAnchorDateToLabChemCompleteDate
+"	number												
+patient_lab_chem	DaysFromAnchorDateToLabChemSpecimenDate	"DaysFromAnchorDateToLabChemSpecimenDate
+"	integer												
+patient_lab_chem	ICDOncologyCode	"ICDOncologyCode
+"	string												
+patient_lab_chem	LabChemCompleteTime	"LabChemCompleteTime
+"	string												
+patient_lab_chem	LabChemPrintTestName	"LabChemPrintTestName
+"	string												
+patient_lab_chem	LabChemResultNumericValue	"LabChemResultNumericValue
+"	number												
+patient_lab_chem	LabChemResultValue	"LabChemResultValue
+"	number												
+patient_lab_chem	LabChemSpecimenTime	"LabChemSpecimenTime
+"	string												
+patient_lab_chem	LabChemTestName	"LabChemTestName
+"	string												
+patient_lab_chem	LabCode	"LabCode
+"	string												
+patient_lab_chem	RefHigh	"RefHigh
+"	number												
+patient_lab_chem	RefLow	"RefLow
+"	number												
+patient_lab_chem	Topography	"Topography
+"	string												
+patient_lab_chem	Units	"Units
+"	string												
+outpat_visit	AgentOrangeFlag	"AgentOrangeFlag
+"	string												
+outpat_visit	AppointmentStatus	"AppointmentStatus
+"	string												
+outpat_visit	AppointmentType	"AppointmentType
+"	string												
+outpat_visit	CheckOutTime	"CheckOutTime
+"	string												
+outpat_visit	Chicago_VisitSID	"Chicago_VisitSID
+"	string												
+outpat_visit	COProcessCompleteTime	"COProcessCompleteTime
+"	string												
+outpat_visit	DaysFromAnchorDateToCheckOutDate	"DaysFromAnchorDateToCheckOutDate
+"	integer												
+outpat_visit	DaysFromAnchorDateToCOProcessCompleteDate	"DaysFromAnchorDateToCOProcessCompleteDate
+"	integer												
+outpat_visit	DaysFromAnchorDateToEncounterCreatedDate	"DaysFromAnchorDateToEncounterCreatedDate
+"	integer												
+outpat_visit	DaysFromAnchorDateToEncounterDate	"DaysFromAnchorDateToEncounterDate
+"	integer												
+outpat_visit	DaysFromAnchorDateToVisitCreatedDate	"DaysFromAnchorDateToVisitCreatedDate
+"	integer												
+outpat_visit	DaysFromAnchorDateToVisitDate	"DaysFromAnchorDateToVisitDate
+"	integer												
+outpat_visit	DiagnosisCount	"DiagnosisCount
+"	number												
+outpat_visit	EncounterComputerGeneratedFlag	"EncounterComputerGeneratedFlag
+"	string												
+outpat_visit	EncounterCreatedTime	"EncounterCreatedTime
+"	string												
+outpat_visit	EncounterTime	"EncounterTime
+"	string												
+outpat_visit	EncounterType	"EncounterType
+"	string												
+outpat_visit	HeadNeckCancerFlag	"HeadNeckCancerFlag
+"	string												
+outpat_visit	IonizingRadiationFlag	"IonizingRadiationFlag
+"	string												
+outpat_visit	NoncountClinicFlag	"NoncountClinicFlag
+"	string												
+outpat_visit	OriginatingProcessType	"OriginatingProcessType
+"	string												
+outpat_visit	PatientAgentOrangeFlag	"PatientAgentOrangeFlag
+"	string												
+outpat_visit	PatientIonizingRadiationCode	"PatientIonizingRadiationCode
+"	string												
+outpat_visit	PatientNoseThroatRadiumExposureFlag	"PatientNoseThroatRadiumExposureFlag
+"	string												
+outpat_visit	PatientShipboardHazardDefenseFlag	"PatientShipboardHazardDefenseFlag
+"	string												
+outpat_visit	PatientStatusInOut	"PatientStatusInOut
+"	number												
+outpat_visit	PrimaryStopCodeName	"PrimaryStopCodeName
+"	string												
+outpat_visit	ProcedureCount	"ProcedureCount
+"	integer												
+outpat_visit	ProviderCount	"ProviderCount
+"	integer												
+outpat_visit	SecondaryStopCodeName	"SecondaryStopCodeName
+"	string												
+outpat_visit	ServiceCategory	"ServiceCategory
+"	string												
+outpat_visit	ShipboardHazardDefenseFlag	"ShipboardHazardDefenseFlag
+"	string												
+outpat_visit	VisitCreatedTime	"VisitCreatedTime
+"	string												
+outpat_visit	VisitDependentEntryCount	"VisitDependentEntryCount
+"	integer												
+outpat_visit	VisitTime	"VisitTime
+"	string												
+outpat_v_procedure_diagnosis	Chicago_VisitSID	"Chicago_VisitSID
+"	string												
+outpat_v_procedure_diagnosis	CPTCategory	"CPTCategory
+"	string												
+outpat_v_procedure_diagnosis	CPTCode	"CPTCode
+"	string												
+outpat_v_procedure_diagnosis	CPTDescription	"CPTDescription
+"	string												
+outpat_v_procedure_diagnosis	CPTName	"CPTName
+"	string												
+outpat_v_procedure_diagnosis	DaysFromAnchorDateToEventDate	"DaysFromAnchorDateToEventDate
+"	integer												
+outpat_v_procedure_diagnosis	DaysFromAnchorDateToVisitDate	"DaysFromAnchorDateToVisitDate
+"	integer												
+outpat_v_procedure_diagnosis	DaysFromAnchorDateToVProcedureDate	"DaysFromAnchorDateToVProcedureDate
+"	integer												
+outpat_v_procedure_diagnosis	EventTime	"EventTime
+"	string												
+outpat_v_procedure_diagnosis	ICD10Code	"ICD10Code
+"	string												
+outpat_v_procedure_diagnosis	ICD10Description	"ICD10Description
+"	string												
+outpat_v_procedure_diagnosis	ICD9Code	"ICD9Code
+"	string												
+outpat_v_procedure_diagnosis	ICD9Description	"ICD9Description
+"	string												
+outpat_v_procedure_diagnosis	MajorCPTCategory	"MajorCPTCategory
+"	string												
+outpat_v_procedure_diagnosis	OrdinalNumber	"OrdinalNumber
+"	integer												
+outpat_v_procedure_diagnosis	VisitTime	"VisitTime
+"	string												
+outpat_v_procedure_diagnosis	VProcedureTime	"VProcedureTime
+"	string												
+icd_code	DaysFromAnchorDateToEndDate	"DaysFromAnchorDateToEndDate
+"	integer												
+icd_code	DaysFromAnchorDateToStartDate	"DaysFromAnchorDateToStartDate
+"	integer												
+icd_code	EndTime	"EndTime
+"	string												
+icd_code	ICD10Code	"ICD10Code
+"	string												
+icd_code	ICD10Description	"ICD10Description
+"	string												
+icd_code	ICD9Code	"ICD9Code
+"	number												
+icd_code	ICD9Description	"ICD9Description
+"	string												
+icd_code	ParentTableName	"ParentTableName
+"	string												
+icd_code	Sta3n	"Sta3n
+"	integer												
+icd_code	StartTime	"StartTime
+"	string												
+icd_code	TableName	"TableName
+"	string												
+rx_outpat	AgentOrangeFlag	"AgentOrangeFlag
+"	string												
+rx_outpat	ArchivedFlag	"ArchivedFlag
+"	string												
+rx_outpat	BingoWaitTime	"BingoWaitTime
+"	number												
+rx_outpat	CMOPFlag	"CMOPFlag
+"	string												
+rx_outpat	CMOPStatus	"CMOPStatus
+"	number												
+rx_outpat	CombatVeteranFlag	"CombatVeteranFlag
+"	string												
+rx_outpat	CopayTransaction	"CopayTransaction
+"	string												
+rx_outpat	CounseledFlag	"CounseledFlag
+"	string												
+rx_outpat	DAWCode	"DAWCode
+"	number												
+rx_outpat	DaysFromAnchorDateToCancelDate	"DaysFromAnchorDateToCancelDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToFinishingDate	"DaysFromAnchorDateToFinishingDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToHoldDate	"DaysFromAnchorDateToHoldDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToIssueDate	"DaysFromAnchorDateToIssueDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToLastDispensedDate	"DaysFromAnchorDateToLastDispensedDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToNextPossibleFillDate	"DaysFromAnchorDateToNextPossibleFillDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToPriorFillDate	"DaysFromAnchorDateToPriorFillDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillDispensedDate	"DaysFromAnchorDateToRxOutpatFillDispensedDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillExpirationDate	"DaysFromAnchorDateToRxOutpatFillExpirationDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillFillDate	"DaysFromAnchorDateToRxOutpatFillFillDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillIssueDate	"DaysFromAnchorDateToRxOutpatFillIssueDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillLoginDate	"DaysFromAnchorDateToRxOutpatFillLoginDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillReleaseDate	"DaysFromAnchorDateToRxOutpatFillReleaseDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillReturnedToStockDate	"DaysFromAnchorDateToRxOutpatFillReturnedToStockDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate	"DaysFromAnchorDateToRxOutpatFillSuspenseHoldDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatFillValidatedDate	"DaysFromAnchorDateToRxOutpatFillValidatedDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate	"DaysFromAnchorDateToRxOutpatMedInstructionsIssueDate
+"	integer												
+rx_outpat	DaysFromAnchorDateToRxOutpatSigIssueDate	"DaysFromAnchorDateToRxOutpatSigIssueDate
+"	integer												
+rx_outpat	DaysSupply	"DaysSupply
+"	integer												
+rx_outpat	DiscontinueType	"DiscontinueType
+"	number												
+rx_outpat	DispenseUnits	"DispenseUnits
+"	number												
+rx_outpat	DrugAllergyFlag	"DrugAllergyFlag
+"	string												
+rx_outpat	DrugClass	"DrugClass
+"	string												
+rx_outpat	DrugClassification	"DrugClassification
+"	string												
+rx_outpat	DrugInteractionAffectedMedication	"DrugInteractionAffectedMedication
+"	string												
+rx_outpat	DrugInteractionSeverity	"DrugInteractionSeverity
+"	string												
+rx_outpat	DrugNameWithoutDose	"DrugNameWithoutDose
+"	string												
+rx_outpat	FillType	"FillType
+"	string												
+rx_outpat	FinishingTime	"FinishingTime
+"	string												
+rx_outpat	HeadNeckCancerFlag	"HeadNeckCancerFlag
+"	string												
+rx_outpat	InstructionNumber	"InstructionNumber
+"	number												
+rx_outpat	IonizingRadiationFlag	"IonizingRadiationFlag
+"	string												
+rx_outpat	LocalDrugNameWithDose	"LocalDrugNameWithDose
+"	string												
+rx_outpat	MailWindow	"MailWindow
+"	string												
+rx_outpat	MaxRefills	"MaxRefills
+"	integer												
+rx_outpat	MedRoute	"MedRoute
+"	string												
+rx_outpat	MilitarySexualTraumaFlag	"MilitarySexualTraumaFlag
+"	string												
+rx_outpat	NDC	"NDC
+"	string												
+rx_outpat	PartialPrescriptionFlag	"PartialPrescriptionFlag
+"	string												
+rx_outpat	PatientStatus	"PatientStatus
+"	string												
+rx_outpat	Qty	"Qty
+"	number												
+rx_outpat	QtyNumeric	"QtyNumeric
+"	number												
+rx_outpat	ReprintFlag	"ReprintFlag
+"	string												
+rx_outpat	RetransmitFlag	"RetransmitFlag
+"	string												
+rx_outpat	RxOutpatFill_RxStatus	"RxOutpatFill_RxStatus
+"	string												
+rx_outpat	RxOutpatFillFillTime	"RxOutpatFillFillTime
+"	string												
+rx_outpat	RxOutpatFillReleaseTime	"RxOutpatFillReleaseTime
+"	string												
+rx_outpat	RxOutpatFillReturnedToStockTime	"RxOutpatFillReturnedToStockTime
+"	string												
+rx_outpat	RxOutpatFillValidatedTime	"RxOutpatFillValidatedTime
+"	string												
+rx_outpat	RxStatus	"RxStatus
+"	string												
+rx_outpat	ServiceConnectedFlag	"ServiceConnectedFlag
+"	string												
+rx_outpat	Sig	"Sig
+"	string												
+rx_outpat	SWAsiaFlag	"SWAsiaFlag
+"	string												
+rx_outpat	TradeLabelName	"TradeLabelName
+"	string												
+rx_outpat	UnderstoodFlag	"UnderstoodFlag
+"	string												
+rx_outpat	Unit	"Unit
+"	string												
+rx_outpat	UnitPrice	"UnitPrice
+"	number												
+patient_means_test	DaysFromAnchorDateToMeansTestDate	"DaysFromAnchorDateToMeansTestDate
+"	integer												
+patient_means_test	Income	"Income
+"	string												
+outpat_v_skin_test	Chicago_VisitSID	"Chicago_VisitSID
+"	string												
+outpat_v_skin_test	DaysFromAnchorDateToEventDate	"DaysFromAnchorDateToEventDate
+"	integer												
+outpat_v_skin_test	DaysFromAnchorDateToReadDate	"DaysFromAnchorDateToReadDate
+"	integer												
+outpat_v_skin_test	DaysFromAnchorDateToVisitDate	"DaysFromAnchorDateToVisitDate
+"	integer												
+outpat_v_skin_test	DaysFromAnchorDateToVSkinTestDate	"DaysFromAnchorDateToVSkinTestDate
+"	integer												
+outpat_v_skin_test	EditedFlag	"EditedFlag
+"	string												
+outpat_v_skin_test	EventTime	"EventTime
+"	string												
+outpat_v_skin_test	Reading	"Reading
+"	number												
+outpat_v_skin_test	ReadTime	"ReadTime
+"	string												
+outpat_v_skin_test	Results	"Results
+"	string												
+outpat_v_skin_test	SkinTest	"SkinTest
+"	string												
+outpat_v_skin_test	VisitTime	"VisitTime
+"	string												
+outpat_v_skin_test	VSkinTestTime	"VSkinTestTime
+"	string												
+surgery_procedure_diagnosis_code	CPTCategory	"CPTCategory
+"	string												
+surgery_procedure_diagnosis_code	CPTDescription	"CPTDescription
+"	string												
+surgery_procedure_diagnosis_code	CPTModifier	"CPTModifier
+"	string												
+surgery_procedure_diagnosis_code	CPTModifierName	"CPTModifierName
+"	string												
+surgery_procedure_diagnosis_code	CPTName	"CPTName
+"	string												
+surgery_procedure_diagnosis_code	DaysFromAnchorDateToSurgeryDate	"DaysFromAnchorDateToSurgeryDate
+"	integer												
+surgery_procedure_diagnosis_code	MajorCPTCategory	"MajorCPTCategory
+"	string												
+surgery_procedure_diagnosis_code	OtherPostopICD9Code	"OtherPostopICD9Code
+"	string												
+surgery_procedure_diagnosis_code	OtherPostopICD9Desc	"OtherPostopICD9Desc
+"	string												
+surgery_procedure_diagnosis_code	PrincipalPostOpICD10Code	"PrincipalPostOpICD10Code
+"	string												
+surgery_procedure_diagnosis_code	PrincipalPostOpICD10Desc	"PrincipalPostOpICD10Desc
+"	string												
+surgery_procedure_diagnosis_code	PrincipalPostOpICD9Code	"PrincipalPostOpICD9Code
+"	string												
+surgery_procedure_diagnosis_code	PrincipalPostOpICD9Desc	"PrincipalPostOpICD9Desc
+"	string												
+surgery_procedure_diagnosis_code	ServiceConnectedFlag	"ServiceConnectedFlag
+"	string												
+surgery_procedure_diagnosis_code	SurgeryPrincipalAssociatedDiagnosisICD10Code	"SurgeryPrincipalAssociatedDiagnosisICD10Code
+"	string												
+surgery_procedure_diagnosis_code	SurgeryPrincipalAssociatedDiagnosisICD10Desc	"SurgeryPrincipalAssociatedDiagnosisICD10Desc
+"	string												
+surgery_procedure_diagnosis_code	SurgeryPrincipalAssociatedDiagnosisICD9Code	"SurgeryPrincipalAssociatedDiagnosisICD9Code
+"	string												
+surgery_procedure_diagnosis_code	SurgeryPrincipalAssociatedDiagnosisICD9Desc	"SurgeryPrincipalAssociatedDiagnosisICD9Desc
+"	string												
+surgery_procedure_diagnosis_code	SurgeryTime	"SurgeryTime
+"	string												
+read_group	adapter_name		string	_terms.yaml#/adapter_name											
+read_group	adapter_sequence		string	_terms.yaml#/adapter_sequence											
+read_group	base_caller_name		string	_terms.yaml#/base_caller_name											
+read_group	base_caller_version		string	_terms.yaml#/base_caller_version											
+read_group	experiment_name		string	_terms.yaml#/experiment_name											
+read_group	flow_cell_barcode		string	_terms.yaml#/flow_cell_barcode											
+read_group	fragment_maximum_length		integer	_terms.yaml#/fragment_maximum_length											
+read_group	fragment_mean_length		number	_terms.yaml#/fragment_mean_length											
+read_group	fragment_minimum_length		integer	_terms.yaml#/fragment_minimum_length											
+read_group	fragment_standard_deviation_length		number	_terms.yaml#/fragment_standard_deviation_length											
+read_group	includes_spike_ins		boolean	_terms.yaml#/includes_spike_ins											
+read_group	instrument_model		enum					454 GS FLX Titanium | AB SOLiD 4 | AB SOLiD 2 | AB SOLiD 3 | Complete Genomics | Illumina HiSeq X Ten | Illumina HiSeq X Five | Illumina Genome Analyzer II | Illumina Genome Analyzer IIx | Illumina HiSeq 2000 | Illumina HiSeq 2500 | Illumina HiSeq 4000 | Illumina MiSeq | Illumina NextSeq 500 | Illumina NextSeq 550 | Illumina NovaSeq 6000 | Ion Torrent PGM | Ion Torrent Proton | PacBio RS | Other 							
+read_group	is_paired_end		boolean	_terms.yaml#/is_paired_end											
+read_group	lane_number		integer	_terms.yaml#/lane_number											
+read_group	library_name		string	_terms.yaml#/library_name											
+read_group	library_preparation_kit_name		string	_terms.yaml#/library_preparation_kit_name											
+read_group	library_preparation_kit_vendor		string	_terms.yaml#/library_preparation_kit_vendor											
+read_group	library_preparation_kit_catalog_number		string	_terms.yaml#/library_preparation_kit_catalog_number											
+read_group	library_preparation_kit_version		string	_terms.yaml#/library_preparation_kit_version											
+read_group	library_selection		enum	_terms.yaml#/library_selection				Hybrid Selection | PCR | Affinity Enrichment | Poly-T Enrichment | Random | rRNA Depletion | miRNA Size Fractionation | Other 							
+read_group	library_strand		enum	_terms.yaml#/library_strand				Unstranded | First Stranded | Second Stranded | Not Applicable 							
+read_group	library_strategy		enum	_terms.yaml#/library_strategy				WGS | WXS | RNA-Seq | ChIP-Seq | miRNA-Seq | Bisulfite-Seq | Targeted Sequencing | Validation | Amplicon | Other 							
+read_group	multiplex_barcode		string	_terms.yaml#/multiplex_barcode											
+read_group	platform		enum	_terms.yaml#/platform				Illumina | SOLiD | LS454 | Ion Torrent | Complete Genomics | PacBio | Other 							
+read_group	read_group_name	Read Group Name	string												
+read_group	read_length	Length of the reads	integer												
+read_group	RIN		number	_terms.yaml#/RIN											
+read_group	sequencing_center		string	_terms.yaml#/sequencing_center											
+read_group	sequencing_date			_definitions.yaml#/datetime											
+read_group	size_selection_range		string	_terms.yaml#/size_selection_range											
+read_group	spike_ins_concentration		string	_terms.yaml#/spike_ins_concentration											
+read_group	spike_ins_fasta		string	_terms.yaml#/spike_ins_fasta											
+read_group	target_capture_kit		enum	_terms.yaml#/target_capture_kit				Custom AmpliSeq Cancer Hotspot GENIE-MDA Augmented Panel v1 - 46 Genes | Custom GENIE-DFCI OncoPanel - 275 Genes | Custom GENIE-DFCI Oncopanel - 300 Genes | Custom GENIE-DFCI Oncopanel - 447 Genes | Custom HaloPlex DLBCL Panel - 370 Genes | Custom Ion AmpliSeq Hotspot GENIE-MOSC3 Augmented Panel - 74 Genes | Custom Large Construct Capture TARGET-OS Panel - 8 Genes | Custom MSK IMPACT Panel - 341 Genes | Custom MSK IMPACT Panel - 410 Genes | Custom MSK IMPACT Panel - 468 Genes | Custom Myeloid GENIE-VICC Panel - 37 Genes | Custom PGDX SureSelect CancerSelect VAREPOP-APOLLO Panel - 203 Genes | Custom PGDX SureSelect CancerSelect VAREPOP-APOLLO Panel - 88 Genes | Custom SeqCap EZ HGSC VCRome v2.1 ER Augmented v1 | Custom SeqCap EZ HGSC VCRome v2.1 ER Augmented v2 | Custom SeqCap EZ TARGET-OS Panel - 7.0 Mb | Custom Solid Tumor GENIE-VICC Panel - 34 Genes | Custom SureSelect CGCI-BLGSP Panel - 4.6 Mb | Custom SureSelect GENIE-UHN Panel - 555 Genes | Custom SureSelect TARGET-AML_NBL_WT Panel - 2.8 Mb | Foundation Medicine T5a Panel - 322 Genes | Foundation Medicine T7 Panel - 429 Genes | Ion AmpliSeq Cancer Hotspot Panel v2 | Ion AmpliSeq Comprehensive Cancer Panel | Nextera Rapid Capture Exome v1.2 | SeqCap EZ HGSC VCRome v2.1 | SureSelect Human All Exon v3 | SureSelect Human All Exon v5 | TruSeq Amplicon Cancer Panel | TruSeq Exome Enrichment - 62 Mb | TruSight Myeloid Sequencing Panel | Not Applicable | Unknown 							
+read_group	to_trim_adapter_sequence		boolean	_terms.yaml#/to_trim_adapter_sequence											
+outpat_v_skin_test_diagnosis	Chicago_VisitSID	"Chicago_VisitSID
+"	string												
+outpat_v_skin_test_diagnosis	DaysFromAnchorDateToEventDate	"DaysFromAnchorDateToEventDate
+"	integer												
+outpat_v_skin_test_diagnosis	DaysFromAnchorDateToVisitDate	"DaysFromAnchorDateToVisitDate
+"	integer												
+outpat_v_skin_test_diagnosis	DaysFromAnchorDateToVSkinTestDate	"DaysFromAnchorDateToVSkinTestDate
+"	integer												
+outpat_v_skin_test_diagnosis	EventTime	"EventTime
+"	string												
+outpat_v_skin_test_diagnosis	ICD10Code	"ICD10Code
+"	string												
+outpat_v_skin_test_diagnosis	ICD10Description	"ICD10Description
+"	string												
+outpat_v_skin_test_diagnosis	ICD9Code	"ICD9Code
+"	string												
+outpat_v_skin_test_diagnosis	ICD9Description	"ICD9Description
+"	string												
+outpat_v_skin_test_diagnosis	OrdinalNumber	"OrdinalNumber
+"	integer												
+outpat_v_skin_test_diagnosis	VisitTime	"VisitTime
+"	string												
+outpat_v_skin_test_diagnosis	VSkinTestTime	"VSkinTestTime
+"	string												
+sample	biospecimen_anatomic_site		enum	_terms.yaml#/biospecimen_anatomic_site				Abdomen | Abdominal Wall | Acetabulum | Adenoid | Adipose | Adrenal | Alveolar Ridge | Amniotic Fluid | Ampulla Of Vater | Anal Sphincter | Ankle | Anorectum | Antecubital Fossa | Antrum | Anus | Aorta | Aortic Body | Appendix | Aqueous Fluid | Arm | Artery | Ascending Colon | Ascending Colon Hepatic Flexure | Auditory Canal | Autonomic Nervous System | Axilla | Back | Bile Duct | Bladder | Blood | Blood Vessel | Bone | Bone Marrow | Bowel | Brain | Brain Stem | Breast | Broad Ligament | Bronchiole | Bronchus | Brow | Buccal Cavity | Buccal Mucosa | Buttock | Calf | Capillary | Cardia | Carina | Carotid Artery | Carotid Body | Cartilage | Cecum | Cell-Line | Central Nervous System | Cerebellum | Cerebral Cortex | Cerebrospinal Fluid | Cerebrum | Cervical Spine | Cervix | Chest | Chest Wall | Chin | Clavicle | Clitoris | Colon | Colon - Mucosa Only | Common Duct | Conjunctiva | Connective Tissue | Dermal | Descending Colon | Diaphragm | Duodenum | Ear | Ear Canal | Ear, Pinna (External) | Effusion | Elbow | Endocrine Gland | Epididymis | Epidural Space | Esophageal, Distal | Esophageal, Mid | Esophageal, Proximal | Esophagogastric Junction | Esophagus | Esophagus - Mucosa Only | Eye | Fallopian Tube | Femoral Artery | Femoral Vein | Femur | Fibroblasts | Fibula | Finger | Floor Of Mouth | Fluid | Foot | Forearm | Forehead | Foreskin | Frontal Cortex | Frontal Lobe | Fundus Of Stomach | Gallbladder | Ganglia | Gastroesophageal Junction | Gastrointestinal Tract | Groin | Gum | Hand | Hard Palate | Head and Neck | Head - Face Or Neck, Nos | Heart | Hepatic | Hepatic Duct | Hepatic Flexure | Hepatic Vein | Hip | Hippocampus | Humerus | Hypopharynx | Ileum | Ilium | Index Finger | Ischium | Islet Cells | Jaw | Jejunum | Joint | Kidney | Knee | Lacrimal Gland | Large Bowel | Laryngopharynx | Larynx | Leg | Leptomeninges | Ligament | Lip | Liver | Lumbar Spine | Lung | Lymph Node | Lymph Node(s) Axilla | Lymph Node(s) Cervical | Lymph Node(s) Distant | Lymph Node(s) Epitrochlear | Lymph Node(s) Femoral | Lymph Node(s) Hilar | Lymph Node(s) Iliac-Common | Lymph Node(s) Iliac-External | Lymph Node(s) Inguinal | Lymph Node(s) Internal Mammary | Lymph Node(s) Mammary | Lymph Node(s) Mesenteric | Lymph Node(s) Occipital | Lymph Node(s) Paraaortic | Lymph Node(s) Parotid | Lymph Node(s) Pelvic | Lymph Node(s) Popliteal | Lymph Node(s) Regional | Lymph Node(s) Retroperitoneal | Lymph Node(s) Scalene | Lymph Node(s) Splenic | Lymph Node(s) Subclavicular | Lymph Node(s) Submandibular | Lymph Node(s) Supraclavicular | Lymph Nodes(s) Mediastinal | Mandible | Maxilla | Mediastinal Soft Tissue | Mediastinum | Mesentery | Mesothelium | Middle Finger | Mitochondria | Muscle | Nails | Nasal Cavity | Nasal Soft Tissue | Nasopharynx | Neck | Nerve | Nerve(s) Cranial | Occipital Cortex | Ocular Orbits | Omentum | Oral Cavity | Oral Cavity - Mucosa Only | Oropharynx | Other | Ovary | Palate | Pancreas | Paraspinal Ganglion | Parathyroid | Parotid Gland | Patella | Pelvis | Penis | Pericardium | Periorbital Soft Tissue | Peritoneal Cavity | Peritoneum | Pharynx | Pineal | Pineal Gland | Pituitary Gland | Placenta | Pleura | Popliteal Fossa | Prostate | Pylorus | Rectosigmoid Junction | Rectum | Retina | Retro-Orbital Region | Retroperitoneum | Rib | Ring Finger | Round Ligament | Sacrum | Salivary Gland | Scalp | Scapula | Sciatic Nerve | Scrotum | Seminal Vesicle | Shoulder | Sigmoid Colon | Sinus | Sinus(es), Maxillary | Skeletal Muscle | Skin | Skull | Small Bowel | Small Bowel - Mucosa Only | Small Finger | Soft Tissue | Spinal Column | Spinal Cord | Spleen | Splenic Flexure | Sternum | Stomach | Stomach - Mucosa Only | Subcutaneous Tissue | Synovium | Temporal Cortex | Tendon | Testis | Thigh | Thoracic Spine | Thorax | Throat | Thumb | Thymus | Thyroid | Tibia | Tongue | Tonsil | Tonsil (Pharyngeal) | Trachea | Transverse Colon | Trunk | Umbilical Cord | Ureter | Urethra | Urinary Tract | Uterus | Uvula | Vagina | Vas Deferens | Vein | Venous | Vertebra | Vulva | White Blood Cells | Wrist | Unknown 							
+sample	biospecimen_laterality		enum	_terms.yaml#/biospecimen_laterality				Bilateral | Left | Right | Unknown | Not Reported 							
+sample	composition		enum	_terms.yaml#/composition				2D Classical Conditionally Reprogrammed Cells | 2D Modified Conditionally Reprogrammed Cells | 3D Organoid | 3D Air-Liquid Interface Organoid | 3D Neurosphere | Adherent Cell Line | Buccal Cells | Buffy Coat | Bone Marrow Components | Bone Marrow Components NOS | Control Analyte | Cell | Derived Cell Line | EBV Immortalized | Fibroblasts from Bone Marrow Normal | Granulocytes | Human Original Cells | Liquid Suspension Cell Line | Lymphocytes | Mononuclear Cells from Bone Marrow Normal | Peripheral Blood Components NOS | Pleural Effusion | Plasma | Peripheral Whole Blood | Serum | Saliva | Sputum | Solid Tissue | Sorted Cells | Whole Bone Marrow | Unknown | Not Reported 							
+sample	days_to_collection		integer	_terms.yaml#/days_to_collection											
+sample	freezing_method		string	_terms.yaml#/freezing_method											
+sample	initial_weight		number	_terms.yaml#/initial_weight											
+sample	method_of_sample_procurement		enum	_terms.yaml#/method_of_sample_procurement				Abdomino-perineal Resection of Rectum | Anterior Resection of Rectum | Aspirate | Autopsy | Biopsy | Blood Draw | Bone Marrow Aspirate | Core Biopsy | Cystectomy | Endo Rectal Tumor Resection | Endoscopic Biopsy | Endoscopic Mucosal Resection (EMR) | Enucleation | Excisional Biopsy | Fine Needle Aspiration | Full Hysterectomy | Gross Total Resection | Hand Assisted Laparoscopic Radical Nephrectomy | Hysterectomy NOS | Incisional Biopsy | Indeterminant | Laparoscopic Biopsy | Laparoscopic Partial Nephrectomy | Laparoscopic Radical Nephrectomy | Laparoscopic Radical Prostatectomy with Robotics | Laparoscopic Radical Prostatectomy without Robotics | Left Hemicolectomy | Lobectomy | Local Resection (Exoresection, wall resection) | Lumpectomy | Modified Radical Mastectomy | Needle Biopsy | Open Craniotomy | Open Partial Nephrectomy | Open Radical Nephrectomy | Open Radical Prostatectomy | Orchiectomy | Other | Other Surgical Resection | Pan-Procto Colectomy | Pancreatectomy | Paracentesis | Pneumonectomy | Right Hemicolectomy | Sigmoid Colectomy | Simple Mastectomy | Subtotal Resection | Surgical Resection | Thoracoscopic Biopsy | Total Colectomy | Total Mastectomy | Transplant | Transurethral resection (TURBT) | Transverse Colectomy | Tumor Resection | Wedge Resection | Whipple Procedure | Unknown | Not Reported 							
+sample	preservation_method		enum	_terms.yaml#/preservation_method				Cryopreserved | FFPE | Fresh | OCT | Snap Frozen | Frozen | Unknown | Not Applicable | Not Reported 							
+sample	tissue_type		enum	_terms.yaml#/tissue_type				Tumor | Normal | Abnormal | Peritumoral | Unknown | Not Reported 							
+cprs_order	AbnormalResultsFlag	"AbnormalResultsFlag
+"	string												
+cprs_order	CompletedTime	"CompletedTime
+"	string												
+cprs_order	DaysFromAnchorDateToCompletedDate	"DaysFromAnchorDateToCompletedDate
+"	integer												
+cprs_order	DaysFromAnchorDateToDiscontinuedDate	"DaysFromAnchorDateToDiscontinuedDate
+"	integer												
+cprs_order	DaysFromAnchorDateToEnteredDate	"DaysFromAnchorDateToEnteredDate
+"	integer												
+cprs_order	DaysFromAnchorDateToLapsedDate	"DaysFromAnchorDateToLapsedDate
+"	integer												
+cprs_order	DaysFromAnchorDateToLastActivityDate	"DaysFromAnchorDateToLastActivityDate
+"	integer												
+cprs_order	DaysFromAnchorDateToOrderStartDate	"DaysFromAnchorDateToOrderStartDate
+"	integer												
+cprs_order	DaysFromAnchorDateToOrderStoptDate	"DaysFromAnchorDateToOrderStoptDate
+"	integer												
+cprs_order	DaysFromAnchorDateToPatientAppointmentDate	"DaysFromAnchorDateToPatientAppointmentDate
+"	integer												
+cprs_order	DaysFromAnchorDateToResultsDate	"DaysFromAnchorDateToResultsDate
+"	integer												
+cprs_order	DaysFromDx2Order	"DaysFromDx2Order
+"	integer												
+cprs_order	DiscontinuedNatureOfOrderName	"DiscontinuedNatureOfOrderName
+"	string												
+cprs_order	DiscontinuedOrderReason	"DiscontinuedOrderReason
+"	string												
+cprs_order	DiscontinuedTime	"DiscontinuedTime
+"	string												
+cprs_order	DisplayGroupName	"DisplayGroupName
+"	string												
+cprs_order	EnteredTime	"EnteredTime
+"	string												
+cprs_order	Findings	"Findings
+"	string												
+cprs_order	GraceDaysBeforePurge	"GraceDaysBeforePurge
+"	number												
+cprs_order	ImagingType	"ImagingType
+"	string												
+cprs_order	InPatientFlag	"InPatientFlag
+"	string												
+cprs_order	IVAdditiveFlag	"IVAdditiveFlag
+"	string												
+cprs_order	IVBaseFlag	"IVBaseFlag
+"	string												
+cprs_order	LapsedTime	"LapsedTime
+"	string												
+cprs_order	LastActivityTime	"LastActivityTime
+"	string												
+cprs_order	LocationType	"LocationType
+"	string												
+cprs_order	MedicalService	"MedicalService
+"	string												
+cprs_order	NonFormularyFlag	"NonFormularyFlag
+"	string												
+cprs_order	NonVAMedsFlag	"NonVAMedsFlag
+"	string												
+cprs_order	OrderableItemCode	"OrderableItemCode
+"	number												
+cprs_order	OrderableItemCodeSource	"OrderableItemCodeSource
+"	string												
+cprs_order	OrderableItemDisplayGroupName	"OrderableItemDisplayGroupName
+"	string												
+cprs_order	OrderableItemName	"OrderableItemName
+"	string												
+cprs_order	OrderStartTime	"OrderStartTime
+"	string												
+cprs_order	OrderStatus	"OrderStatus
+"	string												
+cprs_order	OrderStopTime	"OrderStopTime
+"	string												
+cprs_order	OrderType	"OrderType
+"	string												
+cprs_order	OutpatientMedFlag	"OutpatientMedFlag
+"	string												
+cprs_order	PackageName	"PackageName
+"	string												
+cprs_order	PatientAppointmentTime	"PatientAppointmentTime
+"	string												
+cprs_order	ResultsTime	"ResultsTime
+"	string												
+cprs_order	SignatureRequired	"SignatureRequired
+"	string												
+cprs_order	Sta3n	"Sta3n
+"	integer												
+cprs_order	TreatingSpecialtyName	"TreatingSpecialtyName
+"	string												
+cprs_order	VeiledFlag	"VeiledFlag
+"	string												
+cprs_order	VistaPackage	"VistaPackage
+"	string												
+cprs_order	VistaPackageShortDesc	"VistaPackageShortDesc
+"	string												
+clinical_demographic	Days_To_Birth	"Days_To_Birth
+"	integer												
+clinical_demographic	Days_To_Death	"Days_To_Death
+"	number												
+clinical_demographic	Ethnicity	"Ethnicity
+"	string												
+clinical_demographic	Gender	"Gender
+"	string												
+clinical_demographic	Race	"Race
+"	string												
+clinical_demographic	Vital_Status	"Vital_Status
+"	string												
+clinical_demographic	Year_Of_Birth	"Year_Of_Birth
+"	integer												
+clinical_demographic	Year_Of_Death	"Year_Of_Death
+"	number												
+clinical_demographic	DeceasedFlag	"DeceasedFlag
+"	string												
+clinical_demographic	MaritalStatus	"MaritalStatus
+"	string												
+clinical_demographic	PatientOver90Flag	"PatientOver90Flag
+"	string												
+unaligned_reads_file	data_category		enum	_terms.yaml#/data_category				Sequencing Data | Sequencing Reads | Raw Sequencing Data 							
+unaligned_reads_file	data_type		enum	_terms.yaml#/data_type				Unaligned Reads 							
+unaligned_reads_file	data_format		enum	_terms.yaml#/data_format				BAM | FASTQ | FASTA 							
+unaligned_reads_file	experimental_strategy		enum	_terms.yaml#/experimental_strategy				ATAC-Seq | Bisulfite-Seq | ChIP-Seq | Low Pass WGS | miRNA-Seq | RNA-Seq | Targeted Sequencing | WGS | WXS 							
+unaligned_reads_file	read_pair_number		enum	_terms.yaml#/read_pair_number				R1 | R2 							
+variant_call_file	data_category		enum	_terms.yaml#/data_category				Simple Nucleotide Variation | Combined Nucleotide Variation 							
+variant_call_file	data_type		enum	_terms.yaml#/data_type				Annotated Somatic Mutation | Raw Simple Somatic Mutation 							
+variant_call_file	data_format		enum	_terms.yaml#/data_format				VCF 							
+variant_call_file	experimental_strategy		enum	_terms.yaml#/experimental_strategy				WGS | WXS | Low Pass WGS | Validation | Targeted Sequencing 							
+variant_call_file	variant_calling_workflow	"Indicate the variant calling workflow or pipeline used to generate the variant calls.
+"	string												
+nsclc_curated_gene	ABL1	"ABL1
+"	string												
+nsclc_curated_gene	Age	"Age
+"	number												
+nsclc_curated_gene	AKT1	"AKT1
+"	string												
+nsclc_curated_gene	ALK_Col1	"ALK_Col1
+"	string												
+nsclc_curated_gene	ALK_Col2	"ALK_Col2
+"	string												
+nsclc_curated_gene	ALK_ALK	"ALK-ALK
+"	string												
+nsclc_curated_gene	APC	"APC
+"	string												
+nsclc_curated_gene	AR	"AR
+"	string												
+nsclc_curated_gene	ARID1A	"ARID1A
+"	string												
+nsclc_curated_gene	ARID1B	"ARID1B
+"	string												
+nsclc_curated_gene	ATM_Col1	"ATM_Col1
+"	string												
+nsclc_curated_gene	ATM_Col2	"ATM_Col2
+"	string												
+nsclc_curated_gene	AXIN2	"AXIN2
+"	string												
+nsclc_curated_gene	AXL	"AXL
+"	string												
+nsclc_curated_gene	BCL2	"BCL2
+"	string												
+nsclc_curated_gene	BRAF	"BRAF
+"	string												
+nsclc_curated_gene	BRCA1	"BRCA1
+"	string												
+nsclc_curated_gene	BRCA2	"BRCA2
+"	string												
+nsclc_curated_gene	BRCA2_BRCA2	"BRCA2-BRCA2
+"	string												
+nsclc_curated_gene	CCND1	"CCND1
+"	string												
+nsclc_curated_gene	CCND2	"CCND2
+"	string												
+nsclc_curated_gene	CCNE1	"CCNE1
+"	string												
+nsclc_curated_gene	CDK4	"CDK4
+"	string												
+nsclc_curated_gene	CDK6	"CDK6
+"	string												
+nsclc_curated_gene	CDKN2A	"CDKN2A
+"	string												
+nsclc_curated_gene	CEBPA	"CEBPA
+"	string												
+nsclc_curated_gene	CREBBP	"CREBBP
+"	string												
+nsclc_curated_gene	CS_Lymphnodes	"CS_Lymphnodes
+"	integer												
+nsclc_curated_gene	CSF1R	"CSF1R
+"	string												
+nsclc_curated_gene	CTNNB1	"CTNNB1
+"	string												
+nsclc_curated_gene	DaysFromAnchorDateToBirthDate	"DaysFromAnchorDateToBirthDate
+"	integer												
+nsclc_curated_gene	DaysFromAnchorDateToDeathDate	"DaysFromAnchorDateToDeathDate
+"	integer												
+nsclc_curated_gene	DaysFromAnchorDateToDiagnosisDate	"DaysFromAnchorDateToDiagnosisDate
+"	integer												
+nsclc_curated_gene	DDR2	"DDR2
+"	string												
+nsclc_curated_gene	DerivedSS1977	"DerivedSS1977
+"	integer												
+nsclc_curated_gene	DNMT3A	"DNMT3A
+"	string												
+nsclc_curated_gene	EGFR	"EGFR
+"	string												
+nsclc_curated_gene	EML4_ALK	"EML4-ALK
+"	string												
+nsclc_curated_gene	EP300	"EP300
+"	string												
+nsclc_curated_gene	EPHA2	"EPHA2
+"	string												
+nsclc_curated_gene	ERBB2	"ERBB2
+"	string												
+nsclc_curated_gene	ERBB3	"ERBB3
+"	string												
+nsclc_curated_gene	ERBB4	"ERBB4
+"	string												
+nsclc_curated_gene	ERG	"ERG
+"	string												
+nsclc_curated_gene	ESR1	"ESR1
+"	string												
+nsclc_curated_gene	FANCA	"FANCA
+"	string												
+nsclc_curated_gene	FANCB	"FANCB
+"	string												
+nsclc_curated_gene	FANCD2	"FANCD2
+"	string												
+nsclc_curated_gene	FANCI	"FANCI
+"	string												
+nsclc_curated_gene	FANCM	"FANCM
+"	string												
+nsclc_curated_gene	FBXW7	"FBXW7
+"	string												
+nsclc_curated_gene	FGFR1	"FGFR1
+"	string												
+nsclc_curated_gene	FGFR2	"FGFR2
+"	string												
+nsclc_curated_gene	FGFR2_KIAA1217	"FGFR2-KIAA1217
+"	string												
+nsclc_curated_gene	FGFR3	"FGFR3
+"	string												
+nsclc_curated_gene	FGFR4	"FGFR4
+"	string												
+nsclc_curated_gene	First_Malignant_Primary_Indicator	"First_Malignant_Primary_Indicator
+"	integer												
+nsclc_curated_gene	FLT1	"FLT1
+"	string												
+nsclc_curated_gene	FLT3	"FLT3
+"	string												
+nsclc_curated_gene	FLT4	"FLT4
+"	string												
+nsclc_curated_gene	FOXL2	"FOXL2
+"	string												
+nsclc_curated_gene	GNAS	"GNAS
+"	string												
+nsclc_curated_gene	GPC3	"GPC3
+"	string												
+nsclc_curated_gene	Grade	"Grade
+"	integer												
+nsclc_curated_gene	H3F3A	"H3F3A
+"	string												
+nsclc_curated_gene	Histology_Recode_Broad_Groupings	"Histology_Recode_Broad_Groupings
+"	integer												
+nsclc_curated_gene	HNF1A	"HNF1A
+"	string												
+nsclc_curated_gene	HRAS	"HRAS
+"	string												
+nsclc_curated_gene	IDH1	"IDH1
+"	string												
+nsclc_curated_gene	IDH2	"IDH2
+"	string												
+nsclc_curated_gene	JAK1	"JAK1
+"	string												
+nsclc_curated_gene	JAK3	"JAK3
+"	string												
+nsclc_curated_gene	KDR	"KDR
+"	string												
+nsclc_curated_gene	KIT	"KIT
+"	string												
+nsclc_curated_gene	KMT2A	"KMT2A
+"	string												
+nsclc_curated_gene	KRAS_Col1	"KRAS_Col1
+"	string												
+nsclc_curated_gene	KRAS_Col2	"KRAS_Col2
+"	string												
+nsclc_curated_gene	LDLRAD3_BCL2	"LDLRAD3-BCL2
+"	string												
+nsclc_curated_gene	M	"M
+"	number												
+nsclc_curated_gene	MAML1	"MAML1
+"	string												
+nsclc_curated_gene	MAP2K1	"MAP2K1
+"	string												
+nsclc_curated_gene	MAP2K2	"MAP2K2
+"	string												
+nsclc_curated_gene	MDM2	"MDM2
+"	string												
+nsclc_curated_gene	MET	"MET
+"	string												
+nsclc_curated_gene	MLH_Col1	"MLH_Col1
+"	string												
+nsclc_curated_gene	MLH_Col2	"MLH_Col2
+"	string												
+nsclc_curated_gene	MLH_Col3	"MLH_Col3
+"	string												
+nsclc_curated_gene	MPL	"MPL
+"	string												
+nsclc_curated_gene	MSH2	"MSH2
+"	string												
+nsclc_curated_gene	MSH6	"MSH6
+"	string												
+nsclc_curated_gene	MSI	"MSI
+"	string												
+nsclc_curated_gene	MTOR	"MTOR
+"	string												
+nsclc_curated_gene	MYC	"MYC
+"	string												
+nsclc_curated_gene	MYCN	"MYCN
+"	string												
+nsclc_curated_gene	N	"N
+"	number												
+nsclc_curated_gene	NF_Col1	"NF_Col1
+"	string												
+nsclc_curated_gene	NF_Col2	"NF_Col2
+"	string												
+nsclc_curated_gene	NF_Col3	"NF_Col3
+"	string												
+nsclc_curated_gene	NF_Col4	"NF_Col4
+"	string												
+nsclc_curated_gene	NF_Col5	"NF_Col5
+"	string												
+nsclc_curated_gene	NOTCH1	"NOTCH1
+"	string												
+nsclc_curated_gene	NOTCH2	"NOTCH2
+"	string												
+nsclc_curated_gene	NOTCH3	"NOTCH3
+"	string												
+nsclc_curated_gene	NRAS	"NRAS
+"	string												
+nsclc_curated_gene	NTRK1	"NTRK1
+"	string												
+nsclc_curated_gene	NTRK2	"NTRK2
+"	string												
+nsclc_curated_gene	Number_Mutation	"Number_Mutation
+"	integer												
+nsclc_curated_gene	number_of_primaries	"number_of_primaries
+"	integer												
+nsclc_curated_gene	Outcome	"Outcome
+"	string												
+nsclc_curated_gene	PAX5	"PAX5
+"	string												
+nsclc_curated_gene	PBRM1	"PBRM1
+"	string												
+nsclc_curated_gene	PDGFRA	"PDGFRA
+"	string												
+nsclc_curated_gene	PDGFRB	"PDGFRB
+"	string												
+nsclc_curated_gene	PIK3CA	"PIK3CA
+"	string												
+nsclc_curated_gene	PIK3CB	"PIK3CB
+"	string												
+nsclc_curated_gene	PMS2	"PMS2
+"	string												
+nsclc_curated_gene	POLD_Col1	"POLD_Col1
+"	string												
+nsclc_curated_gene	POLD_Col2	"POLD_Col2
+"	string												
+nsclc_curated_gene	POLE	"POLE
+"	string												
+nsclc_curated_gene	Primary_Site	"Primary_Site
+"	string												
+nsclc_curated_gene	PTCH1	"PTCH1
+"	string												
+nsclc_curated_gene	PTEN	"PTEN
+"	string												
+nsclc_curated_gene	PTPN11	"PTPN11
+"	string												
+nsclc_curated_gene	Radiation	"Radiation
+"	integer												
+nsclc_curated_gene	Radiation_Sequence_with_Surgery	"Radiation_Sequence_with_Surgery
+"	integer												
+nsclc_curated_gene	RB1	"RB1
+"	string												
+nsclc_curated_gene	RET	"RET
+"	string												
+nsclc_curated_gene	RNF43	"RNF43
+"	string												
+nsclc_curated_gene	ROS1	"ROS1
+"	string												
+nsclc_curated_gene	RUNX1	"RUNX1
+"	string												
+nsclc_curated_gene	RXSumm_ScopeRegLNSur	"RXSumm_ScopeRegLNSur
+"	integer												
+nsclc_curated_gene	RXSumm_SurgPrimSite	"RXSumm_SurgPrimSite
+"	integer												
+nsclc_curated_gene	Sequence_Number	"Sequence_Number
+"	integer												
+nsclc_curated_gene	SLC34A2_ROS1	"SLC34A2-ROS1
+"	string												
+nsclc_curated_gene	SMARCA4	"SMARCA4
+"	string												
+nsclc_curated_gene	SMARCB1	"SMARCB1
+"	string												
+nsclc_curated_gene	SMO	"SMO
+"	string												
+nsclc_curated_gene	SRC	"SRC
+"	string												
+nsclc_curated_gene	Stage	"Stage
+"	string												
+nsclc_curated_gene	STK11	"STK11
+"	string												
+nsclc_curated_gene	Survival_time_Month	"Survival_time_Month
+"	integer												
+nsclc_curated_gene	T	"T
+"	string												
+nsclc_curated_gene	TERT	"TERT
+"	string												
+nsclc_curated_gene	TET2	"TET2
+"	string												
+nsclc_curated_gene	TMPRSS2	"TMPRSS2
+"	string												
+nsclc_curated_gene	TMPRSS2_CASQ2	"TMPRSS2-CASQ2
+"	string												
+nsclc_curated_gene	TMPRSS2_ERG	"TMPRSS2-ERG
+"	string												
+nsclc_curated_gene	TNFAIP3	"TNFAIP3
+"	string												
+nsclc_curated_gene	TP53_Col1	"TP53_Col1
+"	string												
+nsclc_curated_gene	TP53_Col2	"TP53_Col2
+"	string												
+nsclc_curated_gene	TSC2	"TSC2
+"	string												
+nsclc_curated_gene	TumorSize	"TumorSize
+"	number												
+nsclc_curated_gene	VEGFA	"VEGFA
+"	string												
+oncology_primary	Abdominalultrasound	"Abdominalultrasound
+"	string												
+oncology_primary	Abstractstatus	"Abstractstatus
+"	string												
+oncology_primary	Adjuvantchemotherapycol	"Adjuvantchemotherapycol
+"	string												
+oncology_primary	AfipSubmission	"AfipSubmission
+"	string												
+oncology_primary	AjccStagingBasis	"AjccStagingBasis
+"	string												
+oncology_primary	AmbiguousterminologydX	"AmbiguousterminologydX
+"	string												
+oncology_primary	Androgendprvtntherapy	"Androgendprvtntherapy
+"	string												
+oncology_primary	Antiegfrmoabtherapy	"Antiegfrmoabtherapy
+"	string												
+oncology_primary	Apprchforbpsyofprmry	"Apprchforbpsyofprmry
+"	string												
+oncology_primary	AutomaticStagingOverridden	"AutomaticStagingOverridden
+"	string												
+oncology_primary	Bariumenema	"Bariumenema
+"	string												
+oncology_primary	Biopsyofotherthanprimary	"Biopsyofotherthanprimary
+"	string												
+oncology_primary	Biopsyprocedure	"Biopsyprocedure
+"	string												
+oncology_primary	Bloodinsputumperpt	"Bloodinsputumperpt
+"	string												
+oncology_primary	Boneimaging	"Boneimaging
+"	string												
+oncology_primary	Bonemarrowaspiration	"Bonemarrowaspiration
+"	string												
+oncology_primary	Boostdosecgy	"Boostdosecgy
+"	number												
+oncology_primary	Boosttreatmentmodality	"Boosttreatmentmodality
+"	number												
+oncology_primary	Brachytherapy	"Brachytherapy
+"	string												
+oncology_primary	Bronchoscopy	"Bronchoscopy
+"	string												
+oncology_primary	Cancer1	"Cancer1
+"	string												
+oncology_primary	Cancer2	"Cancer2
+"	string												
+oncology_primary	Cancer3	"Cancer3
+"	string												
+oncology_primary	Cancer4	"Cancer4
+"	string												
+oncology_primary	Capprotocolreview	"Capprotocolreview
+"	string												
+oncology_primary	Captext	"Captext
+"	string												
+oncology_primary	Casefindingsource	"Casefindingsource
+"	number												
+oncology_primary	Changeinbowelhabitsperpt	"Changeinbowelhabitsperpt
+"	string												
+oncology_primary	Chemotherapeuticagent1	"Chemotherapeuticagent1
+"	string												
+oncology_primary	Chemotherapeuticagent2	"Chemotherapeuticagent2
+"	string												
+oncology_primary	Chemotherapeuticagent3	"Chemotherapeuticagent3
+"	string												
+oncology_primary	Chemotherapeuticagent4	"Chemotherapeuticagent4
+"	string												
+oncology_primary	Chemotherapeuticagent5	"Chemotherapeuticagent5
+"	string												
+oncology_primary	Chemotherapy	"Chemotherapy
+"	string												
+oncology_primary	ChemotherapyFac	"ChemotherapyFac
+"	string												
+oncology_primary	Chemotherapyrecommended	"Chemotherapyrecommended
+"	string												
+oncology_primary	Chestxray	"Chestxray
+"	string												
+oncology_primary	ClassCategory	"ClassCategory
+"	string												
+oncology_primary	ClassofcaseX	"ClassofcaseX
+"	number												
+oncology_primary	ClinicalM	"ClinicalM
+"	string												
+oncology_primary	ClinicalN	"ClinicalN
+"	string												
+oncology_primary	Clinicalriskfactors	"Clinicalriskfactors
+"	string												
+oncology_primary	ClinicalT	"ClinicalT
+"	string												
+oncology_primary	Clinicaltrialsdiscussion	"Clinicaltrialsdiscussion
+"	string												
+oncology_primary	ClintnmdocumentationpretX	"ClintnmdocumentationpretX
+"	string												
+oncology_primary	Colonoscopy	"Colonoscopy
+"	string												
+oncology_primary	Csschemadiscriminator	"Csschemadiscriminator
+"	number												
+oncology_primary	Ctofabdomenpelvis	"Ctofabdomenpelvis
+"	string												
+oncology_primary	Ctscan	"Ctscan
+"	string												
+oncology_primary	Ctscanofchest	"Ctscanofchest
+"	string												
+oncology_primary	Ctscanofneckthyroid	"Ctscanofneckthyroid
+"	string												
+oncology_primary	DaysFromAnchorDateToChemotherapyDate	"DaysFromAnchorDateToChemotherapyDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToChemotherapyFacDate	"DaysFromAnchorDateToChemotherapyFacDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToCltnmdocumentationdate	"DaysFromAnchorDateToCltnmdocumentationdate
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateadtinitiated	"DaysFromAnchorDateToDateadtinitiated
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatecasecompleted	"DaysFromAnchorDateToDatecasecompleted
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatecaseinitiated	"DaysFromAnchorDateToDatecaseinitiated
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatecaselastchanged	"DaysFromAnchorDateToDatecaselastchanged
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatechmthrpyrcmmndd	"DaysFromAnchorDateToDatechmthrpyrcmmndd
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatefirstsrgclprcdr	"DaysFromAnchorDateToDatefirstsrgclprcdr
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatehospicecareinitiated	"DaysFromAnchorDateToDatehospicecareinitiated
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatehspccnsltcmpltd	"DaysFromAnchorDateToDatehspccnsltcmpltd
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatehspccnsltinttd	"DaysFromAnchorDateToDatehspccnsltinttd
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateof1stPositiveBiopsy	"DaysFromAnchorDateToDateof1stPositiveBiopsy
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofbariumenema	"DaysFromAnchorDateToDateofbariumenema
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofbloodinsputumperpt	"DaysFromAnchorDateToDateofbloodinsputumperpt
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofbronchoscopy	"DaysFromAnchorDateToDateofbronchoscopy
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofcancerconf	"DaysFromAnchorDateToDateofcancerconf
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofchangeinbowelhabits	"DaysFromAnchorDateToDateofchangeinbowelhabits
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofchestXray	"DaysFromAnchorDateToDateofchestXray
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofColonoscopy	"DaysFromAnchorDateToDateofColonoscopy
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofconclusivedX	"DaysFromAnchorDateToDateofconclusivedX
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofctofabdomenpelvis	"DaysFromAnchorDateToDateofctofabdomenpelvis
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofctscan	"DaysFromAnchorDateToDateofctscan
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofdyspnea	"DaysFromAnchorDateToDateofdyspnea
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateoffever	"DaysFromAnchorDateToDateoffever
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateoffirstcontact	"DaysFromAnchorDateToDateoffirstcontact
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateOfFirstRecurrence	"DaysFromAnchorDateToDateOfFirstRecurrence
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateoffirstsymptoms	"DaysFromAnchorDateToDateoffirstsymptoms
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateoffobt	"DaysFromAnchorDateToDateoffobt
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofincreasedcough	"DaysFromAnchorDateToDateofincreasedcough
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofmediastinoscopy	"DaysFromAnchorDateToDateofmediastinoscopy
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofmultipletumors	"DaysFromAnchorDateToDateofmultipletumors
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofnightsweats	"DaysFromAnchorDateToDateofnightsweats
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofnotreatment	"DaysFromAnchorDateToDateofnotreatment
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofPetscan	"DaysFromAnchorDateToDateofPetscan
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofsigmoidoscopy	"DaysFromAnchorDateToDateofsigmoidoscopy
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateofsurgeryconsult	"DaysFromAnchorDateToDateofsurgeryconsult
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateonclgycnsltordrd	"DaysFromAnchorDateToDateonclgycnsltordrd
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateoncologyconsultdone	"DaysFromAnchorDateToDateoncologyconsultdone
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateradiationended	"DaysFromAnchorDateToDateradiationended
+"	integer												
+oncology_primary	DaysFromAnchorDateToDatestartofworkupordered	"DaysFromAnchorDateToDatestartofworkupordered
+"	integer												
+oncology_primary	DaysFromAnchorDateToDateworkupstarted	"DaysFromAnchorDateToDateworkupstarted
+"	integer												
+oncology_primary	DaysFromAnchorDateToDiagnosisDate	"DaysFromAnchorDateToDiagnosisDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToDredate	"DaysFromAnchorDateToDredate
+"	integer												
+oncology_primary	DaysFromAnchorDateToFirstCourseOfTreatmentDate	"DaysFromAnchorDateToFirstCourseOfTreatmentDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToHematransendcrnprocdate	"DaysFromAnchorDateToHematransendcrnprocdate
+"	integer												
+oncology_primary	DaysFromAnchorDateToHormoneTherapyDate	"DaysFromAnchorDateToHormoneTherapyDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToHormoneTherapyFacDate	"DaysFromAnchorDateToHormoneTherapyFacDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToImmunotherapyDate	"DaysFromAnchorDateToImmunotherapyDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToImmunotherapyFacDate	"DaysFromAnchorDateToImmunotherapyFacDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToInpatientAdmissionDate	"DaysFromAnchorDateToInpatientAdmissionDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToInpatientDischargeDate	"DaysFromAnchorDateToInpatientDischargeDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToMostdefinitivesurgDate	"DaysFromAnchorDateToMostdefinitivesurgDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToMostdefinitivesurgfacDate	"DaysFromAnchorDateToMostdefinitivesurgfacDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToOtherTreatmentFacilityDate	"DaysFromAnchorDateToOtherTreatmentFacilityDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToOtherTreatmentStartDate	"DaysFromAnchorDateToOtherTreatmentStartDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToPsadate	"DaysFromAnchorDateToPsadate
+"	integer												
+oncology_primary	DaysFromAnchorDateToRadiationauxiliarydate	"DaysFromAnchorDateToRadiationauxiliarydate
+"	integer												
+oncology_primary	DaysFromAnchorDateToRadiationFacilityDate	"DaysFromAnchorDateToRadiationFacilityDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToRadiationStartDate	"DaysFromAnchorDateToRadiationStartDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToRadiationTherapyToCnsDate	"DaysFromAnchorDateToRadiationTherapyToCnsDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToReportingdate	"DaysFromAnchorDateToReportingdate
+"	integer												
+oncology_primary	DaysFromAnchorDateToScopeoflnsurgerydate	"DaysFromAnchorDateToScopeoflnsurgerydate
+"	integer												
+oncology_primary	DaysFromAnchorDateToScopeoflnsurgeryfacdate	"DaysFromAnchorDateToScopeoflnsurgeryfacdate
+"	integer												
+oncology_primary	DaysFromAnchorDateToSurgDxstagingProcFacDate	"DaysFromAnchorDateToSurgDxstagingProcFacDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToSurgicalDxstagingProcDate	"DaysFromAnchorDateToSurgicalDxstagingProcDate
+"	integer												
+oncology_primary	DaysFromAnchorDateToSurgprocothersitedate	"DaysFromAnchorDateToSurgprocothersitedate
+"	integer												
+oncology_primary	DaysFromAnchorDateToSurgprocothersitefacdate	"DaysFromAnchorDateToSurgprocothersitefacdate
+"	integer												
+oncology_primary	DaysFromAnchorDateToTreatmentguidelinedocdate	"DaysFromAnchorDateToTreatmentguidelinedocdate
+"	integer												
+oncology_primary	Depthoftumor	"Depthoftumor
+"	string												
+oncology_primary	Derivedss1977	"Derivedss1977
+"	string												
+oncology_primary	Derivedss2000	"Derivedss2000
+"	string												
+oncology_primary	DiagnosisTime	"DiagnosisTime
+"	string												
+oncology_primary	DiagnosticConfirmation	"DiagnosticConfirmation
+"	string												
+oncology_primary	DiffuseRetinalInvolvement	"DiffuseRetinalInvolvement
+"	string												
+oncology_primary	DistantSite1	"DistantSite1
+"	string												
+oncology_primary	DistantSite2	"DistantSite2
+"	string												
+oncology_primary	DistantSite3	"DistantSite3
+"	string												
+oncology_primary	Docfornoplatbasedchemo	"Docfornoplatbasedchemo
+"	string												
+oncology_primary	DRE	"DRE
+"	string												
+oncology_primary	Dyspnea	"Dyspnea
+"	string												
+oncology_primary	Egfrmutation1	"Egfrmutation1
+"	string												
+oncology_primary	Egfrmutation2	"Egfrmutation2
+"	string												
+oncology_primary	Egfrmutationtesting	"Egfrmutationtesting
+"	string												
+oncology_primary	Extension	"Extension
+"	number												
+oncology_primary	ExtensionCs	"ExtensionCs
+"	number												
+oncology_primary	Externalbeamradiation	"Externalbeamradiation
+"	string												
+oncology_primary	FamilyHistory	"FamilyHistory
+"	string												
+oncology_primary	Fecaloccultbloodtestfobt	"Fecaloccultbloodtestfobt
+"	string												
+oncology_primary	Feebasis	"Feebasis
+"	string												
+oncology_primary	FEVER	"FEVER
+"	string												
+oncology_primary	Firstsitecode	"Firstsitecode
+"	string												
+oncology_primary	Gaschemotherapeuticagent1	"Gaschemotherapeuticagent1
+"	string												
+oncology_primary	Gaschemotherapeuticagent2	"Gaschemotherapeuticagent2
+"	string												
+oncology_primary	Gaschemotherapeuticagent3	"Gaschemotherapeuticagent3
+"	string												
+oncology_primary	Gascomorbidcondition1	"Gascomorbidcondition1
+"	string												
+oncology_primary	Gascomorbidcondition2	"Gascomorbidcondition2
+"	string												
+oncology_primary	Gascomorbidcondition3	"Gascomorbidcondition3
+"	string												
+oncology_primary	Gascomorbidcondition4	"Gascomorbidcondition4
+"	string												
+oncology_primary	Gascomorbidcondition5	"Gascomorbidcondition5
+"	string												
+oncology_primary	Gascomorbidcondition6	"Gascomorbidcondition6
+"	string												
+oncology_primary	Gascomplication1	"Gascomplication1
+"	string												
+oncology_primary	Gascomplication2	"Gascomplication2
+"	string												
+oncology_primary	Gascomplication3	"Gascomplication3
+"	string												
+oncology_primary	Gascomplication4	"Gascomplication4
+"	string												
+oncology_primary	Gascomplication5	"Gascomplication5
+"	string												
+oncology_primary	Gaspersonalhistothmalig	"Gaspersonalhistothmalig
+"	string												
+oncology_primary	Gleasonscoreclinical	"Gleasonscoreclinical
+"	string												
+oncology_primary	Gleasonscorepathologic	"Gleasonscorepathologic
+"	string												
+oncology_primary	Gradedifferentiation	"Gradedifferentiation
+"	string												
+oncology_primary	Gradepathsystem	"Gradepathsystem
+"	string												
+oncology_primary	Gradepathvalue	"Gradepathvalue
+"	string												
+oncology_primary	Guidance	"Guidance
+"	string												
+oncology_primary	Hematransendocrineproc	"Hematransendocrineproc
+"	number												
+oncology_primary	Histologyicdo2X	"Histologyicdo2X
+"	string												
+oncology_primary	Histologyicdo3X	"Histologyicdo3X
+"	string												
+oncology_primary	HormoneTherapy	"HormoneTherapy
+"	string												
+oncology_primary	HormoneTherapyFac	"HormoneTherapyFac
+"	string												
+oncology_primary	ICDOSite	"ICDOSite
+"	string												
+oncology_primary	Immunotherapy	"Immunotherapy
+"	string												
+oncology_primary	ImmunotherapyFac	"ImmunotherapyFac
+"	string												
+oncology_primary	ImmunotherapyhospitalX	"ImmunotherapyhospitalX
+"	string												
+oncology_primary	Increasedcough	"Increasedcough
+"	string												
+oncology_primary	Infrasupra	"Infrasupra
+"	string												
+oncology_primary	Inpatientoutpatientstatus	"Inpatientoutpatientstatus
+"	string												
+oncology_primary	Intentofchemotherapy	"Intentofchemotherapy
+"	string												
+oncology_primary	Intentofradiation	"Intentofradiation
+"	string												
+oncology_primary	Intentofsurgery	"Intentofsurgery
+"	string												
+oncology_primary	IrisciliaryBody	"IrisciliaryBody
+"	string												
+oncology_primary	Karnofskysratingdistrans	"Karnofskysratingdistrans
+"	string												
+oncology_primary	KarnofskysratingpriortotX	"KarnofskysratingpriortotX
+"	string												
+oncology_primary	Krnfskysratingrcrrnc	"Krnfskysratingrcrrnc
+"	string												
+oncology_primary	Lasttumorstatus	"Lasttumorstatus
+"	string												
+oncology_primary	Laterality	"Laterality
+"	string												
+oncology_primary	Lesserpattern0240	"Lesserpattern0240
+"	string												
+oncology_primary	Lngcomorbidcondition1	"Lngcomorbidcondition1
+"	string												
+oncology_primary	Lngcomorbidcondition2	"Lngcomorbidcondition2
+"	string												
+oncology_primary	Lngcomorbidcondition3	"Lngcomorbidcondition3
+"	string												
+oncology_primary	Lngcomorbidcondition4	"Lngcomorbidcondition4
+"	string												
+oncology_primary	Lngcomorbidcondition5	"Lngcomorbidcondition5
+"	string												
+oncology_primary	Lngcomorbidcondition6	"Lngcomorbidcondition6
+"	string												
+oncology_primary	Lngcomplication1	"Lngcomplication1
+"	string												
+oncology_primary	Lngcomplication2	"Lngcomplication2
+"	string												
+oncology_primary	Lngcomplication3	"Lngcomplication3
+"	string												
+oncology_primary	Lngcomplication4	"Lngcomplication4
+"	string												
+oncology_primary	Lngcomplication5	"Lngcomplication5
+"	string												
+oncology_primary	Lngpersonalhistothmalig	"Lngpersonalhistothmalig
+"	string												
+oncology_primary	LocationofradiationtX	"LocationofradiationtX
+"	string												
+oncology_primary	LymphNodes	"LymphNodes
+"	number												
+oncology_primary	LymphNodesCs	"LymphNodesCs
+"	number												
+oncology_primary	Lymphvascularinvasionl	"Lymphvascularinvasionl
+"	string												
+oncology_primary	Mediastinoscopy	"Mediastinoscopy
+"	string												
+oncology_primary	Metsatdxbone	"Metsatdxbone
+"	string												
+oncology_primary	Metsatdxbrain	"Metsatdxbrain
+"	string												
+oncology_primary	MetsAtDxCs	"MetsAtDxCs
+"	number												
+oncology_primary	Metsatdxliver	"Metsatdxliver
+"	string												
+oncology_primary	Metsatdxlung	"Metsatdxlung
+"	string												
+oncology_primary	MetsEvalCs	"MetsEvalCs
+"	number												
+oncology_primary	Mripelvisabdomen	"Mripelvisabdomen
+"	string												
+oncology_primary	MultimodalityTherapy	"MultimodalityTherapy
+"	string												
+oncology_primary	MultimodalityTherapyClin	"MultimodalityTherapyClin
+"	string												
+oncology_primary	MultipleTumors	"MultipleTumors
+"	number												
+oncology_primary	Multiplicitycounter	"Multiplicitycounter
+"	number												
+oncology_primary	Multtumrptasoneprim	"Multtumrptasoneprim
+"	number												
+oncology_primary	Neoadjuvanttherapy	"Neoadjuvanttherapy
+"	string												
+oncology_primary	Nightsweats	"Nightsweats
+"	string												
+oncology_primary	Nonadtchemotherapy	"Nonadtchemotherapy
+"	string												
+oncology_primary	Nslcstage13pathlnstaging	"Nslcstage13pathlnstaging
+"	string												
+oncology_primary	Numberoflnremovedfacr	"Numberoflnremovedfacr
+"	number												
+oncology_primary	Numberoflnremovedr	"Numberoflnremovedr
+"	number												
+oncology_primary	Oncologyreferral	"Oncologyreferral
+"	string												
+oncology_primary	Othercancer	"Othercancer
+"	string												
+oncology_primary	Otherm	"Otherm
+"	string												
+oncology_primary	Othern	"Othern
+"	string												
+oncology_primary	Otherstagegroup	"Otherstagegroup
+"	string												
+oncology_primary	Otherstagingsystem	"Otherstagingsystem
+"	string												
+oncology_primary	Othert	"Othert
+"	string												
+oncology_primary	OtherTreatment	"OtherTreatment
+"	string												
+oncology_primary	OtherTreatmentFac	"OtherTreatmentFac
+"	string												
+oncology_primary	OthertypeoffirstrecurrenceX	"OthertypeoffirstrecurrenceX
+"	string												
+oncology_primary	Painassessment	"Painassessment
+"	string												
+oncology_primary	Palliativecare	"Palliativecare
+"	string												
+oncology_primary	Palliativecarefac	"Palliativecarefac
+"	string												
+oncology_primary	Palpabilityofprimary	"Palpabilityofprimary
+"	string												
+oncology_primary	Papillaryfollicular	"Papillaryfollicular
+"	string												
+oncology_primary	Pathologicfracture	"Pathologicfracture
+"	string												
+oncology_primary	Pathologicm	"Pathologicm
+"	string												
+oncology_primary	PathologicN	"PathologicN
+"	string												
+oncology_primary	Pathologicriskfactors	"Pathologicriskfactors
+"	string												
+oncology_primary	Pathologicsizeoftumor	"Pathologicsizeoftumor
+"	string												
+oncology_primary	PathologicT	"PathologicT
+"	string												
+oncology_primary	PerformanceStatus	"PerformanceStatus
+"	string												
+oncology_primary	PerformancestatusatdX	"PerformancestatusatdX
+"	string												
+oncology_primary	PeripheralBloodInvolvement	"PeripheralBloodInvolvement
+"	string												
+oncology_primary	Perirectallninvolvement	"Perirectallninvolvement
+"	string												
+oncology_primary	Petscan	"Petscan
+"	string												
+oncology_primary	PhysiciansStage	"PhysiciansStage
+"	string												
+oncology_primary	Predominantpattern0240	"Predominantpattern0240
+"	string												
+oncology_primary	Preopobstructinglesion	"Preopobstructinglesion
+"	string												
+oncology_primary	Presenceofmultipletumors	"Presenceofmultipletumors
+"	string												
+oncology_primary	Presentationatcancerconf	"Presentationatcancerconf
+"	string												
+oncology_primary	PrimarySiteCodePrefiX	"PrimarySiteCodePrefiX
+"	string												
+oncology_primary	PrimarysiteX	"PrimarysiteX
+"	string												
+oncology_primary	Radiation	"Radiation
+"	string												
+oncology_primary	Radiationauxiliaryvolume	"Radiationauxiliaryvolume
+"	string												
+oncology_primary	Radiationcompletionstatus	"Radiationcompletionstatus
+"	string												
+oncology_primary	RadiationFacility	"RadiationFacility
+"	string												
+oncology_primary	RadiationsurgerySequence	"RadiationsurgerySequence
+"	string												
+oncology_primary	RadiationTherapyToCns	"RadiationTherapyToCns
+"	string												
+oncology_primary	RadiationtherapytocnshospX	"RadiationtherapytocnshospX
+"	string												
+oncology_primary	Radiationtreatmentvolume	"Radiationtreatmentvolume
+"	number												
+oncology_primary	Rdtnlocalcntrlstatus	"Rdtnlocalcntrlstatus
+"	string												
+oncology_primary	ReadmissionWi30Dayssurg	"ReadmissionWi30Dayssurg
+"	string												
+oncology_primary	Reasonchemotherapystopped	"Reasonchemotherapystopped
+"	string												
+oncology_primary	ReasonForNoChemotherapy	"ReasonForNoChemotherapy
+"	string												
+oncology_primary	ReasonForNoHormoneTherapy	"ReasonForNoHormoneTherapy
+"	string												
+oncology_primary	Reasonfornolnbiopsy	"Reasonfornolnbiopsy
+"	string												
+oncology_primary	ReasonForNoRadiation	"ReasonForNoRadiation
+"	string												
+oncology_primary	Reasonhrmnthrpystppd	"Reasonhrmnthrpystppd
+"	string												
+oncology_primary	Reasonnosurgeryofprimary	"Reasonnosurgeryofprimary
+"	string												
+oncology_primary	Reasonradiationstopped	"Reasonradiationstopped
+"	string												
+oncology_primary	Reconstructionrestoration	"Reconstructionrestoration
+"	number												
+oncology_primary	Referraltosupportservices	"Referraltosupportservices
+"	string												
+oncology_primary	Regionaldosecgy	"Regionaldosecgy
+"	number												
+oncology_primary	RegionalLymphNodesExamined	"RegionalLymphNodesExamined
+"	number												
+oncology_primary	RegionalLymphNodesPositive	"RegionalLymphNodesPositive
+"	number												
+oncology_primary	Regionaltreatmentmodality	"Regionaltreatmentmodality
+"	number												
+oncology_primary	RegNodesEvalCs	"RegNodesEvalCs
+"	number												
+oncology_primary	Riskofrecurrence	"Riskofrecurrence
+"	string												
+oncology_primary	Scopeoflnsurgeryf	"Scopeoflnsurgeryf
+"	string												
+oncology_primary	Scopeoflnsurgeryfacf	"Scopeoflnsurgeryfacf
+"	string												
+oncology_primary	Scopeoflnsurgeryfacr	"Scopeoflnsurgeryfacr
+"	number												
+oncology_primary	Scopeoflnsurgeryr	"Scopeoflnsurgeryr
+"	number												
+oncology_primary	Screeningresult	"Screeningresult
+"	string												
+oncology_primary	Secondsitecode	"Secondsitecode
+"	string												
+oncology_primary	SeerSummaryStage2000	"SeerSummaryStage2000
+"	string												
+oncology_primary	Sentinelnodesexaminedbr98	"Sentinelnodesexaminedbr98
+"	string												
+oncology_primary	Sentinelnodespositivebr98	"Sentinelnodespositivebr98
+"	string												
+oncology_primary	SequenceNumber	"SequenceNumber
+"	string												
+oncology_primary	Serumtumormarkers	"Serumtumormarkers
+"	string												
+oncology_primary	Sigmoidoscopy	"Sigmoidoscopy
+"	string												
+oncology_primary	SitegpX	"SitegpX
+"	string												
+oncology_primary	SiteOfDistantMetastasis1	"SiteOfDistantMetastasis1
+"	string												
+oncology_primary	SiteOfDistantMetastasis2	"SiteOfDistantMetastasis2
+"	string												
+oncology_primary	SiteOfDistantMetastasis3	"SiteOfDistantMetastasis3
+"	string												
+oncology_primary	SitespecificFactor1Cs	"SitespecificFactor1Cs
+"	number												
+oncology_primary	Sizeoftumormelanoma	"Sizeoftumormelanoma
+"	string												
+oncology_primary	Smokinghistory	"Smokinghistory
+"	string												
+oncology_primary	Sporadicpolyps	"Sporadicpolyps
+"	string												
+oncology_primary	Stagedbyotherstage	"Stagedbyotherstage
+"	string												
+oncology_primary	Stagedbypathologicstage	"Stagedbypathologicstage
+"	string												
+oncology_primary	Stagegroupbest	"Stagegroupbest
+"	string												
+oncology_primary	Stagegroupclinical	"Stagegroupclinical
+"	string												
+oncology_primary	StageGroupingajcc	"StageGroupingajcc
+"	string												
+oncology_primary	Stagegrouppathologic	"Stagegrouppathologic
+"	string												
+oncology_primary	Subsite	"Subsite
+"	string												
+oncology_primary	SurgDxstagingProcFac	"SurgDxstagingProcFac
+"	number												
+oncology_primary	SurgeryOfPrimaryF	"SurgeryOfPrimaryF
+"	number												
+oncology_primary	SurgeryOfPrimaryFacF	"SurgeryOfPrimaryFacF
+"	number												
+oncology_primary	SurgicalMargins	"SurgicalMargins
+"	string												
+oncology_primary	Surgprocothersitef	"Surgprocothersitef
+"	string												
+oncology_primary	Surgprocothersitefacf	"Surgprocothersitefacf
+"	string												
+oncology_primary	Surgprocothersitefacr	"Surgprocothersitefacr
+"	number												
+oncology_primary	Surgprocothersiter	"Surgprocothersiter
+"	number												
+oncology_primary	Systemicsurgerysequence	"Systemicsurgerysequence
+"	string												
+oncology_primary	Texthistologytitle	"Texthistologytitle
+"	string												
+oncology_primary	Textprimarysitetitle	"Textprimarysitetitle
+"	string												
+oncology_primary	Treatmentabbreviated	"Treatmentabbreviated
+"	string												
+oncology_primary	Treatmentguideline1	"Treatmentguideline1
+"	string												
+oncology_primary	Treatmentguideline2	"Treatmentguideline2
+"	string												
+oncology_primary	Treatmentguideline3	"Treatmentguideline3
+"	string												
+oncology_primary	TumorSize	"TumorSize
+"	number												
+oncology_primary	TumorSizeCs	"TumorSizeCs
+"	number												
+oncology_primary	TumorSizeextEvalCs	"TumorSizeextEvalCs
+"	number												
+oncology_primary	Tumorsizesource	"Tumorsizesource
+"	string												
+oncology_primary	Typeofchemotherapy	"Typeofchemotherapy
+"	string												
+oncology_primary	TypeoffirstrecurrenceX	"TypeoffirstrecurrenceX
+"	number												
+oncology_primary	TypeofreportingsourceX	"TypeofreportingsourceX
+"	number												
+oncology_primary	Typeofstagingsystemped	"Typeofstagingsystemped
+"	string												
+oncology_primary	Ulcerativecolitisuc	"Ulcerativecolitisuc
+"	string												
+oncology_primary	Upperlower	"Upperlower
+"	string												
+oncology_primary	Venousinvasionv	"Venousinvasionv
+"	string												
+oncology_primary	Weightlossperpt	"Weightlossperpt
+"	string												
+oncology_primary	Whohistologicalcl	"Whohistologicalcl
+"	string												
+surgery_post	AdmitPACUTime	"AdmitPACUTime
+"	string												
+surgery_post	CPTOnNurseReportFlag	"CPTOnNurseReportFlag
+"	string												
+surgery_post	CurrentAdmissionCumulativeOperations	"CurrentAdmissionCumulativeOperations
+"	string												
+surgery_post	DaysFromAnchorDateToAdmitPACUDate	"DaysFromAnchorDateToAdmitPACUDate
+"	integer												
+surgery_post	DaysFromAnchorDateToDeathDate	"DaysFromAnchorDateToDeathDate
+"	integer												
+surgery_post	DaysFromAnchorDateToDictationDate	"DaysFromAnchorDateToDictationDate
+"	integer												
+surgery_post	DaysFromAnchorDateToDischargeDate	"DaysFromAnchorDateToDischargeDate
+"	integer												
+surgery_post	DaysFromAnchorDateToDischargePACUDate	"DaysFromAnchorDateToDischargePACUDate
+"	integer												
+surgery_post	DaysFromAnchorDateToObservationAdmissionDate	"DaysFromAnchorDateToObservationAdmissionDate
+"	integer												
+surgery_post	DaysFromAnchorDateToObservationDischargeDate	"DaysFromAnchorDateToObservationDischargeDate
+"	integer												
+surgery_post	DaysFromAnchorDateToPostOpAnesthesiaNoteDate	"DaysFromAnchorDateToPostOpAnesthesiaNoteDate
+"	integer												
+surgery_post	DaysFromAnchorDateToProcedureDate	"DaysFromAnchorDateToProcedureDate
+"	integer												
+surgery_post	DaysFromAnchorDateToSterilityExpirationDate	"DaysFromAnchorDateToSterilityExpirationDate
+"	integer												
+surgery_post	DaysFromAnchorDateToSurgeryDate	"DaysFromAnchorDateToSurgeryDate
+"	integer												
+surgery_post	DaysFromAnchorDateToTranscriptionDate	"DaysFromAnchorDateToTranscriptionDate
+"	integer												
+surgery_post	Death30DaysFlag	"Death30DaysFlag
+"	string												
+surgery_post	DeviceQuantity	"DeviceQuantity
+"	number												
+surgery_post	DictatedSummaryFlag	"DictatedSummaryFlag
+"	string												
+surgery_post	DictationTime	"DictationTime
+"	string												
+surgery_post	DischargePACUTime	"DischargePACUTime
+"	string												
+surgery_post	DischargeSurgeryTransportDevice	"DischargeSurgeryTransportDevice
+"	string												
+surgery_post	DischargeSurgeryTransportDeviceCode	"DischargeSurgeryTransportDeviceCode
+"	string												
+surgery_post	DressingCondition	"DressingCondition
+"	string												
+surgery_post	DynamedNotifiedFlag	"DynamedNotifiedFlag
+"	number												
+surgery_post	EndBP	"EndBP
+"	string												
+surgery_post	EndPulse	"EndPulse
+"	string												
+surgery_post	EndRespirationRate	"EndRespirationRate
+"	string												
+surgery_post	EventCaptureSpecialty	"EventCaptureSpecialty
+"	string												
+surgery_post	ICDOnNurseReportFlag	"ICDOnNurseReportFlag
+"	string												
+surgery_post	ImplantSterilityCheckedFlag	"ImplantSterilityCheckedFlag
+"	string												
+surgery_post	LocalSurgicalSpecialty	"LocalSurgicalSpecialty
+"	string												
+surgery_post	LockCase	"LockCase
+"	number												
+surgery_post	NonORProcedureFlag	"NonORProcedureFlag
+"	string												
+surgery_post	OccurenceNoProcedureFlag	"OccurenceNoProcedureFlag
+"	string												
+surgery_post	OPSurgeryDisposition	"OPSurgeryDisposition
+"	string												
+surgery_post	OPSurgeryDispositionCode	"OPSurgeryDispositionCode
+"	string												
+surgery_post	PACUAdmitScore	"PACUAdmitScore
+"	number												
+surgery_post	PACUDischargeScore	"PACUDischargeScore
+"	number												
+surgery_post	PACUSurgeryDisposition	"PACUSurgeryDisposition
+"	string												
+surgery_post	PACUSurgeryDispositionCode	"PACUSurgeryDispositionCode
+"	string												
+surgery_post	PostOpAnesthesiaNoteTime	"PostOpAnesthesiaNoteTime
+"	string												
+surgery_post	PostOpAttendingConcurFlag	"PostOpAttendingConcurFlag
+"	string												
+surgery_post	PostOpBP	"PostOpBP
+"	string												
+surgery_post	PostOpPatientConsciousness	"PostOpPatientConsciousness
+"	string												
+surgery_post	PostOpPatientMood	"PostOpPatientMood
+"	string												
+surgery_post	PostOpPatientMoodCode	"PostOpPatientMoodCode
+"	string												
+surgery_post	PostOpPulse	"PostOpPulse
+"	string												
+surgery_post	PostOpRespiratoryRate	"PostOpRespiratoryRate
+"	string												
+surgery_post	PostOpSkinColor	"PostOpSkinColor
+"	string												
+surgery_post	PostOpSkinIntegrity	"PostOpSkinIntegrity
+"	string												
+surgery_post	PostOpSkinIntegrityCode	"PostOpSkinIntegrityCode
+"	string												
+surgery_post	PreAdmitTestingFlag	"PreAdmitTestingFlag
+"	string												
+surgery_post	ProcedureTime	"ProcedureTime
+"	string												
+surgery_post	ProsthesisName	"ProsthesisName
+"	string												
+surgery_post	SurgeryTime	"SurgeryTime
+"	string												
+surgery_post	TranscriptionTime	"TranscriptionTime
+"	string												
+surgery_post	WoundOccurrences	"WoundOccurrences
+"	string												
+outpat_v_diagnosis	AgentOrangeFlag	"AgentOrangeFlag
+"	string												
+outpat_v_diagnosis	CategoryOfProviderNarrative	"CategoryOfProviderNarrative
+"	string												
+outpat_v_diagnosis	Chicago_VisitSID	"Chicago_VisitSID
+"	string												
+outpat_v_diagnosis	ClinicalTerm	"ClinicalTerm
+"	string												
+outpat_v_diagnosis	DaysFromAnchorDateToEventDate	"DaysFromAnchorDateToEventDate
+"	integer												
+outpat_v_diagnosis	DaysFromAnchorDateToInjuryDate	"DaysFromAnchorDateToInjuryDate
+"	integer												
+outpat_v_diagnosis	DaysFromAnchorDateToVDiagnosisDate	"DaysFromAnchorDateToVDiagnosisDate
+"	integer												
+outpat_v_diagnosis	DaysFromAnchorDateToVisitDate	"DaysFromAnchorDateToVisitDate
+"	integer												
+outpat_v_diagnosis	EventTime	"EventTime
+"	string												
+outpat_v_diagnosis	HeadNeckCancerFlag	"HeadNeckCancerFlag
+"	string												
+outpat_v_diagnosis	ICD10Code	"ICD10Code
+"	string												
+outpat_v_diagnosis	ICD10Description	"ICD10Description
+"	string												
+outpat_v_diagnosis	ICD9Code	"ICD9Code
+"	number												
+outpat_v_diagnosis	ICD9Description	"ICD9Description
+"	string												
+outpat_v_diagnosis	InjuryTime	"InjuryTime
+"	string												
+outpat_v_diagnosis	IonizingRadiationFlag	"IonizingRadiationFlag
+"	string												
+outpat_v_diagnosis	OrderingResulting	"OrderingResulting
+"	string												
+outpat_v_diagnosis	PrimarySecondary	"PrimarySecondary
+"	string												
+outpat_v_diagnosis	ProviderNarrative	"ProviderNarrative
+"	string												
+outpat_v_diagnosis	ServiceConnectedFlag	"ServiceConnectedFlag
+"	string												
+outpat_v_diagnosis	SWAsiaConditionsFlag	"SWAsiaConditionsFlag
+"	string												
+outpat_v_diagnosis	VDiagnosisTime	"VDiagnosisTime
+"	string												
+outpat_v_diagnosis	VisitTime	"VisitTime
+"	string												
+clinical_supplement	data_category		enum	_terms.yaml#/data_category				Clinical 							
+clinical_supplement	data_type		enum	_terms.yaml#/data_type				Clinical Supplement 							
+clinical_supplement	data_format		enum	_terms.yaml#/data_format				BCR Biotab | BCR OMF XML | BCR XML | CDC JSON | CSV | FoundationOne XML | TSV | XLSX 							
+aligned_reads_file	alignment_workflow	"Indicate the alignment workflow or pipeline used for alignment of unaligned reads.
+"	string												
+aligned_reads_file	data_category		enum	_terms.yaml#/data_category				Sequencing Data | Sequencing Reads | Raw Sequencing Data 							
+aligned_reads_file	data_type		enum	_terms.yaml#/data_type				Aligned Reads 							
+aligned_reads_file	data_format		enum	_terms.yaml#/data_format				BAM 							
+aligned_reads_file	experimental_strategy		enum	_terms.yaml#/experimental_strategy				WGS | WXS | Low Pass WGS | RNA-Seq | miRNA-Seq | Targeted Sequencing | Bisulfite-Seq | ChIP-Seq | ATAC-Seq 							
+aligned_reads_file	molecular_tagging_workflow	"A description of the specific bioinformatics workflow or pipeline used for molecular tagging of sequenced reads.
+"	string												
+surgery_intra	AirwayIndex	"AirwayIndex
+"	integer												
+surgery_intra	AnesthesiaBillableCareFlag	"AnesthesiaBillableCareFlag
+"	string												
+surgery_intra	AnesthesiaMedicallyDirectedFlag	"AnesthesiaMedicallyDirectedFlag
+"	string												
+surgery_intra	AnesthesiaPersonallyPerformedFlag	"AnesthesiaPersonallyPerformedFlag
+"	string												
+surgery_intra	AnesthesiaPhysicianAvailableFlag	"AnesthesiaPhysicianAvailableFlag
+"	string												
+surgery_intra	AnesthetistAvailableTime	"AnesthetistAvailableTime
+"	string												
+surgery_intra	AnesthetistCategory	"AnesthetistCategory
+"	string												
+surgery_intra	AntibioticProphylaxis	"AntibioticProphylaxis
+"	string												
+surgery_intra	ASAClass	"ASAClass
+"	string												
+surgery_intra	ASAClassDescription	"ASAClassDescription
+"	string												
+surgery_intra	AttendingCode	"AttendingCode
+"	string												
+surgery_intra	AttendingCodeDescription	"AttendingCodeDescription
+"	string												
+surgery_intra	AttendingCodeName	"AttendingCodeName
+"	string												
+surgery_intra	BatchID	"BatchID
+"	integer												
+surgery_intra	BatistaProcUsedFlag	"BatistaProcUsedFlag
+"	string												
+surgery_intra	BeginNonORProcedureTime	"BeginNonORProcedureTime
+"	string												
+surgery_intra	BeginOperationTime	"BeginOperationTime
+"	string												
+surgery_intra	BeginORCleanTime	"BeginORCleanTime
+"	string												
+surgery_intra	BloodAvailability	"BloodAvailability
+"	string												
+surgery_intra	BloodLoss	"BloodLoss
+"	number												
+surgery_intra	CaseVerificationFlag	"CaseVerificationFlag
+"	string												
+surgery_intra	Cohort	"Cohort
+"	string												
+surgery_intra	ConcurrentAnesthesiaCases	"ConcurrentAnesthesiaCases
+"	string												
+surgery_intra	ConfirmedMarkedSiteTime	"ConfirmedMarkedSiteTime
+"	string												
+surgery_intra	ContaminationFlashSterilization	"ContaminationFlashSterilization
+"	number												
+surgery_intra	CorrectMedicalImplants	"CorrectMedicalImplants
+"	string												
+surgery_intra	CreatedAt	"CreatedAt
+"	string												
+surgery_intra	DaysFromAnchorDateToAnesthetistAvailableDate	"DaysFromAnchorDateToAnesthetistAvailableDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToBeginNonORProcedureDate	"DaysFromAnchorDateToBeginNonORProcedureDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToBeginOperationDate	"DaysFromAnchorDateToBeginOperationDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToBeginORCleanDate	"DaysFromAnchorDateToBeginORCleanDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToConfirmedMarkedSiteDate	"DaysFromAnchorDateToConfirmedMarkedSiteDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToEndAnesthesiaCareDate	"DaysFromAnchorDateToEndAnesthesiaCareDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToEndNonORProcedureDate	"DaysFromAnchorDateToEndNonORProcedureDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToEndOperationDate	"DaysFromAnchorDateToEndOperationDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToEndORCleanDate	"DaysFromAnchorDateToEndORCleanDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToInductionCompleteDate	"DaysFromAnchorDateToInductionCompleteDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToNurseOutDate	"DaysFromAnchorDateToNurseOutDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToNursePresentDate	"DaysFromAnchorDateToNursePresentDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToORPatientTransportDate	"DaysFromAnchorDateToORPatientTransportDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToPatientHoldAreaDate	"DaysFromAnchorDateToPatientHoldAreaDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToPatientOutDate	"DaysFromAnchorDateToPatientOutDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToProcedureDate	"DaysFromAnchorDateToProcedureDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToStartAnesthesiaCareDate	"DaysFromAnchorDateToStartAnesthesiaCareDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToSurgeonPresentDate	"DaysFromAnchorDateToSurgeonPresentDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToSurgeryDate	"DaysFromAnchorDateToSurgeryDate
+"	integer												
+surgery_intra	DaysFromAnchorDateToTimeOutVerifiedDate	"DaysFromAnchorDateToTimeOutVerifiedDate
+"	integer												
+surgery_intra	DecontaminationFlashSterilization	"DecontaminationFlashSterilization
+"	number												
+surgery_intra	Devices	"Devices
+"	string												
+surgery_intra	DiagnosticTherapeuticFlag	"DiagnosticTherapeuticFlag
+"	string												
+surgery_intra	ElectrogroundPosition	"ElectrogroundPosition
+"	string												
+surgery_intra	ElectrogroundPositionCode	"ElectrogroundPositionCode
+"	string												
+surgery_intra	EmergencyCaseFlashSterilization	"EmergencyCaseFlashSterilization
+"	number												
+surgery_intra	EndAnesthesiaCareTime	"EndAnesthesiaCareTime
+"	string												
+surgery_intra	EndNonORProcedureTime	"EndNonORProcedureTime
+"	string												
+surgery_intra	EndOperationTime	"EndOperationTime
+"	string												
+surgery_intra	EndORCleanTime	"EndORCleanTime
+"	string												
+surgery_intra	ESUCoagulationRange	"ESUCoagulationRange
+"	string												
+surgery_intra	ESUCuttingRange	"ESUCuttingRange
+"	string												
+surgery_intra	EventCaptureSpecialty	"EventCaptureSpecialty
+"	string												
+surgery_intra	FinalAnesthesiaTemperature	"FinalAnesthesiaTemperature
+"	number												
+surgery_intra	FinalCountsVerifiedCorrect	"FinalCountsVerifiedCorrect
+"	string												
+surgery_intra	FoleyCatheterSize	"FoleyCatheterSize
+"	number												
+surgery_intra	GastricOutput	"GastricOutput
+"	number												
+surgery_intra	HairRemovalMethod	"HairRemovalMethod
+"	string												
+surgery_intra	InductionCompleteTime	"InductionCompleteTime
+"	string												
+surgery_intra	InstrumentCountCorrect	"InstrumentCountCorrect
+"	string												
+surgery_intra	IntraOpTemperature	"IntraOpTemperature
+"	number												
+surgery_intra	IntraOpXRayCode	"IntraOpXRayCode
+"	string												
+surgery_intra	LaserType	"LaserType
+"	string												
+surgery_intra	LoanerInstrumentFlashSterilization	"LoanerInstrumentFlashSterilization
+"	number												
+surgery_intra	LocalSurgicalSpecialty	"LocalSurgicalSpecialty
+"	string												
+surgery_intra	MajorMinor	"MajorMinor
+"	string												
+surgery_intra	MajorPosition	"MajorPosition
+"	string												
+surgery_intra	MallampatiScale	"MallampatiScale
+"	number												
+surgery_intra	MandibularSpace	"MandibularSpace
+"	number												
+surgery_intra	MarkedSiteConfirmed	"MarkedSiteConfirmed
+"	string												
+surgery_intra	MarkedSiteConfirmedFlag	"MarkedSiteConfirmedFlag
+"	string												
+surgery_intra	ModifiedAt	"ModifiedAt
+"	string												
+surgery_intra	NoBetterOptionFlashSterilization	"NoBetterOptionFlashSterilization
+"	number												
+surgery_intra	NonORProcedureFlag	"NonORProcedureFlag
+"	string												
+surgery_intra	NurseOutTime	"NurseOutTime
+"	string												
+surgery_intra	NursePresentTime	"NursePresentTime
+"	string												
+surgery_intra	ORPatientTransportTime	"ORPatientTransportTime
+"	string												
+surgery_intra	ORSetupTime	"ORSetupTime
+"	number												
+surgery_intra	Packing	"Packing
+"	number												
+surgery_intra	PatientHoldAreaTime	"PatientHoldAreaTime
+"	string												
+surgery_intra	PatientIdentityConfirmedFlag	"PatientIdentityConfirmedFlag
+"	string												
+surgery_intra	PatientOutTime	"PatientOutTime
+"	string												
+surgery_intra	PhysicalStatus	"PhysicalStatus
+"	string												
+surgery_intra	PositiveDrugScreening	"PositiveDrugScreening
+"	string												
+surgery_intra	PossibleItemRetentionCode	"PossibleItemRetentionCode
+"	string												
+surgery_intra	PreOperativeImagingConfirmed	"PreOperativeImagingConfirmed
+"	string												
+surgery_intra	PreOpImagesConfirmed	"PreOpImagesConfirmed
+"	string												
+surgery_intra	PreOpSkinColor	"PreOpSkinColor
+"	string												
+surgery_intra	ProcedureTime	"ProcedureTime
+"	string												
+surgery_intra	SequentialBloodDeviceFlag	"SequentialBloodDeviceFlag
+"	string												
+surgery_intra	SharpsCountCorrect	"SharpsCountCorrect
+"	string												
+surgery_intra	SkinIntegrity	"SkinIntegrity
+"	string												
+surgery_intra	SkinIntegrityCode	"SkinIntegrityCode
+"	string												
+surgery_intra	SkinPrepAgent	"SkinPrepAgent
+"	string												
+surgery_intra	SkinPrepAgentCode	"SkinPrepAgentCode
+"	string												
+surgery_intra	SPDFlashSterilization	"SPDFlashSterilization
+"	number												
+surgery_intra	SpecialEquipmentAvailability	"SpecialEquipmentAvailability
+"	string												
+surgery_intra	SpongeCountCorrect	"SpongeCountCorrect
+"	string												
+surgery_intra	StaffOrResident	"StaffOrResident
+"	string												
+surgery_intra	StartAnesthesiaCareTime	"StartAnesthesiaCareTime
+"	string												
+surgery_intra	SurgeonPresentTime	"SurgeonPresentTime
+"	string												
+surgery_intra	SurgeryPosition	"SurgeryPosition
+"	string												
+surgery_intra	SurgeryPositionCode	"SurgeryPositionCode
+"	string												
+surgery_intra	SurgeryTime	"SurgeryTime
+"	string												
+surgery_intra	SurgeryTransportDevice	"SurgeryTransportDevice
+"	string												
+surgery_intra	SurgeryTransportDeviceCode	"SurgeryTransportDeviceCode
+"	string												
+surgery_intra	TimeOutVerified	"TimeOutVerified
+"	string												
+surgery_intra	TimeOutVerifiedTime	"TimeOutVerifiedTime
+"	string												
+surgery_intra	UrineOutput	"UrineOutput
+"	number												
+surgery_intra	UserID	"UserID
+"	string												
+surgery_intra	WoundClassification	"WoundClassification
+"	string												
+surgery_intra	WoundSweepCode	"WoundSweepCode
+"	string												
+case	days_to_lost_to_followup		integer	_terms.yaml#/days_to_lost_to_followup											
+case	AnchorDate		enum	_terms.yaml#/index_date				Diagnosis | First Patient Visit | Study Enrollment 							
+case	lost_to_followup		enum	_terms.yaml#/lost_to_followup				Yes | No 							
+pathology_slide	data_type		enum	_terms.yaml#/data_type				Pathology Slide 							
+pathology_slide	data_format		enum	_terms.yaml#/data_format				JPEG | SVS | TIFF | PNG | GIF | DCM 							
+pathology_slide	data_category		enum	_terms.yaml#/data_category				Pathology Slide 							
+pathology_slide	study_date			_definitions.yaml#/datetime											
+pathology_slide	magnification	Magnification used to capture the image.	number												
+pathology_slide	patient_sex	Patient's gender.	string												
+pathology_slide	series_number	Number of serial studies.	number												
+pathology_slide	series_description	Specifics of a given study.	string												
+pathology_slide	series_instance_uid	Unique identifier of a series.	string												
+pathology_slide	sop_class_uid	Classification of image storage.	string												
+pathology_slide	manufacturer	Manufacturer of the study equipment.	string												
+pathology_slide	study_description	Type of the study and a studied body part.	string												
+pathology_slide	study_id	Identifier of a study.	number												
+pathology_slide	study_instance_uid	Unique identifier of a study.	string												
+pathology_slide	patient_id	Scrambled patient identifier.	string												
+pathology_slide	body_part_examined	What part of the body was studied.	string												
+pathology_slide	days_to_image	Days from the case index date to the date the image was acquired.	integer												
+pathology_slide	imaging_instrument	"The instrument model used to acquire the image.
+"	string												
+pathology_slide	modality	"What mode the imaging instrument was in during image acquisition.
+"	string												
+pathology_slide	scan_id	"The identification number for a stack of images generated during a single scan.
+"	string												
+outpat_v_procedure	Chicago_VisitSID	"Chicago_VisitSID
+"	string												
+outpat_v_procedure	CPTCategory	"CPTCategory
+"	string												
+outpat_v_procedure	CPTCode	"CPTCode
+"	string												
+outpat_v_procedure	CPTDescription	"CPTDescription
+"	string												
+outpat_v_procedure	CPTName	"CPTName
+"	string												
+outpat_v_procedure	DaysFromAnchorDateToEventDate	"DaysFromAnchorDateToEventDate
+"	integer												
+outpat_v_procedure	DaysFromAnchorDateToVisitDate	"DaysFromAnchorDateToVisitDate
+"	integer												
+outpat_v_procedure	DaysFromAnchorDateToVProcedureDate	"DaysFromAnchorDateToVProcedureDate
+"	integer												
+outpat_v_procedure	EventTime	"EventTime
+"	string												
+outpat_v_procedure	MajorCPTCategory	"MajorCPTCategory
+"	string												
+outpat_v_procedure	VisitTime	"VisitTime
+"	string												
+outpat_v_procedure	VProcedureTime	"VProcedureTime
+"	string												
+surgery_pre	AgentOrangeFlag	"AgentOrangeFlag
+"	string												
+surgery_pre	AsOrderedNPOCode	"AsOrderedNPOCode
+"	string												
+surgery_pre	AvoidableFlag	"AvoidableFlag
+"	string												
+surgery_pre	BathAndShampooCode	"BathAndShampooCode
+"	string												
+surgery_pre	BeginOperationTime	"BeginOperationTime
+"	string												
+surgery_pre	BloodScreenCode	"BloodScreenCode
+"	string												
+surgery_pre	BloodTypeAndMatchCode	"BloodTypeAndMatchCode
+"	string												
+surgery_pre	CancellationComments	"CancellationComments
+"	string												
+surgery_pre	CancelTime	"CancelTime
+"	string												
+surgery_pre	CarePlanInChartCode	"CarePlanInChartCode
+"	string												
+surgery_pre	CaseScheduleTypeCode	"CaseScheduleTypeCode
+"	string												
+surgery_pre	CBCIn48HoursCode	"CBCIn48HoursCode
+"	string												
+surgery_pre	ChestXRayIn7DaysCode	"ChestXRayIn7DaysCode
+"	string												
+surgery_pre	CigarettesRemovedCode	"CigarettesRemovedCode
+"	string												
+surgery_pre	ClassificationEnteredFlag	"ClassificationEnteredFlag
+"	string												
+surgery_pre	CleanDressingCode	"CleanDressingCode
+"	string												
+surgery_pre	CleanHospitalClothCode	"CleanHospitalClothCode
+"	string												
+surgery_pre	DaysFromAnchorDateToAdmissionDate	"DaysFromAnchorDateToAdmissionDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToBeginOperationDate	"DaysFromAnchorDateToBeginOperationDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToCancelDate	"DaysFromAnchorDateToCancelDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToDesiredProcedureDate	"DaysFromAnchorDateToDesiredProcedureDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToDesiredProcedureEntryDate	"DaysFromAnchorDateToDesiredProcedureEntryDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToEndOperationDate	"DaysFromAnchorDateToEndOperationDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToOriginalDesiredDate	"DaysFromAnchorDateToOriginalDesiredDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToOriginalScheduledDate	"DaysFromAnchorDateToOriginalScheduledDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToPreoperativeImagingDate	"DaysFromAnchorDateToPreoperativeImagingDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToProcedureDate	"DaysFromAnchorDateToProcedureDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToRequestMadeDate	"DaysFromAnchorDateToRequestMadeDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToScheduledDate	"DaysFromAnchorDateToScheduledDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToScheduledEndDate	"DaysFromAnchorDateToScheduledEndDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToScheduledEntryDate	"DaysFromAnchorDateToScheduledEntryDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToScheduledStartDate	"DaysFromAnchorDateToScheduledStartDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToSurgeryConsultDate	"DaysFromAnchorDateToSurgeryConsultDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToSurgeryDate	"DaysFromAnchorDateToSurgeryDate
+"	integer												
+surgery_pre	DaysFromAnchorDateToSurgicalWaitStartDate	"DaysFromAnchorDateToSurgicalWaitStartDate
+"	integer												
+surgery_pre	DelayPrimaryCauseCode	"DelayPrimaryCauseCode
+"	string												
+surgery_pre	DesiredProcedureEntryTime	"DesiredProcedureEntryTime
+"	string												
+surgery_pre	EKGIn24HoursCode	"EKGIn24HoursCode
+"	string												
+surgery_pre	EndOperationTime	"EndOperationTime
+"	string												
+surgery_pre	EnemasCode	"EnemasCode
+"	string												
+surgery_pre	EstimatedCaseLength	"EstimatedCaseLength
+"	string												
+surgery_pre	EventCaptureSpecialty	"EventCaptureSpecialty
+"	string												
+surgery_pre	FreshlyShavedCode	"FreshlyShavedCode
+"	string												
+surgery_pre	HospitalAdmissionStatusCode	"HospitalAdmissionStatusCode
+"	string												
+surgery_pre	IntraoperativeXRayCode	"IntraoperativeXRayCode
+"	string												
+surgery_pre	IonizingRadiationFlag	"IonizingRadiationFlag
+"	string												
+surgery_pre	LevinTubeCode	"LevinTubeCode
+"	string												
+surgery_pre	LocalSurgicalSpecialty	"LocalSurgicalSpecialty
+"	string												
+surgery_pre	OralHygieneCode	"OralHygieneCode
+"	string												
+surgery_pre	PatientAssessmentCode	"PatientAssessmentCode
+"	string												
+surgery_pre	PatientVoidedCode	"PatientVoidedCode
+"	string												
+surgery_pre	PlannedPrincipalCPTCategory	"PlannedPrincipalCPTCategory
+"	string												
+surgery_pre	PlannedPrincipalCPTCode	"PlannedPrincipalCPTCode
+"	number												
+surgery_pre	PlannedPrincipalCPTDesc	"PlannedPrincipalCPTDesc
+"	string												
+surgery_pre	PlannedPrincipalCPTName	"PlannedPrincipalCPTName
+"	string												
+surgery_pre	PreOpBP	"PreOpBP
+"	string												
+surgery_pre	PreOpConversationCode	"PreOpConversationCode
+"	string												
+surgery_pre	PreoperativeImagingTime	"PreoperativeImagingTime
+"	string												
+surgery_pre	PreOpMedAndRailUpCode	"PreOpMedAndRailUpCode
+"	string												
+surgery_pre	PreOpPatientConsciousness	"PreOpPatientConsciousness
+"	string												
+surgery_pre	PreOpPatientMood	"PreOpPatientMood
+"	string												
+surgery_pre	PreOpPatientMoodCode	"PreOpPatientMoodCode
+"	string												
+surgery_pre	PreOpPulse	"PreOpPulse
+"	string												
+surgery_pre	PreOpRequiredXRay	"PreOpRequiredXRay
+"	string												
+surgery_pre	PreOpRespiratoryRate	"PreOpRespiratoryRate
+"	string												
+surgery_pre	PreOpTemperature	"PreOpTemperature
+"	string												
+surgery_pre	PreOpWeight	"PreOpWeight
+"	string												
+surgery_pre	PrincipalDiagnosisText	"PrincipalDiagnosisText
+"	string												
+surgery_pre	PrincipalPostOpDiagnosisText	"PrincipalPostOpDiagnosisText
+"	string												
+surgery_pre	PrincipalPreOpDiagnosisText	"PrincipalPreOpDiagnosisText
+"	string												
+surgery_pre	PrincipalPreOpICD10Code	"PrincipalPreOpICD10Code
+"	string												
+surgery_pre	PrincipalPreOpICD10CodeDesc	"PrincipalPreOpICD10CodeDesc
+"	string												
+surgery_pre	PrincipalPreOpICD9Code	"PrincipalPreOpICD9Code
+"	string												
+surgery_pre	PrincipalPreOpICD9CodeDesc	"PrincipalPreOpICD9CodeDesc
+"	string												
+surgery_pre	ProcedureTime	"ProcedureTime
+"	string												
+surgery_pre	ProsthesisRemovedCode	"ProsthesisRemovedCode
+"	string												
+surgery_pre	RequestedAnesthesiaTechniqueCode	"RequestedAnesthesiaTechniqueCode
+"	string												
+surgery_pre	RequestedFlag	"RequestedFlag
+"	string												
+surgery_pre	RequestMadeTime	"RequestMadeTime
+"	string												
+surgery_pre	RequiresCleaningOrContaminatedCode	"RequiresCleaningOrContaminatedCode
+"	string												
+surgery_pre	ScheduledEndTime	"ScheduledEndTime
+"	string												
+surgery_pre	ScheduledEntryTime	"ScheduledEntryTime
+"	string												
+surgery_pre	ScheduledProcedure	"ScheduledProcedure
+"	string												
+surgery_pre	ScheduledStartTime	"ScheduledStartTime
+"	string												
+surgery_pre	ServiceConnectedFlag	"ServiceConnectedFlag
+"	string												
+surgery_pre	SignedAndWitnessedConsentCode	"SignedAndWitnessedConsentCode
+"	string												
+surgery_pre	SurgeryCancelReason	"SurgeryCancelReason
+"	string												
+surgery_pre	SurgeryDisposition	"SurgeryDisposition
+"	string												
+surgery_pre	SurgeryDispositionCode	"SurgeryDispositionCode
+"	string												
+surgery_pre	SurgeryTime	"SurgeryTime
+"	string												
+surgery_pre	UrinalysisIn48HoursCode	"UrinalysisIn48HoursCode
+"	string												
+surgery_pre	ValuablesSecuredCode	"ValuablesSecuredCode
+"	string												
+surgery_pre	XRayReadyAndReceivedCode	"XRayReadyAndReceivedCode
+"	string												
+outpat_v_patient_ed	Chicago_VisitSID	"Chicago_VisitSID
+"	string												
+outpat_v_patient_ed	DaysFromAnchorDateToEventDate	"DaysFromAnchorDateToEventDate
+"	integer												
+outpat_v_patient_ed	DaysFromAnchorDateToVisitDate	"DaysFromAnchorDateToVisitDate
+"	integer												
+outpat_v_patient_ed	DaysFromAnchorDateToVPatientEdDate	"DaysFromAnchorDateToVPatientEdDate
+"	integer												
+outpat_v_patient_ed	EducationTopic	"EducationTopic
+"	string												
+outpat_v_patient_ed	EducationTopicPrintName	"EducationTopicPrintName
+"	string												
+outpat_v_patient_ed	EventTime	"EventTime
+"	string												
+outpat_v_patient_ed	LevelOfUnderstanding	"LevelOfUnderstanding
+"	string												
+outpat_v_patient_ed	VisitTime	"VisitTime
+"	string												
+outpat_v_patient_ed	VPatientEdTime	"VPatientEdTime
+"	string												
+core_metadata_collection	contributor	"An entity responsible for making contributions to the resource. Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity.
+"	string												
+core_metadata_collection	coverage	"The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN] (http://www.getty.edu/research/tools/vocabulary/tgn/index.html). Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.
+"	string												
+core_metadata_collection	creator	"An entity primarily responsible for making the resource. Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.
+"	string												
+core_metadata_collection	date			_definitions.yaml#/datetime											
+core_metadata_collection	description	"An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.
+"	string												
+core_metadata_collection	format	"The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME] (http://www.iana.org/assignments/media-types/).
+"	string												
+core_metadata_collection	language	"A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 (http://www.ietf.org/rfc/rfc4646.txt).
+"	string												
+core_metadata_collection	publisher	"An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.
+"	string												
+core_metadata_collection	relation	"A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. 
+"	string												
+core_metadata_collection	rights	"Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.
+"	string												
+core_metadata_collection	source	"A related resource from which the described resource is derived. The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.
+"	string												
+core_metadata_collection	subject	"The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.
+"	string												
+core_metadata_collection	title	"A name given to the resource. Typically, a Title will be a name by which the resource is formally known.
+"	string												
+core_metadata_collection	data_type	"The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.
+"	string												

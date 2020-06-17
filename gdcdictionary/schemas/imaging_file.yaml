@@ -47,8 +47,8 @@ required:
   - file_size
   - md5sum
   - data_format
-  - data_category
   - data_type
+  - data_category
 
 uniqueKeys:
   - [ id ]
@@ -60,7 +60,7 @@ properties:
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
-    enum: [ "Imaging File" ]
+    type: string
 
   data_format:
     term:
@@ -76,10 +76,7 @@ properties:
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
-    enum:
-      - "MRI"
-      - "CT Scan"
-      - "Ultrasound"
+    type: string
 
   study_date:
     $ref: "_definitions.yaml#/datetime"

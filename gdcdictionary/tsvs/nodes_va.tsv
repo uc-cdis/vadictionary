@@ -1,0 +1,63 @@
+<node>	<namespace>	<title>	<nodeTerms>	<category>	<submittable>	<description>	<additionalProperties>	<property_ref>	<program>	<project>	<required>	<link_name>	<backref>	<label>	<target>	<multiplicity>	<link_required>	<link_group_required>	<group_exclusive>
+bcma_medication_log	https://vpodc.org/	BCMA Medication Log		clinical	True	"Barcode Medication Administration (BCMA) log for a patient.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	bcma_medication_logs	associated_with	case	many_to_one	True		
+aliquot	https://vpodc.org/	Aliquot		biospecimen	True	"A portion taken from a sample used for analysis, including analytes extracted from a sample.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	submitter_id, type, samples	samples	aliquots	derived_from	sample	many_to_many	True		
+actionable_mutation	https://vpodc.org/	Actionable Mutations		clinical	True	"Mutations extracted from a patient's sequencing results.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	actionable_mutations	associated_with	case	many_to_one	True		
+imaging_file	https://vpodc.org/	Imaging File		data_file	True	"Data file containing diagnostic image from clinical imaging exam.
+"	False	_definitions.yaml#/data_file_properties	*	*	submitter_id, type, file_name, file_size, md5sum, data_format, data_category, data_type	['core_metadata_collections', 'cases']	['imaging_files', 'imaging_files']	['data_from', 'data_from']	['core_metadata_collection', 'case']	['many_to_one', 'many_to_one']	[False, False]	True	False
+patient_lab_chem	https://vpodc.org/	Patient Lab Chem		clinical	True	"Laboratory results for patients. Location information about the physical institution, physical laboratory, accession area and lab section is found in the domain�s tables. Details about the lab test itself (e.g., the type of test, whether the test qualifies as workload, whether the test is part of panel), the specimen collected for the test, the SNOMED code, the LOINC code and the National VA Lab Code are also included.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	patient_lab_chems	associated_with	case	many_to_one	True		
+outpat_visit	https://vpodc.org/	Outpat Visit		clinical	True	"Outpat Visit
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	outpat_visits	associated_with	case	many_to_one	True		
+outpat_v_procedure_diagnosis	https://vpodc.org/	Outpat VProcedureDiagnosis		clinical	True	"Outpat VProcedureDiagnosis
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	outpat_v_procedure_diagnoses	associated_with	case	many_to_one	True		
+icd_code	https://vpodc.org/	ICD Code		clinical	True	"The ICD Code Domain provides details on the International Classification Codes (ICD) and Diagnostic Related Groups (DRG) identifiers. This domain includes descriptions for ICD9 and ICD10 codes as well as the status to indicate if the code is active or inactive.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	icd_codes	associated_with	case	many_to_one	True		
+rx_outpat	https://vpodc.org/	Rx Outpat		clinical	True	"Outpatient pharmacy data including prescription, refills, dosage, units and instructions to patients on taking medications.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	rx_outpats	associated_with	case	many_to_one	True		
+patient_means_test	https://vpodc.org/	Patient Means Test		clinical	True	"Income information for a patient.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	patient_means_tests	associated_with	case	many_to_one	True		
+outpat_v_skin_test	https://vpodc.org/	Outpat VSkinTest		clinical	True	"Outpat VSkinTest
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	outpat_v_skin_tests	associated_with	case	many_to_one	True		
+surgery_procedure_diagnosis_code	https://vpodc.org/	Surgery Procedure Diagnosis Code		clinical	True	"Contains surgery-related ICD diagnosis & procedure codes and CPT procedure codes.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	surgery_procedure_diagnosis_codes	associated_with	case	many_to_one	True		
+read_group	https://vpodc.org/	Read Group		biospecimen	True	Sequencing reads from one lane of an NGS experiment.	False	_definitions.yaml#/ubiquitous_properties	*	*	submitter_id, type, aliquots	aliquots	read_groups	derived_from	aliquot	many_to_one	True		
+outpat_v_skin_test_diagnosis	https://vpodc.org/	Outpat VSkinTestDiagnosis		clinical	True	"Outpat VSkinTestDiagnosis
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	outpat_v_skin_test_diagnoses	associated_with	case	many_to_one	True		
+sample	https://vpodc.org/	Sample		biospecimen	True	"Any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes, including a sample obtained from a living organism or taken from the biological object after halting of all its life functions. Samples can contain one or more components including but not limited to cellular molecules, cells, tissues, organs, body fluids, embryos, and body excretory products.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	submitter_id, type, cases	cases	samples	derived_from	case	many_to_one	True		
+cprs_order	https://vpodc.org/	CPRS Order		clinical	True	"The Computerized Patient Record System (CPRS) domain stores information about a given order. Information on the type of order (whether it is related to medications, labs, consults, dietary, or activities) is available. In addition, this domain includes a timestamp of events related to the order which includes status changes, signatory authorities, other related orders/checks, and other components related to the staff or service who requested the order.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	cprs_orders	associated_with	case	many_to_one	True		
+clinical_demographic	https://vpodc.org/	Clinical Demographic		clinical	True	"Clinical demographic data for a patient.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	clinical_demographics	associated_with	case	many_to_one	True		
+unaligned_reads_file	https://vpodc.org/	Unaligned Reads File		data_file	True	Data file containing unaligned reads.	False	_definitions.yaml#/data_file_properties	*	*	submitter_id, type, file_name, file_size, md5sum	['core_metadata_collections', 'read_groups', 'cases']	['unaligned_reads_files', 'unaligned_reads_files', 'unaligned_reads_files']	['data_from', 'data_from', 'data_from']	['core_metadata_collection', 'read_group', 'case']	['many_to_one', 'many_to_many', 'many_to_many']	[False, False, False]	True	False
+variant_call_file	https://vpodc.org/	Variant Call File (VCF)		data_file	False	"Data file containing variants called from sequencing reads.
+"	False	_definitions.yaml#/data_file_properties	*	*	submitter_id, type, file_name, file_size, md5sum	['core_metadata_collections', 'aligned_reads_files', 'unaligned_reads_files', 'cases']	['variant_call_files', 'variant_call_files', 'variant_call_files', 'variant_call_files']	['data_from', 'data_from', 'data_from', 'data_from']	['core_metadata_collection', 'aligned_reads_file', 'unaligned_reads_file', 'case']	['many_to_one', 'many_to_many', 'many_to_many', 'many_to_many']	[False, False, False, False]	True	False
+nsclc_curated_gene	https://vpodc.org/	NSCLC Curated Genes		clinical	True	"NSCLC Curated Genes
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	nsclc_curated_genes	associated_with	case	many_to_one	True		
+oncology_primary	https://vpodc.org/	Oncology Primary		clinical	True	"Tumor-related data for Oncology patients. Data elements in this node uniquely define the tumor, the extent of disease, first course of treatment accorded, and all recurrence information.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	oncology_primaries	associated_with	case	many_to_one	True		
+surgery_post	https://vpodc.org/	Surgery POST		clinical	True	"SurgeryPOST contains post-case data, provider notes, indications for operations, and information on surgically implanted prosthetics.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	surgery_posts	associated_with	case	many_to_one	True		
+outpat_v_diagnosis	https://vpodc.org/	Outpat VDiagnosis		clinical	True	"Outpat Vdiagnosis
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	outpat_v_diagnoses	associated_with	case	many_to_one	True		
+clinical_supplement	https://vpodc.org/	Clinical Supplement		data_file	True	"Data file containing clinical metadata information.
+"	False	_definitions.yaml#/data_file_properties	*	*	submitter_id, type, file_name, file_size, data_format, md5sum, data_category, data_type	['core_metadata_collections', 'cases']	['clinical_supplements', 'clinical_supplements']	['data_from', 'derived_from']	['core_metadata_collection', 'case']	['many_to_one', 'many_to_many']	[False, False]	True	False
+aligned_reads_file	https://vpodc.org/	Aligned Reads File		data_file	True	"Data file containing aligned reads.
+"	False	_definitions.yaml#/data_file_properties	*	*	submitter_id, type, file_name, file_size, data_format, md5sum	['core_metadata_collections', 'read_groups', 'unaligned_reads_files', 'cases']	['aligned_reads_files', 'aligned_reads_files', 'aligned_reads_files', 'aligned_reads_files']	['data_from', 'data_from', 'data_from', 'data_from']	['core_metadata_collection', 'read_group', 'unaligned_reads_file', 'case']	['many_to_one', 'many_to_many', 'many_to_many', 'many_to_many']	[False, False, False, False]	True	False
+surgery_intra	https://vpodc.org/	Surgery INTRA		clinical	True	"SurgeryINTRA contains data captured during a surgical case progress.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	surgery_intras	associated_with	case	many_to_one	True		
+case	https://vpodc.org/	Case		administrative	True	"The collection of all data related to a specific subject in the context of a specific project.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	submitter_id, type, projects	projects	cases	member_of	project	many_to_one	True		
+pathology_slide	https://vpodc.org/	Pathology Slide		data_file	True	"Data file containing a pathology slide.
+"	False	_definitions.yaml#/data_file_properties	*	*	submitter_id, type, file_name, file_size, md5sum, data_format, data_category, data_type	['core_metadata_collections', 'cases', 'samples']	['pathology_slides', 'pathology_slides', 'pathology_slides']	['data_from', 'data_from', 'data_from']	['core_metadata_collection', 'case', 'sample']	['many_to_one', 'many_to_one', 'many_to_one']	[False, False, False]	True	False
+outpat_v_procedure	https://vpodc.org/	Outpat VProcedure		clinical	True	"Outpat Vprocedure
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	outpat_v_procedures	associated_with	case	many_to_one	True		
+surgery_pre	https://vpodc.org/	Surgery PRE		clinical	True	"SurgeryPRE contains data relevant to surgical case scheduling and preparation.
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	surgery_pres	associated_with	case	many_to_one	True		
+outpat_v_patient_ed	https://vpodc.org/	Outpat VPatientEd		clinical	True	"Outpat VPatientEd
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	cases, submitter_id, type	cases	outpat_v_patient_eds	associated_with	case	many_to_one	True		
+core_metadata_collection	https://vpodc.org/	Core Metadata Collection		administrative	True	"Structured description of a collection of several datasets
+"	False	_definitions.yaml#/ubiquitous_properties	*	*	submitter_id, type, projects	projects	core_metadata_collections	data_from	project	many_to_one	True		
