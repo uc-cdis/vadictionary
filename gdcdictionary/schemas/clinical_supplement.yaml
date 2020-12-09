@@ -80,6 +80,8 @@ properties:
       - FoundationOne XML
       - TSV
       - XLSX
+      - ZIP
+      - Other
 
   cases:
     $ref: "_definitions.yaml#/to_many"
