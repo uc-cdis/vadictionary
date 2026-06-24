@@ -1,7 +1,7 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "actionable_mutation"
-title: Actionable Mutations
+id: "somatic_mutation"
+title: Somatic Mutations
 type: object
 namespace: https://vpodc.org/
 category: clinical
