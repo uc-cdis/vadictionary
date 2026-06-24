@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "gdcdictionary"
 version = "0.0.0"
-description = "Data Dictionary for MIDRC"
+description = "Data Dictionary for VPODC"
 authors = ["Center for Translational Data Science at the University of Chicago <support@gen3.org>"]
 license = "Apache-2.0"
 readme = "README.md"
