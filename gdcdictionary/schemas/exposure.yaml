@@ -161,5 +161,205 @@ properties:
       - '> 2.0'
       - 'Not reported / Unknown'
 
+  XP_AGENTORANGE:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_ANTHRAX:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_ASBESTOS:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_BURNPIT:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_CHROMIUM:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_CONSTRUCT:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_MICROWAVE:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_MUSTARD:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_NUCLEAR:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_PAINT:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_PERCHLORATE:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_PESTICIDE:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_PETROLEUM:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_RADIATION:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_RESP:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_URANIUM:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_WARFARE:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_WOUNDS:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_XRAY:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_OTHER:
+    description: >
+
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
   cases:
     $ref: "_definitions.yaml#/to_one"
