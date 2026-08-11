@@ -54,9 +54,9 @@ properties:
     description: >
 
     enum:
-      - Yes
-      - No
-      - Not reported / Unknown
+      - 'Yes'
+      - 'No'
+      - 'Not reported / Unknown'
 
   DRINK_BEER_FREQ:
     description: >
