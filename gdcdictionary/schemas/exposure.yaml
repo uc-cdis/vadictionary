@@ -1,0 +1,372 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "exposure"
+title: Exposure
+type: object
+namespace: https://vpodc.org/
+category: clinical
+program: '*'
+project: '*'
+description: >
+  Clinically relevant patient information not immediately resulting from genetic predispositions.
+additionalProperties: false
+submittable: true
+downloadable: false
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - state
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: cases
+    backref: exposures
+    label: describes
+    target_type: case
+    multiplicity: many_to_one
+    required: true
+
+required:
+  - submitter_id
+  - type
+  - cases
+
+uniqueKeys:
+  #unclear if want submitter ID for clinical
+  - [id]
+  - [project_id, submitter_id]
+
+properties:
+  $ref: "_definitions.yaml#/ubiquitous_properties"
+
+  DRINK_CURRENT:
+    description: >
+      DRINK_CURRENT
+    enum:
+      - 'Yes'
+      - 'No'
+      - 'Not reported / Unknown'
+
+  DRINK_MIN_12:
+    description: >
+      DRINK_MIN_12
+    enum:
+      - 'Yes'
+      - 'No'
+      - 'Not reported / Unknown'
+
+  DRINK_BEER_FREQ:
+    description: >
+      DRINK_BEER_FREQ
+    enum:
+      - '1 D'
+      - '2 - 3 D'
+      - '> 4 D'
+      - '4 - 6 W'
+      - '1 - 3 W'
+      - '1 - 3 M'
+      - 'Not reported / Unknown'
+
+  DRINK_WINE_FREQ:
+    description: >
+      DRINK_WINE_FREQ
+    enum:
+      - '1 D'
+      - '2 - 3 D'
+      - '> 4 D'
+      - '4 - 6 W'
+      - '1 - 3 W'
+      - '1 - 3 M'
+      - 'Not reported / Unknown'
+
+  DRINK_LIQUOR_FREQ:
+    description: >
+      DRINK_LIQUOR_FREQ
+    enum:
+      - '1 D'
+      - '2 - 3 D'
+      - '> 4 D'
+      - '4 - 6 W'
+      - '1 - 3 W'
+      - '1 - 3 M'
+      - 'Not reported / Unknown'
+
+  DRINK_START_AGE:
+    description: >
+      DRINK_START_AGE
+    type: number
+
+  DRINK_TOTAL_YEARS:
+    description: >
+      DRINK_TOTAL_YEARS
+    type: number
+
+  DRINK_STOP_AGE:
+    description: >
+      DRINK_STOP_AGE
+    type: number
+
+  SMOKE_CURRENT:
+    description: >
+      SMOKE_CURRENT
+    enum:
+      - 'Yes'
+      - 'No'
+      - 'Not reported / Unknown'
+
+  SMOKE_MIN_100:
+    description: >
+      SMOKE_MIN_100
+    enum:
+      - 'Yes'
+      - 'No'
+      - 'Not reported / Unknown'
+
+  SMOKE_CIGAR_PIPE:
+    description: >
+      SMOKE_CIGAR_PIPE
+    enum:
+      - 'Yes'
+      - 'No'
+      - 'Not reported / Unknown'
+
+  SMOKE_SMOKELESS:
+    description: >
+      SMOKE_SMOKELESS
+    enum:
+      - 'Yes'
+      - 'No'
+      - 'Not reported / Unknown'
+
+  SMOKE_TOTAL_YEARS:
+    description: >
+      SMOKE_TOTAL_YEARS
+    type: number
+
+  SMOKE_STOP_AGE:
+    description: >
+      SMOKE_STOP_AGE
+    type: number
+
+  SMOKE_DAILY_AMT:
+    description: >
+      SMOKE_DAILY_AMT
+    enum:
+      - '< 0.5'
+      - '0.5 - 1.0'
+      - '1.0 - 2.0'
+      - '> 2.0'
+      - 'Not reported / Unknown'
+
+  XP_AGENTORANGE:
+    description: >
+      XP_AGENTORANGE
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_ANTHRAX:
+    description: >
+      XP_ANTHRAX
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_ASBESTOS:
+    description: >
+      XP_ASBESTOS
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_BURNPIT:
+    description: >
+      XP_BURNPIT
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_CHROMIUM:
+    description: >
+      XP_CHROMIUM
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_CONSTRUCT:
+    description: >
+      XP_CONSTRUCT
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_MICROWAVE:
+    description: >
+      XP_MICROWAVE
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_MUSTARD:
+    description: >
+      XP_MUSTARD
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_NUCLEAR:
+    description: >
+      XP_NUCLEAR
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_PAINT:
+    description: >
+      XP_PAINT
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_PERCHLORATE:
+    description: >
+      XP_PERCHLORATE
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_PESTICIDE:
+    description: >
+      XP_PESTICIDE
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_PETROLEUM:
+    description: >
+      XP_PETROLEUM
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_RADIATION:
+    description: >
+      XP_RADIATION
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_RESP:
+    description: >
+      XP_RESP
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_URANIUM:
+    description: >
+      XP_URANIUM
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_WARFARE:
+    description: >
+      XP_WARFARE
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_WOUNDS:
+    description: >
+      XP_WOUNDS
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_XRAY:
+    description: >
+      XP_XRAY
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  XP_OTHER:
+    description: >
+      XP_OTHER
+    enum:
+      - '1-12 months'
+      - '13-24 months'
+      - '25 months or more'
+      - 'Not Reported'
+      - 'Unknown'
+
+  MILITARY_ASSOCIATION:
+    description: >
+      MILITARY_ASSOCIATION
+    type: array
+    items:
+      type: string
+
+  cases:
+    $ref: "_definitions.yaml#/to_one"
