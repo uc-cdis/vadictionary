@@ -364,7 +364,7 @@ properties:
   MILITARY_ASSOCIATION:
     description: >
 
-    type: string
+    type: array
 
   cases:
     $ref: "_definitions.yaml#/to_one"
