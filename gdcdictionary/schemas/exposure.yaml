@@ -365,6 +365,8 @@ properties:
     description: >
 
     type: array
+    items:
+      type: string
 
   cases:
     $ref: "_definitions.yaml#/to_one"
