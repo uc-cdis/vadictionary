@@ -44,7 +44,7 @@ properties:
 
   DRINK_CURRENT:
     description: >
-
+      DRINK_CURRENT
     enum:
       - 'Yes'
       - 'No'
@@ -52,7 +52,7 @@ properties:
 
   DRINK_MIN_12:
     description: >
-
+      DRINK_MIN_12
     enum:
       - 'Yes'
       - 'No'
@@ -60,7 +60,7 @@ properties:
 
   DRINK_BEER_FREQ:
     description: >
-
+      DRINK_BEER_FREQ
     enum:
       - '1 D'
       - '2 - 3 D'
@@ -72,7 +72,7 @@ properties:
 
   DRINK_WINE_FREQ:
     description: >
-
+      DRINK_WINE_FREQ
     enum:
       - '1 D'
       - '2 - 3 D'
@@ -84,7 +84,7 @@ properties:
 
   DRINK_LIQUOR_FREQ:
     description: >
-
+      DRINK_LIQUOR_FREQ
     enum:
       - '1 D'
       - '2 - 3 D'
@@ -96,22 +96,22 @@ properties:
 
   DRINK_START_AGE:
     description: >
-
+      DRINK_START_AGE
     type: number
 
   DRINK_TOTAL_YEARS:
     description: >
-
+      DRINK_TOTAL_YEARS
     type: number
 
   DRINK_STOP_AGE:
     description: >
-
+      DRINK_STOP_AGE
     type: number
 
   SMOKE_CURRENT:
     description: >
-
+      SMOKE_CURRENT
     enum:
       - 'Yes'
       - 'No'
@@ -119,7 +119,7 @@ properties:
 
   SMOKE_MIN_100:
     description: >
-
+      SMOKE_MIN_100
     enum:
       - 'Yes'
       - 'No'
@@ -127,7 +127,7 @@ properties:
 
   SMOKE_CIGAR_PIPE:
     description: >
-
+      SMOKE_CIGAR_PIPE
     enum:
       - 'Yes'
       - 'No'
@@ -135,7 +135,7 @@ properties:
 
   SMOKE_SMOKELESS:
     description: >
-
+      SMOKE_SMOKELESS
     enum:
       - 'Yes'
       - 'No'
@@ -143,17 +143,17 @@ properties:
 
   SMOKE_TOTAL_YEARS:
     description: >
-
+      SMOKE_TOTAL_YEARS
     type: number
 
   SMOKE_STOP_AGE:
     description: >
-
+      SMOKE_STOP_AGE
     type: number
 
   SMOKE_DAILY_AMT:
     description: >
-
+      SMOKE_DAILY_AMT
     enum:
       - '< 0.5'
       - '0.5 - 1.0'
@@ -163,7 +163,7 @@ properties:
 
   XP_AGENTORANGE:
     description: >
-
+      XP_AGENTORANGE
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -173,7 +173,7 @@ properties:
 
   XP_ANTHRAX:
     description: >
-
+      XP_ANTHRAX
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -183,7 +183,7 @@ properties:
 
   XP_ASBESTOS:
     description: >
-
+      XP_ASBESTOS
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -193,7 +193,7 @@ properties:
 
   XP_BURNPIT:
     description: >
-
+      XP_BURNPIT
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -203,7 +203,7 @@ properties:
 
   XP_CHROMIUM:
     description: >
-
+      XP_CHROMIUM
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -213,7 +213,7 @@ properties:
 
   XP_CONSTRUCT:
     description: >
-
+      XP_CONSTRUCT
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -223,7 +223,7 @@ properties:
 
   XP_MICROWAVE:
     description: >
-
+      XP_MICROWAVE
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -233,7 +233,7 @@ properties:
 
   XP_MUSTARD:
     description: >
-
+      XP_MUSTARD
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -243,7 +243,7 @@ properties:
 
   XP_NUCLEAR:
     description: >
-
+      XP_NUCLEAR
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -253,7 +253,7 @@ properties:
 
   XP_PAINT:
     description: >
-
+      XP_PAINT
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -263,7 +263,7 @@ properties:
 
   XP_PERCHLORATE:
     description: >
-
+      XP_PERCHLORATE
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -273,7 +273,7 @@ properties:
 
   XP_PESTICIDE:
     description: >
-
+      XP_PESTICIDE
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -283,7 +283,7 @@ properties:
 
   XP_PETROLEUM:
     description: >
-
+      XP_PETROLEUM
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -293,7 +293,7 @@ properties:
 
   XP_RADIATION:
     description: >
-
+      XP_RADIATION
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -303,7 +303,7 @@ properties:
 
   XP_RESP:
     description: >
-
+      XP_RESP
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -313,7 +313,7 @@ properties:
 
   XP_URANIUM:
     description: >
-
+      XP_URANIUM
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -323,7 +323,7 @@ properties:
 
   XP_WARFARE:
     description: >
-
+      XP_WARFARE
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -333,7 +333,7 @@ properties:
 
   XP_WOUNDS:
     description: >
-
+      XP_WOUNDS
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -343,7 +343,7 @@ properties:
 
   XP_XRAY:
     description: >
-
+      XP_XRAY
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -353,7 +353,7 @@ properties:
 
   XP_OTHER:
     description: >
-
+      XP_OTHER
     enum:
       - '1-12 months'
       - '13-24 months'
@@ -363,7 +363,7 @@ properties:
 
   MILITARY_ASSOCIATION:
     description: >
-
+      MILITARY_ASSOCIATION
     type: array
     items:
       type: string
