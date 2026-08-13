@@ -99,14 +99,14 @@ properties:
       DRINK_START_AGE
     type: number
 
-  DRINK_TOTAL_YEARS:
-    description: >
-      DRINK_TOTAL_YEARS
-    type: number
-
   DRINK_STOP_AGE:
     description: >
       DRINK_STOP_AGE
+    type: number
+
+  DRINK_TOTAL_YEARS:
+    description: >
+      DRINK_TOTAL_YEARS
     type: number
 
   SMOKE_CURRENT:
@@ -125,6 +125,16 @@ properties:
       - 'No'
       - 'Not reported / Unknown'
 
+  SMOKE_DAILY_AMT:
+    description: >
+      SMOKE_DAILY_AMT
+    enum:
+      - '< 0.5'
+      - '0.5 - 1.0'
+      - '1.0 - 2.0'
+      - '> 2.0'
+      - 'Not reported / Unknown'
+
   SMOKE_CIGAR_PIPE:
     description: >
       SMOKE_CIGAR_PIPE
@@ -141,11 +151,6 @@ properties:
       - 'No'
       - 'Not reported / Unknown'
 
-  SMOKE_TOTAL_YEARS:
-    description: >
-      SMOKE_TOTAL_YEARS
-    type: number
-
   SMOKE_START_AGE:
     description: >
       SMOKE_START_AGE
@@ -156,15 +161,10 @@ properties:
       SMOKE_STOP_AGE
     type: number
 
-  SMOKE_DAILY_AMT:
+  SMOKE_TOTAL_YEARS:
     description: >
-      SMOKE_DAILY_AMT
-    enum:
-      - '< 0.5'
-      - '0.5 - 1.0'
-      - '1.0 - 2.0'
-      - '> 2.0'
-      - 'Not reported / Unknown'
+      SMOKE_TOTAL_YEARS
+    type: number
 
   XP_AGENTORANGE:
     description: >
