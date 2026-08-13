@@ -146,6 +146,11 @@ properties:
       SMOKE_TOTAL_YEARS
     type: number
 
+  SMOKE_START_AGE:
+    description: >
+      SMOKE_START_AGE
+    type: number
+
   SMOKE_STOP_AGE:
     description: >
       SMOKE_STOP_AGE
