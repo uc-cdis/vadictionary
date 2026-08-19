@@ -127,7 +127,7 @@ properties:
 
   SMOKE_DAILY_AMT:
     description: >
-      Approxiamte number of packs per day participant smokes or smoked (when smoking)
+      Approximate number of packs per day participant smokes or smoked (when smoking)
     enum:
       - '< 0.5'
       - '0.5 - 1.0'
